@@ -8,6 +8,9 @@ const Header = ({ siteTitle }) => (
       <h1>
         <Link
           to="/"
+          style={{
+            textDecoration: `none`,
+          }}
         >
           {siteTitle}
         </Link>
