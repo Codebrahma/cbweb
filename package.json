@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "codebrahma-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Codebrahma.com website built on GatsbyJS",
+  "version": "0.0.1",
+  "author": "Anand Narayan <anand@codebrahma.com>",
   "dependencies": {
     "gatsby": "^2.4.3",
     "gatsby-image": "^2.0.41",
@@ -32,12 +32,5 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
