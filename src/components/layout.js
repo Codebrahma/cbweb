@@ -9,8 +9,16 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import {ThemeProvider} from 'emotion-theming'
 import Header from "./header"
 import "./fonts.css"
+
+const breakpoints = [
+  '768px', '1280px',
+];
+const theme = {
+  breakpoints,
+}
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -23,20 +31,23 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <body style={{background: 'rgb(247,245,242)'}}>
-        <div style={{
-              width: '80%',
-              margin: '0 auto',
-            }}>
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <div>
-            <main >{children}</main>
-            <footer>
-              © {new Date().getFullYear()}
-            </footer>
+      <ThemeProvider theme={theme}>
+        <body style={{background: 'rgb(247,245,242)'}}>
+          <div style={{
+                width: '80%',
+                margin: '0 auto',
+              }}>
+            <Header siteTitle={data.site.siteMetadata.title} />
+            <div>
+              <main >{children}</main>
+              <footer>
+                © {new Date().getFullYear()}
+              </footer>
+            </div>
           </div>
-        </div>
-      </body>
+        </body>
+
+      </ThemeProvider>
     )}
   />
 )

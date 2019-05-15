@@ -4,13 +4,20 @@ import Img from "gatsby-image"
 
 
 import styled from '@emotion/styled'
-import { color } from 'styled-system'
+import { color,fontSize } from 'styled-system'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+
+
+
 const Box = styled.div`
   ${color}
+`
+
+const H1 = styled.h1`
+  ${fontSize}
 `
 
 const NonStretchedImage = props => {
@@ -32,11 +39,11 @@ const NonStretchedImage = props => {
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Box class="hero">
-      <h1>We build your frontend<br>
+    <Box class="hero"> 
+      <H1 fontSize={['1rem', '4rem']}>We build your frontend<br>
       </br>
       You focus on your backend business logic!
-      </h1>
+      </H1>
       <p>We take your design files and api docs. And give you a fast mobile and browser app</p>
     </Box>
     <div class="work">
