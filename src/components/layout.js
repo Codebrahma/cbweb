@@ -23,15 +23,20 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}
-          </footer>
+      <body style={{background: 'rgb(247,245,242)'}}>
+        <div style={{
+              width: '80%',
+              margin: '0 auto',
+            }}>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div>
+            <main >{children}</main>
+            <footer>
+              © {new Date().getFullYear()}
+            </footer>
+          </div>
         </div>
-      </>
+      </body>
     )}
   />
 )

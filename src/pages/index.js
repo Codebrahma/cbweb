@@ -3,8 +3,15 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 
+import styled from '@emotion/styled'
+import { color } from 'styled-system'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+const Box = styled.div`
+  ${color}
+`
 
 const NonStretchedImage = props => {
   let normalizedProps = props
@@ -25,13 +32,13 @@ const NonStretchedImage = props => {
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div class="hero">
+    <Box class="hero">
       <h1>We build your frontend<br>
       </br>
       You focus on your backend business logic!
       </h1>
       <p>We take your design files and api docs. And give you a fast mobile and browser app</p>
-    </div>
+    </Box>
     <div class="work">
       <h2>
         Our Work
