@@ -26,8 +26,10 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div class="hero">
-      <h1>We build your frontend.</h1>
-      <h1>You focus on your backend business logic!</h1>
+      <h1>We build your frontend<br>
+      </br>
+      You focus on your backend business logic!
+      </h1>
       <p>We take your design files and api docs. And give you a fast mobile and browser app</p>
     </div>
     <div class="work">
@@ -44,8 +46,10 @@ const IndexPage = ({data}) => (
     <div class="stacks">
       <div class="stack">
         <NonStretchedImage fluid={data.react.childImageSharp.fluid} />
-        We have been building on React/ReactNative for 3 years now, and we absolutely love its philosophy.
-        We strongly believe that a good react codebase is very conduisive to rapid UI iteration
+        <p>
+          We have been building on React/ReactNative for 3 years now, and we absolutely love its philosophy.
+          We strongly believe that a good react codebase is very conduisive to rapid UI iteration
+        </p>
       </div>
     </div>
   </Layout>
