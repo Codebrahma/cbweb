@@ -373,10 +373,3 @@ textarea {
   src: url('../fonts/TiemposHeadlineTest-Regular.woff') format('woff');
   font-family: 'TiemposHeadline';
 }
-
-h1, h2 {
-  font-family: 'TiemposHeadline';
-}
-p {
-  font-family: 'TiemposText';
-}

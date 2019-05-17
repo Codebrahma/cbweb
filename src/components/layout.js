@@ -9,16 +9,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import Container from './common/container'
 import {ThemeProvider} from 'emotion-theming'
 import Header from "./header"
 import "./fonts.css"
+import theme from './theme'
 
-const breakpoints = [
-  '768px', '1280px',
-];
-const theme = {
-  breakpoints,
-}
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -32,11 +28,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <ThemeProvider theme={theme}>
-        <body style={{background: 'rgb(247,245,242)'}}>
-          <div style={{
-                width: '80%',
-                margin: '0 auto',
-              }}>
+        <div style={{background: 'rgb(247,245,242)'}}>
+          <Container>
             <Header siteTitle={data.site.siteMetadata.title} />
             <div>
               <main >{children}</main>
@@ -44,8 +37,8 @@ const Layout = ({ children }) => (
                 © {new Date().getFullYear()}
               </footer>
             </div>
-          </div>
-        </body>
+          </Container>
+        </div>
 
       </ThemeProvider>
     )}

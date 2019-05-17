@@ -1,69 +1,40 @@
 import React from "react"
+// eslint-disable-next-line
 import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
 
-
-import styled from '@emotion/styled'
-import { color,fontSize } from 'styled-system'
-
+import NonStretchedImage from "../components/common/nonStretchedImage"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Box, H1, H2, P } from '../components/common/atoms'
 
 
-
-
-const Box = styled.div`
-  ${color}
-`
-
-const H1 = styled.h1`
-  ${fontSize}
-`
-
-const NonStretchedImage = props => {
-  let normalizedProps = props
-  if (props.fluid && props.fluid.presentationWidth) {
-    normalizedProps = {
-      ...props,
-      style: {
-        ...(props.style || {}),
-        maxWidth: props.fluid.presentationWidth,
-        margin: "0 auto", // Used to center the image
-      },
-    }
-  }
-
-  return <Img {...normalizedProps} />
-}
 
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Box class="hero"> 
-      <H1 fontSize={['1rem', '4rem']}>We build your frontend<br>
-      </br>
-      You focus on your backend business logic!
-      </H1>
-      <p>We take your design files and api docs. And give you a fast mobile and browser app</p>
+    <Box py={[8,9]} className="hero"> 
+      <H1>We build your frontend</H1>
+      <P>We take your design files &amp; api docs. And give you a fast mobile and browser app. 
+      You focus on your backend business&nbsp;logic! </P>
     </Box>
-    <div class="work">
-      <h2>
-        Our Work
-      </h2>
-      <div class="project">
+    <div>
+      <H2>
+        Featured Projects
+      </H2>
+      <div>
         <NonStretchedImage fluid={data.rippling.childImageSharp.fluid}/>
         <NonStretchedImage fluid={data.rippling_screenshot.childImageSharp.fluid}/>
-        <p>Built the complete browser and mobile app for this fast growing 
-        Parker Conrad startup, currently valued at $250 million</p>
+        <P>Built the complete browser and mobile app for this fast growing 
+        Parker Conrad startup, currently valued at $250 million</P>
       </div>
     </div>
-    <div class="stacks">
-      <div class="stack">
+    <div>
+      <div>
         <NonStretchedImage fluid={data.react.childImageSharp.fluid} />
-        <p>
+        <P>
           We have been building on React/ReactNative for 3 years now, and we absolutely love its philosophy.
           We strongly believe that a good react codebase is very conduisive to rapid UI iteration
-        </p>
+        </P>
       </div>
     </div>
   </Layout>
