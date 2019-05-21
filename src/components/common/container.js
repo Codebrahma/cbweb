@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { maxWidth } from 'styled-system';
+import { maxWidth, space } from 'styled-system';
 import PropTypes from 'prop-types';
 
 import theme from '../theme';
@@ -7,7 +7,8 @@ import theme from '../theme';
 const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
-  ${maxWidth};
+  ${maxWidth}
+  ${space}
 `;
 
 Container.propTypes = {
@@ -20,6 +21,7 @@ Container.propTypes = {
 
 Container.defaultProps = {
   maxWidth: theme.maxContainerWidth,
+  px: 1,
 };
 
 Container.displayName = 'Container';

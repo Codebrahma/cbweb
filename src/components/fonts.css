@@ -373,3 +373,10 @@ textarea {
   src: url('../fonts/TiemposHeadlineTest-Regular.woff') format('woff');
   font-family: 'TiemposHeadline';
 }
+
+a:visited { 
+  color: inherit;
+}
+a:hover {
+  cursor: grab;  
+}

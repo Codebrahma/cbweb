@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Container from './common/container'
-import {ThemeProvider} from 'emotion-theming'
+import { ThemeProvider } from 'emotion-theming'
 import Header from "./header"
 import "./fonts.css"
 import theme from './theme'

@@ -38,12 +38,9 @@ const fontSizes = {
   mxxl: scale[4] * mbaseSize + 'rem',
 };
 
-/*
 const space = [
   0, 10, 20, 30, 40, 60, 80, 100, 120, 140, 160, 180, 200,
 ];
-*/
-const space = lineHeights;
 const theme = {
   breakpoints,
   space,
