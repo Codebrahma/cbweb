@@ -2,7 +2,6 @@
 import { jsx } from '@emotion/core'
 // eslint-disable-next-line
 import { Link, graphql } from "gatsby"
-import React from "react"
 
 import NonStretchedImage from "../components/common/nonStretchedImage"
 import Layout from "../components/layout"
@@ -22,23 +21,23 @@ const IndexPage = ({data}) => (
     </Box>
     <div>
       <H3>
-        Our Work
+        Our Featured Work
       </H3>
-      <Box marginTop={3}>
+      <Flex marginTop={3} flexDirection='column'>
         <NonStretchedImage fluid={data.rippling_screenshot.childImageSharp.fluid}/>
         <H4>
           Rippling
         </H4>
         <P>Codebrahma built the complete browser and mobile app for this fast growing 
         Parker Conrad startup, currently valued at $250 million</P>
-      </Box>
+      </Flex>
     </div>
     <div>
       <H3>
         React & ReactNative
       </H3>
       <Flex marginTop={3} flexDirection='column'>
-        <Box alignSelf={['center','flex-start']}>
+        <Box alignSelf={['center','flex-start']} width={1}>
           <ReactIcon width="200" height="200"></ReactIcon>
         </Box>
         <P>
@@ -54,25 +53,9 @@ export default IndexPage
 
 export const query = graphql`
 query {
-  rippling:file(relativePath: {eq: "logos/rippling.png"}) {
-    childImageSharp {
-      fluid(maxWidth: 200) {
-        ...GatsbyImageSharpFluid,
-        presentationWidth
-      }
-    }
-  }
   rippling_screenshot:file(relativePath: {eq: "screenshots/rippling_screenshot.png"}) {
     childImageSharp {
-      fluid(maxWidth: 400) {
-        ...GatsbyImageSharpFluid,
-        presentationWidth
-      }
-    }
-  }
-  react:file(relativePath: {eq: "logos/react.png"}) {
-    childImageSharp {
-      fluid(maxWidth: 200) {
+      fluid(maxWidth: 550, quality: 100) {
         ...GatsbyImageSharpFluid,
         presentationWidth
       }
