@@ -30,7 +30,7 @@ const Nav = ({logo, links = []})=>{
   let [isOpen, setOpen] = useState(false);
   return (
   <Flex py='1' justifyContent="space-between">
-    <Box width='1/5'>{logo()}</Box>
+    <Box width='1/5'>{logo}</Box>
     <Flex 
       width='4/5'
       css={ isOpen ? mobileNav : {} } 

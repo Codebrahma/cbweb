@@ -1,24 +1,7 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Nav from "./common/nav"
-import { H2 } from './common/atoms'
-
-const logo = (title) => {
-  return () =>
-    (
-      <H2 marginTop='0' padding='0'>
-        <Link
-          to="/"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          {title}
-        </Link>
-      </H2>
-    )
-}
+import { Logo } from './common/logo'
 
 const links = [
   {title: 'Contact', link: '/contact'},
@@ -31,7 +14,7 @@ const Header = ({ siteTitle }) => {
   <header>
     <div>
       <Nav 
-        logo={logo(siteTitle)}
+        logo={Logo({title: siteTitle})}
         links={links}
       />
     </div>

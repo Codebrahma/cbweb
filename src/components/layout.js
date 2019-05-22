@@ -14,6 +14,35 @@ import { ThemeProvider } from 'emotion-theming'
 import Header from "./header"
 import "./fonts.css"
 import theme from './theme'
+import { Logo } from './common/logo'
+import { Box, P } from './common/atoms'
+
+const Footer = () => (
+  <Box marginTop={theme.lineHeights[4]}>
+    <hr/>
+    <P>
+      Join our newsletter to learn about the latest trends in the fast changing
+      front end atmosphere
+    </P>
+    <form>
+      <input type="email"></input>
+      <input type="submit"></input>
+    </form>
+    <P>
+       156, 2nd Street<br/>
+       San Francisco, CA 94105<br/>
+    </P>
+    <P>
+       info@codebrahma.com<br/>
+       +1 484 506 0634<br/>
+    </P>
+    <P>
+        Twitter<br/>
+        Github<br/>
+    </P>
+
+  </Box>
+)
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -34,7 +63,7 @@ const Layout = ({ children }) => (
             <div>
               <main >{children}</main>
               <footer>
-                © {new Date().getFullYear()}
+                <Footer></Footer>
               </footer>
             </div>
           </Container>
