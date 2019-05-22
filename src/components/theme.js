@@ -41,6 +41,12 @@ const fontSizes = {
 const space = [
   0, 10, 20, 30, 40, 60, 80, 100, 120, 140, 160, 180, 200,
 ];
+
+const colors = {
+  tint: '#F8F4F2',
+  black: ['#0F0F0F','#333333'],
+  
+}
 const theme = {
   breakpoints,
   space,
@@ -48,5 +54,6 @@ const theme = {
   lineHeights,
   maxContainerWidth,
   font,
+  colors,
 }
 export default theme;

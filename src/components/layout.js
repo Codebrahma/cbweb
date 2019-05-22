@@ -8,18 +8,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import "./fonts.css"
 
-import Container from './common/container'
 import { ThemeProvider } from 'emotion-theming'
 import Header from "./header"
-import "./fonts.css"
 import theme from './theme'
-import { Logo } from './common/logo'
-import { Box, P } from './common/atoms'
+import Container from './common/container'
+import { Box, P, HorizontalRule } from './common/atoms'
 
 const Footer = () => (
   <Box marginTop={theme.lineHeights[4]}>
-    <hr/>
+    <HorizontalRule
+      width={1}
+      height="2px"
+      color="black.0"
+      type="solid"
+    />
     <P>
       Join our newsletter to learn about the latest trends in the fast changing
       front end atmosphere

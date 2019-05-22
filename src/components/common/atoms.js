@@ -1,10 +1,22 @@
 import styled from '@emotion/styled'
-import { alignSelf, style, maxWidth, color, space, fontSize, fontFamily, lineHeight} from 'styled-system'
+import { alignSelf, width, style, maxWidth, color, space, fontSize, fontFamily, lineHeight} from 'styled-system'
 import theme from '../theme'
 
 const hidable = style({
   prop: 'display',
 });
+
+const horizontalRuleHeight = style({
+  prop: 'height',
+  cssProperty: 'border-top-width',
+});
+
+const horizontalRuleColor = style({
+  prop: 'color',
+  cssProperty: 'border-top-color',
+  key: 'colors',
+});
+
 export const Box = styled.div`
   ${color} ${space} ${hidable}
   ${alignSelf}
@@ -89,3 +101,18 @@ Text.defaultProps = {
 } 
 
 Text.span = Text.withComponent('span');
+
+export const HorizontalRule = styled.div`
+  border-top-style: ${({ type }) => type};
+  display: block;
+  height: 1px;
+
+  ${width}
+  ${horizontalRuleColor}
+  ${horizontalRuleHeight}
+`;
+
+HorizontalRule.defaultProps = {
+  type: 'solid',
+};
+
