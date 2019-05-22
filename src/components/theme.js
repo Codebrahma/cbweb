@@ -10,7 +10,7 @@ const breakpoints = [
 const scale = [
   1, 1.2, 1.375, 1.6875, 2.5
 ];
-const font = {
+const fonts = {
   body: "TiemposText",
   heading: "TiemposHeadline",
   bold: 'TiemposBold',
@@ -55,7 +55,7 @@ const theme = {
   fontSizes,
   lineHeights,
   maxContainerWidth,
-  font,
+  fonts,
   colors,
 }
 export default theme;

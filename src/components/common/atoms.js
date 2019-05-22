@@ -26,7 +26,7 @@ export const H1 = styled.h1`
   ${space}
 `
 H1.defaultProps = {
-  fontFamily: theme.font.heading,
+  fontFamily: theme.fonts.heading,
   fontSize: ['mxxl','xxl'],
   lineHeight: [3,3],
   marginTop: [4,5],
@@ -36,7 +36,7 @@ export const H2 = styled.h2`
   ${fontFamily} ${fontSize} ${lineHeight} ${space}
 `
 H2.defaultProps = {
-  fontFamily: theme.font.heading,
+  fontFamily: theme.fonts.heading,
   fontSize: ['mxl', 'xl'],
   lineHeight: [2,2],
   marginTop: [3,4],
@@ -46,7 +46,7 @@ export const H3 = styled.h3`
   ${fontFamily} ${fontSize} ${lineHeight} ${space}
 `
 H3.defaultProps = {
-  fontFamily: theme.font.heading,
+  fontFamily: theme.fonts.heading,
   fontSize: ['ml', 'l'],
   lineHeight: [1,1],
   marginTop: [ 2,3 ],
@@ -56,7 +56,7 @@ export const H4 = styled.h4`
   ${fontFamily} ${fontSize} ${lineHeight} ${space}
 `
 H4.defaultProps = {
-  fontFamily: theme.font.heading,
+  fontFamily: theme.fonts.heading,
   fontSize: ['mm', 'm'],
   lineHeight: [1,1],
   marginTop: 2,
@@ -66,7 +66,7 @@ export const H5 = styled.h5`
   ${fontFamily} ${fontSize} ${lineHeight} ${space}
 `
 H5.defaultProps = {
-  fontFamily: theme.font.heading,
+  fontFamily: theme.fonts.heading,
   fontSize: ['mbody', 'body'],
   lineHeight: 1,
   marginTop: 3,
@@ -78,7 +78,7 @@ export const P = styled.p`
   ${space} ${maxWidth}
 `;
 P.defaultProps = {
-  fontFamily: theme.font.body,
+  fontFamily: theme.fonts.body,
   fontSize: ['mbody', 'body'],
   lineHeight: 1,
   marginTop: 1,
@@ -89,14 +89,14 @@ export const B = styled.b`
   ${fontFamily}
 `
 B.defaultProps = {
-  fontFamily: theme.font.bold
+  fontFamily: theme.fonts.bold
 }
 
 export const I = styled.b`
   ${fontFamily}
 `
 I.defaultProps = {
-  fontFamily: theme.font.italic
+  fontFamily: theme.fonts.italic
 }
 
 export const Text = styled.div`
@@ -107,7 +107,7 @@ export const Text = styled.div`
 `;
 Text.displayName = 'Text';
 Text.defaultProps = {
-  fontFamily: theme.font.body,
+  fontFamily: theme.fonts.body,
   fontSize: ['mbody', 'body'],
   lineHeight: 1,
   maxWidth: '40rem',

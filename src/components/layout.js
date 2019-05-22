@@ -32,9 +32,9 @@ const Footer = () => (
     </P>
     <form>
       <InputText border='2px solid' padding='5px' 
-                 borderColor='black.1' bg='tint' color='black.1' />
+                 borderColor='black.1' bg='tint' color='black.1' placeholder='Email address' />
       <InputButton border='2px solid' padding='5px' 
-                 borderColor='black.1' bg='black.1' color='tint' />
+                 borderColor='black.1' bg='black.1' color='tint' text='submit'/>
     </form>
     <P>
        156, 2nd Street<br/>
