@@ -8,12 +8,12 @@ const hidable = style({
 
 const horizontalRuleHeight = style({
   prop: 'height',
-  cssProperty: 'border-top-width',
+  cssProperty: 'borderTopWidth',
 });
 
 const horizontalRuleColor = style({
   prop: 'color',
-  cssProperty: 'border-top-color',
+  cssProperty: 'borderTopColor',
   key: 'colors',
 });
 
@@ -85,6 +85,19 @@ P.defaultProps = {
   maxWidth: '40rem',
 } 
 
+export const B = styled.b`
+  ${fontFamily}
+`
+B.defaultProps = {
+  fontFamily: theme.font.bold
+}
+
+export const I = styled.b`
+  ${fontFamily}
+`
+I.defaultProps = {
+  fontFamily: theme.font.italic
+}
 
 export const Text = styled.div`
   ${color}

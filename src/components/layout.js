@@ -14,7 +14,9 @@ import { ThemeProvider } from 'emotion-theming'
 import Header from "./header"
 import theme from './theme'
 import Container from './common/container'
-import { Box, P, HorizontalRule } from './common/atoms'
+import { Box, P, HorizontalRule, B, I } from './common/atoms'
+import { InputText } from './common/inputText'
+import { InputButton } from './common/inputButton'
 
 const Footer = () => (
   <Box marginTop={theme.lineHeights[4]}>
@@ -25,12 +27,14 @@ const Footer = () => (
       type="solid"
     />
     <P>
-      Join our newsletter to learn about the latest trends in the fast changing
+      Join our <B>NEW</B> <I>NEW</I> newsletter to learn about the latest trends in the fast changing
       front end atmosphere
     </P>
     <form>
-      <input type="email"></input>
-      <input type="submit"></input>
+      <InputText border='2px solid' padding='5px' 
+                 borderColor='black.1' bg='tint' color='black.1' />
+      <InputButton border='2px solid' padding='5px' 
+                 borderColor='black.1' bg='black.1' color='tint' />
     </form>
     <P>
        156, 2nd Street<br/>

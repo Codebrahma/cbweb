@@ -370,6 +370,14 @@ textarea {
   font-family: 'TiemposText';
 }
 @font-face {
+  src: url('../fonts/TiemposTextTest-RegularItalic.woff') format('woff');
+  font-family: 'TiemposItalic';
+}
+@font-face {
+  src: url('../fonts/TiemposTextTest-Bold.woff') format('woff');
+  font-family: 'TiemposBold';
+}
+@font-face {
   src: url('../fonts/TiemposHeadlineTest-Regular.woff') format('woff');
   font-family: 'TiemposHeadline';
 }
