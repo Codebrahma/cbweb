@@ -28,38 +28,38 @@ const Footer = () => (
     color="black.0"
     type="solid"
   />
-  <Flex flexDirection='column' mt='3'>
-    <Box>
+  <Flex flexDirection={['column','row']} justifyContent='space-between' mt='3'>
+    <Box width={[1, 1/3]}>
       <P>
       Join our <B>NEW</B> newsletter 
       to learn about the latest trends 
       in the fast changing front end atmosphere
       </P>
+      <Box my='1'>
+        <form>
+          <InputText border='2px solid' padding='5px' 
+                    borderColor='black.1' bg='tint' color='black.1' placeholder='Email address' />
+          <InputButton border='2px solid' padding='5px' 
+                    borderColor='black.1' bg='black.1' color='tint' text='submit'/>
+        </form>
+      </Box>
     </Box>
-    <Box my='1'>
-      <form>
-        <InputText border='2px solid' padding='5px' 
-                  borderColor='black.1' bg='tint' color='black.1' placeholder='Email address' />
-        <InputButton border='2px solid' padding='5px' 
-                  borderColor='black.1' bg='black.1' color='tint' text='submit'/>
-      </form>
-    </Box>
-    <Box mt='2'>
-      <P>
-        156, 2nd Street<br/>
-        San Francisco, CA 94105<br/>
-      </P>
-    </Box>
-    <Box mt='1'>
+    <Box width={[1,1/4]} mt={[2,0]}>
       <P>
         info@codebrahma.com<br/>
         +1 484 506 0634<br/>
       </P>
+      <Box mt='1'>
+        <P>
+            Twitter<br/>
+            Github<br/>
+        </P>
+      </Box>
     </Box>
-    <Box mt='1'>
+    <Box width={[1,1/4]} mt={[2,0]}>
       <P>
-          Twitter<br/>
-          Github<br/>
+        156, 2nd Street<br/>
+        San Francisco, CA 94105<br/>
       </P>
     </Box>
   </Flex>
