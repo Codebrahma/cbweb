@@ -21,36 +21,47 @@ import { InputButton } from './common/inputButton'
 import { Flex } from './common/flex'
 
 const Footer = () => (
-  <Box marginTop='3'>
+  <Box marginTop='6' pb='6'>
   <HorizontalRule
     width={1}
     height="2px"
     color="black.0"
     type="solid"
   />
-  <Flex flexDirection='column'>
+  <Flex flexDirection='column' mt='3'>
     <Box>
-      Join our <B>NEW</B> <I>NEW</I> newsletter to learn about the latest trends in the fast changing
-      front end atmosphere
+      <P>
+      Join our <B>NEW</B> newsletter 
+      to learn about the latest trends 
+      in the fast changing front end atmosphere
+      </P>
     </Box>
-    <form>
-      <InputText border='2px solid' padding='5px' 
-                 borderColor='black.1' bg='tint' color='black.1' placeholder='Email address' />
-      <InputButton border='2px solid' padding='5px' 
-                 borderColor='black.1' bg='black.1' color='tint' text='submit'/>
-    </form>
-    <P>
-       156, 2nd Street<br/>
-       San Francisco, CA 94105<br/>
-    </P>
-    <P>
-       info@codebrahma.com<br/>
-       +1 484 506 0634<br/>
-    </P>
-    <P>
-        Twitter<br/>
-        Github<br/>
-    </P>
+    <Box my='1'>
+      <form>
+        <InputText border='2px solid' padding='5px' 
+                  borderColor='black.1' bg='tint' color='black.1' placeholder='Email address' />
+        <InputButton border='2px solid' padding='5px' 
+                  borderColor='black.1' bg='black.1' color='tint' text='submit'/>
+      </form>
+    </Box>
+    <Box mt='2'>
+      <P>
+        156, 2nd Street<br/>
+        San Francisco, CA 94105<br/>
+      </P>
+    </Box>
+    <Box mt='1'>
+      <P>
+        info@codebrahma.com<br/>
+        +1 484 506 0634<br/>
+      </P>
+    </Box>
+    <Box mt='1'>
+      <P>
+          Twitter<br/>
+          Github<br/>
+      </P>
+    </Box>
   </Flex>
   </Box>
 )
