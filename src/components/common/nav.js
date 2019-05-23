@@ -1,13 +1,18 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
 import { Flex } from './flex'
-import { Box, H3 } from './atoms'
+import { Box, Text } from './atoms'
 import { useState } from 'react'
 import  Link  from '../link'
 import Ham from './hamburger-icon'
 import Close from './close-icon'
 import { EmptyButton } from './button'
 
+const NavLink = ({link})=>(
+          <Link to={ link.link }>
+            <Text fontSize={['l', 'mbody']}>{link.title}</Text>
+          </Link>
+)
 
 const Nav = ({logo, links = []})=>{
   const mobileNav = {
@@ -46,9 +51,7 @@ const Nav = ({logo, links = []})=>{
           key={ i } 
           px='1' py={ [4, 0] } 
           display={ [isOpen ? 'block' : 'none', 'block'] }>
-          <Link to={ link.link }>
-            <H3 marginTop={0}>{ link.title }</H3>
-          </Link>
+            <NavLink link={link}/>
         </Box>
       ))}
       </Flex>
