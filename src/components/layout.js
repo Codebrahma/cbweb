@@ -11,25 +11,28 @@ import { StaticQuery, graphql } from "gatsby"
 import "./fonts.css"
 
 import { ThemeProvider } from 'emotion-theming'
+import { Global, css } from '@emotion/core'
 import Header from "./header"
 import theme from './theme'
 import Container from './common/container'
 import { Box, P, HorizontalRule, B, I } from './common/atoms'
 import { InputText } from './common/inputText'
 import { InputButton } from './common/inputButton'
+import { Flex } from './common/flex'
 
 const Footer = () => (
-  <Box marginTop={theme.lineHeights[4]}>
-    <HorizontalRule
-      width={1}
-      height="2px"
-      color="black.0"
-      type="solid"
-    />
-    <P>
+  <Box marginTop='3'>
+  <HorizontalRule
+    width={1}
+    height="2px"
+    color="black.0"
+    type="solid"
+  />
+  <Flex flexDirection='column'>
+    <Box>
       Join our <B>NEW</B> <I>NEW</I> newsletter to learn about the latest trends in the fast changing
       front end atmosphere
-    </P>
+    </Box>
     <form>
       <InputText border='2px solid' padding='5px' 
                  borderColor='black.1' bg='tint' color='black.1' placeholder='Email address' />
@@ -48,7 +51,7 @@ const Footer = () => (
         Twitter<br/>
         Github<br/>
     </P>
-
+  </Flex>
   </Box>
 )
 
@@ -66,6 +69,19 @@ const Layout = ({ children }) => (
     render={data => (
       <ThemeProvider theme={theme}>
         <div style={{background: 'rgb(247,245,242)'}}>
+          <Global
+            styles={css`
+                    a:visited { 
+                      color: inherit;
+                    }
+                    a:hover {
+                      cursor: grab;  
+                    }
+                    body {
+                      font-family: ${theme.fonts.body};
+                      color: ${theme.colors.black[1]};
+                    }
+              `}/>
           <Container>
             <Header siteTitle={data.site.siteMetadata.title} />
             <div>

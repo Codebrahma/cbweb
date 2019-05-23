@@ -29,7 +29,7 @@ H1.defaultProps = {
   fontFamily: theme.fonts.heading,
   fontSize: ['mxxl','xxl'],
   lineHeight: [3,3],
-  marginTop: [4,5],
+  marginTop: [3,4],
   marginBottom: 1,
 } 
 export const H2 = styled.h2`
@@ -40,7 +40,7 @@ H2.defaultProps = {
   fontSize: ['mxl', 'xl'],
   lineHeight: [2,2],
   marginTop: [3,4],
-  marginBottom: 0,
+  marginBottom: 1,
 } 
 export const H3 = styled.h3`
   ${fontFamily} ${fontSize} ${lineHeight} ${space}
@@ -50,7 +50,7 @@ H3.defaultProps = {
   fontSize: ['ml', 'l'],
   lineHeight: [1,1],
   marginTop: [ 2,3 ],
-  marginBottom: 0,
+  marginBottom: 1,
 } 
 export const H4 = styled.h4`
   ${fontFamily} ${fontSize} ${lineHeight} ${space}
@@ -60,7 +60,7 @@ H4.defaultProps = {
   fontSize: ['mm', 'm'],
   lineHeight: [1,1],
   marginTop: 2,
-  marginBottom: 0,
+  marginBottom: 1,
 } 
 export const H5 = styled.h5`
   ${fontFamily} ${fontSize} ${lineHeight} ${space}
@@ -69,8 +69,8 @@ H5.defaultProps = {
   fontFamily: theme.fonts.heading,
   fontSize: ['mbody', 'body'],
   lineHeight: 1,
-  marginTop: 3,
-  marginBottom: 0,
+  marginTop: 2,
+  marginBottom: 1,
 }
 
 export const P = styled.p`
@@ -81,7 +81,6 @@ P.defaultProps = {
   fontFamily: theme.fonts.body,
   fontSize: ['mbody', 'body'],
   lineHeight: 1,
-  marginTop: 1,
   maxWidth: '40rem',
 } 
 

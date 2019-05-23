@@ -1,18 +1,17 @@
 const maxContainerWidth = '70rem'
-const baseLineHeight = '1.65'; //26px
+const baseLineHeight = '1.45'; //24.8px
 const baseSize = '1.125'; //18px
 const mbaseSize = '1'; //16px
 const breakpoints = [
   '52em',
 ]
-
-
 const scale = [
   1, 1.2, 1.375, 1.6875, 2.5
 ];
+
 const fonts = {
+  heading: 'TiemposHeadline',
   body: "TiemposText",
-  heading: "TiemposHeadline",
   bold: 'TiemposBold',
   italic: 'TiemposItalic'
 }
@@ -24,6 +23,7 @@ const lineHeights = [
   2.5 * baseLineHeight + 'rem',
   3 * baseLineHeight + 'rem',
 ];
+const space = [0,...lineHeights];
 const fontSizes = {
   xs: 0.5 * baseSize + 'rem',
   s: 0.75 * baseSize + 'rem',
@@ -39,16 +39,12 @@ const fontSizes = {
   mxl: scale[3] * mbaseSize + 'rem',
   mxxl: scale[4] * mbaseSize + 'rem',
 };
-
-const space = [
-  0, 10, 20, 30, 40, 60, 80, 100, 120, 140, 160, 180, 200,
-];
-
 const colors = {
   tint: '#F8F4F2',
   black: ['#0F0F0F','#333333'],
   
 }
+
 const theme = {
   breakpoints,
   space,

@@ -14,8 +14,8 @@ import { Flex } from '../components/common/flex'
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Box py={ [1,2] } className="hero"> 
-      <H1>We build your React &amp;&nbsp;React Native frontend</H1>
+    <Box className="hero" mt='6' mb='6'> 
+      <H1 lineHeight='42px'>We build your React &amp;&nbsp;React Native frontend</H1>
       <P>We take your design files &amp; api docs. And give you a fast mobile and browser app. 
       You focus on your backend business&nbsp;logic! </P>
     </Box>
@@ -23,11 +23,11 @@ const IndexPage = ({data}) => (
       <H3>
         Our Featured Work
       </H3>
-      <Flex marginTop={3} flexDirection='column'>
-        <NonStretchedImage fluid={data.rippling_screenshot.childImageSharp.fluid}/>
+      <Flex flexDirection='column'>
         <H4>
           Rippling
         </H4>
+        <NonStretchedImage fluid={data.rippling_screenshot.childImageSharp.fluid}/>
         <P>Codebrahma built the complete browser and mobile app for this fast growing 
         Parker Conrad startup, currently valued at $250 million</P>
       </Flex>
@@ -36,13 +36,13 @@ const IndexPage = ({data}) => (
       <H3>
         React & ReactNative
       </H3>
-      <Flex marginTop={3} flexDirection='column'>
+      <Flex flexDirection='column'>
         <Box alignSelf={['center','flex-start']} width={1}>
           <ReactIcon width="200" height="200"></ReactIcon>
         </Box>
         <P>
           We have been building on React/ReactNative for 3 years now, and we absolutely love its declarative and functional philosophy.
-          We strongly believe that a good react codebase is very conduisive for rapid UI iteration
+          We strongly believe that a good react codebase is conducive for rapid UI iteration
         </P>
       </Flex>
     </div>
