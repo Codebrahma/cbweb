@@ -19,7 +19,7 @@ const horizontalRuleColor = style({
 
 export const Box = styled.div`
   ${color} ${space} ${hidable}
-  ${alignSelf}
+  ${alignSelf} ${width}
 `
 export const H1 = styled.h1`
   ${fontFamily} ${fontSize} ${lineHeight}

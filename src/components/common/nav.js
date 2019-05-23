@@ -34,18 +34,24 @@ const Nav = ({logo, links = []})=>{
     <Flex 
       width='4/5'
       css={ isOpen ? mobileNav : {} } 
-      flexDirection={ ['column', 'row'] }
-      alignItems='center'>
-    { links.map((link, i) => (
-      <Box 
-        key={ i } 
-        px='1' py={ [3, 0] } 
-        display={ [isOpen ? 'block' : 'none', 'block'] }>
-        <Link to={ link.link }>
-          <H3 marginTop={0}>{ link.title }</H3>
-        </Link>
-      </Box>
-    ))}
+      >
+      <Flex 
+        marginTop={['5','0']}
+        flexDirection={ ['column', 'row'] }
+        alignItems='center'
+        width='100%'
+        >
+      { links.map((link, i) => (
+        <Box 
+          key={ i } 
+          px='1' py={ [4, 0] } 
+          display={ [isOpen ? 'block' : 'none', 'block'] }>
+          <Link to={ link.link }>
+            <H3 marginTop={0}>{ link.title }</H3>
+          </Link>
+        </Box>
+      ))}
+      </Flex>
       <Box p='1' css={ buttonCss } display={ [links.length?'block':'none', 'none'] }>
         {isOpen?
         <EmptyButton onClick={ ()=>setOpen(false) }><Close/></EmptyButton>

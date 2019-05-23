@@ -15,7 +15,7 @@ import { Global, css } from '@emotion/core'
 import Header from "./header"
 import theme from './theme'
 import Container from './common/container'
-import { Box, P, HorizontalRule, B, I } from './common/atoms'
+import { Box, P, HorizontalRule, B } from './common/atoms'
 import { InputText } from './common/inputText'
 import { InputButton } from './common/inputButton'
 import { Flex } from './common/flex'
