@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from 'bricks'
 import {  space, color, border, fontFamily, fontSize, borderColor } from 'styled-system'
 
 export const InputButton = styled.input`

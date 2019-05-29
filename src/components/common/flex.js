@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from 'bricks'
 import { Box } from './atoms';
 import {
   alignItems,

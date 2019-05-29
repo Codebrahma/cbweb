@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "./fonts.css"
 
-import { ThemeProvider } from 'emotion-theming'
+import { ThemeProvider } from 'bricks'
 import { Global, css } from '@emotion/core'
 import Header from "./header"
 import theme from './theme'
@@ -78,7 +78,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
         <div style={{background: 'rgb(247,245,242)'}}>
           <Global
             styles={css`
@@ -96,7 +96,7 @@ const Layout = ({ children }) => (
           <Container>
             <Header siteTitle={data.site.siteMetadata.title} />
             <div>
-              <main >{children}</main>
+              <main>{ children }</main>
               <footer>
                 <Footer></Footer>
               </footer>

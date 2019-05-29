@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from 'bricks'
 
 export const EmptyButton = styled.button`
   background: none;

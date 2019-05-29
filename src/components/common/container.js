@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import {styled} from 'bricks';
 import { maxWidth, space } from 'styled-system';
 import PropTypes from 'prop-types';
 

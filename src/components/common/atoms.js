@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from 'bricks'
 import { alignSelf, width, style, maxWidth, color, space, fontSize, fontFamily, lineHeight} from 'styled-system'
 import theme from '../theme'
 
@@ -77,6 +77,7 @@ export const P = styled.p`
   ${fontFamily} ${fontSize} ${lineHeight}
   ${space} ${maxWidth}
 `;
+
 P.defaultProps = {
   fontFamily: theme.fonts.body,
   fontSize: ['mbody', 'body'],
