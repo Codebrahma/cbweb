@@ -9,5 +9,5 @@ export const InputButton = styled.input`
 InputButton.defaultProps = {
   type: 'submit',
   fontFamily: 'body',
-  fontSize: 'body'
+  fontSize: 'desktop.1'
 }

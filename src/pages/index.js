@@ -1,4 +1,3 @@
-import React from 'react'
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
 // eslint-disable-next-line
@@ -7,10 +6,8 @@ import { Link, graphql } from "gatsby"
 import NonStretchedImage from "../components/common/nonStretchedImage"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Box, H3, H4, P } from '../components/common/atoms'
 import ReactIcon from '../components/common/react-icon'
-import { Flex } from '../components/common/flex'
-import { H1, H2 } from 'bricks'
+import { Box, Flex, H1, H3, H4, P } from 'bricks'
 
 
 const IndexPage = ({data}) => (

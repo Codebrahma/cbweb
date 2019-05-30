@@ -1,10 +1,10 @@
-import { H2 } from './atoms'
+import { H2 } from 'bricks'
 import Link  from '../link'
 import React from 'react'
 
 export const Logo = ({title}) => 
     (
-      <H2 marginTop='0' padding='0'>
+      <H2 marginTop={[0,0]}>
         <Link
           to="/"
           style={{

@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { Flex } from './flex'
-import { Box, Text } from './atoms'
+import { Box, Text, Flex } from 'bricks'
 import { useState } from 'react'
 import  Link  from '../link'
 import Ham from './hamburger-icon'
@@ -10,7 +9,7 @@ import { EmptyButton } from './button'
 
 const NavLink = ({link})=>(
           <Link to={ link.link }>
-            <Text fontSize={['l', 'mbody']}>{link.title}</Text>
+            <Text fontSize={['desktop.3', 1]}>{link.title}</Text>
           </Link>
 )
 

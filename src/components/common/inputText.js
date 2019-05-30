@@ -9,5 +9,5 @@ export const InputText = styled.input`
 InputText.defaultProps = {
   type: 'text',
   fontFamily: 'body',
-  fontSize: 'body'
+  fontSize: 'desktop.1'
 }
