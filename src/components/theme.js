@@ -34,6 +34,19 @@ const colors = {
   
 }
 
+const styles = {
+  h1: {
+    fontFamily: 'heading',
+    fontSize: [5, 'desktop.5'],
+    lineHeight: 3,
+    marginTop: [3, 4], 
+    marginBottom: 1,
+  },
+  Container: {
+    maxWidth: '70rem',
+  }
+}
+
 const theme = {
   breakpoints,
   space,
@@ -42,5 +55,6 @@ const theme = {
   maxContainerWidth,
   fonts,
   colors,
+  styles,
 }
 export default theme;
