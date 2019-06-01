@@ -81,6 +81,12 @@ const styles = {
     lineHeight: 1,
     maxWidth: '40rem',
   },
+  b: {
+    fontFamily: 'bold',
+  },
+  i: {
+    fontFamily: 'italic',
+  },
   Container: {
     maxWidth: '70rem',
     padding: 0,

@@ -10,21 +10,17 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "./fonts.css"
 
-import { ThemeProvider, Flex, Container, Box, P, HorizontalRule, B } from 'bricks'
+import { ThemeProvider, Flex, Container,
+   Box, P, InputButton, InputText, HorizontalRule, B } from 'bricks'
 import { ThemeProvider as TP } from 'emotion-theming'
 import { Global, css } from '@emotion/core'
 import Header from "./header"
 import theme from './theme'
-import { InputText } from './common/inputText'
-import { InputButton } from './common/inputButton'
 
 const Footer = () => (
   <Box marginTop='6' pb='6'>
   <HorizontalRule
     width={1}
-    height="2px"
-    color="black.0"
-    type="solid"
   />
   <Flex flexDirection={['column','row']} justifyContent='space-between' mt='3'>
     <Box width={[1, 1/3]}>
@@ -35,10 +31,8 @@ const Footer = () => (
       </P>
       <Box my='1'>
         <form>
-          <InputText border='2px solid' padding='5px' 
-                    borderColor='black.1' bg='tint' color='black.1' placeholder='Email address' />
-          <InputButton border='2px solid' padding='5px' 
-                    borderColor='black.1' bg='black.1' color='tint' text='submit'/>
+          <InputText placeholder='Email address'/>
+          <InputButton/>
         </form>
       </Box>
     </Box>
