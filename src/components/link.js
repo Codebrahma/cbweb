@@ -1,5 +1,6 @@
 import { Link } from 'gatsby';
-import { styled } from 'bricks'
+import styled from '@emotion/styled'
+
 
 const link = styled(Link)`
   text-decoration:none;

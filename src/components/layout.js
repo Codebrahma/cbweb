@@ -75,7 +75,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-    <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <div style={{background: 'rgb(247,245,242)'}}>
           <Global
             styles={css`
