@@ -41,9 +41,50 @@ const styles = {
     lineHeight: 3,
     marginTop: [3, 4], 
     marginBottom: 1,
+    padding: 0,
+  },
+  h2: {
+    fontFamily: 'heading',
+    fontSize: [4, 'desktop.4'],
+    lineHeight: 2,
+    marginTop: [3, 4],
+    marginBottom: 1,
+    padding: 0,
+  },
+  h3: {
+    fontFamily: 'heading',
+    fontSize: [3, 'desktop.3'],
+    lineHeight: 1,
+    marginTop: [ 2,3 ],
+    marginBottom: 1,
+    padding: 0,
+  },
+  h4: {
+    fontFamily: 'heading',
+    fontSize: [2, 'desktop.2'],
+    lineHeight: 1,
+    marginTop: 2,
+    marginBottom: 1,
+    padding: 0,
+  },
+  h5: {
+    fontFamily: 'heading',
+    fontSize: [1, 'desktop.1'],
+    lineHeight: 1,
+    marginTop: 2,
+    marginBottom: 1,
+    padding: 0,
+  },
+  p: {
+    fontFamily: 'body',
+    fontSize: [1, 'desktop.1'],
+    lineHeight: 1,
+    maxWidth: '40rem',
   },
   Container: {
     maxWidth: '70rem',
+    padding: 0,
+    px: ['0.725rem']
   }
 }
 

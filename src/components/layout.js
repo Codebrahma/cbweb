@@ -11,6 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 import "./fonts.css"
 
 import { ThemeProvider, Flex, Container, Box, P, HorizontalRule, B } from 'bricks'
+import { ThemeProvider as TP } from 'emotion-theming'
 import { Global, css } from '@emotion/core'
 import Header from "./header"
 import theme from './theme'
@@ -76,6 +77,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <ThemeProvider theme={theme}>
+        <TP theme={theme}>
         <div style={{background: 'rgb(247,245,242)'}}>
           <Global
             styles={css`
@@ -100,7 +102,7 @@ const Layout = ({ children }) => (
             </div>
           </Container>
         </div>
-
+        </TP>
       </ThemeProvider>
     )}
   />
