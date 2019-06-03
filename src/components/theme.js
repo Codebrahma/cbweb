@@ -88,7 +88,7 @@ const styles = {
     fontFamily: 'italic',
   },
   Container: {
-    maxWidth: '70rem',
+    maxWidth: '71.5rem',
     padding: 0,
     px: ['0.725rem']
   }
