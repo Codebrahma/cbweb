@@ -8,6 +8,30 @@ import NonStretchedImage  from '../components/common/nonStretchedImage'
 import { css } from 'bricks'
 import { graphql, Link } from 'gatsby'
 
+const isLast = (arr, index)=> arr.length-1 === index
+
+
+const Blog = ({frontmatter})=>(
+      <Box>
+        <H3>{frontmatter.title }</H3>
+        <Category>{frontmatter.category}</Category>
+        <Box marginTop='2'>
+          <P>{frontmatter.description}</P>
+          <Box marginTop='1'>
+            <Text fontSize={[0,0]} color='black.2'>
+            {frontmatter.tags.map((tag,i)=>(
+              <I>#{tag}{ isLast(frontmatter.tags, i)? '': ','} </I>
+            ))}
+            </Text>
+          </Box>
+        </Box>
+        <Box marginBottom={3} marginTop={1}>
+          <Link to='/'>Read More</Link>
+        </Box>
+      </Box>
+
+)
+
 const Category = ({children})=>(
   <Box 
     bg='primary' color='secondary' fontSize='0' 
@@ -15,45 +39,50 @@ const Category = ({children})=>(
     {children}
   </Box>
 )
-const JournalPage = ({data}) => (
+const JournalPage = ({data}) => {
+  let blogs = data.allFile.edges
+  // TODO sort and limiting needs to go into the graphql layer
+  blogs = blogs.sort((a,b)=> new Date(b.node.childMdx.frontmatter.date) - new Date(a.node.childMdx.frontmatter.date))
+  blogs = blogs.slice(0,3)
+  return(
   <Layout>
-    <H1 css={css({color: 'black.1'})}>Journal</H1>
+    <H4 css={css({color: 'black.1'})}>Journal</H4>
     <P>Our notes and learnings</P>
     <Box marginTop={6} width={[1, 2/3]}>
-      <Box>
-        <H3>How to make an online store from scratch</H3>
-        <Category>E Commerce</Category>
-        <Box marginTop='2'>
-          <P>Use SaaS tools to create your online store in 30 minutes. Top to bottom.
-          Start with designing on sketch and keep moving forward</P>
-          <Box marginTop='1'>
-            <Text fontSize={[0,0]} color='black.2'>
-              <I>E Commerce, SaaS</I>
-            </Text>
-          </Box>
-        </Box>
-        <Box marginBottom={3} marginTop={1}>
-          <Link>Read More</Link>
-        </Box>
+    {blogs.map((blog,i) => (
+      <div>
+        <Blog key={blog.node.childMdx.frontmatter.title} frontmatter={blog.node.childMdx.frontmatter} />
+        { isLast(blogs, i)? '': 
         <HorizontalRule
           width={1}
           borderWidth={1}
           borderColor={'black.3'}
         />
-      </Box>
+        }
+      </div>
+    ))}
     </Box>
   </Layout>
-)
+  )}
 
 export default JournalPage;
 export const query = graphql`
 query {
-  product: file(relativePath: {eq: "blogs/production-optimisation-react.jpg"}){
-   childImageSharp {
-     fluid(maxWidth: 550, quality: 100) {
-      ...GatsbyImageSharpFluid,
-     }
-   } 
- }
+    allFile(filter: {sourceInstanceName: {eq: "posts"}}) {
+      edges {
+        node {
+          childMdx {
+          frontmatter {
+            title
+            description
+            date
+            author
+            tags
+            category
+          }
+        }
+        }
+      }
+    }
 }
 `
