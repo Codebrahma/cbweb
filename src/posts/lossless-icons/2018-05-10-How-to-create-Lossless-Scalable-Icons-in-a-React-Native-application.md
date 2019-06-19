@@ -78,9 +78,9 @@ Don’t forget to re-build after it’s all done.
 
 ---
 
- ## The Icon component
+## The Icon component
 Time to build our icon component!
-```
+```javascript
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
