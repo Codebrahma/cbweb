@@ -1,12 +1,12 @@
 import { jsx } from '@emotion/core'
 /** @jsx jsx */
 import Layout from '../components/layout'
-import { Flex, P, H1, H2, H3, H4, 
+import { P, H3, H4, 
   Box, Text, I,
   HorizontalRule } from 'bricks'
-import NonStretchedImage  from '../components/common/nonStretchedImage'
 import { css } from 'bricks'
 import { graphql, Link } from 'gatsby'
+import Category from '../components/category'
 
 const isLast = (arr, index)=> arr.length-1 === index
 
@@ -26,19 +26,12 @@ const Blog = ({frontmatter})=>(
           </Box>
         </Box>
         <Box marginBottom={3} marginTop={1}>
-          <Link to='/'>Read More</Link>
+          <Link to={frontmatter.link}>Read More</Link>
         </Box>
       </Box>
 
 )
 
-const Category = ({children})=>(
-  <Box 
-    bg='primary' color='secondary' fontSize='0' 
-    px='6px' py='2px' display='inline-block' borderRadius={6}>
-    {children}
-  </Box>
-)
 const JournalPage = ({data}) => {
   let blogs = data.allFile.edges
   // TODO sort and limiting needs to go into the graphql layer
@@ -79,6 +72,7 @@ query {
             author
             tags
             category
+            link
           }
         }
         }

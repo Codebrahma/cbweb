@@ -30,7 +30,11 @@ module.exports = {
     {
       resolve: `gatsby-mdx`,
       options: {
-        extensions: [`.mdx`, `.md`]
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts:{
+          posts: require.resolve('./src/components/blog-post-layout.js'),
+          default: require.resolve('./src/components/layout.js')
+        }
       },
       
     },

@@ -382,6 +382,9 @@ textarea {
   font-family: 'TiemposHeadline';
 }
 
+a {
+  color: inherit;
+}
 a:visited { 
   color: inherit;
 }

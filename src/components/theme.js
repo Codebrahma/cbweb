@@ -81,6 +81,7 @@ const styles = {
     fontSize: [1, 'desktop.1'],
     lineHeight: 1,
     maxWidth: '40rem',
+    marginBottom: 1
   },
   b: {
     fontFamily: 'bold',

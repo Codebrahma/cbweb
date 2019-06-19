@@ -2,6 +2,7 @@
  * Layout component that queries for data
  * with Gatsby's StaticQuery component
  *
+import { ThemeProvider as TP } from 'emotion-theming'
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
@@ -12,10 +13,13 @@ import "./fonts.css"
 
 import { ThemeProvider, Flex, Container,
    Box, P, InputButton, InputText, HorizontalRule, B } from 'bricks'
-import { ThemeProvider as TP } from 'emotion-theming'
 import { Global, css } from '@emotion/core'
 import Header from "./header"
 import theme from './theme'
+// TODO MDXProvider need not be used as theme ui set the components automatically
+// due to ambiguity on what gatsby theme ui does, we are yet to implement this
+import { MDXProvider } from "@mdx-js/react";
+import { useThemeUI } from 'bricks';
 
 const Footer = () => (
   <Box marginTop='6' pb='6'>
@@ -58,49 +62,53 @@ const Footer = () => (
   </Box>
 )
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+const Layout = ({ children }) => {
+  const context = useThemeUI();
+  const comps   = context.components;
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+            }
           }
         }
-      }
-    `}
-    render={data => (
-      <ThemeProvider theme={theme}>
-        <TP theme={theme}>
-        <div style={{background: 'rgb(247,245,242)'}}>
-          <Global
-            styles={css`
-                    a:visited { 
-                      color: inherit;
-                    }
-                    a:hover {
-                      cursor: grab;  
-                    }
-                    body {
-                      font-family: ${theme.fonts.body};
-                      color: ${theme.colors.black[1]};
-                    }
-              `}/>
-          <Container>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <div>
-              <main>{ children }</main>
-              <footer>
-                <Footer></Footer>
-              </footer>
+      `}
+      render={data => (
+        <ThemeProvider theme={theme}>
+          <MDXProvider components={comps}>
+            <div style={{background: 'rgb(247,245,242)'}}>
+              <Global
+                styles={css`
+                        a:visited { 
+                          color: inherit;
+                        }
+                        a:hover {
+                          cursor: grab;  
+                        }
+                        body {
+                          font-family: ${theme.fonts.body};
+                          color: ${theme.colors.black[1]};
+                        }
+                  `}/>
+              <Container>
+                <Header siteTitle={data.site.siteMetadata.title} />
+                <div>
+                  <main>{ children }</main>
+                  <footer>
+                    <Footer></Footer>
+                  </footer>
+                </div>
+              </Container>
             </div>
-          </Container>
-        </div>
-        </TP>
-      </ThemeProvider>
-    )}
-  />
-)
+          </MDXProvider>
+        </ThemeProvider>
+      )}
+    />
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
