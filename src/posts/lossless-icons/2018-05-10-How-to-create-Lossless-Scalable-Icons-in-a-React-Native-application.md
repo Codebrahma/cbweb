@@ -26,7 +26,7 @@ Let’s start off with getting an SVG image to iconize. I shall be using the fol
 
 If you had tried any of the tools out there that make fonts out of SVGs such as Fontello or IcoMoon, you might have had problems with some SVG images. For fonts, we need SVGs that do not have strokes in them. They only take *fills*.
 
-![[img](/img/Screen-Shot-2018-12-24-at-1.09.18-PM-1.png)](https://codebrahma.com/wp-content/uploads/2018/06/react-native-application-development.png)
+![react native application development](./images/react-native-application-development.png)
 
 The end result would be this icon picture-perfect in whatever size / color we might need which is easily controllable by our React Native Code.
 
@@ -37,21 +37,25 @@ In this case we are using InkScape since it’s available across Mac, Windows an
 2. One thing to note is multi-colored icons aren’t really a thing. So, if I was exporting the above icon from Sketch, we would simply export the inner most lines and circles and leave the circular lavender background. If that proves difficult, extract our icon using InkScape.
 3. Open up the SVG in InkScape and select the second option in the left pane Edit Paths by Node (F2). Select all the paths you need by holding down shift and left clicking them. If the lines happen to be invisible for some reason simply hovering over the area where they are would show outlines. Now cut out your selection. Let’s remove what was left out. Select everything else on screen, choose the Selection tool (first on the left pane / F1) and delete. Paste the selection that you cut out earlier.
 
+![react native app development](./images/react-native-app-development.png)
 
 Right click and Group them.
 
-You can play around with this a little bit to see what’s happening. Basically, if you set Stroke color and see your image filling up like so, then it isn’t ready for conversion into a font. Shift + Ctrl + F brings it up.
+You can play around with this a little bit to see what’s happening. Basically, if you set Stroke color and see your image filling up like so, then it isn’t ready for conversion into a font. `Shift + Ctrl + F` brings it up.
 
+![react native vector icons](./images/react-native-vector-icons.png)
 
 Select your image and click on the Path menu and choose Stroke to Path. After that you can try to remove colors for Stroke and choose a color for Fill and see if the icons color up with just the Fill color set.
 
+![react native vector icons 2](./images/react-native-vector-icons-2.png)
 
-In this case it was not working. So to make it work, get into the XML editor which is brought up with Shift + Ctrl + X. Select each of the paths that have Stroke on them and convert them to Paths by pressing Ctrl + Alt + C or going into the menu.
+In this case it was not working. So to make it work, get into the XML editor which is brought up with `Shift + Ctrl + X`. Select each of the paths that have Stroke on them and convert them to Paths by pressing `Ctrl + Alt + C` or going into the menu.
 
+![react native vector icons 3](./images/react-native-vector-icons-3.png)
 
 The colors that you got from Strokes, you get them from Fills now. The SVG is ready to go into our font!
 
-Next up, we have to export / save this image. Select the image go to Document Properties in the File menu or press Ctrl + Shift + D. The option we’re looking for here is Resize Page to Content. Click on it and select Resize page to drawing or selection. Then simply save as a Plain SVG.
+Next up, we have to export / save this image. Select the image go to Document Properties in the File menu or press `Ctrl + Shift + D`. The option we’re looking for here is Resize Page to Content. Click on it and select Resize page to drawing or selection. Then simply save as a Plain SVG.
 
 ---
 
@@ -61,9 +65,11 @@ Generating the fonts itself is pretty straightforward at this point. You simply 
 Put the .json and the .ttf files into your assets folder. For Android, you simply want to move it to android/app/src/main/assets/fonts and you are done. For iOS, you have to import the files into your project from XCode.
 
 &nbsp; &nbsp; &nbsp; &nbsp;Add the font file to info.plist.
+![react native development services](./images/react-native-app-development-services.png)
 
 
 &nbsp; &nbsp; &nbsp; &nbsp;Make sure it shows up in Build Phases under Copy Bundle Resources. Create an entry and point it to your font location.
+![react native development services 2](./images/react-native-app-development-services-2.png)
  
 
 If you think you didn’t get it right check out react-native-vector-icons’ git for a more detailed explanation.
@@ -117,6 +123,6 @@ return backdrop ? (
 
 The code above does simple as well as icons with a backdrop. Doing gradients is just as simple. All you have to do is replace the View component with the imported LinearGradient component and pass on some colors. It can also easily be customized to add shadows other fancy adornments.
 
-![[image](/img/icons-300x111.png)](https://codebrahma.com/wp-content/uploads/2018/06/icons.png 'img')
+![image](./images/icons.png)
 
 This technique can also be employed in React. Instead of importing images and hassling with the dimensions and editing for colors, this is so much easier.

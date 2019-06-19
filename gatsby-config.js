@@ -34,7 +34,16 @@ module.exports = {
         defaultLayouts:{
           posts: require.resolve('./src/components/blog-post-layout.js'),
           default: require.resolve('./src/components/layout.js')
-        }
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1035,
+              backgroundColor: 'none',
+            }
+          }
+        ],
       },
       
     },
@@ -51,7 +60,8 @@ module.exports = {
         name: `services`,
         path: `${__dirname}/src/services/`
       }
-    }
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
