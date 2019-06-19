@@ -1,34 +1,38 @@
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage, createRedirect } = actions;
+  const { createPage } = actions;
   const result = await graphql(`
   {
     posts: allFile(
-    filter: {sourceInstanceName: {eq: "posts"}},
-    sort: { fields: relativePath, order: DESC }
-  ) {
-    nodes {
-      id
-      childMdx {
-        frontmatter {
-          title
-          description
-          tags
-          category
-          link
+      filter: {
+        sourceInstanceName: {eq: "posts"}, 
+        ext: {in: [".md",".mdx"]
+      }
+    }) {
+      nodes {
+        id
+        childMdx {
+          frontmatter {
+            title
+            description
+            tags
+            category
+            link
+          }
         }
       }
     }
-    }
   }
+  
   `);
 
-  let posts = result.data.posts.nodes.filter(
-    post => post.childMdx.frontmatter.publish !== false,
-  );
-
-  posts = posts.filter(
-    post => post.childMdx.frontmatter.link != null
-  )
+  let posts = result.data.posts.nodes.filter((post) => { 
+    try { 
+      let fm = post.childMdx.frontmatter;
+      return fm.publish !== false && fm.link != null;
+    } catch { 
+      return false
+    }
+  });
 
   posts.forEach(post => {
     const { link } = post.childMdx.frontmatter;

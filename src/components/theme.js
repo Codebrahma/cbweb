@@ -36,6 +36,11 @@ colors.primary = colors.black[1]
 colors.secondary = colors.tint
 
 const styles = {
+  body:{
+    fontFamily: 'body',
+    fontSize: [1, 'desktop.1'],
+    lineHeight: 1,
+  },
   h1: {
     fontFamily: 'heading',
     fontSize: [5, 'desktop.5'],
@@ -81,10 +86,16 @@ const styles = {
     fontSize: [1, 'desktop.1'],
     lineHeight: 1,
     maxWidth: '40rem',
-    marginBottom: 1
+    marginBottom: [2,2]
   },
   b: {
     fontFamily: 'bold',
+  },
+  strong: {
+    fontFamily: 'bold'
+  },
+  em: {
+    fontFamily: 'italic'
   },
   i: {
     fontFamily: 'italic',
@@ -93,6 +104,21 @@ const styles = {
     maxWidth: '71.5rem',
     padding: 0,
     px: ['0.725rem']
+  },
+  ul: {
+    listStyle: 'disc inside none' ,
+    mb: [2,2]
+  },
+  ol: {
+    listStyle: 'decimal inside none',
+  },
+  li: {
+    mb: ['0.5rem','0.5rem'],
+    fontFamily: 'body',
+    fontSize: [1, 'desktop.1'],
+    lineHeight: 1,
+    maxWidth: '40rem',
+    marginBottom: [1,1]
   }
 }
 

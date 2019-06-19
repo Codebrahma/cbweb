@@ -18,15 +18,13 @@ Developing iOS and Android applications by React Native is growing day by day. S
 
 Let’s start off with getting an SVG image to iconize. I shall be using the following:
 
- &nbsp; &nbsp; &nbsp; &nbsp;[Inkscape](https://inkscape.org/)
+- [Inkscape](https://inkscape.org/)
+- [IcoMoon](https://icomoon.io/app)
+- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+- [React Native Linear Gradient](https://github.com/react-native-community/react-native-linear-gradient)
 
- &nbsp; &nbsp; &nbsp; &nbsp;[IcoMoon](https://icomoon.io/app)
 
- &nbsp; &nbsp; &nbsp; &nbsp;[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
-
- &nbsp; &nbsp; &nbsp; &nbsp;[React Native Linear Gradient](https://github.com/react-native-community/react-native-linear-gradient)
-
-If you had tried any of the tools out there that make fonts out of SVGs such as Fontello or IcoMoon, you might have had problems with some SVG images. For fonts, we need SVGs that do not have strokes in them. They only take fills.
+If you had tried any of the tools out there that make fonts out of SVGs such as Fontello or IcoMoon, you might have had problems with some SVG images. For fonts, we need SVGs that do not have strokes in them. They only take *fills*.
 
 ![[img](/img/Screen-Shot-2018-12-24-at-1.09.18-PM-1.png)](https://codebrahma.com/wp-content/uploads/2018/06/react-native-application-development.png)
 
