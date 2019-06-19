@@ -3,13 +3,50 @@ import Layout from './layout'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 import { graphql } from 'gatsby';
 import {H1, Flex, Box, Text, I} from 'bricks'
-import category from '../components/category'
 import Category from "../components/category";
 
+const isLast = (arr, index)=> arr.length-1 === index
 
+const Sidebar = ({frontmatter: {author, category, tags}})=> (
+  <div>
+    <Box my={2}>
+      <Flex fontSize={[0, 0]} justifyContent='center' >
+        Written by
+      </Flex>
+      <Flex justifyContent='center' mt='0.5rem'>
+        <I>{author}</I><br />
+      </Flex>
+    </Box>
+    <Box my={2}>
+      <Flex fontSize={[0, 0]} justifyContent='center'>
+        Posted in
+      </Flex>
+      <Flex justifyContent='center' mt='0.5rem'>
+        <Category>{category}</Category>
+      </Flex>
+    </Box>
+    <Box my={2}>
+      <Flex fontSize={[0, 0]} justifyContent='center'>
+        Tags
+      </Flex>
+      <Flex justifyContent='center'>
+        <Text fontSize={[0, 0]} color='black.2'>
+          {tags.map((tag, i) => (
+            <I>#{tag}{isLast(tags, i) ? '' : ','} </I>
+          ))}
+        </Text>
+      </Flex>
+    </Box>
+    <Flex justifyContent='center'>
+      <Box width={[1 / 2, 1 / 2]} fontSize={0} color='black.2'>
+        If you want to get more posts like this, join our newsletter
+      </Box>
+    </Flex>
+  </div>
+)
 
 const BlogLayout = ({ data }) => {
-  const { author, title, category, tags} = data.post.frontmatter
+  let {title} = data.post.frontmatter;
   return (
     <Layout>
       <Flex flexWrap='wrap'>
@@ -19,20 +56,8 @@ const BlogLayout = ({ data }) => {
           </Box>
           <MDXRenderer>{data.post.code.body}</MDXRenderer>
         </Box>
-        <Box width={['100%',1/3]}>
-          <Text fontSize={[0,0]}>
-            Written by <br/>
-            <I>{author}</I><br/>
-            Posted in <br/>
-            <Category>{category}</Category>
-          </Text>
-          <Box>
-            Tags: 
-            {tags}
-          </Box>
-          <Box>
-            If you want to get more posts like this, join our newsletter
-          </Box>
+        <Box width={['100%',1/3]} marginTop={[1, 5]}>
+          <Sidebar frontmatter={data.post.frontmatter} />
         </Box>
       </Flex>
     </Layout>
