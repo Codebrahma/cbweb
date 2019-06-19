@@ -7,6 +7,7 @@ const links = [
   {title: 'Contact', link: '/contact'},
   {title: 'Pricing', link: '/pricing'},
   {title: 'FAQ', link: '/faq'},
+  {title: 'Journal', link: '/journal'},
 ]
 
 const Header = ({ siteTitle }) => {

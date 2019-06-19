@@ -2,7 +2,7 @@ import React from "react"
 import Layout from './layout'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 import { graphql } from 'gatsby';
-import {H1, Flex, Box, Text, I} from 'bricks'
+import {H1, Flex, Box, I} from 'bricks'
 import Category from "../components/category";
 
 const isLast = (arr, index)=> arr.length-1 === index
@@ -29,12 +29,14 @@ const Sidebar = ({frontmatter: {author, category, tags}})=> (
       <Flex fontSize={[0, 0]} justifyContent='center'>
         Tags
       </Flex>
-      <Flex justifyContent='center'>
-        <Text fontSize={[0, 0]} color='black.2'>
+      <Flex justifyContent='center' mt='0.5rem'>
+        <Flex fontSize={[0, 0]} color='black.2' width={[0.5,0.5]} justifyContent='center' flexWrap='wrap'>
           {tags.map((tag, i) => (
-            <I>#{tag}{isLast(tags, i) ? '' : ','} </I>
+            <Box p='0.125rem'>
+              <I> #{tag}{isLast(tags, i) ? '' : ','} </I>
+            </Box>
           ))}
-        </Text>
+        </Flex>
       </Flex>
     </Box>
     <Flex justifyContent='center'>
