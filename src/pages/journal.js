@@ -20,7 +20,7 @@ const Blog = ({frontmatter})=>(
           <Box marginTop='1'>
             <Text fontSize={[0,0]} color='black.2'>
             {frontmatter.tags.map((tag,i)=>(
-              <I>#{tag}{ isLast(frontmatter.tags, i)? '': ','} </I>
+              <I key={tag}>#{tag}{ isLast(frontmatter.tags, i)? '': ','} </I>
             ))}
             </Text>
           </Box>
@@ -43,8 +43,8 @@ const JournalPage = ({data}) => {
     <P>Our notes and learnings</P>
     <Box marginTop={6} width={[1, 2/3]}>
     {blogs.map((blog,i) => (
-      <div>
-        <Blog key={blog.node.childMdx.frontmatter.title} frontmatter={blog.node.childMdx.frontmatter} />
+      <div key={blog.node.childMdx.frontmatter.title}>
+        <Blog frontmatter={blog.node.childMdx.frontmatter} />
         { isLast(blogs, i)? '': 
         <HorizontalRule
           width={1}
@@ -61,7 +61,11 @@ const JournalPage = ({data}) => {
 export default JournalPage;
 export const query = graphql`
 query {
-    allFile(filter: {sourceInstanceName: {eq: "posts"}}) {
+    allFile(filter: 
+      { 
+        sourceInstanceName: {eq: "posts"},
+        ext: {in: [".md",".mdx"]},
+      }) {
       edges {
         node {
           childMdx {

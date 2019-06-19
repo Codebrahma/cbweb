@@ -80,7 +80,7 @@ Don’t forget to re-build after it’s all done.
 
 ## The Icon component
 Time to build our icon component!
-```javascript
+```jsx
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
@@ -113,8 +113,13 @@ const RadIcon = ({
 return backdrop ? (
   <View
     backgroundColor={backdrop}
-    style={[{ borderRadius: size, height: size * 2, width: size * 2 }, styles.backdrop, style]}
-  >
+    style={[{ 
+              borderRadius: size, 
+              height: size * 2, 
+              width: size * 2 
+            }, 
+            styles.backdrop, 
+            style]}>
     {IconComponent}
   </View>
 ) : IconComponent;
