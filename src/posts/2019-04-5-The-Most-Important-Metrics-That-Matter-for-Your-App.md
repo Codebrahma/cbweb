@@ -6,12 +6,14 @@ featuredpost: true
 description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Anand Narayan
-category: Marketing
+category: 
+- Marketing
 link: /important-metrics-matter-app
 tags: 
 - business
 - metrics
 - marketing
+- react-native
 ---
 The world of apps is competitive today. Different companies are entering the marketplace every day competing for the same users. When it comes to measuring the success of your app, you need to keep a close eye on the right metrics. App developers already know there’s an unlimited library of metrics to choose from, but which ones actually matter when measuring success?
 

@@ -6,6 +6,7 @@ featuredpost: true
 description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Anand Narayan
+link: 4-steps-building-cloud-ready-application-architecture/
 ---
 Most experts agree that by the year 2020, nearly [83 percent of enterprise workloads](https://www.forbes.com/sites/louiscolumbus/2018/01/07/83-of-enterprise-workloads-will-be-in-the-cloud-by-2020/#3dd5a6e26261) will be based in the cloud. In just the past few years, the number of businesses using cloud-based tools has exploded.
 

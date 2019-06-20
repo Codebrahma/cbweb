@@ -7,7 +7,8 @@ description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Arivanandan
 link: /create-lossless-scalable-icons-react-native-application
-category: React-Native
+category: 
+- React-Native
 tags: 
 - react-native 
 - image-manipulation

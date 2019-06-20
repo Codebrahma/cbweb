@@ -6,7 +6,8 @@ featuredpost: true
 description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Anand Narayan
-category: Business
+category: 
+- Business
 link: /make-online-store-scratch
 tags: 
 - ecommerce

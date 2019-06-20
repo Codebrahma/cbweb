@@ -14,7 +14,7 @@ const isLast = (arr, index)=> arr.length-1 === index
 const Blog = ({frontmatter})=>(
       <Box>
         <H3>{frontmatter.title }</H3>
-        <Category>{frontmatter.category}</Category>
+        <Category>{frontmatter.category[0]}</Category>
         <Box marginTop='2'>
           <P>{frontmatter.description}</P>
           <Box marginTop='1'>
