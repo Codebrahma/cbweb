@@ -1,3 +1,4 @@
+// TODO move perpage variable outside to a config file
 const getUnique = (field, posts) =>
   posts.reduce((uniques, post) => {
     let values = post.childMdx.frontmatter[field];
@@ -54,7 +55,7 @@ const createPages = (type, postArray, parent = 'journal', createPage) => {
 // Adapted from https://github.com/pixelstew/gatsby-paginate
 const paginate = (
   { pathTemplate, createPage, component, type, value, linkRoot = 'blog' },
-  posts, perpage = 1
+  posts, perpage = 2
 ) =>
   posts
     // 1
@@ -144,4 +145,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   createPages('category', posts, 'journal', createPage);
   createPages('author', posts, 'journal', createPage);
 
+  //create blogs index
+  paginate(
+    {
+      createPage,
+      component: require.resolve('./src/components/preview.js'),
+      pathTemplate: '/journal/pgnum/',
+      type: 'all',
+      value: null,
+    },
+    posts,
+  );
 }

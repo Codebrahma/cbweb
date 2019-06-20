@@ -2,12 +2,12 @@ import { jsx } from '@emotion/core'
 /** @jsx jsx */
 import Layout from '../components/layout'
 import { P, H3, H4, 
-  Box, Text, I,
-  HorizontalRule } from 'bricks'
+  Box, Text, HorizontalRule } from 'bricks'
 import { css } from 'bricks'
 import { Link } from 'gatsby'
 import Category from '../components/category'
 import Pagination from './pagination'
+import { getCategory, getTags } from '../utils'
 
 const isLast = (arr, index)=> arr.length-1 === index
 const getHeading = ({
@@ -37,22 +37,7 @@ const getHeading = ({
 };
 
 
-const getCategory = (frontmatter)=>{
-  try {
-    return frontmatter.category[0]
-  } catch {
-    return null
-  }
-}
-const getTags = (frontmatter)=>{
-  try {
-    return frontmatter.tags.map((tag,i)=>(
-      <I key={tag}>#{tag}{ isLast(frontmatter.tags, i)? '': ','} </I>
-    ))
-  } catch {
-    return null
-  }
-}
+
 const Blog = ({frontmatter})=>(
       <Box>
         <H3>{frontmatter.title }</H3>
@@ -110,15 +95,15 @@ const JournalPage = ({
           borderColor={'black.3'}
         />
         }
-      <Pagination
-        isFirstPage={isFirstPage}
-        isLastPage={isLastPage}
-        currentPage={currentPage}
-        totalPages={totalPages}
-        linkBase={linkBase}
-      />
       </div>
     ))}
+    <Pagination
+      isFirstPage={isFirstPage}
+      isLastPage={isLastPage}
+      currentPage={currentPage}
+      totalPages={totalPages}
+      linkBase={linkBase}
+    />
     </Box>
   </Layout>
   )}
