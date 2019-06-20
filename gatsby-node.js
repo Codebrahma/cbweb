@@ -3,7 +3,6 @@ const getUnique = (field, posts) =>
     let values = post.childMdx.frontmatter[field];
     values = ( typeof values != 'undefined' && values instanceof Array ) ? values : [values]
 
-
     return uniques.concat(values.filter(val => !uniques.includes(val)));
   }, []);
 
@@ -28,6 +27,7 @@ const groupPostsByUnique = (field, posts) => {
 const createPages = (type, postArray, parent = 'journal', createPage) => {
   const groupedPosts = groupPostsByUnique(type, postArray);
   Object.entries(groupedPosts).forEach(([typeValue, postGroup], index) => {
+    typeValue = typeValue.split(' ').join('-')
     paginate(
       {
         createPage,
