@@ -4,7 +4,7 @@ import { jsx } from '@emotion/core'
 import { Link, graphql } from "gatsby"
 
 import NonStretchedImage from "../components/common/nonStretchedImage"
-import Layout from "../components/layout"
+import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import ReactIcon from '../components/common/react-icon'
 import { Box, Flex, H1, H3, H4, P } from 'bricks'

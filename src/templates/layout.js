@@ -15,7 +15,7 @@ import { ThemeProvider, Flex, Container,
    Box, P, InputButton, InputText, HorizontalRule, B } from 'bricks'
 import { Global, css } from '@emotion/core'
 import Header from "./header"
-import theme from './theme'
+import theme from '../theme'
 // TODO MDXProvider need not be used as theme ui set the components automatically
 // due to ambiguity on what gatsby theme ui does, we are yet to implement this
 import { MDXProvider } from "@mdx-js/react";

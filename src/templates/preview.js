@@ -1,12 +1,12 @@
 import { jsx } from '@emotion/core'
 /** @jsx jsx */
-import Layout from '../components/layout'
+import Layout from '../templates/layout'
 import { P, H3, H4, 
   Box, Text, HorizontalRule } from 'bricks'
 import { css } from 'bricks'
 import { Link } from 'gatsby'
 import Category from '../components/category'
-import Pagination from './pagination'
+import Pagination from '../components/pagination'
 import { getCategory, getTags } from '../utils'
 
 const isLast = (arr, index)=> arr.length-1 === index

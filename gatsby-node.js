@@ -32,7 +32,7 @@ const createPages = (type, postArray, parent = 'journal', createPage) => {
     paginate(
       {
         createPage,
-        component: require.resolve('./src/components/preview.js'),
+        component: require.resolve('./src/templates/preview.js'),
         pathTemplate: `/${parent}/${type}/${typeValue}/pgnum/`,
         type,
         value: typeValue,
@@ -133,7 +133,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const { link } = post.childMdx.frontmatter;
     createPage({
       path: `${link}/`,
-      component: require.resolve('./src/components/blog-post-layout.js'),
+      component: require.resolve('./src/templates/blog-post-layout.js'),
       context: {
         link,
       },
@@ -149,7 +149,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   paginate(
     {
       createPage,
-      component: require.resolve('./src/components/preview.js'),
+      component: require.resolve('./src/templates/preview.js'),
       pathTemplate: '/journal/pgnum/',
       type: 'all',
       value: null,

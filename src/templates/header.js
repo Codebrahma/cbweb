@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Nav from "./common/nav"
-import { Logo } from './common/logo'
+import Nav from "../components/common/nav"
+import { Logo } from '../components/common/logo'
 
 const links = [
   {title: 'Contact', link: '/contact'},
