@@ -3,7 +3,7 @@ import { jsx } from '@emotion/core'
 // eslint-disable-next-line
 import { Link, graphql } from "gatsby"
 
-import NonStretchedImage from "../components/common/nonStretchedImage"
+import NonStretchedImage from "../components/nonStretchedImage"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import { Box, Flex, H1, H3, H4, P, ReactIcon } from 'bricks'

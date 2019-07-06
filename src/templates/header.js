@@ -1,7 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Nav from "../components/common/nav"
-import { Logo } from '../components/common/logo'
+import { Nav } from 'bricks'
+import { Logo } from '../components/logo'
+import { Link } from 'gatsby'
 
 const links = [
   {title: 'Contact', link: '/contact'},
@@ -17,6 +18,7 @@ const Header = ({ siteTitle }) => {
       <Nav 
         logo={Logo({title: siteTitle})}
         links={links}
+        GatsbyLink={Link}
       />
     </div>
   </header>

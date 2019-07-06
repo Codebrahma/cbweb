@@ -1,5 +1,5 @@
 import { H2 } from 'bricks'
-import Link  from '../link'
+import Link  from './link'
 import React from 'react'
 
 export const Logo = ({title}) => 
