@@ -1,10 +1,8 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { Box, Text, Flex, EmptyButton } from 'bricks'
+import { HamburgerIcon as Ham, CloseIcon as Close, Box, Text, Flex, EmptyButton } from 'bricks'
 import { useState } from 'react'
 import  Link  from '../link'
-import Ham from './hamburger-icon'
-import Close from './close-icon'
 
 const NavLink = ({link})=>(
           <Link to={ link.link }>

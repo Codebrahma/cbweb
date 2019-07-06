@@ -6,8 +6,7 @@ import { Link, graphql } from "gatsby"
 import NonStretchedImage from "../components/common/nonStretchedImage"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
-import ReactIcon from '../components/common/react-icon'
-import { Box, Flex, H1, H3, H4, P } from 'bricks'
+import { Box, Flex, H1, H3, H4, P, ReactIcon } from 'bricks'
 
 
 const IndexPage = ({data}) => (
