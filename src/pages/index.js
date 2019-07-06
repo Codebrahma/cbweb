@@ -36,7 +36,7 @@ const IndexPage = ({data}) => (
     </H3>
     <Flex flexDirection='column'>
       <Box alignSelf={['center', 'flex-start']} width={1}>
-        <ReactIcon width="200" height="200"></ReactIcon>
+        <ReactIcon width="200" height="200" />
       </Box>
       <P>
         We have been building on React/ReactNative for 3 years now, and we absolutely love its declarative and functional philosophy.
