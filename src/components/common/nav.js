@@ -1,11 +1,10 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { Box, Text, Flex } from 'bricks'
+import { Box, Text, Flex, EmptyButton } from 'bricks'
 import { useState } from 'react'
 import  Link  from '../link'
 import Ham from './hamburger-icon'
 import Close from './close-icon'
-import { EmptyButton } from './button'
 
 const NavLink = ({link})=>(
           <Link to={ link.link }>
