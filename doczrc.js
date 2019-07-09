@@ -5,6 +5,5 @@ export default {
   themeConfig: {
     showPlaygroundEditor: true
   },
-  src: './src/components/',
   files: './docs/*.mdx'
 }
