@@ -16,7 +16,7 @@ const groupPostsByUnique = (field, posts) => {
       [unique]: posts.filter(post => {
         try {
           return post.childMdx.frontmatter[field].includes(unique)
-        } catch {
+        } catch(err) {
           return false
         }
       }
@@ -96,7 +96,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   {
     posts: allFile(
       filter: {
-        sourceInstanceName: {eq: "posts"}, 
+        sourceInstanceName: {eq: "posts"},
         ext: {in: [".md",".mdx"]
       }
     }) {
@@ -115,15 +115,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
     }
   }
-  
+
   `);
 
   // remove the unpublished and posts which dont have a URL
-  let posts = result.data.posts.nodes.filter((post) => { 
-    try { 
+  let posts = result.data.posts.nodes.filter((post) => {
+    try {
       let fm = post.childMdx.frontmatter;
       return fm.publish !== false && fm.link != null;
-    } catch { 
+    } catch(err) {
       return false
     }
   });
