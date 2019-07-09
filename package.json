@@ -10,6 +10,7 @@
     "@mdx-js/mdx": "^1.0.20",
     "@mdx-js/react": "^1.0.20",
     "@mdx-js/tag": "^0.20.3",
+    "babel-preset-react": "^6.24.1",
     "bricks": "github:codebrahma/bricks#master",
     "emotion-theming": "^10.0.10",
     "gatsby": "^2.8.6",
@@ -33,7 +34,9 @@
     "styled-system": "^5.0.5"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "docz": "^1.2.0",
+    "docz-theme-default": "^1.2.0"
   },
   "keywords": [
     "gatsby"
@@ -45,6 +48,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }
 }
