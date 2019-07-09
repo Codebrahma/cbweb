@@ -7,7 +7,7 @@ import Category from "../components/category";
 import { getCategory, isLast } from '../utils'
 
 
-const Sidebar = ({frontmatter: {author, category, tags}})=> (
+const Sidebar = ({author, category, tags})=> (
   <div>
     <Box my={2}>
       <Flex fontSize={[0, 0]} justifyContent='center' >
@@ -51,8 +51,8 @@ const Sidebar = ({frontmatter: {author, category, tags}})=> (
   </div>
 )
 
-const BlogLayout = ({ data }) => {
-  let {title} = data.post.frontmatter;
+const BlogLayout = ({title, body, category, author, tags}) => {
+  console.log(title)
   return (
     <Layout>
       <Flex flexWrap='wrap'>
@@ -60,10 +60,10 @@ const BlogLayout = ({ data }) => {
           <Box mb={4}>
             <H1>{title}</H1>
           </Box>
-          <MDXRenderer>{data.post.code.body}</MDXRenderer>
+          <MDXRenderer>{body}</MDXRenderer>
         </Box>
         <Box width={['100%',1/3]} marginTop={[1, 5]}>
-          <Sidebar frontmatter={data.post.frontmatter} />
+          <Sidebar author={author} category={category} tags={tags} />
         </Box>
       </Flex>
     </Layout>
@@ -71,8 +71,22 @@ const BlogLayout = ({ data }) => {
 
 }
 
+const Transformer = ({data}) => {
+  let {title, category, tags, author} = data.post.frontmatter;
+  let body = data.post.code.body;
+  console.log(body);
+  return (
+    <BlogLayout 
+      title={title}
+      category={category}
+      tags={tags}
+      author={author}
+      body={body}
+    />
+  )
+}
 
-export default BlogLayout
+export default Transformer
 
 export const pageQuery = graphql`
   query($link: String!){

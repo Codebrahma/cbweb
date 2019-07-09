@@ -27,6 +27,7 @@ const groupPostsByUnique = (field, posts) => {
 };
 const createPages = (type, postArray, parent = 'journal', createPage) => {
   const groupedPosts = groupPostsByUnique(type, postArray);
+  // returns {['tag']: [post1, post2], ['tag2']: [post3, post4]}
   Object.entries(groupedPosts).forEach(([typeValue, postGroup], index) => {
     typeValue = typeValue.split(' ').join('-')
     paginate(
@@ -58,11 +59,11 @@ const paginate = (
   posts, perpage = 2
 ) =>
   posts
-    // 1
+    // 1 group them by page number and posts in that page
     .map((_, index, allPosts) =>
       index % perpage === 0 ? allPosts.slice(index, index + perpage) : null,
     )
-    // 2
+    // 2 filter the null items in the array
     .filter(item => item)
     // 3
     .forEach((postGroup, index, allGroups) => {
@@ -118,7 +119,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   `);
 
-  // remove the unpublished and posts which dont have a URL
+  // remove the unpublished and posts which dont have a URL and is not published
   let posts = result.data.posts.nodes.filter((post) => {
     try {
       let fm = post.childMdx.frontmatter;

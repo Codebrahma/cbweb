@@ -34,9 +34,10 @@
     "styled-system": "^5.0.5"
   },
   "devDependencies": {
-    "prettier": "^1.18.2",
+    "css-loader": "^3.0.0",
     "docz": "^1.2.0",
-    "docz-theme-default": "^1.2.0"
+    "docz-theme-default": "^1.2.0",
+    "prettier": "^1.18.2"
   },
   "keywords": [
     "gatsby"
