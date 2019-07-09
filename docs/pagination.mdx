@@ -2,9 +2,17 @@
 name: Pagination
 ---
 import { Playground } from 'docz'
+import Pagination from '../src/components/pagination'
 
-# hi
 
 <Playground>
-  hi
+  <Pagination
+    isFirstPage={true}
+    isLastPage={false}
+    currentPage={1}
+    totalPages={10}
+    linkBase="/hello"
+  />
 </Playground>
+
+# hi
