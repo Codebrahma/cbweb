@@ -3,6 +3,7 @@ templateKey: 'blog-post'
 title: '‘Swiss knife of analytics’: A Chat With The Founder of Octo.ai'
 date: 2016-10-25
 featuredpost: true
+link: /swiss-knife-analytics-chat-dipankar-founder-octo-ai
 description: >-
   ‘Swiss knife of analytics’: A Chat With The Founder of Octo.ai
 author: Anand Narayan
@@ -12,8 +13,8 @@ tags:
   - founders
 ---
 
-![after](/img/after-768x566.png)
- 
+![after](./images/after.png)
+
 
 As a premium engineering product company we have delivered not just projects, but success stories for entrepreneurs. For every project we take, there is a back story. Story of why it happened and story of the struggle to make it happen.
 
@@ -35,7 +36,7 @@ The awesome founders & seniors at Slideshare were nice enough to give me a platf
 
 This is what got the startup bug into me, and I have continued following my passion for startups ever since. Did quite a few by myself, but Octo.ai has been one of the most interesting journeys among them.
 
- 
+
 
 __How did the idea for your business come about? What ignited the spark to get into machine learning?__
 
@@ -49,7 +50,7 @@ In that development process, we realized that there was a bigger opportunity in 
 
 Of course, the engineering – be it NLP (natural language processing) or ML (machine learning) – was built for the various products developed. This was an extension of my interest in heuristics and algorithms.
 
- 
+
 
 __With AAHIT – An intelligent Whatsapp bot, you had gained good initial traction with 20,000+ users. What happened there?__
 
@@ -57,13 +58,13 @@ We had built something interesting and had traction. To take things forward and 
 
 Haptik and Helpchat had way too many resources at their disposal. Technology was not the primary question with the kind of capital competitors had raised.
 
- 
+
 
 __How important is it to find the right partner/co-founder?__
 
 It is possibly the most important choice to make. The character of the company is defined by those early choices for the team.
 
- 
+
 
 __Incase finding a partner proves difficult, would you suggest looking towards a tech services company for help?__
 
@@ -71,10 +72,10 @@ If it is a core tech company, then you need someone who understands it in the fo
 
 If tech is an enabler, outsourcing that capability is actually recommended. Though, someone again must have some basic tech experience for a positive outcome.
 
- 
+
 
 [![in-blogad-01](/img/In-blogAd-01-768x128.png)](https://codebrahma.com/contact)
- 
+
 
 __How did the idea of Octo.ai come around?__
 
@@ -82,7 +83,7 @@ Octo.ai is a product of how we think data science for consumers will evolve. We 
 
 We are proposing that for software to perform any sort of intelligence, it needs to collect data. The valuable data for Octo.ai is user interactions. The more data it collects, the smarter it becomes. Context is derived from data, which in turn is the basis of decisions made by the software.
 
- 
+
 
 __There exist a lot of analytics tools. And it looks like you’ll be, more or less, competing with big players like Google Analytics and Mixpanel. Right?__
 
@@ -92,7 +93,7 @@ Yes. Our Open Source framework eliminates third party analytics including Google
 
 No. What we are offering to enterprise clients is segment of one marketing automation, it learns user behavior and targets them intelligently to pull them back into the system. Effectively, increasing retention and potential conversions within the system. This is right at the intersection of high-end analytics and marketing automation. There are no players in this vertical.
 
- 
+
 
 __Could you give us a business case that’ll set you apart from analytics competition?__
 
@@ -111,7 +112,7 @@ This future is very near – we’ll slowly see different sub verticals coming t
 
 Possibilities – they sure are endless.
 
- 
+
 
 __How do you define success and what would you say are the essential skills needed to be a successful entrepreneur?__
 
@@ -119,7 +120,7 @@ At a personal level, I view success as being able to keep doing the things that 
 
 The only skill is the willingness to learn and listen, rest follows.
 
- 
+
 
 __I think every founder has a fair share of ups and downs, and lessons learned from them. If you could go back in time again and have a fresh start – what would you do differently?__
 
@@ -127,7 +128,7 @@ I would not do anything differently.
 
 The present moment is a result of all that has gone right and wrong, no regrets.
 
- 
+
 
 __Advice to young entrepreneurs out there?__
 
