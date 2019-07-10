@@ -6,6 +6,7 @@ featuredpost: true
 description: >-
   Going About Application Development Basic Methodology
 author: Anand Narayan
+link: /application-development-basic-methodology
 tags:
 
 ---
@@ -36,10 +37,9 @@ __Design prototype:__ Design prototype is how your application is going to look 
 
 __Development:__ This is where the active work begins on app development. The architecture of the application is created, if required, and developers begin churning out beautiful code. Front end guys begin transforming the designs into amazing pages or screens. The whole is put together, tested with every possible edge case, demoed to the client and shipped! The product is now in your hand to be used.
 
-![Mobile Application Development](/img/AppDevInfo-3-521x1024.png)
+![Mobile Application Development](./images/AppDevInfo-3-521x1024.png)
  
 
 That’s our 5 stage process to make your app development strategy easier – simple and gets the job done! We have more than 40 clients who agree with us. 🙂
 
-If you’re thinking of entering the mobile application market – [drop us a line](https://codebrahma.com/contact/). We love building great products!
-
+If you’re thinking of entering the mobile application market – [drop us a line](/contact). We love building great products!
