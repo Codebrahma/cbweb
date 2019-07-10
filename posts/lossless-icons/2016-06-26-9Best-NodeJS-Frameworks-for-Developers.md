@@ -7,7 +7,6 @@ description: >-
   9 Best NodeJS Frameworks for Developers
 link: /9-best-node-js-frameworks-developers
 author: Aravindan
-link: /9-best-node-js-frameworks-developers
 category:
 - NodeJS
 tags:
