@@ -6,10 +6,14 @@ featuredpost: true
 description: >-
   Meteor Publications and Subscriptions
 author: Tarun Batra
+link: /meteor-publications-and-subscriptions
+category:
+- Meteor
 tags:
-  - Meteor development
+- Meteor development
 ---
-[Meteor][1] is a full-stack JavaScript platform, in fact the [11th most popular][2] JavaScript project on GitHub at the time of writing. What makes Meteor so disruptive is the mode of data communication between server and client. It's not [RESTful][3] but instead, Meteor uses Publish Subscribe pattern to communicate data between server and client. The protocol used for this communication is Distributed Data Protocol (DDP), which is built in-house by The [Meteor Development Group (MDG)][4], the startup behind Meteor.
+
+[Meteor](https://www.meteor.com/) is a full-stack JavaScript platform, in fact the [11th most popular](http://stats.js.org/) JavaScript project on GitHub at the time of writing. What makes Meteor so disruptive is the mode of data communication between server and client. It's not [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) but instead, Meteor uses Publish Subscribe pattern to communicate data between server and client. The protocol used for this communication is Distributed Data Protocol (DDP), which is built in-house by The [Meteor Development Group (MDG)](https://www.meteor.com/company), the startup behind Meteor.
 
 In this chapter specifically, we're going to talk about meteor **publications** and **subscriptions**, and to explain these interwoven concepts, we're going to use them in various scenarios and analyze their results using 3rd party tools to achieve a better understanding of how Meteor publications and subscriptions work and the ways we can use them.
 
@@ -53,21 +57,21 @@ If you're new to Meteor, you'd already be sweating seeing that we just created a
 
 We actually created a **MiniMongo** Collection. MiniMongo is a client-side data store with a Mongo-like API. When we talk about server sending data to client, it's MiniMongo we're talking about.
 
-![Subscribed data in MiniMongo | meteor publications and subscriptions][5]
+![Subscribed data in MiniMongo | meteor publications and subscriptions](./images/Screenshot-from-2016-07-19-20-44-19.png)
 
-Subscribed data in MiniMongo visualized using [Meteor DevTools][6] showing the 2 posts that were pushed to MiniMongo
+Subscribed data in MiniMongo visualized using [Meteor DevTools](https://github.com/thebakeryio/meteor-devtools) showing the 2 posts that were pushed to MiniMongo
 
  
 
 When a subscription becomes ready, the data is stored in MiniMongo and can be accessed by Mongo-like queries. The server keeps the MiniMongo in-sync with the data in back-end by sending additional data as the data changes in the back-end.
 
-![Syncing of MiniMongo data through DDP | meteor publications and subscriptions][7]
+![Syncing of MiniMongo data through DDP | meteor publications and subscriptions](./images/Screenshot-from-2016-07-19-20-45-28.png)
 
 Syncing of MiniMongo data through DDP showing 1 item being pushed to MiniMongo as it got added on the server
 
  
 
-![Updated MiniMongo data | meteor publications and subscriptions][8]
+![Updated MiniMongo data | meteor publications and subscriptions](./images/Screenshot-from-2016-07-19-21-11-01.png)
 
 Updated MiniMongo data showing total 3 posts
 
@@ -136,9 +140,9 @@ Meteor publications and subscriptions work like a charm if used properly. Syncin
 
 To gain more control over the data you publish, you need to know what happens when Meteor publishes data. The following screenshot shows all the DDP messages which are exchanged between client and server of our sample Meteor app.
 
-![Low level DDP messages | meteor publications and subscriptions][9]
+![Low level DDP messages | meteor publications and subscriptions](./images/Screenshot-1-1.png)
 
-DDP messages showing the publication of data using [Arunoda][10]'s [DDP Analyzer][11] tool
+DDP messages showing the publication of data using [Arunoda](https://github.com/arunoda)'s [DDP Analyzer](https://github.com/arunoda/meteor-ddp-analyzer) tool
 
 1. First, the client sends a DDP message to server subscribing to the `listAllPosts` publication.
 2. Then the server pushes the first set of data using `added` message.
@@ -193,27 +197,10 @@ _Code to publish a post and then change it's content_
     
     
 
-![Manually sent DDP messages][12]
+![Manually sent DDP messages](./images/Screenshot-from-2016-07-20-15-22-29.png)
 
 DDP messages after executing the above code
 
 So, you can control the data you publish to the client. There are more interesting concepts, like intercepting a publication and changing the data but that's out of the scope of this article.
 
-Meteor publications and subscriptions make working with real time data easy and fun. To know more refer [Meteor Documentation][13] and after you're done with that, maybe [DDP specification][14] too.
-
-[1]: https://www.meteor.com/
-[2]: http://stats.js.org/
-[3]: https://en.wikipedia.org/wiki/Representational_state_transfer
-[4]: https://www.meteor.com/company
-[5]: /img/Screenshot-from-2016-07-19-20-44-19.png
-[6]: https://github.com/thebakeryio/meteor-devtools
-[7]: /img/Screenshot-from-2016-07-19-20-45-28.png
-[8]: /img/Screenshot-from-2016-07-19-21-11-01.png
-[9]: /img/Screenshot-1-1.png
-[10]: https://github.com/arunoda
-[11]: https://github.com/arunoda/meteor-ddp-analyzer
-[12]: /img/Screenshot-from-2016-07-20-15-22-29.png
-[13]: http://docs.meteor.com/
-[14]: https://github.com/meteor/meteor/blob/devel/packages/ddp/DDP.md
-
-  
+Meteor publications and subscriptions make working with real time data easy and fun. To know more refer [Meteor Documentation](http://docs.meteor.com/) and after you're done with that, maybe [DDP specification](https://github.com/meteor/meteor/blob/devel/packages/ddp/DDP.md) too.

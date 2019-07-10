@@ -10,7 +10,7 @@ link: /whats-new-jquery-3-0
 category:
 - jQuery
 tags:
-  - jQuery 3.0
+- jQuery 3.0
 ---
 
 It's been 10 years since [jQuery](http://jquery.com/) started ruling the web and it has stuck around for good reasons. After a long time jQuery got a major update last month with the release of jQuery 3.0 and jQuery Compat 3.0. This release promises a slimmer and faster jQuery, with backwards compatibility in mind. You can download the latest jQuery 3.0 from the [download page](http://jquery.com/download/). It's also worth having a look at the [upgrade guide](http://jquery.com/upgrade-guide/3.0/) and the [source code](https://code.jquery.com/jquery-3.0.0.js).
