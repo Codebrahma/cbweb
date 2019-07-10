@@ -160,8 +160,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   );
 
   let folders = {
-    solutions: { templateName: 'solutions-layout.js'},
-    projects: {templateName: 'project-layout.js'}
+    solutions: { templateName: 'solutions-layout.js', frontmatter: 'title link'},
+    projects: {templateName: 'project-layout.js', frontmatter: 'title link'}
   }
 
   Object.keys(folders).map(async (folder)=>{
@@ -177,8 +177,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id
           childMdx {
             frontmatter {
-              title
-              link
+              ${folders[folder].frontmatter}
             }
           }
         }
