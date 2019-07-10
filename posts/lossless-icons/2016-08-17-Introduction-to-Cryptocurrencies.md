@@ -6,6 +6,9 @@ featuredpost: true
 description: >-
   Introduction to Cryptocurrencies
 author: Tarun Batra
+link: /introduction-to-cryptocurrencies
+category:
+- Cryptocurrency
 tags:
   - Bitcoins
   - Cryptocurrency
@@ -29,7 +32,7 @@ Market sentiments greatly effect the value of the currencies, stocks and commodi
 ## Trust
 Trust is essential for virtually all economic activity. Banknotes often have a __promissory clause__ which reads like this:
 
-![image](/img/Promise-To-Pay-300x200.jpg)
+![image](./images/Promise-To-Pay-300x200.jpg)
 without any gold or other precious resources to actually back that claim. (Earlier they used to back currency value to something like gold. Though it’s discontinued now, but the idea is same).
 
 # Why cryptocurrencies?
@@ -37,7 +40,7 @@ So we already have things in place to keep the system running, why do we need th
 
 1. The banks represent __a single point of control__ which can deem a currency illegitimate, refuting our claims to our wealth.
 2. Apart from being a single point of control, they also represent __a single point of failure__. Banks have failed in the past, and can certainly fail in the future due to various reasons, which puts our wealth at risk.
-![Bank failures in past](/img/bank-failures-since-1865-with-text-boxes_large.png)
+![Bank failures in past](./images/bank-failures-since-1865-with-text-boxes_large.png)
 3. We have to trust the system with our wealth without any satisfactory assurance against a fraud, intentional or otherwise.
 
 Cryptocurrenies are an attempt towards liberating the monetary system, something so essential to our lives, from these issues, in a way that one can be in absolute control of one’s wealth without trusting the system.
@@ -57,14 +60,14 @@ When we transfer money through banks, we trust them to do so. But without any ce
 
 Blockchains, themselves are greatly hyped and are considered the biggest achievement of Bitcoin, as the idea can be used in various other industries to create trust-less systems.
 
-![blockchain](/img/blockchain.png)
+![blockchain](./images/blockchain.png)
 
 ## Value of bitcoins
 If there’s no central authority, who decides the value of the currency?
 
 Well, as we discussed earlier, the golden rule of __demand and supply__ comes to play here too. Satoshi made the protocol in such a way that the maximum number of bitcoins that can ever be generated (minted) is fixed at __21 million__.
 
-![bitcoin price chart](/img/coindesk-bpi-chart-768x266.png)
+![bitcoin price chart](./images/coindesk-bpi-chart-768x266.png)
 
 __Market sentiments__ also play a vital role. Recently bitcoin prices plunged when Bitfinex, a Hong Kong based cryptocurrecncy exchange was hacked and $65 million worth bitcoins were stolen.
 
@@ -116,16 +119,16 @@ Cryptocurrencies other than Bitcoin are know as __altcoins__, or alternative to 
 
 The altcoins vary in terms of under lying principles. For example, [Primecoin](http://primecoin.io/) is a cryptocurrency which makes use of the vast amount of computational resources to find long chains of prime numbers which can contribute in advancement of cryptography as a science.
 
-[Ethereum](https://en.wikipedia.org/wiki/Ethereum) is a disruptive [blockchain-based platform](https://codebrahma.com/financial-software-development-company/), the highlight of which is __smart contracts__. Smart contracts are contracts enforced by computer code, instead of institutions set up by humans. This way, we can port whole economies and governments to digital ecosystem, let alone currencies. The possibilities are endless and out of the scope of this article.
+[Ethereum](https://en.wikipedia.org/wiki/Ethereum) is a disruptive [blockchain-based platform](/financial-software-development-company), the highlight of which is __smart contracts__. Smart contracts are contracts enforced by computer code, instead of institutions set up by humans. This way, we can port whole economies and governments to digital ecosystem, let alone currencies. The possibilities are endless and out of the scope of this article.
 
 Cryptocurrencies also vary in terms of user friendliness. More popular ones, like Bitcoin are very user friendly, while others are not so.
 
-![Bitcoin wallet by Blockchain Info](/img/Screenshot-from-2016-08-16-00-35-21.png)
+![Bitcoin wallet by Blockchain Info](./images/Screenshot-from-2016-08-16-00-35-21.png)
 My bitcoin wallet app
 
 You can see stark difference in my bitcoin wallet app shown above, and my Ethereum wallet shown below.
 
-![My Ethereum wallet](/img/Screenshot-from-2016-08-16-00-26-23.png)
+![My Ethereum wallet](./images/Screenshot-from-2016-08-16-00-26-23.png)
 My Ethereum wallet
 
 ## Conclusion
@@ -145,4 +148,4 @@ If you liked the article and feel generous, or just want to hone your newly acqu
 
 17ULzN8PCaCtE16WKtBhMYc28DQxxt4ja
 
-![17ULzN8PCaCtE16WKtBhMYc28DQxxt4ja](/img/qr-1-125x125.png)
+![17ULzN8PCaCtE16WKtBhMYc28DQxxt4ja](./images/qr-1-125x125.png)
