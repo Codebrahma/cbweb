@@ -73,7 +73,6 @@ const JournalPage = ({
   },
 }) => {
   let blogs = postGroup
-  console.log(linkBase)
   return(
   <Layout>
     <H4 css={css({color: 'black.1'})}>

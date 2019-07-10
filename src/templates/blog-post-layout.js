@@ -52,7 +52,6 @@ const Sidebar = ({author, category, tags})=> (
 )
 
 const BlogLayout = ({title, body, category, author, tags}) => {
-  console.log(title)
   return (
     <Layout>
       <Flex flexWrap='wrap'>
@@ -74,7 +73,6 @@ const BlogLayout = ({title, body, category, author, tags}) => {
 const Transformer = ({data}) => {
   let {title, category, tags, author} = data.post.frontmatter;
   let body = data.post.code.body;
-  console.log(body);
   return (
     <BlogLayout 
       title={title}
