@@ -6,6 +6,7 @@ featuredpost: true
 description: >-
   PR 101 Setting Up Your Startup For Success
 author: Anand Narayan
+link: /pr-101-setting-up-your-startup-for-success
 tags:
   - growth hack
   - PR
@@ -65,7 +66,7 @@ Romain Dillet of TechCrunch has some good advice here, “… find out who tends
 
 [HARO](https://www.helpareporter.com/) – help a reporter out is another great service wherein you get periodic notifications from reporters looking to cover certain topics. If the topics they’re looking to cover fall within your domain, you reply with your thoughts and ideas, and chances are the reporter will use your help to structure their article.
 
- 
+[![](./images/In-blogAd-01-768x128.png)](/contact)
 
 ## Construct the perfect email
  
