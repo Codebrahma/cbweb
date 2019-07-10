@@ -146,6 +146,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   createPages('category', posts, 'journal', createPage);
   createPages('author', posts, 'journal', createPage);
 
+
   //create blogs index
   paginate(
     {
@@ -157,4 +158,37 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     },
     posts,
   );
+
+  const solutions = await graphql(`
+  {
+    solutions: allFile(
+      filter: {
+        sourceInstanceName: {eq: "solutions"},
+        ext: {in: [".md",".mdx"]
+      }
+    }) {
+      nodes {
+        id
+        childMdx {
+          frontmatter {
+            title
+            link
+          }
+        }
+      }
+    }
+  }
+  `)
+
+  //create each individual blog post
+  solutions.data.solutions.nodes.forEach(solution => {
+    const { link } = solution.childMdx.frontmatter;
+    createPage({
+      path: `${link}/`,
+      component: require.resolve('./src/templates/solutions-layout.js'),
+      context: {
+        link,
+      },
+    });
+  });
 }

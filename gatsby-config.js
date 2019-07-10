@@ -33,6 +33,7 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
         defaultLayouts:{
           posts: require.resolve('./src/templates/blog-post-layout.js'),
+          solutions: require.resolve('./src/templates/solutions-layout.js'),
           default: require.resolve('./src/templates/layout.js')
         },
         gatsbyRemarkPlugins: [
@@ -65,8 +66,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `services`,
-        path: `${__dirname}/services/`
+        name: `solutions`,
+        path: `${__dirname}/solutions/`
       }
     },
 

@@ -65,6 +65,7 @@ const Footer = () => (
 const Layout = ({ children }) => {
   const context = useThemeUI();
   const comps   = context.components;
+  console.log(comps)
   return (
     <StaticQuery
       query={graphql`
