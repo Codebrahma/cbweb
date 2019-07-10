@@ -6,11 +6,14 @@ featuredpost: true
 description: >-
   Write Less. Do More.
 author: Balram Khichar
+link: /whats-new-jquery-3-0
+category:
+- jQuery
 tags:
   - jQuery 3.0
 ---
 
-It's been 10 years since [jQuery][1] started ruling the web and it has stuck around for good reasons. After a long time jQuery got a major update last month with the release of jQuery 3.0 and jQuery Compat 3.0. This release promises a slimmer and faster jQuery, with backwards compatibility in mind. You can download the latest jQuery 3.0 from the [download page][2]. It's also worth having a look at the [upgrade guide][3] and the [source code][4].
+It's been 10 years since [jQuery](http://jquery.com/) started ruling the web and it has stuck around for good reasons. After a long time jQuery got a major update last month with the release of jQuery 3.0 and jQuery Compat 3.0. This release promises a slimmer and faster jQuery, with backwards compatibility in mind. You can download the latest jQuery 3.0 from the [download page](http://jquery.com/download/). It's also worth having a look at the [upgrade guide](http://jquery.com/upgrade-guide/3.0/) and the [source code](https://code.jquery.com/jquery-3.0.0.js).
 
 In this article, I'm going to highlight the new important changes introduced inside jQuery 3.0 and how you can use it.
 
@@ -20,19 +23,19 @@ In this article, I'm going to highlight the new important changes introduced ins
 
 Today almost all browsers supported by jQuery 3 support [strict mode][5], this release have been built with this directive in mind.
 
-![jquery-strict][6]
+![jquery-strict](./images/eWqih.png)
 
 Got your code running in non strict mode? No worries, You don't need to rewrite your existing jQuery code. Although jQuery 3 has been written in strict mode, it's not compulsory to run your code in strict mode. Strict & non-strict mode JavaScript can happily coexist.
 
  
 
-![mobile-application-development][7]
+[![mobile-application-development](./images/mobile-app-development-01.png)](/mobile-application-development)
 
  
 
 #### 2\. For…of Loop
 
-jQuery 3.0 supports the `for…of` statement, a new kind of `for` loop. This new iterator is part of the [ECMAScript 6][8]. It gives a more straightforward way to loop over iterable objects, such as Arrays, Maps, and Sets. In jQuery 3.0, the `for...of` loop can replace the former `$.each(...)` syntax.
+jQuery 3.0 supports the `for…of` statement, a new kind of `for` loop. This new iterator is part of the [ECMAScript 6](http://es6-features.org/). It gives a more straightforward way to loop over iterable objects, such as Arrays, Maps, and Sets. In jQuery 3.0, the `for...of` loop can replace the former `$.each(...)` syntax.
     
     
     var items = $('.random-class');
@@ -48,15 +51,15 @@ jQuery 3.0 supports the `for…of` statement, a new kind of `for` loop. This new
     };
     
 
-_Note: The `for...of` loop will only work with browsers that supports ECMAScript 6 or if you use a JavaScript compiler such as [Babel][9]._
+_Note: The `for...of` loop will only work with browsers that supports ECMAScript 6 or if you use a JavaScript compiler such as [Babel](https://babeljs.io/)._
 
  
 
 #### 3\. requestAnimationFrame( ) for Animations
 
-jQuery 3.0 uses the `requestAnimationFrame()` API for animations. It makes animations run smoother, faster and less CPU-intensive animations. This new API is only used in browsers that [support][10] it. For older browsers (i.e. IE9), it uses previous API as a fallback method to display animations. If you want to learn more about **RequestAnimationFrame**, you can refer this good [blog post][11].
+jQuery 3.0 uses the `requestAnimationFrame()` API for animations. It makes animations run smoother, faster and less CPU-intensive animations. This new API is only used in browsers that [support](http://caniuse.com/#feat=requestanimationframe) it. For older browsers (i.e. IE9), it uses previous API as a fallback method to display animations. If you want to learn more about **RequestAnimationFrame**, you can refer this good [blog post](https://css-tricks.com/using-requestanimationframe/).
 
-![requestanimationframe-support][12]
+![requestanimationframe-support](./images/requestanimationframe-support-1024x418.png)
 
  
 
@@ -82,7 +85,7 @@ The new `$.escapeSelector()` method allows you to escape strings or characters t
 
 #### 5\. Additional Protection against XSS Attacks
 
-jQuery 3.0 added an extra security layer for protection against [Cross-Site Scripting (XSS)][13] attacks. It requires developers to specify `dataType: 'script'` in the options of `$.ajax()` and `$.get()` methods. In other words, While making a request for a script on a domain other than the one that hosts the document, you must now explicitly declare this in the options.
+jQuery 3.0 added an extra security layer for protection against [Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) attacks. It requires developers to specify `dataType: 'script'` in the options of `$.ajax()` and `$.get()` methods. In other words, While making a request for a script on a domain other than the one that hosts the document, you must now explicitly declare this in the options.
 
 > _Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted web sites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user. Flaws that allow these attacks to succeed are quite widespread and occur anywhere a web application uses input from a user within the output it generates without validating or encoding it._
 
@@ -120,7 +123,7 @@ This is one important change that you should should remember. From now on, the `
 
 > _As a result, disconnected elements are no longer considered hidden unless they have inline display: none;, and therefore .toggle() will no longer differentiate them from connected elements as of jQuery 3.0._
 
-If you want to understand the results of the new show/hide logic in more better way, you can refer this [table][14] created by jQuery team or read this interesting [Github discussion][15] about it.
+If you want to understand the results of the new show/hide logic in more better way, you can refer this [table](https://docs.google.com/spreadsheets/d/1UaISjcS3UMxVJ7eSBIXtK-jqF8Grl67w640peCqlkoc/edit) created by jQuery team or read this interesting [Github discussion](https://github.com/jquery/jquery/issues/2854) about it.
 
  
 
@@ -140,25 +143,6 @@ jQuery 1.7 introduced the `.on()` method for attaching event handlers. jQuery 3.
 
 Many people consider that jQuery is dead and doesn't have a place in modern web. However, its development continues and statistics of its adoption (78.5% in the top million) contradict these claims.
 
-![jquery-usage][16]
+![jquery-usage](./images/Screen-Shot-2016-07-12-at-7.37.08-PM.png)
 
 In this article, I've walked you through the major changes in jQuery 3.0. As you might have noticed, this version is unlikely to break any of your existing projects. Keep using jQuery and "Write Less, Do More". 🙂
-
-[1]: http://jquery.com/
-[2]: http://jquery.com/download/
-[3]: http://jquery.com/upgrade-guide/3.0/
-[4]: https://code.jquery.com/jquery-3.0.0.js
-[5]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
-[6]: /img/eWqih.png
-[7]: /img/mobile-app-development-01.png
-[8]: http://es6-features.org/
-[9]: https://babeljs.io/
-[10]: http://caniuse.com/#feat=requestanimationframe
-[11]: https://css-tricks.com/using-requestanimationframe/
-[12]: /img/requestanimationframe-support-1024x418.png
-[13]: https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
-[14]: https://docs.google.com/spreadsheets/d/1UaISjcS3UMxVJ7eSBIXtK-jqF8Grl67w640peCqlkoc/edit
-[15]: https://github.com/jquery/jquery/issues/2854
-[16]: /img/Screen-Shot-2016-07-12-at-7.37.08-PM.png
-
-  
