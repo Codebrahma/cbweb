@@ -159,68 +159,44 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     posts,
   );
 
-  const solutions = await graphql(`
-  {
-    solutions: allFile(
-      filter: {
-        sourceInstanceName: {eq: "solutions"},
-        ext: {in: [".md",".mdx"]
-      }
-    }) {
-      nodes {
-        id
-        childMdx {
-          frontmatter {
-            title
-            link
+  let folders = {
+    solutions: { templateName: 'solutions-layout.js'},
+    projects: {templateName: 'project-layout.js'}
+  }
+
+  Object.keys(folders).map(async (folder)=>{
+    let result = await graphql(`
+    {
+      x: allFile(
+        filter: {
+          sourceInstanceName: {eq: "${folder}"},
+          ext: {in: [".md",".mdx"]
+        }
+      }) {
+        nodes {
+          id
+          childMdx {
+            frontmatter {
+              title
+              link
+            }
           }
         }
       }
     }
-  }
-  `)
-
-  //create each individual blog post
-  solutions.data.solutions.nodes.forEach(solution => {
-    const { link } = solution.childMdx.frontmatter;
-    createPage({
-      path: `${link}/`,
-      component: require.resolve('./src/templates/solutions-layout.js'),
-      context: {
-        link,
-      },
+    `)
+    //create each individual blog post
+    result.data.x.nodes.forEach(node => {
+      const { link } = node.childMdx.frontmatter;
+      createPage({
+        path: `${link}/`,
+        component: require.resolve(`./src/templates/${folders[folder].templateName}`),
+        context: {
+          link,
+        },
+      });
     });
-  });
-  const projects = await graphql(`
-  {
-    projects: allFile(
-      filter: {
-        sourceInstanceName: {eq: "projects"},
-        ext: {in: [".md",".mdx"]
-      }
-    }) {
-      nodes {
-        id
-        childMdx {
-          frontmatter {
-            title
-            link
-          }
-        }
-      }
-    }
-  }
-  `)
 
-  //create each individual blog post
-  projects.data.projects.nodes.forEach(solution => {
-    const { link } = solution.childMdx.frontmatter;
-    createPage({
-      path: `${link}/`,
-      component: require.resolve('./src/templates/project-layout.js'),
-      context: {
-        link,
-      },
-    });
-  });
+  })
+
 }
