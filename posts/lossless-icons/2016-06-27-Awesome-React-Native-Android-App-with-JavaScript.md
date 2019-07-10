@@ -6,6 +6,9 @@ featuredpost: true
 description: >-
   Awesome React Native: Building Android App with JavaScript
 author: Balram Khichar
+link: /awesome-react-native-building-android-app-javascript
+category: 
+- React-Native
 tags:
   - React Native
   - React Native Tutorial
@@ -14,38 +17,36 @@ tags:
 ---
 
 
-[Source](https://codebrahma.com/awesome-react-native-building-android-app-javascript/ "Permalink to Awesome React Native: Building Android App")
+[Source](/awesome-react-native-building-android-app-javascript "Permalink to Awesome React Native: Building Android App")
 
 # Awesome React Native: Building Android App
 
-Building mobile applications using JavaScript is in trend these days. Frameworks like [Ionic][1], [PhoneGap][2] and [Sencha Touch][3] provide the ability to develop apps using basic knowledge of HTML, CSS and JavaScript. With these frameworks, you have the ability to make calls to native APIs, but the bulk of your app will be HTML and JavaScript inside a WebView. [React][4], Facebook's JavaScript library has proved tremendously successful around the web, including large companies like [Netflix][5] and [Airbnb][6].
+Building mobile applications using JavaScript is in trend these days. Frameworks like [Ionic](http://ionicframework.com/), [PhoneGap](http://phonegap.com/) and [Sencha Touch](http://www.sencha.com/products/touch/) provide the ability to develop apps using basic knowledge of HTML, CSS and JavaScript. With these frameworks, you have the ability to make calls to native APIs, but the bulk of your app will be HTML and JavaScript inside a WebView. [React](https://facebook.github.io/react/), Facebook's JavaScript library has proved tremendously successful around the web, including large companies like [Netflix](http://techblog.netflix.com/2015/01/netflix-likes-react.html) and [Airbnb](https://www.airbnb.com/meetups/x4ede5jr2-css-frameworks-and-the-evolution-of-airbnb-s-frontend).
 
-[React Native][7] is a JavaScript framework for writing real, natively rendering iOS and Android applications. Instead of running React in the browser and rendering to divs and spans, React Native run it in an embedded instance of JavaScriptCore inside app and render to higher-level platform-specific components.
-
- 
-
-![react-native-architecture][8]
+[React Native](https://codebrahma.com/react-native-development-company/) is a JavaScript framework for writing real, natively rendering iOS and Android applications. Instead of running React in the browser and rendering to divs and spans, React Native run it in an embedded instance of JavaScriptCore inside app and render to higher-level platform-specific components.
 
  
 
-In this tutorial, we'll build an android movie app **Motion** using public api provided by [themoviedb][9] with React Native. You can find list of movies currently playing in theaters.
+![react-native-architecture](./images/image001-e1467025274716.png)
+
+ 
+
+In this tutorial, we'll build an android movie app **Motion** using public api provided by [themoviedb](https://www.themoviedb.org) with React Native. You can find list of movies currently playing in theaters.
 
  
 
 ### 1\. Creating A Blank React Native Project
 
-Make sure you have [Node][10] installed in your system. You can follow [this][11] guide to install Node. Now, from the terminal run `npm install -g react-native-cli`. This will install React Native globally on your system. You can also follow the [official guide][12] to get started.
+Make sure you have [Node](https://nodejs.org/en/) installed in your system. You can follow [this](https://docs.npmjs.com/getting-started/installing-node) guide to install Node. Now, from the terminal run `npm install -g react-native-cli`. This will install React Native globally on your system. You can also follow the [official guide](https://facebook.github.io/react-native/docs/getting-started.html#content) to get started.
 
 Navigate to the folder in your system where you would like to set up the project. Once there, from the terminal run `react-native init Motion`. This should fetch and install the required modules and create a new folder called **Motion**.
 
+
+
+![motion-react-native-app-folder](./images/Screen-Shot-2016-06-27-at-5.04.58-PM-1024x538.png)   
  
 
-![motion-react-native-app-folder][13]
-
-   
- 
-
-![][14]  
+[![](./images/react-native-banner-01.png)](/react-native-development-company)
  
 
 React Native provides ability to write both Android and iOS applications together with a majority of JavaScript code shared between them. Inside the newly created folder **Motion** you will find two .js files: index.android.js and index.ios.js. If you're building an iOS app you'll work with index.ios.js; with index.android.js for an Android app; and both for, you know, both platforms.
@@ -54,31 +55,30 @@ We're building an android app so we can remove the index.ios.js and ios folder. 
 
 Connect your usb-debugging enabled android device to your system and from the terminal run `react-native run-android`. It will start the blank app in your device.
 
- 
-
-![motion-react-native-app-blank][15]
-
+<div style="width: 340; margin: 0 auto;">
+  <img src="./images/Screen-Shot-2016-06-27-at-5.35.52-PM.png" alt="motion-react-native-app-blank" />
+</div>
  
 
 ### 2\. Getting the data from themoviedb API
 
-You need to get an api key from [themoviedb][16] first to access the api. Once we acquire the API key we're good to go. This is how your Motion class looks like initially:
+You need to get an api key from [themoviedb](https://www.themoviedb.org/documentation/api) first to access the api. Once we acquire the API key we're good to go. This is how your Motion class looks like initially:
     
     
     class Motion extends Component {
       render() {
         return (
-          
-            
+          <View style={styles.container}>
+            <Text style={styles.welcome}>
               Welcome to React Native!
-            
-            
+            </Text>
+            <Text style={styles.instructions}>
               To get started, edit index.android.js
-            
-            
+            </Text>
+            <Text style={styles.instructions}>
               Shake or press menu button for dev menu
-            
-          
+            </Text>
+          </View>
         );
       }
     }
@@ -120,7 +120,7 @@ Next, we need to add the **componentDidMount** method. componentDidMount is a li
 
  
 
-![react-lifecycle][17]
+![react-lifecycle](./images/react-lifecycle.png)
 
 Let's declare componentDidMount method and call the fetchMoviesData function inside it.
     
@@ -153,22 +153,29 @@ Now, get rid of everything from inside Motion class's **render** method and add 
     
     
     render() {
-        return (
-          
-        );
-      }
+      return (
+        <ListView
+          dataSource={this.state.moviesData}
+          renderRow={this.renderRow}
+          style={styles.container}
+        />
+      );
+    }
 
 ListView's **renderRow** prop expects a template which needs to be rendered for each row. Add the following **renderRow** function inside the Motion class:
     
     
     renderRow(rowData){
-        return (
-          
-            https://image.tmdb.org/t/p/w500_and_h281_bestv2/'+rowData.poster_path}}" resizemode="cover" style="{styles.img}">
-              {rowData.title} (Rating: {Math.round( rowData.vote_average * 10 ) / 10})
-          
-        );
-      }
+      return (
+        <View style={styles.thumb}>
+          <Image
+            source={{uri:'https://image.tmdb.org/t/p/w500_and_h281_bestv2/'+rowData.poster_path}}
+            resizeMode='cover'
+            style={styles.img} />
+            <Text style={styles.txt}>{rowData.title} (Rating: {Math.round( rowData.vote_average * 10 ) / 10})</Text>
+        </View>
+      );
+    }
 
 We need to do one more thing before we can see the results. You can find the line that says `var styles = StyleSheet.create({` at the bottom. These styles are responsible for displaying the initial default screen. We can update these to show our movie listing in thumbnail list:
     
@@ -194,40 +201,17 @@ We need to do one more thing before we can see the results. You can find the lin
 
  
 
-Your app with latest movie listing is complete. You can open the terminal run `react-native run-android` to see your app. You can find the code for this app [here][18]. Enjoy!
+Your app with latest movie listing is complete. You can open the terminal run `react-native run-android` to see your app. You can find the code for this app [here](https://github.com/balramkhichar/MotionApp). Enjoy!
 
  
 
-![][19]
+![](./images/Screen-Shot-2016-06-27-at-8.23.10-PM-179x300.png)
 
  
 
-PS: This is the simple demo of the app. You can use pagination of the themoviedb API and build fully functional App. You can also implement the movie detail page using the React Native [Navigator][20].
+PS: This is the simple demo of the app. You can use pagination of the themoviedb API and build fully functional App. You can also implement the movie detail page using the React Native [Navigator](http://facebook.github.io/react-native/docs/navigator.html).
 
-[ Hire React Native Developers][7]  
+[ Hire React Native Developers](/react-native-development-company)
+
 About Codebrahma:  
-**Codebrahma is a [React JS development services][21]** company who are expert in developing React applications. Being an [ iOS app development company][21]we have created iOS applications with stunning UI both using React Native and native frameworks.
-
-[1]: http://ionicframework.com/
-[2]: http://phonegap.com/
-[3]: http://www.sencha.com/products/touch/
-[4]: https://facebook.github.io/react/
-[5]: http://techblog.netflix.com/2015/01/netflix-likes-react.html
-[6]: https://www.airbnb.com/meetups/x4ede5jr2-css-frameworks-and-the-evolution-of-airbnb-s-frontend
-[7]: https://codebrahma.com/react-native-development-company/
-[8]: /img/image001-e1467025274716.png
-[9]: https://www.themoviedb.org
-[10]: https://nodejs.org/en/
-[11]: https://docs.npmjs.com/getting-started/installing-node
-[12]: https://facebook.github.io/react-native/docs/getting-started.html#content
-[13]: /img/Screen-Shot-2016-06-27-at-5.04.58-PM-1024x538.png
-[14]: /img/react-native-banner-01.png
-[15]: /img/Screen-Shot-2016-06-27-at-5.35.52-PM.png
-[16]: https://www.themoviedb.org/documentation/api
-[17]: /img/react-lifecycle.png
-[18]: https://github.com/balramkhichar/MotionApp
-[19]: /img/Screen-Shot-2016-06-27-at-8.23.10-PM-179x300.png
-[20]: http://facebook.github.io/react-native/docs/navigator.html
-[21]: https://codebrahma.com/react-js-development/
-
-  
+**Codebrahma is a [React JS development services](/react-js-development)** company who are expert in developing React applications. Being an [ iOS app development company]((/react-js-development)we have created iOS applications with stunning UI both using React Native and native frameworks.
