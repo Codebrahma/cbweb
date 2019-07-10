@@ -191,4 +191,36 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     });
   });
+  const projects = await graphql(`
+  {
+    projects: allFile(
+      filter: {
+        sourceInstanceName: {eq: "projects"},
+        ext: {in: [".md",".mdx"]
+      }
+    }) {
+      nodes {
+        id
+        childMdx {
+          frontmatter {
+            title
+            link
+          }
+        }
+      }
+    }
+  }
+  `)
+
+  //create each individual blog post
+  projects.data.projects.nodes.forEach(solution => {
+    const { link } = solution.childMdx.frontmatter;
+    createPage({
+      path: `${link}/`,
+      component: require.resolve('./src/templates/project-layout.js'),
+      context: {
+        link,
+      },
+    });
+  });
 }
