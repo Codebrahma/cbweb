@@ -6,12 +6,15 @@ featuredpost: true
 description: >-
   Reactive Subscriptions In Meteor
 author: Hari Krishna
+link: /reactive-subscriptions-in-meteor
+category:
+- Meteor
 tags:
-  - Meteor Development
-  - Reactive subscription
+- Meteor Development
+- Reactive subscription
 ---
 
-Publication and subscription concepts are as important as its getting misunderstood. Recently my friend Tarun wrote a tutorial on[ Meteor publications](https://codebrahma.com/meteor-publications-and-subscriptions/), Now let’s dive deeper into subscriptions, but in a simpler way. This article shows how to write reactive subscriptions using Meteor’s autorun for effective sync between remote data sources and the view.
+Publication and subscription concepts are as important as its getting misunderstood. Recently my friend Tarun wrote a tutorial on[ Meteor publications](/meteor-publications-and-subscriptions/), Now let’s dive deeper into subscriptions, but in a simpler way. This article shows how to write reactive subscriptions using Meteor’s autorun for effective sync between remote data sources and the view.
 
 Publication sends data to the client on subscribing to that end point. The data gets merged into MiniMongo collections. But there will be considerable amount of latency in receiving
 data after subscribing to it. We can use __subscription handlers__ provided in subscription function as callbacks. ```onReady()``` callback, is called when data is received and available in MiniMongo, then we query collection in MiniMongo and load data into the view. ```onStop()``` callback is called when subscription is stopped. In overview we will have a subset of mongoDB available on client side as MiniMongo.
@@ -106,4 +109,3 @@ Sometimes we need to pass arguments along with subscription call, such as number
 }
 ```
 This is all we need to know about how to make subscriptions reactive. Advanced concepts, sequence of stopping and starting of new subscription, exploring the autorun will be featured in next posts. Stay tuned!
-
