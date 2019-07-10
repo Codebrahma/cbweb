@@ -15,7 +15,7 @@ export default {
           {
             // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
             // Ignore .json files because they fail to be parsed
-            exclude: [/node_modules\/(?!(gatsby)\/)/, /\.json$/],
+            exclude: [/node_modules\/(?!(gatsby(.*))\/)/, /\.json$/],
             use: [
               {
                 // use installed babel-loader which is v8.0-beta (which is meant to work with @babel/core@7)
