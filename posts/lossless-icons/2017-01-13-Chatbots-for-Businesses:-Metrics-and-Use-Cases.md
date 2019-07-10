@@ -1,15 +1,16 @@
 ---
 templateKey: 'blog-post'
-title: 'Writing a Good Project Brief'
+title: 'Chatbots for Businesses: Metrics and Use Cases'
 date: 2017-02-14
 featuredpost: true
+link: /chatbot-business-metrics-use-cases
 description: >-
-  Writing a Good Project Brief
+  Chatbots for Businesses: Metrics and Use Cases
 author: Anand Narayan
 tags:
-  - project brief
-  - product development
-  - project management
+  - Chatbot Developers bangalore
+  - chatbot
+  - chatbots for business
 ---
 
 The last decade (2000’s) was all about search engine optimization and marketing for businesses. Early 2010 saw businesses flocking to social media to actively engage with the users, and the past five odd years have been mostly about mobile marketing and the rise of apps. But as app business plateaus with more and more users preferring to not download apps – we see a new platform for businesses to engage with the users on – messaging platforms.
@@ -32,9 +33,9 @@ This campaign enjoyed enormous success with people talking with the bot for over
 In chatbot analytics, there’s a metric called conversation steps. A conversation step is defined as one round of back and forth between the user and chatbot. So if the user messages a ‘Hi’ and gets a reply ‘Hi’ from the chatbot, it’s counted as one conversation step.
 
 Longer conversations between a user and a chatbot may or may not be a good thing. Considering a scenario where a user is trying to order a cab using a chatbot, the conversation should be as small as possible with the end goal – book a cab – achieved.
- 
-[![chatbot-development-company](/img/chatbot-development-banner-02-768x149.png)](https://codebrahma.com/chatbot-development-company-bangalore/)
- 
+
+[![chatbot-development-company](./images/chatbot-development-banner-02.png)](/chatbot-development-company-bangalore/)
+
 This metric can also be used to segment users and define separate flows for each, to maximise conversion. This is what PennyCat, a discount hunting app did using a Facebook bot. They created a game with discount coupons as rewards. People who had more than 40 conversational steps were tagged as ‘Game Lovers’ and people who stopped playing as soon as they won a discount were tagged as ‘Discount Lovers’. Once they identified the ‘Game Lovers’, they were able to target them with specific discounts to convert them into users. This segmented targeting led to a 70% increase in coupon use.
 
 ### Personalization
@@ -45,7 +46,6 @@ Take for example, the French cosmetic store chain Sephora. They recently launche
 
 The travel company, Hipmunk, recently launched an AI powered travel planning assistant across multiple platforms. An email bot, chatbot that lives on Slack, Skype and Messenger and a Calendar bot that keeps an eye on your calendar and suggests bookings accordingly. This is the closest we’ve gotten to a virtual assistant that can completely take care of all your travel requirements.
 
-
 Closing thoughts, we believe chatbots can be a boon to your business. How you apply and use them to boost marketing, customer service or sales is only limited by your creativity!
 
-If you own a business and are not sure whether chatbots are right for you, [drop us a message and we’ll schedule a call with you to help you with your decision](https://codebrahma.com/contact/). If you’re convinced that chatbot is essential to your business, drop us a line and we’ll [help build it for you!](https://codebrahma.com/contact/)
+If you own a business and are not sure whether chatbots are right for you, [drop us a message and we’ll schedule a call with you to help you with your decision](/contact). If you’re convinced that chatbot is essential to your business, drop us a line and we’ll [help build it for you!](/contact)
