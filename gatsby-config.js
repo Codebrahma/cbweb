@@ -31,52 +31,54 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
-        defaultLayouts:{
-          posts: require.resolve('./src/templates/blog-post-layout.js'),
-          solutions: require.resolve('./src/templates/solutions-layout.js'),
-          projects: require.resolve('./src/templates/project-layout.js'),
-          default: require.resolve('./src/templates/layout.js')
+        defaultLayouts: {
+          posts: require.resolve("./src/templates/blog-post-layout.js"),
+          solutions: require.resolve("./src/templates/solutions-layout.js"),
+          projects: require.resolve("./src/templates/project-layout.js"),
+          default: require.resolve("./src/templates/layout.js"),
         },
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 1035,
-              backgroundColor: 'none',
-            }
+              backgroundColor: "none",
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: "language-",
               inlineCodeMarker: null,
               showLineNumbers: false,
-            }
-          }
+            },
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+          },
         ],
       },
-      
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/posts/`
-      }
+        path: `${__dirname}/posts/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `solutions`,
-        path: `${__dirname}/solutions/`
-      }
+        path: `${__dirname}/solutions/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: `${__dirname}/projects/`
-      }
+        path: `${__dirname}/projects/`,
+      },
     },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
