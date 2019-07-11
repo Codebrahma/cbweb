@@ -3,14 +3,15 @@ templateKey: 'blog-post'
 title: 'CHOOSING THE RIGHT TECH STACK FOR YOUR PRODUCT
 '
 date: 2017-04-25
-featuredpost: true
+featuredpost: false
 description: >-
  CHOOSING THE RIGHT TECH STACK FOR YOUR PRODUCT
 author: Anand Narayan
+link: /choosing-right-tech-stack-product
 tags:
-  - Product development
-  - programming languages
-  - project management
+- Product development
+- programming languages
+- project management
 ---
 Starting to build a new product and seeing your idea take share can be an exhilarating feeling. But founders, specially those without a tech background, have a hard time deciding which technology stack should they use for their product. The information overload on the internet can sometimes only add to the confusion. If you are in such a position, this article will help you reduce the variables in your decision making and help you conclude faster.
 
@@ -31,22 +32,23 @@ Python – Django framework is another very popular backend stack used by entrep
 
 Javascript which was mainly a browser scripting language until a few years ago, has seen tremendous rise in popularity as a server side programming language. A complete Javascript based stack (including the frontend) called MEAN has become one of the more popular choices for tech stack for MVPs. MEAN stands for MongoDB, Express.js, Angular.js and Node.js. MongoDB being the nosql database, Express and Node running on the backed while AngularJS is used to render the interface. Due to its open source nature and availability of extensive libraries available, a lot of modern web applications are being built on the MEAN stack.
 
-![how to choose the right tech stack for your software product](/img/choosing-right-tech-stack-2-768x216.jpeg)
+![how to choose the right tech stack for your software product](./images/choosing-right-tech-stack-2.jpeg)
 
 ## Frontend Tech Stack
-[Frontend](https://codebrahma.com/front-end-development-company/) is the part of the application a user interacts with. It could be a website, web app or a mobile app. When building for the web, the frontend consists of three technologies:
+[Frontend](/front-end-development-company/) is the part of the application a user interacts with. It could be a website, web app or a mobile app. When building for the web, the frontend consists of three technologies:
 
 - HTML – the markup language
 - CSS – the style sheet
 - Javascript – browser scripting language
-[Google’s AngularJS and Facebook’s [ReactJS](https://codebrahma.com/react-js-development/) are two of the most popular frontend frameworks in the market today. They both are language independent, meaning no matter what tech stack you’ve used for your backend – you could use either of these frameworks to create impressive user interfaces. While we have teams working on both AngularJS and ReactJS – we’re a bit more biased towards using ReactJS for frontend, specially due to the React Native library for mobile.
+
+[Google’s AngularJS and Facebook’s [ReactJS](/react-js-development/) are two of the most popular frontend frameworks in the market today. They both are language independent, meaning no matter what tech stack you’ve used for your backend – you could use either of these frameworks to create impressive user interfaces. While we have teams working on both AngularJS and ReactJS – we’re a bit more biased towards using ReactJS for frontend, specially due to the React Native library for mobile.
 ]
 For CSS, Twitter’s Bootstrap has been the goto framework since launch. The interactive components in Bootstrap are built on JQuery.
 
-When building applications on mobile, using the native languages is the first preference due to more control and easier hardware access. Java for Android and Objective-C/Swift for iOS. Although, there are plenty of cross platform frameworks available, none have caught the developers attention like [React Native](https://codebrahma.com/react-native-development-company/).
+When building applications on mobile, using the native languages is the first preference due to more control and easier hardware access. Java for Android and Objective-C/Swift for iOS. Although, there are plenty of cross platform frameworks available, none have caught the developers attention like [React Native](/react-native-development-company/).
 
  
-![factors influencing the choice of your tech stack](/img/choosing-right-tech-stack-3-768x288.jpeg)
+![factors influencing the choice of your tech stack](./images/choosing-right-tech-stack-3.jpeg)
 ## Factors Influencing Choice Of Tech Stack
 There are lot of factors that could influence a company’s choice of tech stack. Objectively, to help with decision making, we believe the following factors are the most important.
 
@@ -59,4 +61,4 @@ Availability of developers who are going to build your product is one of the mos
 
 If you’re concerned about the scalability of your product, known that unless you have very specific & extreme requirements, almost all languages would be able to handle your traffic. More often than not, applications don’t scale well because of poor architecture and product design rather that the choice of programming language.
 
-In our humble opinion, a bias towards decision is way more important that fretting about the right tech stack early on. Choose whatever tech stack you and your dev team feel most confident with. If, however, you have any specific concerns don’t hesitate to drop us a line here.
+In our humble opinion, a bias towards decision is way more important that fretting about the right tech stack early on. Choose whatever tech stack you and your dev team feel most confident with. If, however, you have any specific concerns don’t hesitate to [drop us a line here](/contacts).

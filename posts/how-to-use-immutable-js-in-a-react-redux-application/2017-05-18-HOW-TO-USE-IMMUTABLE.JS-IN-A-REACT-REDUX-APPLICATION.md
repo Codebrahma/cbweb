@@ -2,11 +2,12 @@
 templateKey: 'blog-post'
 title: 'HOW TO USE IMMUTABLE.JS IN A REACT REDUX APPLICATION'
 date: 2017-05-18
-featuredpost: true
+featuredpost: false
 description: >-
   HOW TO USE IMMUTABLE.JS IN A REACT REDUX APPLICATION
+link: /how-to-use-immutable-js-in-a-react-redux-application
 tags:
-  - immutable.js
+- immutable.js
 author: Prasanna
 ---
 ReactJS is one of the more popular Javascript libraries for developing front-end applications. Along with redux it gives good control in persisting the app state in the browser. State can be of anything among user interactions with the app or API data.
@@ -18,7 +19,7 @@ This helps in:
 __Time Traveling__ – Moving to the Previous states.
 __Optimized re rendering__ of react components based on change in redux state. (Since the final state is different from initial based on both reference and value).
 The straight forward way of changing redux store based on an action is using spread operators as described. Lets say to update the state’s ```activeSelected``` we can do something like
-```
+```js
 return {...state, { activeSelected: updateValue } }.
 ```
 But this gets complex once the state goes bigger and when you need to do more operations inside each reducer.
@@ -31,7 +32,7 @@ It’s API is very rich and it provides optimised performance by structural shar
 
 With immutable JS we can easily do the same task by:
  
-```
+```js
 return state.set(‘activeSelected’, updateValue);
  ```
 
@@ -52,7 +53,7 @@ If we are going to use ImmutableJS in our application, the best way to approach 
 - Efficiency in memory.
 - Lazy Seq to convert into sequencing where can do operations like map, reduce.. and bringing it back to regular Immutable object.
 If you encounter any deep nested JS objects, you can use FromJS API to convert them. This will convert every object to Immutable Map and convert every List to Immutable Array.
-```
+```js
 Const deeplyNestedObject = // any deeply nested object
 Let state = fromJS(deeplyNestedObject);
 ```
@@ -60,7 +61,7 @@ __2. If so, how will I maintain and modify them?__
 The main advantage of converting entire state to ImmutableJS is to use their API which does every operation in an optimized manner. They offer a set of APIs to modify or update the immutable object. For example
 
 Merging a state with another
-```
+```js
 const map1 = Map({ a: 1, b: 2, c: 3, d: 4 })
 const map2 = Map({ c: 10, a: 20, t: 30 })
 const obj = { d: 100, o: 200, g: 300 }
@@ -68,7 +69,7 @@ const map3 = map1.merge(map2, obj); // merges the given objects
 // Map { a: 20, b: 2, c: 10, d: 100, t: 30, o: 200, g: 300 }
 ```
 Updating a deep Object
-```
+```js
 const map1 = Map({ a: { b: 2 }})
 Map1 = map1.setIn([‘a’,  ‘b’], 3) 
 // Map { a: { b: 3 }}
@@ -77,7 +78,7 @@ There are other useful methods in their API which is useful for solving most of 
 
 __3. How to do regular lodash type map, reduce and other operations?__
 With Immutable JS we have option to convert it into Seq which Represents a sequence of values, but may not be backed by a concrete data structure. This helps us perform lodash type chain operations efficiently.
-```
+```js
 const { Seq } = require('immutable')
 const oddSquares = Seq([ 1, 2, 3, 4, 5, 6, 7, 8 ])
   .filter(x => x % 2 !== 0) // Filters all odd numbers
@@ -87,13 +88,13 @@ The resulting sequence can be converted to any data structure of our choice. Thi
 
 __4. Should I use it inside components too ?__
 So you are done with redux change. Components which are subscribed to redux will get notifications about the change. If we are using ‘react-redux’ library to connect then the mapStateToProps function will look something like this:
-```
+```jsx
 mapStateToProps = (state) => {
   activeSelected: state.get(‘activeSelected’) // Returns a new activeSelected even if data is not changed.     
 }
 ```
 Since the component re renders based on comparing the props, if we are using the above mentioned way, then it will re render every time when redux store changes. Since immutable objects returns new reference each time (even if it has same data and remains unchanged during transition) this way will slow down the app due to unnecessary re renders. The best way to avoid this is by writing a HOC something like this:
-```
+```jsx
 import React from 'react';
 
 import { reduce } from 'lodash';

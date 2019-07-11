@@ -2,16 +2,16 @@
 templateKey: 'blog-post'
 title: 'A BRIEF INTRO TO SMART CONTRACTS AND THEIR ENDLESS POSSIBILITIES'
 date: 2017-05-12
-featuredpost: true
+featuredpost: false
 description: >-
   A BRIEF INTRO TO SMART CONTRACTS AND THEIR ENDLESS POSSIBILITIES
+link: /brief-intro-smart-contracts-endless-possibilities
 tags:
-  - blockchain
+- blockchain
 author: Anand Narayan
 ---
-![what-is-smart-contract](/img/Smart-contracts-01.png)
+![what-is-smart-contract](./images/Smart-contracts-01.png)
  
-
 ## What is a Smart Contract
 A smart contract is a computer program designed to facilitate, verify and enforce an agreement. When implemented, a smart contract can very well replace the need for an attorney or a notary to sign a document which then can be upheld in the court.
 
@@ -39,5 +39,5 @@ Let’s face it, smart contracts have a long way to go before being accepted as 
 
 _The possibilities are endless. Excitement is a natural by product_.
 
-Codebrahma is an expert [Blockchain application development company](https://codebrahma.com/serviceblockchain-development-company/). If you’re thinking of implementing a smart contract for your business, we’d love to talk to you about it and see if we can help!
+Codebrahma is an expert [Blockchain application development company](/serviceblockchain-development-company/). If you’re thinking of implementing a smart contract for your business, we’d love to talk to you about it and see if we can help!
 
