@@ -1,13 +1,16 @@
 import { jsx } from '@emotion/core'
 /** @jsx jsx */
+import styled from '@emotion/styled'
 import Layout from '../templates/layout'
-import { P, H3, H4, 
+import { P, H3, H4, I,
   Box, Text, HorizontalRule } from 'bricks'
+import PlainLink  from '../components/link'
 import { css } from 'bricks'
 import { Link } from 'gatsby'
-import Category from '../components/category'
 import Pagination from '../components/pagination'
 import { getCategory, getTags } from '../utils'
+import { space } from 'styled-system'
+import CategoryLink from '../components/categorylink'
 
 const isLast = (arr, index)=> arr.length-1 === index
 const getHeading = ({
@@ -36,24 +39,72 @@ const getHeading = ({
   return `Blog Posts, page ${currentPage} of ${totalPages}`;
 };
 
+const ReadPostLink = styled(Link)(
+  css({
+    textAlign: 'center',
+    width: '100%',
+    borderRadius: '3px',
+    p: '2px',
+    display: 'inline-block',
+    '&:hover':{
+      bg: 'black.1',
+      color: 'tint',
+    },
+    ':visited':{
+      '&:hover':{
+        bg: 'black.1',
+        color: 'tint',
+      }
+    }
+  })
+)
 
+const TagLink = styled(PlainLink)`
+  display: inline-block;
+  margin-right: 10px;
+`
 
+const HeadingLink = styled(Link)(
+    space, 
+    css({
+    p: '5px',
+    borderRadius:'5px',
+    display: 'inline-block',
+    textDecoration: 'none',
+    '&:hover': {
+      backgroundColor: 'primary',
+      color: 'secondary',
+    }
+  })
+)
+
+// refactoring the Link beautifully with invert etc
 const Blog = ({frontmatter})=>(
       <Box>
-        <H3>{frontmatter.title }</H3>
+        <H3>
+          <HeadingLink ml='-5px' to={frontmatter.link}>
+            {frontmatter.title }
+          </HeadingLink>
+        </H3>
         {getCategory(frontmatter) && (
-          <Category>{getCategory(frontmatter)}</Category>
+          <CategoryLink to={'/journal/category/' + getCategory(frontmatter)}>
+              {getCategory(frontmatter)}
+          </CategoryLink>
         )}
         <Box marginTop='2'>
           <P>{frontmatter.description}</P>
           <Box marginTop='1'>
             <Text fontSize={[0,0]} color='black.2'>
-              {getTags(frontmatter)}
+              {getTags(frontmatter) && getTags(frontmatter).map((tag,i)=>(
+                <TagLink key={tag} to={'/journal/tags/' + tag}>
+                  <I>#{tag}</I>
+                </TagLink>
+              ))}
             </Text>
           </Box>
         </Box>
         <Box marginBottom={3} marginTop={1}>
-          <Link to={frontmatter.link}>Read More</Link>
+          <ReadPostLink to={frontmatter.link}>Read Post</ReadPostLink>
         </Box>
       </Box>
 

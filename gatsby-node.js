@@ -1,4 +1,5 @@
 // TODO move perpage variable outside to a config file
+let ppage = 2;
 const getUnique = (field, posts) =>
   posts.reduce((uniques, post) => {
     let values = post.childMdx.frontmatter[field];
@@ -56,7 +57,7 @@ const createPages = (type, postArray, parent = 'journal', createPage) => {
 // Adapted from https://github.com/pixelstew/gatsby-paginate
 const paginate = (
   { pathTemplate, createPage, component, type, value, linkRoot = 'blog' },
-  posts, perpage = 2
+  posts, perpage = ppage
 ) =>
   posts
     // 1 group them by page number and posts in that page

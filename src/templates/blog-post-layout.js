@@ -3,9 +3,9 @@ import Layout from './layout'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 import { graphql } from 'gatsby';
 import {H1, Flex, Box, I} from 'bricks'
-import Category from "../components/category";
-import { getCategory, isLast } from '../utils'
-
+import { getCategory } from '../utils'
+import CategoryLink from '../components/categorylink'
+import PlainLink  from '../components/link'
 
 const Sidebar = ({author, category, tags})=> (
   <div>
@@ -14,7 +14,9 @@ const Sidebar = ({author, category, tags})=> (
         Written by
       </Flex>
       <Flex justifyContent='center' mt='0.5rem'>
-        <I>{author}</I><br />
+        <PlainLink to={'/journal/author/'+author}>
+          <I>{author}</I><br />
+        </PlainLink>
       </Flex>
     </Box>
     {getCategory({category}) && (
@@ -23,7 +25,7 @@ const Sidebar = ({author, category, tags})=> (
             Posted in
           </Flex>
           <Flex justifyContent='center' mt='0.5rem'>
-            <Category>{getCategory({ category })}</Category>
+            <CategoryLink to={'/journal/category/'+getCategory({category})}>{getCategory({ category })}</CategoryLink>
           </Flex>
     </Box>
     )}
@@ -36,7 +38,9 @@ const Sidebar = ({author, category, tags})=> (
           <Flex fontSize={[0, 0]} color='black.2' width={[0.5,0.5]} justifyContent='center' flexWrap='wrap'>
             {tags.map((tag, i) => (
               <Box p='0.125rem'>
-                <I> #{tag}{isLast(tags, i) ? '' : ','} </I>
+                <PlainLink key={tag} to={'/journal/tags/' + tag}>
+                  <I>#{tag}</I>
+                </PlainLink>
               </Box>
             ))}
           </Flex>

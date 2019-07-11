@@ -9,7 +9,6 @@ const Wrapper = styled('div')`
 `;
 
 const PaginationLink = styled(Link)`
-  color: 'tint';
   font-size: 0.75rem;
   margin: 0 0.5rem;
   padding: 0.25rem;
