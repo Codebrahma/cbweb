@@ -38,8 +38,6 @@ Chip
 
 Chip is a UK based personal finance bot that helps users save money. “The Automatic Savings App” as proclaimed on their website, Chip is desinged to help people save money no matter how much they earn. Users can connect their bank accounts with Chip via a 256 bit bank grade encryption. The app employs artificial intelligence and machine learning algorithms to identify how much a user can afford to save every month. The app then automatically puts away the amount into a savings account every month. What is impressive is that the amount is flexible and calculated on the basis on actual expenditure, so if you spend more than usual in a specific month, Chip saves slightly less – if you spend less, more money is saved.
 
-[![financial-software-development-company](./images/fintech-software-development-04.png)](/financial-software-development-company/)
-
 Chip has developed its own Android and iOS app, while keeping the flow of information conversational. It’s like talking to your personal banking assistant via the app. Talking to Techcrunch, the founders shared their big plans for Chip, which they envision turning into a complete financial services app providing users a host of financial products at transparent pricing.
 
 ![cleo](./images/cleo.png)
