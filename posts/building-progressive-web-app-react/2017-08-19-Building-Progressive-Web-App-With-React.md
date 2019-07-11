@@ -7,7 +7,10 @@ description: >-
   Building Progressive Web App With React
 author: Balram Khichar
 link: /building-progressive-web-app-react
-tag:
+tags:
+- pwa
+- pwa app development
+- app development
 ---
 [Progressive web apps](https://developers.google.com/web/progressive-web-apps/) (PWAs) came in the lime light recently. It uses the best of web and the best of apps to give a smooth experience to users and feels like native app. PWAs are responsive and fast, consume less data, need less storage space, support push notifications and offline use in browser. Twitter recently launched [mobile.twitter.com](https://mobile.twitter.com/) which delivers mobile app like experience to users in browser without actually installing on user device. This article focuses upon building progressive web app with React JS
 
@@ -15,7 +18,7 @@ tag:
 
 We’re going to build a simple PWA in this article. You can use this code as boilerplate for further PWA developments.
 
- 
+
 ## Getting Started with PWA
 First let’s generate a React application with create-react-app. You can run the following commands to generate the React app.
 ```sh
@@ -30,7 +33,7 @@ cd pwa-app
 
 npm install --save react-router@3.0.5
  ```
- 
+
 Now replace your `src/App.js` content with below gist. It will give us a basic template with navigation.
 ```jsx
 import React, { Component } from 'react';
@@ -95,7 +98,7 @@ Next we need to update the default styles a bit to make our app look clean. Repl
  ```
 Finally run __`npm start`__ to check the app in the browser. Now this is a basic app with 2 routes. We will now convert it to PWA.
 
- 
+
 ## Install Lighthouse and Audit
 Lighthouse is an open-source, automated tool which helps us to test our app against PWA checklist. It also provides audits for performance, accessibility, and more. You can download and install in your chrome browser by following this [link](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk/).
 
@@ -282,10 +285,10 @@ We need to add a 512×512 icon to show up on splash screen. For doing so we need
       "sizes": "192x192",
       "type": "image/png"
     },
-    {  
-      "src": "icon-512x512.png",  
-      "sizes": "512x512",  
-      "type": "image/png"  
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": "/",
@@ -294,7 +297,9 @@ We need to add a 512×512 icon to show up on splash screen. For doing so we need
   "background_color": "#ffffff"
 }
  ```
+
 We also need to add these meta tags to inform the browser that our app is a PWA.
+
 ```html
 <!-- Tell the browser it's a PWA -->
 <meta name="mobile-web-app-capable" content="yes">
@@ -304,12 +309,14 @@ We also need to add these meta tags to inform the browser that our app is a PWA.
 
 ## Let’s Deploy
 We’re now only missing HTTPS and caching which will be fixed after deploy. Update the __doCache__ flag to __true__ in worker.js file. Next, create a new project in firebase-console with name __Pwa App__. Run the following commands in project directory.
+
 ```sh
 npm install -g firebase-tools
 firebase login
 firebase init
  ```
 Make sure your __firebase.json__ looks like this-
+
 ```js
 {
   "hosting": {
@@ -324,14 +331,17 @@ Make sure your __firebase.json__ looks like this-
 }
  ```
 After initialisation build the app and deploy.
-```
+```sh
 npm run build
 firebase deploy
  ```
+
 Now when we do audit using Lighthouse on deployed URL. We should see this result.
+
 ![image](./images/pwa-audit-final.png)
+
 and We’re done! Now we have a working base for building progressive web app with React JS. We’re ready for the future of web applications. 😀
 
-Demo Url: [Pwa Demo App](https://pwa-app-cb.firebaseapp.com/)
+Demo URL: [Pwa Demo App](https://pwa-app-cb.firebaseapp.com/)
 
 Code: [Github](https://github.com/balramkhichar/progressive-webapp-base)
