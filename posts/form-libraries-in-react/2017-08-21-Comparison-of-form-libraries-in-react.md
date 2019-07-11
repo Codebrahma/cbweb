@@ -11,9 +11,9 @@ link: /form-libraries-in-react
 
 ## Introduction
 With [React JS](https://facebook.github.io/react/) community on a journey to conquer the best front-end development Javascript framework, the easiness in handling HTML forms in React is one of the most important aspect. Talking about [forms in react](https://facebook.github.io/react/docs/forms.html), as default they have provided us with an option to create controlled and uncontrolled input components. But that does not provide us with a full fledged solution to have a complete and comprehensive module for handling everything related to forms such as
-Form Validation and error Handling, Handling form submissions, Easiness in creating custom components. We being one of the best [React JS development](https://codebrahma.com/react-js-development/) service company have a good experience with how to handle forms.
+Form Validation and error Handling, Handling form submissions, Easiness in creating custom components. We being one of the best [React JS development](/react-js-development) service company have a good experience with how to handle forms.
 
-Look at [how we create React Applications](https://codebrahma.com/form-libraries-in-react/codebrahma.com/codebrahma-react-application/) in a better way by abstracting these Form libraries.
+Look at [how we create React Applications](/codebrahma-react-application) in a better way by abstracting these Form libraries.
 
 ## How to choose the best form library?
 Various form libraries in React have evolved to greater extent which solves most of our common problems. Some open source enthusiast and react geeks came up with their own ideas of having a library which will not only handle above mentioned features but also will help us write our own custom input components letting us control their design, behaviour and presentation of the entire form. Choosing the right form library for our application depends on
@@ -22,10 +22,11 @@ Various form libraries in React have evolved to greater extent which solves most
 - How easy is it to create custom input elements
 - How easy is it to extract and change the form values
 - How easy is to write custom validation logics
+
 ## Popular form libraries in React
 [Formsy React](https://github.com/christianalfoni/formsy-react) – “The main concept is that forms, inputs and validation is done very differently across developers and projects. This extension to React JS aims to be that “sweet spot” between flexibility and reusability.”
 
-[Redux Forms ](http://redux-form.com/7.0.3/)– “Redux Form works with React Redux to enable an html form in React to use Redux to store all of its state.”
+[Redux Forms](http://redux-form.com/7.0.3/)– “Redux Form works with React Redux to enable an html form in React to use Redux to store all of its state.”
 
 [Formik](https://github.com/jaredpalmer/formik) – “Formik will keep things organized–making testing, refactoring, and reasoning about your forms a breeze.”
 
@@ -36,27 +37,31 @@ Although there are many such libraries we restrict ourselves to comparing two of
 __Formsy React__ was once most popular and most promising solution for most of the problems related to forms. __Redux Forms__ was extending the support of redux in our applications to forms and maintaining the data of all the forms in the app. Apart from being most popular, __Redux Form__ and __Formsy React__ have more things in common. The only thing which isn’t common is the approach with which developer integrates with their React Project and also the way they manage the data from forms.
 
 ## Architecture
+
 ### Formsy
 ![image](./images/Untitled-Diagram-3.jpg)
+
 __Formsy__ architecture is pretty simple and direct, Input components inside formsy form are provided with ```get__()``` and ```set__()``` methods from __formsy mixin__ (or HOC in case of ES6). Using get and set methods we can communicate the data of the form with the library.
 
-__Redux Form__
+### Redux Form
 ![image](./images/reduxFormDiagram-2.png)
+
 __Redux form__ architecture is very much similar to Redux architecture, except there are input components as an addition. Input components wrapped with the library dispatch actions and payload which in turn updates the form Reducer of the Redux store, which in turns updates the UI.
 
 ## Setting Up in a project
 ### Formsy
 Well one of the few benefits of __Formsy__ is that there is no need of setting it up anywhere in the application. We can directly import ```Formsy.Form``` and use it with their custom input components.
 
-## Redux Form
-
-> // in your root reducer
->import { combineReducers } from 'redux';
->import { reducer } from 'redux-form';
->export default combineReducers({
->  form: reducer, // form Reducer which has all details about form.
->  // ...other reducers
-> });
+### Redux Form
+```jsx
+// in your root reducer
+import { combineReducers } from 'redux';
+import { reducer } from 'redux-form';
+export default combineReducers({
+  form: reducer, // form Reducer which has all details about form.
+  // ...other reducers
+});
+```
 
 In case of Redux form we need to have a form reducer to handle all data related to any form in the app.
 
@@ -194,19 +199,19 @@ __Formsy__ have a very good range of built in validations, such as ```isEmail```
 ```jsx
 /* Inside wrapped form */
 <CustomInput
- name="email" 
- validations="isEmail" 
+ name="email"
+ validations="isEmail"
 >
-<CustomInput 
-  name="number" 
-  validations="isNumeric, isLength:5" 
+<CustomInput
+  name="number"
+  validations="isNumeric, isLength:5"
 />
 ```
 But this has a disadvantage as to provide validation error one more prop i.e validationError needs to be passed which will pass the error message to component. Usage given below:
 ```jsx
 /* Inside wrapped form */
-<CustomInput 
-  validationError="Should be an email" 
+<CustomInput
+  validationError="Should be an email"
 />
 ```
 The above code will pass an error message on failure of the validation.
