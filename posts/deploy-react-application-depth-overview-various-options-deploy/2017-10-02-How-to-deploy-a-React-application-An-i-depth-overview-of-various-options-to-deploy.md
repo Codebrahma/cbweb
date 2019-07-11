@@ -293,7 +293,7 @@ There are certain tools which helps us to monitor deployed applications. For exa
 
 Using Sentry we can log all errors and maintain its stack trace. All we need to include their CDN / source code with our account credentials on our JS file. We need to push to sentry at all possible error locations (We can use try catch pattern at async fetches or any other potential locations).
 
-![image](./image/sentry-error.jpg)
+![image](./images/sentry-error.jpg)
 ### Log Rocket
 
 Log Rocket is a latest tool by which we can even replay redux states when a bug occurs. It is gaining its popularity of late.
