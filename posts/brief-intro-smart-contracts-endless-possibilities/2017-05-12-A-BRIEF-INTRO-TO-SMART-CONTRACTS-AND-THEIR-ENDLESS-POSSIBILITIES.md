@@ -1,17 +1,17 @@
 ---
 templateKey: 'blog-post'
-title: 'A BRIEF INTRO TO SMART CONTRACTS AND THEIR ENDLESS POSSIBILITIES'
+title: 'A Brief Intro To Smart Contracts And Their Endless Possibilities'
 date: 2017-05-12
 featuredpost: false
 description: >-
-  A BRIEF INTRO TO SMART CONTRACTS AND THEIR ENDLESS POSSIBILITIES
+  A Brief Intro To Smart Contracts And Their Endless Possibilities
 link: /brief-intro-smart-contracts-endless-possibilities
 tags:
 - blockchain
 author: Anand Narayan
 ---
 ![what-is-smart-contract](./images/Smart-contracts-01.png)
- 
+
 ## What is a Smart Contract
 A smart contract is a computer program designed to facilitate, verify and enforce an agreement. When implemented, a smart contract can very well replace the need for an attorney or a notary to sign a document which then can be upheld in the court.
 
@@ -23,10 +23,10 @@ A smart contract works on the principles of blockchain – a distributed, decent
 Smart contracts run on the blockchain technology – they are immutable and are enforced by the system itself. And because the contract is publicly verifiable – the chances of conflict are minimized. While smart contracts may appear like a solution to the overburdened justice system – they cannot be solely entrusted. Most of the lawyers working towards making smart contracts publicly available think of the future of jurisdiction as a combination of smart contracts and old school paper contracts.
 
 ## Smart Contract Applications
-The concept of smart contracts can be used to run any condition driven operation. Smart contracts take out the confusion and uncertainty from an agreement, because the enforcement is also taken care of by the program. This makes the underlying concept of smart contracts applicable to whole variety of businesses and operations. From healthcare to financial services & Fintech, to supply chain management and even governance – any sector that could do better with highly secure, automated actions based on certain conditions can greatly benefit from smart contracts.
+The concept of smart contracts can be used to run any condition driven operation. Smart contracts take out the confusion and uncertainty from an agreement, because the enforcement is also taken care of by the program. This makes the underlying concept of smart contracts applicable to whole variety of businesses and operations. From healthcare to financial services & [Fintech](/financial-software-development-company), to supply chain management and even governance – any sector that could do better with highly secure, automated actions based on certain conditions can greatly benefit from smart contracts.
 
 ### Some of the possible smart contract applications are:
- 
+
 __Supply Chain__ – Logistics companies can use smart contracts to update their suppliers and inventories based on deliveries. Jeff Garzik explained this in a Blockchain conference held in Washington DC last year. “If I receive cash on delivery at this location in a developing, emerging market, then this other _product_, many, many links up the supply chain, will trigger a supplier creating a new item since the existing item was just delivered in that developing market.”
 
 __Real Estate__ – Continuing the example we used in the starting of the article, a smart contract makes real estate transactions way less stressful. The buyer and the seller draw a smart contract that’ll transfer the ownership of the property to the buyer on receiving the agreed upon amount.
@@ -40,4 +40,3 @@ Let’s face it, smart contracts have a long way to go before being accepted as 
 _The possibilities are endless. Excitement is a natural by product_.
 
 Codebrahma is an expert [Blockchain application development company](/serviceblockchain-development-company/). If you’re thinking of implementing a smart contract for your business, we’d love to talk to you about it and see if we can help!
-
