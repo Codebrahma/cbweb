@@ -77,6 +77,9 @@ class BlogLayout extends React.Component {
 
     return (
       <Layout>
+        <Helmet titleTemplate="%s | Codebrahma">
+          <title>{title}</title>
+        </Helmet>
         {scripts && (
           <Helmet
             script={scripts.map(src => ({ type: "text/javascript", src }))}
