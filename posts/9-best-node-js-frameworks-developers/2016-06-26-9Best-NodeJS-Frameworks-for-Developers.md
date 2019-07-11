@@ -18,12 +18,6 @@ tags:
 
 Node.js is an open-source, cross-platform runtime environment built on Chrome's V8 javascript engine. It is used to build fast, scalable server-side web applications. The event-driven, non-blocking I/O model makes Node.js lightweight and efficient. These features have motivated a lot of developers to adopt Node.js. Today, let us see the list of 9 best Node.js frameworks for developers.
 
-
-
-> [Want to develop Node JS application ?](/node-js-development-company)
-
-
-
 ### BEST NODEJS FRAMEWORKS
 
 [Hapi.js](http://hapijs.com/)
