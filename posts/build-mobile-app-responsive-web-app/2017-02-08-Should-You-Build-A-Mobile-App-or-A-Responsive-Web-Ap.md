@@ -14,12 +14,12 @@ tags:
 - web app
 ---
 
-> John walks into a mobile development shop and meets Jane, the sales person.
-> John: “I want to build a mobile app”.
-> Jane: “Great, which devices do you want your app on?”
-> John: “Android, iOS and Windows. We obviously want to cover the whole market.”
-> Jane: “Okay, we can do all three. Features?”
-> John: “We are looking for an ecommerce app, what do you suggest?”
+> John walks into a mobile development shop and meets Jane, the sales person.<br />
+> John: “I want to build a mobile app”.<br />
+> Jane: “Great, which devices do you want your app on?”<br />
+> John: “Android, iOS and Windows. We obviously want to cover the whole market.”<br />
+> Jane: “Okay, we can do all three. Features?”<br />
+> John: “We are looking for an ecommerce app, what do you suggest?”<br />
 
 Jane pulls out a menu card, much like the ones you see in a restaurant, with features and their costs mentioned next to it. “These are the features that come with an ecommerce app, choose what you want – and we’ll build it for you.”
 
@@ -36,7 +36,7 @@ Take the hugely popular photo sharing app, Instagram, for example. The founders 
 Apps like Instagram are mobile specific – they are born because mobile devices exist.
 
 > Mobile applications are supposed to be simple. The more complex they are, the lower are the chances of success.
- 
+
 
 Compare this to an online education platform like Udemy. Udemy is a course creation platform and a marketplace for courses, catering to two types of users – the instructors who create courses and students who consume courses. A course creation platform is a complicated software. It includes creating and editing multiple content types, managing students, managing billing and whatnot. This side of the platform thus, cannot be built as a mobile app – owing to its vastness and complexity. Instructors will need to login in to the web app and create their course.
 
@@ -65,7 +65,7 @@ Imagine having to do the exact same flow via a web browser. Open the browser –
 > Software applications that primarily work with location and time sensitivity need to be a mobile app and not a web app.
 
 
- 
+
 
 ## 3. Frequency of Use
 Last year, the American clothing company Patagonia bid farewell to their native mobile app, urging users to use the website on their mobile web browsers.
@@ -85,5 +85,5 @@ Closer home, Myntra – an online fashion store disabled their website and went 
 > Applications that warrant a frequent use deserve the effort of creating an app. Otherwise a mobile web app would do just fine.
 
 
-We, at Codebrahma are passionate about building solutions and not just apps. If you have something in mind that you want to build, we’d be more than happy to have a word with you. 
+We, at Codebrahma are passionate about building solutions and not just apps. If you have something in mind that you want to build, we’d be more than happy to have a word with you.
 Drop us a line here.
