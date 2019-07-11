@@ -2,15 +2,16 @@
 templateKey: 'blog-post'
 title: 'Using Higher Order Components in a React Application'
 date: 2017-06-13
-featuredpost: true
+featuredpost: false
 description: >-
   Using Higher Order Components in a React Application
+link: /using-higher-order-components-react-application
 tags:
-  - higher order components in reactjs
+- higher order components in reactjs
 author: Prasanna
 ---
 
-If you have started using [ReactJS](https://codebrahma.com/react-js-development/) recently often you might have felt that you are performing repeated logic in many components. For example consider an app having:
+If you have started using [ReactJS](/react-js-development/) recently often you might have felt that you are performing repeated logic in many components. For example consider an app having:
 
 - Infinite scroll in three different views with all - having different data.
 You want to fetch new set of data when you scroll to the current limit.
@@ -24,7 +25,7 @@ Javascript in general can be treated as functional programming or object orient 
 Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
 
 For example
-```
+```js
 function greaterThan(a) { // Higher order function
   return function(b) { 
     return b > a; 
@@ -34,7 +35,7 @@ function greaterThan(a) { // Higher order function
 greaterThan(10)(11) will be true.
 
 Also we can do
-```
+```js
 var greaterThan10 = greaterThan(10);
 ```
 And anywhere we can use greaterThan10(11) [ Which will be true ]. This helps in abstraction the inner details thereby giving us ability to think about higher level.
@@ -57,12 +58,11 @@ We can treat this as inheritance in React. How? We can treat the input functiona
 ### 2. How To write a Higher order component.
 
 Functional components started from React V15. It can be created like
-```
+```jsx
 import React from 'react';
  
 export const WrapperComponent(WrappedComponent) => {      // Wrapped Component is the parent component
   return class HigherOrderComponent extends React.Component {     // Returns a new component
- 
     // Bring any reusable logic here.
     // For example Add a new prop to the existing props
     // or filter props based on the need
@@ -89,11 +89,11 @@ Lets try to create a Higher order component for a particular use case. Lets cons
 3. Changing Number of rows per page (Limit).
 The view would look something similar to this
 
-![pasted image 0](/img/pasted-image-0.png)
+![pasted image 0](./images/pasted-image-0.png)
 
 The best way to structure is to have three separate logic for pagination, sorting and changing numbers per page. And whenever the parent component needs to conditionally render any of these then it can be done based on props.
 
-```
+```jsx
 import React from 'react';
  
 export const TableWrapper(WrappedComponent) => {                           
@@ -105,7 +105,6 @@ export const TableWrapper(WrappedComponent) => {
       this.state = {
         tableData: null; // Make some default fetching by which we can obtain this.
       };
- 
       // Bind all the functions here
     }
  
@@ -134,8 +133,6 @@ export const TableWrapper(WrappedComponent) => {
     
     render() {
       return (
-        
-
           (
             props.sortingRequired ? 
               < Sorting 
@@ -163,7 +160,6 @@ export const TableWrapper(WrappedComponent) => {
                 onChangeOffset={this.onChangeOffset}                 // Callback for change in offset
               /> : null
           )
-        
       );
     }
   }
@@ -171,7 +167,7 @@ export const TableWrapper(WrappedComponent) => {
 ```
  
 For this to make work all you need is a presentational component which renders Table cells based on some data. Lets say``` < Table />``` is such a component then,
-```
+```jsx
 // A Table without any feature
 const WrappedTable = TableWrapper(< Table />);
 
@@ -190,7 +186,7 @@ Also we can see data fetching and ```this.state.tableData``` is completely abstr
 
 This structure can help us to write HigherOrder component at multiple level one over the other. For example the same can be achieved by writing three higher order components if we carefully interlink the abstraction. If we do that then we can have something like
 
-```
+```jsx
 const WrappedTable = PaginationWrapper(SortingWrapper(ChangeLimitWrapper(< Table />)));
 ```
 But there are certain disadvantages in this method. This will create three React classes as supposed to one in the previous method. Also HOCs in common might have performance issues if there are too many props linking each functionality. One must use ShouldComponentUpdate lifecycle in order to avoid that.
@@ -199,4 +195,4 @@ But there are certain disadvantages in this method. This will create three React
 
 But apart from that if we are careful enough we can have an architecture which can abstract logic that can be shared across other presentational components using HOC has great benefits.
 
-Proceed to next part of this blog for a more [functional approach to Higher Order Components](https://codebrahma.com/functional-approach-higher-order-components-recompose/)
+Proceed to next part of this blog for a more [functional approach to Higher Order Components](/functional-approach-higher-order-components-recompose/)

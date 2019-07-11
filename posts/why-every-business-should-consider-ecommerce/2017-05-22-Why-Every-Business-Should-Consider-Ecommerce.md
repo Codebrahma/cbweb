@@ -2,16 +2,17 @@
 templateKey: 'blog-post'
 title: 'Why Every Business Should Consider Ecommerce'
 date: 2017-05-22
-featuredpost: true
+featuredpost: false
 description: >-
   Why Every Business Should Consider Ecommerce
+link: /why-every-business-should-consider-ecommerce
 author: Anand Narayan
 tags:
-  - ecommerce development
+- ecommerce development
 ---
 Ecommerce has been one of the most talked about sectors in the new age. While the majority of the internet blog space has been occupied by the giants, the likes of Amazon and Alibaba – it’s really the smaller (comparatively) businesses that stand to gain the most. Independent merchants looking to go online have two options at their behest – become a seller on one of the platforms (like Amazon) or set up their own ecommerce store.
 
-Joining hands with a platform like Amazon has a lot of benefits and makes the whole process rather easy. They even take care of shipping and returns, allowing you to solely focus on production and handling operations. But if you’re looking to build your own brand and be in complete control of every aspect of your business, you’re better off [setting up your own ecommerce store](https://codebrahma.com/ecommerce-development-company).
+Joining hands with a platform like Amazon has a lot of benefits and makes the whole process rather easy. They even take care of shipping and returns, allowing you to solely focus on production and handling operations. But if you’re looking to build your own brand and be in complete control of every aspect of your business, you’re better off [setting up your own ecommerce store](/ecommerce-development-company).
 
 Businesses that have been flirting with the idea of ecommerce for sometime now should consider getting serious about it. The advantages of having your own ecommerce far outweigh the amount of time, effort and money you’d spend on setting it up. Here are some of the reasons why every retail business should consider an ecommerce store:
 
@@ -26,7 +27,7 @@ The basics of setting up an ecommerce store include:
 __Recognizable Brand__ – Invest in creating a brand that people will be able to recognize instantly. So many businesses undermine the power of brand, only to realize later on when it’s too late. A brand gives your business it’s own personality – and your businesses’ personality dictates how users interact with your business.
 __Solid ecommerce platform__ – Because of the ecommerce boom – a lot of out of box solutions have come into being. They allow you to set up a store within minutes, with minimum investments. While these options are quite good for newer businesses looking experiment, established businesses should always look towards a customized solution.
 Building your own ecommerce store from scratch gives you the power of flexibility. As a business looking to be a global force – you need to have complete control over what your site looks like and how it works.
-[Also read: Run Your Online Store Like A Pro.](https://codebrahma.com/ecommerce-run-online-store-like-pro/)
+[Also read: Run Your Online Store Like A Pro.](/ecommerce-run-online-store-like-pro/)
 
 ## Ecommerce Reduces Your Business Overheads
 The biggest advantage of selling your products via an online store is that you save costs on renting, managing and running a physical store. You don’t to pay exorbitant rents, no store managers or even physically keep a stock. All you need a storage space where you keep your inventory, a few people to help manage and a solid ecommerce store.
@@ -48,4 +49,4 @@ The world is moving towards digital. There are more mobile phones in the world t
 A study by UPS in 2015 revealed that a staggering 93% people prefer local businesses that have an online store. It gives them the convenience of online shopping with a promise of better service and unique products.
 
  
-Getting an online store for your business could very well be the difference between a double digit growth versus a slow 5% growth. If you’re still not convinced – [research more](https://codebrahma.com/category/ecommerce-development-company/) or [drop us a message](https://codebrahma.com/contact/). With the way things are moving, the future of shopping could be very different from what it is currently. You wouldn’t want to miss out this this opportunity!
+Getting an online store for your business could very well be the difference between a double digit growth versus a slow 5% growth. If you’re still not convinced – [research more](/category/ecommerce-development-company/) or [drop us a message](/contact). With the way things are moving, the future of shopping could be very different from what it is currently. You wouldn’t want to miss out this this opportunity!

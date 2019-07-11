@@ -1,14 +1,14 @@
 ---
 templateKey: 'blog-post'
-title: 'Intro to the Art of Creating Successful Products
-'
+title: 'Intro to the Art of Creating Successful Products'
 date: 2017-06-08
 featuredpost: true
 description: >-
   Intro to the Art of Creating Successful Products
 author: Anand Narayan
+link: /intro-art-creating-successful-products
 tags:
-  - mobile app
+- mobile app
 ---
 
 > ‘Creating a successful product is seldom a matter of chance.’
@@ -36,8 +36,8 @@ Ideas, more often than not, don’t hold any value unless driven by smart execut
 
 Here’s a chart (credit: Crew) that puts it in perspective:
 
-![htbaob-03-01](/img/htbaob-03-01.jpg)
+![htbaob-03-01](./images/htbaob-03-01.jpg)
 
 We cannot emphasise the importance of good execution enough. There are times when ideas that you’d probably call weak have gone on to form million dollar businesses. And ofcourse, we are all familiar with brilliant ideas biting the dust because ‘something went wrong along the way’. Executing your idea the right way will be the single most important factor in ensuring your product’s success.
 
-We, at Codebrahma, help founders and entrepreneurs build [software products, mobile and web applications their users will love](https://codebrahma.com/building-products-users-love/)! If you need help with your application, drop us a line [here](https://codebrahma.com/contact/)!
+We, at Codebrahma, help founders and entrepreneurs build [software products, mobile and web applications their users will love](/building-products-users-love)! If you need help with your application, drop us a line [here](/contact)!
