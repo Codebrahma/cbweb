@@ -1,11 +1,10 @@
 ---
 templateKey: 'blog-post'
-title: 'CHOOSING THE RIGHT TECH STACK FOR YOUR PRODUCT
-'
+title: 'Choosing The Right Tech Stack For Your Product'
 date: 2017-04-25
 featuredpost: false
 description: >-
- CHOOSING THE RIGHT TECH STACK FOR YOUR PRODUCT
+  Choosing The Right Tech Stack For Your Product
 author: Anand Narayan
 link: /choosing-right-tech-stack-product
 tags:
@@ -22,7 +21,7 @@ A typical web application is divided into two parts:
 
 - Backend (concerning server side)
 - Frontend (concerning the user/client side)
- 
+
 ### Backend Tech Stack
 Backend is the umbrella term for programming the business logic, working with the Database, server side hosting and deployments. The client side (website/app) communicates with the backend for processing user requests, accessing the database and executing simple CRUD (create, read, update, delete) operations.
 
@@ -47,8 +46,8 @@ For CSS, Twitter’s Bootstrap has been the goto framework since launch. The int
 
 When building applications on mobile, using the native languages is the first preference due to more control and easier hardware access. Java for Android and Objective-C/Swift for iOS. Although, there are plenty of cross platform frameworks available, none have caught the developers attention like [React Native](/react-native-development-company/).
 
- 
 ![factors influencing the choice of your tech stack](./images/choosing-right-tech-stack-3.jpeg)
+
 ## Factors Influencing Choice Of Tech Stack
 There are lot of factors that could influence a company’s choice of tech stack. Objectively, to help with decision making, we believe the following factors are the most important.
 
