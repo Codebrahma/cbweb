@@ -113,6 +113,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             link
             author
             date
+            scripts
           }
         }
       }
