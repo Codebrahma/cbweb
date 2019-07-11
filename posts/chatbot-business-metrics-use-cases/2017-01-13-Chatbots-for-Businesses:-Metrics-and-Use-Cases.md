@@ -34,8 +34,6 @@ In chatbot analytics, there’s a metric called conversation steps. A conversati
 
 Longer conversations between a user and a chatbot may or may not be a good thing. Considering a scenario where a user is trying to order a cab using a chatbot, the conversation should be as small as possible with the end goal – book a cab – achieved.
 
-[![chatbot-development-company](./images/chatbot-development-banner-02.png)](/chatbot-development-company-bangalore/)
-
 This metric can also be used to segment users and define separate flows for each, to maximise conversion. This is what PennyCat, a discount hunting app did using a Facebook bot. They created a game with discount coupons as rewards. People who had more than 40 conversational steps were tagged as ‘Game Lovers’ and people who stopped playing as soon as they won a discount were tagged as ‘Discount Lovers’. Once they identified the ‘Game Lovers’, they were able to target them with specific discounts to convert them into users. This segmented targeting led to a 70% increase in coupon use.
 
 ### Personalization
