@@ -1,5 +1,3 @@
-import React from "react"
-import { I } from 'bricks'
 export const getCategory = (frontmatter)=>{
   try {
     return frontmatter.category[0]
@@ -9,9 +7,7 @@ export const getCategory = (frontmatter)=>{
 }
 export const getTags = (frontmatter)=>{
   try {
-    return frontmatter.tags.map((tag,i)=>(
-      <I key={tag}>#{tag}{ isLast(frontmatter.tags, i)? '': ','} </I>
-    ))
+    return frontmatter.tags
   } catch {
     return null
   }

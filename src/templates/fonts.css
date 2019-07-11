@@ -388,9 +388,6 @@ a {
 a:visited { 
   color: inherit;
 }
-a:hover {
-  cursor: grab;  
-}
 
 /* TODO add the css for prism line highlighting
     https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/#optional-add-line-highlighting-styles
