@@ -2,20 +2,21 @@
 templateKey: 'blog-post'
 title: 'Hiring In-House Tech Team vs Outsourcing Your MVP Development'
 date: 2017-03-08
-featuredpost: true
+featuredpost: false
 description: >-
   Hiring In-House Tech Team vs Outsourcing Your MVP Development
 author: Anand Narayan
+link: hiring-in-house-tech-team-vs-outsourcing-mvp-development
 tags:
-  - outsourced software development
-  - outsouced tech team
+- outsourced software development
+- outsouced tech team
 ---
 
 > Should I form the tech team in-house now or outsource development, do the launch and hire talent afterwards?
 
 This is one of the most common questions being asked by non technical founders. Even technical founders who are over burdened with things to do, are considering outsourcing as a viable option. A quick look at the related questions in the popular QnA platform Quora, will tell you how prevalent this dilemma is.
 
-![quora-similar questions](/img/quora-similar-questions-1024x886.png)
+![quora-similar questions](./images/quora-similar-questions.png)
  
 As things gets serious and you raise a seed round to validate your idea, you want to quickly find the right product market fit. You have limited runway in terms of time, money and your own skillset. Unless you already have a strong technical co-founder or team member(s), finding key technical members can get very frustrating.
 
@@ -54,4 +55,4 @@ Couple of years back I asked a developer friend, “Why would good developers jo
 
 Let me clarify – working with an agency gives developers a chance to work on multiple projects. It just keeps things more interesting and because they work iteratively on multiple projects – they level up much faster than their peers. Developers who work in agencies have “seen it all”, as some say.
 
-In conclusion, if you’re having a hard time finding developers to hire for your product, looking towards [outsourced product development](https://codebrahma.com/outsourced-product-development/) agencies to get your MVP done is actually a very viable idea. If you want to learn more about finding the right agency for your product, [this article will help](https://codebrahma.com/software-outsourcing-find-right-tech-team-product/).
+In conclusion, if you’re having a hard time finding developers to hire for your product, looking towards [outsourced product development](/outsourced-product-development/) agencies to get your MVP done is actually a very viable idea. If you want to learn more about finding the right agency for your product, [this article will help](/software-outsourcing-find-right-tech-team-product/).

@@ -2,18 +2,18 @@
 templateKey: 'blog-post'
 title: '5 REASONS WHY REACT NATIVE IS THE FUTURE OF MOBILE DEVELOPMENT'
 date: 2017-04-03
-featuredpost: true
+featuredpost: false
 description: >-
   5 REASONS WHY REACT NATIVE IS THE FUTURE OF MOBILE DEVELOPMENT
 author: Anand Narayan
+link: react-native-future-of-mobile-development
 tags:
-  - React Native
-  - react native development
+- React Native
+- react native development
 ---
 React Native is the native version of the popular JavaScript library – ReactJS, maintained by the developers at Facebook and Instagram. With over 2 years in existence, React Native has gained massive popularity amongst the developer community. So much so that it is now the fourteenth most starred project of all time on GitHub. Google trends show that the ‘React Native’ as a search term has been search more than ‘iOS development’ and ‘Android development’.
 
  
-
 While there’s a new Javascript framework or library doing the rounds every other day, the React Native library has impressively maintained its status. We have been dabbling with the React library for sometime now, and have built quite a few apps using React Native. We believe React will be the future of mobile development, here are 5 reasons why:
 
  
@@ -49,5 +49,5 @@ React Native uses the Flexbox layout engine for both the platforms. This means y
 
 While there is no doubt that React Native makes developing mobile apps a breeze, the apps so developed are also very high quality. A lot of development companies are switching to React Native. The rich ecosystem and the vibrant, growing community are tell tale signs that React Native will soon become a norm for mobile app development.
 
-P.S If you’re looking for a [React Native development company](https://codebrahma.com/react-native-development-company/), give us a shout!
+P.S If you’re looking for a [React Native development company](/react-native-development-company), give us a shout!
 

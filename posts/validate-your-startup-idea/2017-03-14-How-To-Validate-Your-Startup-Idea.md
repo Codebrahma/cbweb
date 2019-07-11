@@ -2,15 +2,18 @@
 templateKey: 'blog-post'
 title: 'How To Validate Your Startup Idea'
 date: 2017-03-14
-featuredpost: true
+featuredpost: false
 description: >-
   How To Validate Your Startup Idea
 author: Anand Narayan
+link: validate-your-startup-idea
 tags:
-  - idea validation
-  - product development
-  - startup ideas
+- idea validation
+- product development
+- startup ideas
 ---
+> ## “Make something people want.”
+> – Paul Graham
 
 Making a product that people want is the holy grail of the startup world. A lot of ideas that sound amazing in your head, may or may not actually be something that people actually want. So how do you ‘know’ even before you build, whether that idea will resonate with your target audience. A popular methodology called Lean Startup, championed the idea of building a Minimum Viable Product to test the waters. A Minimum Viable Product or MVP for short is, “that product which has just those features (and no more) that allows you to ship a product that resonates with early adopters; some of whom will pay you money or give you feedback.”
 
@@ -23,7 +26,7 @@ Landing pages can ideally be a great way to validate your idea. The caveat is, t
 
 Joel Gascoigne used a similar technique to validate his idea. He wanted to build a tool that makes Twitter scheduling a breeze. His idea had weight, as the tool is now the social media giant Buffer.
 
-![validate-your-idea](/img/Buffer-MVP-2.png)
+![validate-your-idea](./images/Buffer-MVP-2.png)
 Joel created this three page MVP after he got some positive feedback on his initial, two page MVP (that didn’t include the actual pricing). Including an actual pricing page made things more real. People who were only really looking to try or buy this product would go through the whole cycle and fill in their email id.
 
 If you’re creating a landing page MVP, be sure to ‘ask’ for money. Show your items as ‘Sold Out’ or ‘Under Preparation’ and build a list of users who are willing to pay. If you can collect enough IDs and deliver within a short period of time, you’re in business.
@@ -38,7 +41,7 @@ The issue with going the crowdsourcing way is that you’re stuck with your init
 Smart watch company Pebble, is one of the most successful crowdfunding stories till date. Three of the four biggest amounts raised on Kickstarted are for their products.
 
  
-![validate-your-idea](/img/Pebble-kickstarter-768x681.png)
+![validate-your-idea](./images/Pebble-kickstarter.png)
 
 The pebble project creating waves on Kickstarter
  
@@ -53,4 +56,4 @@ Incidentally, ZeroCater – a YC startup, that provides catering options to comp
 
 We hope this gives you ideas to implement for your own startups. While validating your startup idea is a big part of your journey, determination will be the single most important factor in determining your success!
 
-P.S. If you’re looking to [outsource your product development](https://codebrahma.com/outsourced-software-product-development/), drop us a line!
+P.S. If you’re looking to [outsource your product development](/outsourced-software-product-development/), drop us a line!

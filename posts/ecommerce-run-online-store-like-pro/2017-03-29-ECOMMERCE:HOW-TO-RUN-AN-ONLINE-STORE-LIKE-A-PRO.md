@@ -2,19 +2,20 @@
 templateKey: 'blog-post'
 title: 'ECOMMERCE: HOW TO RUN AN ONLINE STORE LIKE A PRO'
 date: 2017-03-29
-featuredpost: true
+featuredpost: false
 description: >-
   HOW TO RUN AN ONLINE STORE LIKE A PRO
 author: Anand Narayan
+link: /ecommerce-run-online-store-like-pro
 tags:
-  - ecommerce developmet
-  - Rails Ecommerce Devlopment
-  - spree commerce
+- ecommerce developmet
+- Rails Ecommerce Devlopment
+- spree commerce
 ---
 
 E commerce is one of the biggest outcomes of the rapid technology advances over the past few years. Better & more secure payment gateways, powerful mobile browsers, advent of the internet – have all made ecommerce a mainstream industry. If you have a brick and mortar store – complementing it with an online store can instantly open up the world for you. But with all the noise surrounding ecommerce and the number of players in the market – it can get a bit difficult to carve an identity for yourself.
 
-In this article, we’ve dig into our combined years of experience working with and [setting up ecommerce stores](https://codebrahma.com/ecommerce-development-company) to present you 3 tips on ecommerce. They’ll help you run your store like a pro and dominate the online sales business!
+In this article, we’ve dig into our combined years of experience working with and [setting up ecommerce stores](/ecommerce-development-company) to present you 3 tips on ecommerce. They’ll help you run your store like a pro and dominate the online sales business!
 
 ## 1. UI and UX of your e-commerce store
 The moment a potential customer lands on your website, they’ll make assumptions about your brand based on the design, look & feel and the functionality. That’s why is absolutely essential to ensure that your ecommerce website is designed keeping your customer’s experience in mind. A few components that you should pay special attention to:
@@ -50,10 +51,10 @@ Referral is like a word of mouth system and works on a deeper level as both the 
 ## 3. Up your Customer Service Game
 Zappos, the footwear giant is known for its exceptional customer service. They have an extremely loyal customer base even though their prices are not the lowest in the market. Infact, 75% of Zappos business comes from repeat customers. There are case studies published highlighting the part their customer service has made in making Zappos the largest footwear store in the world.
 
-Having a great customer service could really set you apart from your competition, especially if you’re fighting a lot of competition. And if your budgets are constrained and have no room for hiring call centers – consider getting a [chatbot for your ecommerce](https://codebrahma.com/chatbots-for-businesses/) store.
+Having a great customer service could really set you apart from your competition, especially if you’re fighting a lot of competition. And if your budgets are constrained and have no room for hiring call centers – consider getting a [chatbot for your ecommerce](/chatbots-for-businesses) store.
 
 Take a leaf from the Zappos playbook – consider upgrading your customer service to awesome levels, build a loyal audience and make a name for yourself in your segment!
 
-Setting up a proper e-commerce portal takes a bit of work. Using an out-of-the-box service like Shopify or WordPress (Woocommerce) can limit the flexibility you’d like. That’s why we suggest[ Spree commerce ](https://codebrahma.com/spree-commerce-development/)to our clients. It gives you all the flexibility you need, while ensuring rapid development thanks to the huge repository of ‘gems’.
+Setting up a proper e-commerce portal takes a bit of work. Using an out-of-the-box service like Shopify or WordPress (Woocommerce) can limit the flexibility you’d like. That’s why we suggest[ Spree commerce ](/spree-commerce-development)to our clients. It gives you all the flexibility you need, while ensuring rapid development thanks to the huge repository of ‘gems’.
 
-If you’re thinking about setting up an ecommerce store and want to understand how to go about it – [we’d be happy to help!](https://codebrahma.com/contact)
+If you’re thinking about setting up an ecommerce store and want to understand how to go about it – [we’d be happy to help!](/contact)
