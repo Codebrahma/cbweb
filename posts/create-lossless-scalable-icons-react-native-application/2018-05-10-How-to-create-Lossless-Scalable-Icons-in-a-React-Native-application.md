@@ -1,16 +1,16 @@
 ---
-templateKey: 'blog-post'
-title: 'How to create Lossless scalable icons in a react native application'
+templateKey: "blog-post"
+title: "How to create Lossless scalable icons in a react native application"
 date: 2019-05-10
 featuredpost: true
 description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Arivanandan
 link: /create-lossless-scalable-icons-react-native-application
-category: 
+category:
 - React-Native
-tags: 
-- react-native 
+tags:
+- react-native
 - image-manipulation
 - performance
 ---
@@ -24,14 +24,14 @@ Let’s start off with getting an SVG image to iconize. I shall be using the fol
 - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
 - [React Native Linear Gradient](https://github.com/react-native-community/react-native-linear-gradient)
 
-
-If you had tried any of the tools out there that make fonts out of SVGs such as Fontello or IcoMoon, you might have had problems with some SVG images. For fonts, we need SVGs that do not have strokes in them. They only take *fills*.
+If you had tried any of the tools out there that make fonts out of SVGs such as Fontello or IcoMoon, you might have had problems with some SVG images. For fonts, we need SVGs that do not have strokes in them. They only take _fills_.
 
 ![react native application development](./images/react-native-application-development.png)
 
 The end result would be this icon picture-perfect in whatever size / color we might need which is easily controllable by our React Native Code.
 
 ## Getting the Icon
+
 In this case we are using InkScape since it’s available across Mac, Windows and Linux for free.
 
 1. First get your SVG image. If you have designs in sketch it can easily be exported. Also, there are options in Sketch to export only outlines, that might make short work of the Strokes that we do not want in our images. There are a bunch of services that convert JPEG, PNG and other formats into SVG.
@@ -61,6 +61,7 @@ Next up, we have to export / save this image. Select the image go to Document Pr
 ---
 
 ## Generating the Font
+
 Generating the fonts itself is pretty straightforward at this point. You simply go to IcoMoon’s site and Import your icons and Generate Font. Download it with the Download option at the bottom right. You get a couple of files. The files of significance to us are the selection.json and the iconmoon.ttf files. There’s a bit of work left to bring the icons into your project.
 
 Put the .json and the .ttf files into your assets folder. For Android, you simply want to move it to android/app/src/main/assets/fonts and you are done. For iOS, you have to import the files into your project from XCode.
@@ -68,10 +69,8 @@ Put the .json and the .ttf files into your assets folder. For Android, you simpl
 &nbsp; &nbsp; &nbsp; &nbsp;Add the font file to info.plist.
 ![react native development services](./images/react-native-app-development-services.png)
 
-
 &nbsp; &nbsp; &nbsp; &nbsp;Make sure it shows up in Build Phases under Copy Bundle Resources. Create an entry and point it to your font location.
 ![react native development services 2](./images/react-native-app-development-services-2.png)
- 
 
 If you think you didn’t get it right check out react-native-vector-icons’ git for a more detailed explanation.
 
@@ -80,51 +79,56 @@ Don’t forget to re-build after it’s all done.
 ---
 
 ## The Icon component
+
 Time to build our icon component!
+
 ```jsx
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
+import React from "react"
+import { StyleSheet, View } from "react-native"
+import { createIconSetFromIcoMoon } from "react-native-vector-icons"
 
-import icoMoonConfig from '#/assets/selection.json';
+import icoMoonConfig from "#/assets/selection.json"
 
-const Icon = createIconSetFromIcoMoon(icoMoonConfig);
+const Icon = createIconSetFromIcoMoon(icoMoonConfig)
 
 const styles = StyleSheet.create({
   backdrop: {
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
-});
+})
 
-const RadIcon = ({
-  backdrop, color, name, size, style,
-}) => {
-  if (!name) return null;
+const RadIcon = ({ backdrop, color, name, size, style }) => {
+  if (!name) return null
 
-  const IconComponent = ( 
+  const IconComponent = (
     <Icon
       name={name}
       size={size}
       color={color}
       style={!backdrop && style}
     />
-);
+  )
 
-return backdrop ? (
-  <View
-    backgroundColor={backdrop}
-    style={[{ 
-              borderRadius: size, 
-              height: size * 2, 
-              width: size * 2 
-            }, 
-            styles.backdrop, 
-            style]}>
-    {IconComponent}
-  </View>
-) : IconComponent;
-};
+  return backdrop ? (
+    <View
+      backgroundColor={backdrop}
+      style={[
+        {
+          borderRadius: size,
+          height: size * 2,
+          width: size * 2,
+        },
+        styles.backdrop,
+        style,
+      ]}
+    >
+      {IconComponent}
+    </View>
+  ) : (
+    IconComponent
+  )
+}
 ```
 
 The code above does simple as well as icons with a backdrop. Doing gradients is just as simple. All you have to do is replace the View component with the imported LinearGradient component and pass on some colors. It can also easily be customized to add shadows other fancy adornments.
