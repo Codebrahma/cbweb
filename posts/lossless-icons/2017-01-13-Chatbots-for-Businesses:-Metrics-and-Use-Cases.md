@@ -3,14 +3,14 @@ templateKey: 'blog-post'
 title: 'Chatbots for Businesses: Metrics and Use Cases'
 date: 2017-02-14
 featuredpost: true
-link: /chatbot-business-metrics-use-cases
 description: >-
   Chatbots for Businesses: Metrics and Use Cases
 author: Anand Narayan
+link: /chatbot-business-metrics-use-cases
 tags:
-  - Chatbot Developers bangalore
-  - chatbot
-  - chatbots for business
+- Chatbot Developers bangalore
+- chatbot
+- chatbots for business
 ---
 
 The last decade (2000’s) was all about search engine optimization and marketing for businesses. Early 2010 saw businesses flocking to social media to actively engage with the users, and the past five odd years have been mostly about mobile marketing and the rise of apps. But as app business plateaus with more and more users preferring to not download apps – we see a new platform for businesses to engage with the users on – messaging platforms.

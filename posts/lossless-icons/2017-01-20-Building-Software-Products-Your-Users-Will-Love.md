@@ -3,15 +3,15 @@ templateKey: 'blog-post'
 title: 'Building Software Products Your Users Will Love'
 date: 2017-01-20
 featuredpost: true
-link: /building-products-users-love
 description: >-
   Building Software Products Your Users Will Love
 author: Anand Narayan
+link: /building-products-users-love
 tags:
-  - apps users love
-  - product development
-  - outsourced software development
-  - useful applications
+- apps users love
+- product development
+- outsourced software development
+- useful applications
 ---
 
 Building a great product is not easy. More often than not (almost 90%, statistically), companies fail at making a truly remarkable product that consumers would’ve love using. In this age, where entrepreneurship is over glorified, getting your product right is the single most crucial part in your entrepreneurial journey. Sure, you’ll find people on the internet swearing by the latest growth hacks that tripled their revenue in 3 months or the marketeers that emphasize on the right PR launch to be the key to success. There’s no denying that growth, marketing, PR, strong core team etc are essential to your product’s success, but only if your product truly resonates with your users. Until recently, raising capital was portrayed like a ‘win’ but how many of those ‘next unicorns’ do you see in business today.

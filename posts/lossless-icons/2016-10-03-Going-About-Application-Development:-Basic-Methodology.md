@@ -7,7 +7,6 @@ description: >-
   Going About Application Development Basic Methodology
 author: Anand Narayan
 link: /application-development-basic-methodology
-tags:
 
 ---
 
