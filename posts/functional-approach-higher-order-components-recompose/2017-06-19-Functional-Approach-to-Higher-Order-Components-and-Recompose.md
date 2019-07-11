@@ -5,6 +5,7 @@ date: 2017-06-19
 featuredpost: true
 description: >-
   Functional Approach to Higher Order Components and Recompose
+link: /functional-approach-higher-order-components-recompose
 tags:
   - higher order components in reactjs
 author: Prasanna
@@ -27,23 +28,23 @@ __Functions that operate on other functions, either by taking them as arguments 
 If we adopt functional programming, we need to think about composing existing functions as much as possible in order to create new functions. Currying is one major technique used to achieve this.
 
 Currying is a method of constructing functions which facilitates the function to have all arguments passed to it returning a result or have partial arguments to be passed resulting a new function which expects remaining arguments. For example:
-```
+```js
 const fullName = firstName => lastName => {
   return firstName+lastName;
 };
 ```
 Now if we use ```fullName(‘Code’)``` it will return another function which expects a ```lastName```. Its first name will be replaced as Code.
-```
+```js
 const partialName = fullName(‘Code’);
 ```
 When we write
-```
+```js
 const finalName = partialName(‘brahma’); // Returns ‘Codebrahma’
 ```
 ```finalName``` will be assigned with ‘Codebrahma’. This is a useful technique since it uses to create and compose multiple functions.
 
 So considering the previously discussed task, first we will create a ```conversionFunction``` which can omit the __‘isDone’__ prop.
-```
+```jsx
 // Import React
 import React from 'react';
 
@@ -84,7 +85,7 @@ export default conversionFunction(props => omit(props, ['isDone']))(DummyCompone
 Now we can see that without adding an additional React Class we are able to write a HOC which omits the mentioned prop.
 
 Now the second task is to show a Preloader if we have ```isLoading``` prop set to true. To achieve this the we need to change the conversion function like this.
-```
+```jsx
 const conversionFunction = anyFunction => Component => {
   const factory = createFactory(Component);
   // Render a preloader if you have such a props
@@ -95,7 +96,7 @@ const conversionFunction = anyFunction => Component => {
 Now if we pass ```isLoading``` prop as true, it will always render a preloader. This gives control from the parent component to decide when to load the preloader and when to load the actual component
 
 The third task is to attach an event handler to the functional component and console logging some data on clicking a button using that even handler. This is an extension to the above concept except that we will return one more React Component squashed inside.
-```
+```jsx
 // Import React
 import React from 'react';
 
