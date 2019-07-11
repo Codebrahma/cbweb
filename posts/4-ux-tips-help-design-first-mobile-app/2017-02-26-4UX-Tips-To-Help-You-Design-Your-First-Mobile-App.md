@@ -6,10 +6,11 @@ featuredpost: true
 description: >-
   4 UX Tips To Help You Design Your First Mobile App
 author: Anand Narayan
+link: /4-ux-tips-help-design-first-mobile-app
 tags:
-  - mobile app
-  - product development
-  - UX design
+- mobile app
+- product development
+- UX design
 ---
 As of June 2016, there were over 2.2 million apps on the Google Play store. Another study published by Google, states that only a fourth of the apps installed on a smartphone are used on a daily basis. Overcoming such staggering numbers and letting your app shine through will require a good user experience and friendly interface design. Recent advancements in mobile technology and the fierce app competition have taken mobile design to exceptionally high standards. Users have come to expect nothing less either. The ‘MVP does not need to be well designed’ ideology only works when your idea is exceptionally unique and solves the problem 10x better than the current solution.
 
@@ -41,10 +42,8 @@ Mobile screens are small. You only have so much real estate to work with. If you
 
 Designing for a simple user experience will also make the app faster (unless you’ve used the wrong tech stack – in which case, we’re there to help). Certain apps come with a quick walk through to help people understand the basics, but if you see the need to put in a proper user guide, a FAQ of sorts, then it’s probably time to hit the drawing board again.
 
- 
-
 We hope these pointers help you kickstart your user experience design for your first mobile app, and in the right direction. Keeping a focus on user experience right from the beginning will save you a lot of frustration going forward. It can also be the difference between success and failure!
 
 Good luck!
 
-[Oh, and if you’re looking to hire top front end developers for your project, do check us out!](https://codebrahma.com/front-end-development-company/)
+[Oh, and if you’re looking to hire top front end developers for your project, do check us out!](/front-end-development-company)

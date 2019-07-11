@@ -5,11 +5,12 @@ date: 2017-02-14
 featuredpost: true
 description: >-
   Writing a Good Project Brief
+link: /writing-good-project-brief
 author: Anand Narayan
 tags:
-  - project brief
-  - product development
-  - project management
+- project brief
+- product development
+- project management
 ---
 
 You have an idea that you want to develop and you’re convinced that hiring an outsourced team is the best way to move forward. You spent hours researching about the best agencies to work with and shortlist a bunch of them. Now you need to finalize the one that will turn your idea into a reality. The next thing you need to do is create a solid project brief and share it with all the shortlisted agencies, to kick off discussions.
@@ -33,7 +34,7 @@ While it’s difficult for clients to ascertain a certain number to the project,
 ### Timelines
 This section communicates how fast you’re looking to hit the market and the kind of urgency the agency will have to work with. Setting a soft deadline, ‘we’re looking to launch the first version of the product within six months’, creates a positive pressure and can help agencies figure how to best allocate resources.
 
-![projectbrief-01](img/projectbrief-01-768x768.png)
+![projectbrief-01](./images/projectbrief-01-768x768.png)
 The scope of a project, timelines and budget are highly interdependent. The more defined the scope of the project is, the easier it is to estimate timelines and budget. If you’re looking to expedite development, costs might go up. Complex projects generally need to keep the timelines and budget flexible, otherwise the quality might be compromised.
 
 Depending on which stage your project is and the level of flexibility you’re open to, the project brief might vary from a single paragraph to a detailed multi-page document.
@@ -71,8 +72,6 @@ This project brief barely touches upon what the app should be able to do. There�
 
 It’s essential to attach a budget to exploratory projects. As the scope is loosely defined, the agencies could go on and add a lot of features, fancy technologies, high end systems that would really shoot up the prices. Keeping a budget defined helps them define and work within that budget.
 
-[![mobile-app-development-company](img/mobile-development-ad-01-768x149.png)](https://codebrahma.com/mobile-application-development-company-bangalore/)
- 
 
 ## Estimation Project Briefs
 These project briefs have a clearly defined scope of work. They are used to get an idea of the cost and timelines from different agencies.
@@ -117,4 +116,4 @@ Every single aspect of the project is carefully thought out and included. The ag
 
 A project brief is considered successful if it can clearly communicate the requirements of the project to everyone involved in it, and can help you choose the right development partners.
 
-If you’re looking for development help, [we’d be happy to have a word with you!](https://codebrahma.com/contact)
+If you’re looking for development help, [we’d be happy to have a word with you!](/contact)

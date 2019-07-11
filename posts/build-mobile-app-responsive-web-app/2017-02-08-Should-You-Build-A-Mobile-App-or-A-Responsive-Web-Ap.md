@@ -6,11 +6,12 @@ featuredpost: true
 description: >-
   Should You Build A Mobile App or A Responsive Web App
 author: Anand Narayan
+link: /build-mobile-app-responsive-web-app
 tags:
-  - mobile app
-  - product development
-  - responsive app
-  - web app
+- mobile app
+- product development
+- responsive app
+- web app
 ---
 
 > John walks into a mobile development shop and meets Jane, the sales person.
@@ -26,7 +27,7 @@ Welcome to the world of commoditized software, where everyone talks features and
 
 Deciding on a device to deliver your software on needs to be a carefully thought out process. Certain applications work better as a mobile app, while some of them are meant to be used on a laptop.
 
-![complex-app-mobile-web](/img/complex-app.jpeg)
+![complex-app-mobile-web](./images/complex-app.jpeg)
 ## 1. Complexity
 One of the first questions you need to answer, when deciding on the devices is how complex your application will be.
 
@@ -35,8 +36,6 @@ Take the hugely popular photo sharing app, Instagram, for example. The founders 
 Apps like Instagram are mobile specific – they are born because mobile devices exist.
 
 > Mobile applications are supposed to be simple. The more complex they are, the lower are the chances of success.
-
-[![mobile-app-development-company](/img/mobile-development-ad-01-768x149.png)](https://codebrahma.com/mobile-application-development-company-bangalore/)
  
 
 Compare this to an online education platform like Udemy. Udemy is a course creation platform and a marketplace for courses, catering to two types of users – the instructors who create courses and students who consume courses. A course creation platform is a complicated software. It includes creating and editing multiple content types, managing students, managing billing and whatnot. This side of the platform thus, cannot be built as a mobile app – owing to its vastness and complexity. Instructors will need to login in to the web app and create their course.
@@ -46,7 +45,7 @@ The students, however, only consume a course. Because the flow and complexity ge
 
 > The general rule of thumb when deciding to build a mobile app is that the user should be able to reach the intended goal of the application with minimum number of clicks (no more than 3).
 
-![complex-app-mobile-web](/img/location-time-apps-org-copy.jpeg)
+![complex-app-mobile-web](./images/location-time-apps-org-copy.jpeg)
 
 ## 2. Location and Time Sensitivity
 Taxi apps like Uber allow users to book and call a cab right at their location. There are multiple things that work in tandem and give an extremely seamless experience to the user. Let’s look at the app’s flow:
@@ -72,9 +71,10 @@ Imagine having to do the exact same flow via a web browser. Open the browser –
 Last year, the American clothing company Patagonia bid farewell to their native mobile app, urging users to use the website on their mobile web browsers.
 
 > What was that about websites being irrelevant and this being an app only future?
->  pic.twitter.com/tFrw18KG25
-
-> — Adam Kmiec (@adamkmiec) June 1, 2016
+>
+>  [pic.twitter.com/tFrw18KG25](https://t.co/tFrw18KG25)
+>
+> — Adam Kmiec (@adamkmiec) [June 1, 2016](https://twitter.com/adamkmiec/status/737992375839162368)
 
 Modern mobile web browsers have seriously notched up their technical capabilities to handle heavy websites. They’re also getting increasingly good at their mobile specific functions, including push notifications.
 An average person doesn’t need to shop for clothes every day, or even every other day for that matter. So why would she want to install a native app of an apparel company.

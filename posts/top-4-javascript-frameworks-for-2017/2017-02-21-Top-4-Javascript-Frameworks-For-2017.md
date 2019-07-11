@@ -5,13 +5,14 @@ date: 2017-03-14
 featuredpost: true
 description: >-
   Top 4 Javascript Frameworks For 2017
+link: /top-4-javascript-frameworks-for-2017
 author: Anand Narayan
 tags:
-  - Angular.js
-  - backbone.js
-  - javascript
-  - meteor.js
-  - ReactJS
+- Angular.js
+- backbone.js
+- javascript
+- meteor.js
+- ReactJS
 ---
 Javascript has played a big role in the rise of the web and mobile applications. Since it’s humble beginnings with the Netscape Navigator in 1995, Javascript has evolved into such a powerful force that nearly 95% of all the web uses it for client side programming. With a whole lot of frameworks now in existence, it seems like almost every other week there is a new JS library people are gushing about.
 
@@ -19,7 +20,7 @@ Javascript frameworks empower developers to quickly develop single page applicat
 
 In this article we take a look at four frameworks that are bound to create a ripple in the developer community this year:
 
-![ReactJSDevelopers](/img/TopJSFrameworks-React-1024x342.png)
+![ReactJSDevelopers](./images/TopJSFrameworks-React-1024x342.png)
 
 ## 1. ReactJS
 Developed and maintained by the engineers at Facebook along with a community of individual contributors, React is one of the most talked about Javascript libraries of the last year. It’s an open source library for building user interfaces. The popularity of React can only be substantiated by the 1000 contributors (Github) and the host of websites using it, including Netflix, Airbnb, Walmart and Imgur to name a few.
@@ -28,10 +29,10 @@ ReactJS is not a MVC framework, it’s just a Javascript library that renders th
 
 It does have a slightly steeper learning curve, but makes development really straightforward. It’s a perfect solution for high performance, web application requirements.
 
-[Hire Top ReactJS Developers](https://codebrahma.com/react-js-development/)
+[Hire Top ReactJS Developers](/react-js-development/)
 
  
-![AngularJS-Developers](img/TopJSFrameworks-Angular-1024x342.png)
+![AngularJS-Developers](./images/TopJSFrameworks-Angular-1024x342.png)
 
 ## 2. AngularJS
 A popular enterprise Javascript framework maintained mainly by Google, it was created to address the challenges faced during development of single page applications. It’s a hugely popular framework, the sixth most starred project of all time on Github. A wide variety of web apps and websites are built using AngularJS, including PayPal, Udemy, Weather.com and the Guardian, along with a bunch of Google sites.
@@ -40,10 +41,10 @@ Angular is a MVC type framework with two way data binding being its most notable
 
 AngularJS is immensely popular, with over 10,000 sites currently using it (according to Libscore). It is one of the best frameworks to use for building complex web applications as well as single page applications.
 
-[Hire Top AngularJS Developers](https://codebrahma.com/hire-angularjs-development-company/)
+[Hire Top AngularJS Developers](hire-angularjs-development-company/)
 
  
-![MeteorJSDevelopers](/img/TopJSFrameworks-Meteor-1024x342.png)
+![MeteorJSDevelopers](./images/TopJSFrameworks-Meteor-1024x342.png)
 
 ## 3. MeteorJS
 MeteorJS is an open-source Javascript framework built using Node.js, specifically for rapid prototyping. The framework was developed by the Meteor Development Group, a startup backed by YCombinator and funded by Andreessen Horowitz.
@@ -52,10 +53,10 @@ It’s a complete framework that uses Javascript on both client side and server 
 
 Since its launch in 2012, Meteor has drastically grown in popularity and is currently being used by some big names like Honeywell, IKEA and Qualcomm.
 
-[Hire Best MeteorJS Developers](https://codebrahma.com/meteor-js-development-company/)
+[Hire Best MeteorJS Developers](/meteor-js-development-company)
 
  
-![JavascriptDevelopers](/img/TopJSFrameworks-Backbone-1024x342.png)
+![JavascriptDevelopers](./images/TopJSFrameworks-Backbone-1024x342.png)
 
 ## 4. BackboneJS
 Backbone is a single file JavaScript framework developed by Jeremy Ashkenas of the CoffeeScript and Underscore.js fame. Being a lightweight framework, it’s quite popular with developers looking to give some structure to their JavaScript applications quickly.
