@@ -38,7 +38,7 @@ In this case we are using InkScape since it’s available across Mac, Windows an
 2. One thing to note is multi-colored icons aren’t really a thing. So, if I was exporting the above icon from Sketch, we would simply export the inner most lines and circles and leave the circular lavender background. If that proves difficult, extract our icon using InkScape.
 3. Open up the SVG in InkScape and select the second option in the left pane Edit Paths by Node (F2). Select all the paths you need by holding down shift and left clicking them. If the lines happen to be invisible for some reason simply hovering over the area where they are would show outlines. Now cut out your selection. Let’s remove what was left out. Select everything else on screen, choose the Selection tool (first on the left pane / F1) and delete. Paste the selection that you cut out earlier.
 
-![react native app development](./images/react-native-app-development.png)
+![react native app](./images/react-native-app-development.png)
 
 Right click and Group them.
 
