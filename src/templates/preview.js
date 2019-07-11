@@ -87,7 +87,7 @@ const Blog = ({frontmatter})=>(
           </HeadingLink>
         </H3>
         {getCategory(frontmatter) && (
-          <CategoryLink to={'/journal/category/' + getCategory(frontmatter)}>
+          <CategoryLink to={'/journal/category/' + hypenize(getCategory(frontmatter))}>
               {getCategory(frontmatter)}
           </CategoryLink>
         )}
@@ -96,7 +96,7 @@ const Blog = ({frontmatter})=>(
           <Box marginTop='1'>
             <Text fontSize={[0,0]} color='black.2'>
               {getTags(frontmatter) && getTags(frontmatter).map((tag,i)=>(
-                <TagLink key={tag} to={'/journal/tags/' + tag}>
+                <TagLink key={tag} to={'/journal/tags/' + hypenize(tag)}>
                   <I>#{hypenize(tag)}</I>
                 </TagLink>
               ))}

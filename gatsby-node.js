@@ -1,5 +1,5 @@
 // TODO move perpage variable outside to a config file
-let ppage = 2;
+let ppage = 7;
 const getUnique = (field, posts) =>
   posts.reduce((uniques, post) => {
     let values = post.childMdx.frontmatter[field];
@@ -112,6 +112,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             category
             link
             author
+            date
           }
         }
       }
@@ -130,6 +131,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   });
 
+  // TODO move this into graphql
+  posts = posts.sort((a,b)=> new Date(b.childMdx.frontmatter.date) - new Date(a.childMdx.frontmatter.date));
+
   //create each individual blog post
   posts.forEach(post => {
     const { link } = post.childMdx.frontmatter;
@@ -147,8 +151,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   createPages('category', posts, 'journal', createPage);
   createPages('author', posts, 'journal', createPage);
 
-
   //create blogs index
+  // TODO sorting to be done in graphql
   paginate(
     {
       createPage,
@@ -157,7 +161,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       type: 'all',
       value: null,
     },
-    posts,
+    posts.sort((a,b)=> new Date(b.childMdx.frontmatter.date) - new Date(a.childMdx.frontmatter.date)),
   );
 
   let folders = {

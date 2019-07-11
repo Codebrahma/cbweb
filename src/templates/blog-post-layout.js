@@ -20,15 +20,17 @@ const Sidebar = ({author, category, tags})=> (
         </PlainLink>
       </Flex>
     </Box>
-    {getCategory({category}) && (
-    <Box my={2}>
-          <Flex fontSize={[0, 0]} justifyContent='center'>
-            Posted in
-          </Flex>
-          <Flex justifyContent='center' mt='0.5rem'>
-            <CategoryLink to={'/journal/category/'+getCategory({category})}>{getCategory({ category })}</CategoryLink>
-          </Flex>
-    </Box>
+    {getCategory({ category }) && (
+      <Box my={2}>
+        <Flex fontSize={[0, 0]} justifyContent="center">
+          Posted in
+        </Flex>
+        <Flex justifyContent="center" mt="0.5rem">
+          <CategoryLink to={"/journal/category/" + hypenize(getCategory({ category }))}>
+            {getCategory({ category })}
+          </CategoryLink>
+        </Flex>
+      </Box>
     )}
     {tags && (
       <Box my={2}>
