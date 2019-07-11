@@ -2,19 +2,21 @@
 templateKey: 'blog-post'
 title: 'Microservices for beginners, how to get started with right tools'
 date: 2017-07-18
-featuredpost: true
+featuredpost: false
 description: >-
   Getting Started with microservices.
 author: Tarun Batra
+link: microservices-for-beginners
 tags:
-  - microservices
+- microservices
 ---
 
 __Microservices__ is a vague term which usually points to small independent services which together form up an application. [Microservices architecture](https://martinfowler.com/articles/microservices.html) stands in contrast to Monolithic architecture, where the application is one big system. We will discuss about how to get started as a beginner and choosing the right tools for setting up microservice architechture.
 
 ## Rapid Rise in popularity of Microservices
 Microservices have recently risen into popularity, as suggested by this Google trends index:
-![microservices in Google Trends](/img/Screen-Shot-2017-07-14-at-11.53.15-e1500013748185-768x303.png)
+
+![microservices in Google Trends](./images/Screen-Shot-2017-07-14-at-11.53.15-e1500013748185-1024x404.png)
 
 “microservices” in Google Trends
 
@@ -25,14 +27,16 @@ Before getting into what they are, and how to use them, let’s find out why mic
 Until recently majority of companies were used to be giant enterprises, making equally giant enterprise software, or monoliths. Not anymore. Since last 5 years, companies are getting more distributed in nature. In fact, some of the new unicorns like Automattic and Gitlab are entirely distributed. That explains why microservices are rising in popularity.
 
 ## Why Microservices?
+
 ### Fewer compromises in tech stack
+
 Choosing a tech stack is always a tough call. Skills of the team, scalability, maintenance are all important factors in this choice. But many times what’s good for one portion of the app, is not good for the other.
 
 For example, a trading platform needs PostgreSQL due to support for transactions, the user specific data has to be stored in DynamoDB. Generally, a trade off is made. But in Microservices Architecture, __each microservice owns a set of business logic and related data in the form it deem best__, and provide an interface to interact with it. So there can be microservices for trades and users each, with data hosted on PostgreSQL and DynamoDB, and access to external services is allowed only through the interface. So a computation intensive microservice can be written in Python while the API Server remains in NodeJS, and so on.
 
 A sample architecture would look like
 
-![image](/img/microservices-beginner-2-768x576.jpg)
+![image](./images/microservices-beginner-2.jpg)
 
 ## Independent teams
 In a monolithic application, most of the people in a development team needs to know all the parts of the application even to develop a small feature. They have to collaborate with other teams on deployment schedules, versioning, data migrations, etc. On the other hand, in Microservices Architecture the teams just need to know the interface provided by other services and stick to the interface provided by theirs. Each microservice should be __independently deployable.__ CI/CD tools like [CirclCi](https://circleci.com/), [Travis](https://travis-ci.org/) and [Heroku](https://www.heroku.com/) are of great help while developing microservices. To develop/maintain a service, a small team with limited knowledge is enough.
@@ -43,7 +47,7 @@ Microservices Architecture also resembles the Unix philosophy’s principle, Do 
 ## Fault isolation
 Imagine error in a report generation module, takes the full trading application down. It’s terrible and unnecessary. If the application is based on microservices, the report generation module will fail, taking down only that specific feature. Users who are not generating reports won’t even notice, and __the critical parts of the application will still be working__. That’s a result of __Loose coupling__ between microservices, now achievable through this architecture.
 
-![microservice beginner](/img/microservice-beginner-1-768x576.jpg)
+![microservice beginner](./images/microservice-beginner-1.jpg)
 
 ## How to develop Microservices?
 In Node.js, [Seneca](http://senecajs.org/) is a widely used framework to develop microservices. But if you want to get yours hands dirty, read on.
@@ -62,13 +66,13 @@ __Message Queues:__ Message Queuing protocols like AMQP, STOMP and MQTT allows t
 
 [microservice-template](https://github.com/Codebrahma/microservice-template) is a basic boilerplate which we use in our projects based on Microservices. It’s in Node and has MongoDB configured as a data store. It connects to RabbitMQ for inter-service communication via[ servicebus](https://www.npmjs.com/package/servicebus). Here’s how it looks in it’s bare minimum:
 
-![Microservice logs](/img/Screen-Shot-2017-07-13-at-19.21.56-768x194.png)
+![Microservice logs](./images/Screen-Shot-2017-07-13-at-19.21.56.png)
 Microservice booting up and communicating
 
 There are other concepts like [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) and [CQRS](https://martinfowler.com/bliki/CQRS.html) which complement the Microservices Architecture. Event Sourcing is basically storing the changes to the data, instead of the changed state of the data. in a highly concurrent environment, __event sourcing brings consistency of a higher order.__
 
-![Productivity in Microservices vs Monolothic Architecture](/img/productivity.png)
+![Productivity in Microservices vs Monolothic Architecture](./images/productivity.png)
 
 Productivity in Microservices vs Monolothic Architecture Source: [Martin Fowler](https://martinfowler.com/bliki/MicroservicePremium.html)
 
-But truth be told, Microservices Architecture is no silver bullet. Using microservices for fairly small apps can lead to loss in productivity, as evident in the above graph. To know if switching to microservices [custom app development](https://codebrahma.com/custom-software-development-company/) will help your product do get in touch with us.
+But truth be told, Microservices Architecture is no silver bullet. Using microservices for fairly small apps can lead to loss in productivity, as evident in the above graph. To know if switching to microservices [custom app development](/custom-software-development-company) will help your product do get in touch with us.

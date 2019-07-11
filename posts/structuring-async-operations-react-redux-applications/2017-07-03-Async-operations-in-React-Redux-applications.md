@@ -2,16 +2,17 @@
 templateKey: 'blog-post'
 title: 'Async operations in React Redux applications'
 date: 2017-07-03
-featuredpost: true
+featuredpost: false
 description: >-
   structuring asynchronous requests in react redux application.
+link: /structuring-async-operations-react-redux-applications
 author: Prasanna
 ---
 
 ## Introduction
 Javascript is a single thread programming language. That is when you have code something like this
 
-![async react redux](/img/async-react-redux.gif)
+![async react redux](./images/async-react-redux.gif)
 
 The second line doesn’t get executed till the first one gets completed. Mostly this won’t be a problem since millions of calculations are performed by the client or server in a second. We can notice the effects only when we are performing a costly calculation (A task that takes noticeable time to complete, a network request which takes some time to return back).
 
@@ -40,7 +41,8 @@ For each method we will perform these two API calls.
  #### 1. Fetching city from userDetails (First API response). 
 Lets assume the endpoint is ‘/details’. It will have city in the response. Response will be an object.
 
-```userDetails : {
+```js
+userDetails : {
   ...
   city: 'city', 
   ...
@@ -48,7 +50,7 @@ Lets assume the endpoint is ‘/details’. It will have city in the response. R
 ```
  #### 2. Based on the user city we will fetch all restaurants in the city 
 Lets say the endpoint is /restuarants/:city. Response will be an array
-```
+```js
 ['restaurant1', 'restaurant2', ...]
 ```
 Remember that we can do the second request only when we finish doing the first (Since it is dependent on the first request). Lets discuss various ways to do this.
@@ -64,7 +66,7 @@ Particularly I have chosen the above methods because they are the most popularly
 Javascript ```Promise``` is an object that may provide a single value sometime in the future either a resolved or the reason why it was not resolved.
 
 In our case we will use [axios](https://github.com/mzabriskie/axios) library to fetch, which returns a promise when we make a network request. That promise may resolve and return the response or throw an error. So once the React Component mounts we can straight away fetch like this.
-```
+```jsx
 componentDidMount() {
   axios.get('/details') // Get user details
     .then(response => {
@@ -81,7 +83,7 @@ componentDidMount() {
 By this when the state changes (due to fetching…) Component will automatically re render and load the list of restaurants.
 
 ```Async await ```is a new implementation with which we can make async operations. For example the same thing can be achieved by
-```
+```jsx
 async componentDidMount() {
   const restaurantResponse = await axios.get('/details') // Get user details
     .then(response => {
@@ -100,7 +102,7 @@ Both of these are the simplest of all methods. Since the entire logic is inside 
 ## Drawbacks in the method:
 The problem will be when we will be doing complex interactions based on the data. For example consider the following cases
 
-![async state questions](img/async-state-questions.jpg)
+![async state questions](./images/async-state-questions.jpg)
 
 We don’t want the thread in which JS is being executed to be blocked for network request
 All the above cases will make the code very complex and difficult to maintain and test.
@@ -118,16 +120,14 @@ If we think of moving our business logic outside of the component then where exa
 
 #### 3. Ensuring to have a separate thread where async code is executed and any change to global state can be retrieved through subscription
 
-![redux architecture](/img/redux-architecture.gif)
+![redux architecture](./image/redux-architecture.gif)
 
 From this we can get an idea that if we are moving all the fetching logic before reducer, that is either action or middlewares then it is possible to dispatch the correct action at the correct time.
 For example once the fetch started we can ```dispatch({ type: ‘FETCH_STARTED’ }) ```and when the fetch completed we can ```dispatch({ type: ‘FETCH_SUCCESS’ })``` .
 
  
+> [Want to develop React JS application ?](/react-js-development/)
 
-> Want to develop React JS application ?
-
- 
 
 ## Using Redux thunk
 __‘Redux-thunk’__ is a middleware for redux. It basically allows us to return ```function``` instead of ```objects``` as an action. How this helps exactly is, it provides dispatch and getState as arguments for the function. We use the dispatch effectively by dispatching the necessary actions at the right time. The benefits are
@@ -136,7 +136,7 @@ Allow multiple dispatch inside the function.
 Business logic related to the fetch will be outside of react components and moved to actions.
 
 In our case we can rewrite the action like
-```
+```jsx
 export const getRestaurants = () => {
   return (dispatch) => {
   dispatch(fetchStarted()); // fetchStarted() returns an action
@@ -171,7 +171,7 @@ Using _redux-saga_ middleware we can get additional benefits which solves most o
 
 Redux-saga provides API which helps in achieving
 
-  - Blocking events which blocks the thread in the same line till something in achieved.
+- Blocking events which blocks the thread in the same line till something in achieved.
 - Non blocking events which makes the code async.
 - Handling race between multiple async requests.
 - Pause / Throttle / Debounce any action.
@@ -181,7 +181,7 @@ Saga uses a combination of ES6 generators and async await APIs to simplify the a
 
 Consider our previous example,
 If we initialize the saga and configure it with redux as mentioned in their documentation then we can do something like
-```
+```jsx
 import { takeEvery, call } from 'redux-saga/effects';
 import request from 'axios';
 function* fetchRestaurantSaga() {
@@ -252,7 +252,7 @@ As mentioned in their doc “An epic is the core primitive of redux-observable�
 2. Actions always run through your reducers before epics even recieve them. Epic just recieves and outputs another stream of actions. This is almost similar to redux-saga that none of the Actions get consumed by the middleware. It just listens and does some additional tasks.
 
 For our task we can simply write
-```
+```jsx
 const fetchUserDetails = action$ => (
   action$.ofType('FETCH_RESTAURANTS')
     .switchMap(() =>

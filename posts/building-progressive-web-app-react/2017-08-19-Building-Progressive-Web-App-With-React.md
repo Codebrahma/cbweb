@@ -2,20 +2,20 @@
 templateKey: 'blog-post'
 title: 'Building Progressive Web App With React'
 date: 2017-08-19
-featuredpost: true
+featuredpost: false
 description: >-
   Building Progressive Web App With React
 author: Balram Khichar
+link: /building-progressive-web-app-react
 tag:
 ---
 [Progressive web apps](https://developers.google.com/web/progressive-web-apps/) (PWAs) came in the lime light recently. It uses the best of web and the best of apps to give a smooth experience to users and feels like native app. PWAs are responsive and fast, consume less data, need less storage space, support push notifications and offline use in browser. Twitter recently launched [mobile.twitter.com](https://mobile.twitter.com/) which delivers mobile app like experience to users in browser without actually installing on user device. This article focuses upon building progressive web app with React JS
 
-![image](/img/pwa-reliable-768x433.png)
+![image](./images/pwa-reliable-1024x577.png)
 
 We’re going to build a simple PWA in this article. You can use this code as boilerplate for further PWA developments.
 
  
-
 ## Getting Started with PWA
 First let’s generate a React application with create-react-app. You can run the following commands to generate the React app.
 ```sh
@@ -32,7 +32,7 @@ npm install --save react-router@3.0.5
  ```
  
 Now replace your `src/App.js` content with below gist. It will give us a basic template with navigation.
-```
+```jsx
 import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
 import './App.css';
@@ -75,7 +75,7 @@ class App extends Component {
 export default App;
  ```
 Next we need to update the default styles a bit to make our app look clean. Replace your __src/App.css__ `with below styles.
-```
+```css
 .navbar {
   background-color: #01C8E5;
   text-align: center;
@@ -99,17 +99,17 @@ Finally run __`npm start`__ to check the app in the browser. Now this is a basic
 ## Install Lighthouse and Audit
 Lighthouse is an open-source, automated tool which helps us to test our app against PWA checklist. It also provides audits for performance, accessibility, and more. You can download and install in your chrome browser by following this [link](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk/).
 
-![image](/img/google-lighthouse.png)
+![image](./images/google-lighthouse.png)
 
 Next let’s test our app using Lighthouse. Click on Lighthouse icon in the top right corner of Chrome and then click on Generate Report button. This is how the generated report looks like –
-![image](/img/Screen-Shot-2017-08-29-at-11.37.12-AM.png)
+![image](./images/Screen-Shot-2017-08-29-at-11.37.12-AM.png)
 We will fix all 6 failed audit next.
 
 ## Register a Service Worker
 Services worker act as proxy servers that sit between app and network. Using this we will intercept network requests and serve cached files. It will allow our web app to work even if network is offline.
 
 First create a blank __worker.js__ file in public folder of the app and add this block of code in that file.
-```
+```jsx
 // Flag for enabling cache in production
 var doCache = false;
 
@@ -166,7 +166,7 @@ self.addEventListener('fetch', function(event) {
 });
  ```
 We will check whether the browser supports service workers, and then register our __worker.js__. To do so add the below script to __public/index.html__. (Notice that we have removed “shrink-to-fit=no” from viewport meta tag.)
-```
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -202,11 +202,11 @@ We will check whether the browser supports service workers, and then register ou
  ```
 Restart you app and reload the browser. You will see “Worker registration successful” message in developer console. Now let’s re-generate the Lighthouse report.
 
-![image](/img/pwa-audit-2.png)
+![image](./images/pwa-audit-2.png)
 
 ## Improve Progressive Nature of the app
 Currently, our app renders empty __root__ div till the JavaScript loads and React hooks up the initial route. We need make sure our app works without any JavaScript loading and displays some HTMl and CSS before React comes into the play. Here’s how our updated __index.html__ looks like.
-```
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -272,7 +272,7 @@ Re-audit the app using Lighthouse and you will see the performance is improved;
 
 ## Add Splash Icons
 We need to add a 512×512 icon to show up on splash screen. For doing so we need to update the manifest.json and put the icon in public folder.
-```
+```json
 {
   "short_name": "React App",
   "name": "Create React App Sample",
@@ -295,7 +295,7 @@ We need to add a 512×512 icon to show up on splash screen. For doing so we need
 }
  ```
 We also need to add these meta tags to inform the browser that our app is a PWA.
-```
+```html
 <!-- Tell the browser it's a PWA -->
 <meta name="mobile-web-app-capable" content="yes">
 <!-- Tell iOS it's a PWA -->
@@ -304,13 +304,13 @@ We also need to add these meta tags to inform the browser that our app is a PWA.
 
 ## Let’s Deploy
 We’re now only missing HTTPS and caching which will be fixed after deploy. Update the __doCache__ flag to __true__ in worker.js file. Next, create a new project in firebase-console with name __Pwa App__. Run the following commands in project directory.
-```
+```sh
 npm install -g firebase-tools
 firebase login
 firebase init
  ```
 Make sure your __firebase.json__ looks like this-
-```
+```js
 {
   "hosting": {
     "public": "build",
@@ -329,7 +329,7 @@ npm run build
 firebase deploy
  ```
 Now when we do audit using Lighthouse on deployed URL. We should see this result.
-![image](/img/pwa-audit-final.png)
+![image](./images/pwa-audit-final.png)
 and We’re done! Now we have a working base for building progressive web app with React JS. We’re ready for the future of web applications. 😀
 
 Demo Url: [Pwa Demo App](https://pwa-app-cb.firebaseapp.com/)
