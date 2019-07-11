@@ -3,9 +3,10 @@ import Layout from './layout'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 import { graphql } from 'gatsby';
 import {H1, Flex, Box, I} from 'bricks'
-import { getCategory } from '../utils'
+import { getCategory, hypenize } from '../utils'
 import CategoryLink from '../components/categorylink'
 import PlainLink  from '../components/link'
+
 
 const Sidebar = ({author, category, tags})=> (
   <div>
@@ -14,7 +15,7 @@ const Sidebar = ({author, category, tags})=> (
         Written by
       </Flex>
       <Flex justifyContent='center' mt='0.5rem'>
-        <PlainLink to={'/journal/author/'+author}>
+        <PlainLink to={'/journal/author/'+hypenize(author)}>
           <I>{author}</I><br />
         </PlainLink>
       </Flex>
@@ -36,10 +37,10 @@ const Sidebar = ({author, category, tags})=> (
         </Flex>
         <Flex justifyContent='center' mt='0.5rem'>
           <Flex fontSize={[0, 0]} color='black.2' width={[0.5,0.5]} justifyContent='center' flexWrap='wrap'>
-            {tags.map((tag, i) => (
-              <Box p='0.125rem'>
-                <PlainLink key={tag} to={'/journal/tags/' + tag}>
-                  <I>#{tag}</I>
+            {tags.map((tag) => (
+              <Box key={tag} p='0.125rem'>
+                <PlainLink key={tag} to={'/journal/tags/' + hypenize(tag)}>
+                  <I>#{hypenize(tag)}</I>
                 </PlainLink>
               </Box>
             ))}

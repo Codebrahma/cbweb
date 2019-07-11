@@ -14,3 +14,4 @@ export const getTags = (frontmatter)=>{
 }
 
 export const isLast = (arr, index)=> arr.length-1 === index
+export const hypenize =(s)=>s.split(' ').join('-')

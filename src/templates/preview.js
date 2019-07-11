@@ -8,7 +8,7 @@ import PlainLink  from '../components/link'
 import { css } from 'bricks'
 import { Link } from 'gatsby'
 import Pagination from '../components/pagination'
-import { getCategory, getTags } from '../utils'
+import { getCategory, getTags, hypenize } from '../utils'
 import { space } from 'styled-system'
 import CategoryLink from '../components/categorylink'
 
@@ -33,7 +33,7 @@ const getHeading = ({
   }
 
   if (type === 'author' && value) {
-    return `Posts written by ${value}`;
+    return `Posts written by ${value.split('-').join(' ')}`;
   }
 
   return `Blog Posts, page ${currentPage} of ${totalPages}`;
@@ -97,7 +97,7 @@ const Blog = ({frontmatter})=>(
             <Text fontSize={[0,0]} color='black.2'>
               {getTags(frontmatter) && getTags(frontmatter).map((tag,i)=>(
                 <TagLink key={tag} to={'/journal/tags/' + tag}>
-                  <I>#{tag}</I>
+                  <I>#{hypenize(tag)}</I>
                 </TagLink>
               ))}
             </Text>
