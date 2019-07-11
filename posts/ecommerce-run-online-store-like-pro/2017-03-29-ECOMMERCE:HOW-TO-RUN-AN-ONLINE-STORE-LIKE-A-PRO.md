@@ -1,14 +1,14 @@
 ---
 templateKey: 'blog-post'
-title: 'ECOMMERCE: HOW TO RUN AN ONLINE STORE LIKE A PRO'
+title: 'Ecommerce: How To Run An Online Store Like A Pro'
 date: 2017-03-29
 featuredpost: false
 description: >-
-  HOW TO RUN AN ONLINE STORE LIKE A PRO
+  How To Run An Online Store Like A Pro
 author: Anand Narayan
 link: /ecommerce-run-online-store-like-pro
 tags:
-- ecommerce developmet
+- ecommerce development
 - Rails Ecommerce Devlopment
 - spree commerce
 ---
