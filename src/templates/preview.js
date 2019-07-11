@@ -10,6 +10,8 @@ import { Link } from 'gatsby'
 import Pagination from '../components/pagination'
 import { getCategory, getTags } from '../utils'
 import { space } from 'styled-system'
+import CategoryLink from '../components/categorylink'
+
 const isLast = (arr, index)=> arr.length-1 === index
 const getHeading = ({
   isFirstPage,
@@ -73,32 +75,6 @@ const HeadingLink = styled(Link)(
       backgroundColor: 'primary',
       color: 'secondary',
     }
-  })
-)
-
-const CategoryLink = styled(Link)(
-    css({
-      bg: 'tint',
-      color: 'black.1',
-      fontSize:'0',
-      px:'6px',
-      py:'2px',
-      display:'inline-block',
-      borderRadius: '6px',
-      border: '1px solid black',
-      textDecoration: 'none',
-      '&:hover': {
-        bg:'black.1',
-        color:'tint',
-      },
-      ':visited':{
-        bg:'tint',
-        color:'black.1',
-        '&:hover': {
-          bg:'black.1',
-          color:'tint',
-        },
-      }
   })
 )
 
