@@ -32,8 +32,8 @@ ASO is necessary for the reason that you want your app to be successful. Releasi
 There are a lot of ways users discover an app – friends, online ads, blog articles etc, but searching on the app store remains the most likely way someone will find your app. A staggering 47% of iPhone users in the US admit that they found their last installed app by searching the app store.
 
 ![screen-shot-2015-08-27-at-9-26-12-am](./images/Screen-Shot-2015-08-27-at-9.26.12-AM.png)
-Highest portion of app discovery happens through keyword search and higher ranking directly impacts on the number of downloads.
 
+Highest portion of app discovery happens through keyword search and higher ranking directly impacts on the number of downloads.
 
 
 ## Discovery in search bar
@@ -43,29 +43,20 @@ An average user who browses on app store, the search bar is mostly used in two w
 The algorithm captures these phrases and looks for direct results and moves on to apps that have similar keywords in app descriptions. Thus, optimising these factors can boost visibility, leading to a higher number of views on the app and increased downloads.
 
 
-
 ## App Store Optimising Factors
-
-
 ASO isn’t is a single metric that can be worked overnight. It comprises of several elements including title, description, reviews etc. Depending on the importance, we’ve classified the factors into primary and secondary. You need to make sure that your primary factors are in place before you can expect any boost in the rankings.
 
-
-
-## Primary Factors
-### Title
+### Primary Factors
+#### Title
 The title is the biggest contributing factor for search ranking. When a ‘keyword’ is searched for, apps with the keyword in the title are given utmost importance and picked up first by the app stores.
 
-![keywordsintitle](./images/KeywordsInTitle.png)
-
+![keywords in title](./images/KeywordsInTitle.png)
 
 For instance – let’s take Amazon, Skype and Whatsapp. These are giants in shopping, video-call and messaging categories respectively. It’s also important to note that Skype and Amazon have 500 million downloads and Whatsapp crossing over 1 Billion. Now, let’s have a look at their app pages
 
-![untitled-design-1](./images/Untitled-design-1.png)
-
-
+![app samples](./images/Untitled-design-1.png)
 
 Take a look at the app titles. They are not just __Amazon, Skype and Whatsapp but are ‘ Amazon shopping’ ‘ Skype – free IM & video calls’__ and __‘Whatsapp messenger’__. These titles not only show the app names but also mention their functionality – what they are meant for, and has an advantage over any other app in the category.
-
 
 
 __Description__
@@ -80,40 +71,26 @@ __Kids Animals Jigsaw Puzzles__– If your preschool kids like jigsaw puzzles, t
 In addition to title, the app descriptions have very relevant keywords and hence, have great of visibility and top ranking.
 
 
-
 ## Secondary Factors
 Secondary factors may be aren’t that crucial as the above but, cannot be completely ignored either. These factors add value to primary factors in getting a good rank.
-
-
 
 ### Downloads
 Higher number of downloads indicate that more number of people have used and that means it will be shown more frequently in ‘similar apps’ and ‘users also installed’ section. With increasing downloads, the app also gets increasing exposure.
 
-
 ### Reviews
 Reviews reflect the quality of the app. All applications have an average rating on a given scale of 1 – 5 that is given by users. 5 star rating of an app indicates best quality, good user experience and everything that makes the app more likeable to download.
-
-
 
 ### Localisation
 While uploading apps on the store, uploader has an option to make to available for all, or specific regions. Although an app can be searched with title and keywords globally, having a regional/country preference will give a higher ranking whenever search request comes from that geographical boundary.
 
-
-
 ### Asset Optimizing
 Screenshots and promo video (if any)  placed right in the app page helps users know how the app is going to look like Decoding the functionality based on user interface, users will quickly be able to judge whether your app solves their purpose or not.
-
-
 
 ## How is Android ASO different from iOS ASO?
 Although app store optimization is the process of increasing discoverability of apps, there are different guidelines to comply with, for different app stores. While, most of the factors are generalised and applicable in most cases, there are some guidelines that are different in ios and android.
 
-
-
 ### iOS App store guidelines
 The most important factor that defies with normal app store optimisation rules is that, in iOS the content description doesn’t contribute to search ranking at all. However, the uploader specifies a list of keywords that relevant to the app which is taken into consideration by algorithm. The app is only searchable by app name, company name, and keywords which are given by developer during metadata setup.
-
-
 
 _Some other guidelines include:_
 
@@ -124,9 +101,7 @@ iOS app description has no effect in the search ranking.
 
 
 ### Android Play Store Guidelines
-
 Android, just like Google relies more on the semantics to improve search accuracy by understanding searcher intent and the contextual meaning of terms as they appear in the searchable dataspace. So the title, description, reviews, categories -everything is taken into account by Android for the results.
-
 
 
 _Some other guidelines include:_
@@ -134,7 +109,6 @@ _Some other guidelines include:_
 Android allows for long descriptions. Users can find application features by clicking on ‘Read More’, whereas just a single line description is shown on the app pages.
 Google collects data about installs, uninstalls, install retention and app engagement. Apps that are doing well in these metrics are ranked higher.
 Apps that have good number of ‘+1’ in Google plus or are shared in any kind of social media get a general rank boost
-
 
 App store optimization is important, and can give the boost your app needs to get hugely popular. Have you tried using these tactics for your app? How has your experience been? We’d love to hear your thoughts in the comments section below.
 
