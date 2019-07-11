@@ -20,8 +20,6 @@ The bottomline for a successful company is building a great product that users l
 
 While there is no textbook in this world that can teach you how to build great products, there are certain points than can help you minimize risk and maximise your chances of shipping something your users will love. Putting together a framework of sorts using learnings of other successful entrepreneurs and your own experience makes for a good reference point in times of hard decisions, and should absolutely be followed in times of the easier decisions.
 
-[![frontend development company](./images/frontend-development-banner-03.png)](/front-end-development-company/)
-
 ## Focus on Shipping the Right Product
 Reid Hoffman, the founder of Linkedin said very famously, “if you’re not embarrassed by the first version of your product, you’ve launched too late.” This statement wonderfully puts into focus, what is necessary. We’ve seen founders and entrepreneurs waste way too much time on brainstorming for the right tech stack, spend nights discussing which features to ship in the first version or fretting over the smallest of glitches, without even knowing whether their product is something that their users will use.
 
