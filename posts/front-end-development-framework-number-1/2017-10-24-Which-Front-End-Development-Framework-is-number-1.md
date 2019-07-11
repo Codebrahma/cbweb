@@ -6,6 +6,7 @@ featuredpost: true
 description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Prasanna
+link: /front-end-development-framework-number-1
 ---
 ## VueJS vs ReactJS,
 
@@ -15,8 +16,7 @@ ReactJS is the most popular front end development framework right now. However V
 
 To figure out if ReactJS or VueJS is a better platform for you. The following factors need to be considered.
 
-![[img](/img/vuejs-vs-reactjs1-300x162.png)](https://codebrahma.com/wp-content/uploads/2017/10/vuejs-vs-reactjs1.png)
-
+![img](./images/vuejs-vs-reactjs1-768x416.png)
 # Learning curve
 Vue is probably the best choice if you want an easy to learn front end development framework. Vue is simple, it features a lot of concepts from Angular 1 and React. You can use it without any build system.
 
@@ -54,7 +54,7 @@ Vue’s companion libraries for state management and routing are all officially 
 
 React instead chooses to leave these concerns to the community, creating a more fragmented ecosystem. But since it is more popular React’s ecosystem is considerably richer than Vue’s.
 
-![[image](/img/1-EnbFMixxPy5-kQiJmGSISg-768x401.png)](https://codebrahma.com/wp-content/uploads/2017/10/1-EnbFMixxPy5-kQiJmGSISg.png) 
+![image](./images/1-EnbFMixxPy5-kQiJmGSISg-1024x535.png)
 
 # Jobs
 ReactJS is the most popular right now: That counts for a lot, most popular means it has the most resources online, better job opportunities and more likely to have long term success. React is very popular and it’s been around longer. It’s likely more businesses have used React. Keep that in mind if you’re in the market for a new job right now.

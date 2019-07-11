@@ -14,7 +14,7 @@ If your company is in the business of developing applications for mass consumpti
 
 Are you looking for a way to build cloud-ready application architecture? If so, consider the following tips for success.
 
-![img](/img/cloud-ready-image2.jpg 'image')
+![img](./images/cloud-ready-image2.jpg)
 Source – Pixels
 
 1.Work On Making Security Systemic
@@ -38,12 +38,8 @@ These types of components will require constant communication with other parts o
 
 The best way to catch these performance issues is by adequately monitoring your app’s infrastructure. The tools provided by companies like [AppOptics](https://www.appoptics.com/infrastructure-monitoring) will keep you informed about how well your program is performing.
 
- 
-
-
+![img](./images/cloud-ready-image1.jpg)
 Source-Pexels
-
- 
 
 4.Create App Architecture That is Easy to Scale
 The main goal you should have as an app developer is providing consumers with a product they will love. If your app starts to gain popularity, it will usually get put through the paces. Instead of dealing with outages or crashes, you need to create architecture that is easy to scale.

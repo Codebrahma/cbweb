@@ -2,10 +2,11 @@
 templateKey: 'blog-post'
 title: 'Comparison of form libraries in react'
 date: 2017-08-21
-featuredpost: true
+featuredpost: false
 description: >-
   Comparison of form libraries in react
 author: Anushul Sahni
+link: /form-libraries-in-react
 ---
 
 ## Introduction
@@ -36,11 +37,11 @@ __Formsy React__ was once most popular and most promising solution for most of t
 
 ## Architecture
 ### Formsy
-![image](/img/Untitled-Diagram-3.jpg)
+![image](./images/Untitled-Diagram-3.jpg)
 __Formsy__ architecture is pretty simple and direct, Input components inside formsy form are provided with ```get__()``` and ```set__()``` methods from __formsy mixin__ (or HOC in case of ES6). Using get and set methods we can communicate the data of the form with the library.
 
 __Redux Form__
-![image](/img/reduxFormDiagram-2.png)
+![image](./images/reduxFormDiagram-2.png)
 __Redux form__ architecture is very much similar to Redux architecture, except there are input components as an addition. Input components wrapped with the library dispatch actions and payload which in turn updates the form Reducer of the Redux store, which in turns updates the UI.
 
 ## Setting Up in a project
@@ -63,7 +64,7 @@ In case of Redux form we need to have a form reducer to handle all data related 
 Building a simple form with one input and one submit itself brings out a lot of differences between libraries.
 
 ### Formsy
-```
+```jsx
 import React, { Component } from 'react';
 import { Form } from 'formsy-react';
 
@@ -109,7 +110,7 @@ class ExampleForm extends Component {
 export default ExampleForm;
 ```
 __Redux Form__
-```
+```jsx
 import React from 'react';
 import { reduxForm, ... } from 'redux-form';
 
@@ -143,7 +144,7 @@ Most of the modern web applications have variety of inputs like Date Range Picke
 
 __Formsy__
 /* render part of building component */
-```
+```jsx
 render() {
   return (
     <div>
@@ -160,7 +161,7 @@ render() {
 }
 ```
 ## Redux Form
-```
+```jsx
 /* return part  */
 const CustomInput = ({ label, input, meta, ...props }) => (
   <div className={`${(meta.error ? 'error' : '')} ${(meta.warning ? 'warning' : '')}`}>
@@ -190,7 +191,7 @@ Validations is an essential part of any form library. Modern day Forms have vali
 
 ### Using Built-In validations
 __Formsy__ have a very good range of built in validations, such as ```isEmail```, ```isUrl```, ```isAlphaNumeric```, ```isLength```. Also some of them lets us compare values with other fields or even some fixed values. They can be used in this way.
-```
+```jsx
 /* Inside wrapped form */
 <CustomInput
  name="email" 
@@ -202,7 +203,7 @@ __Formsy__ have a very good range of built in validations, such as ```isEmail```
 />
 ```
 But this has a disadvantage as to provide validation error one more prop i.e validationError needs to be passed which will pass the error message to component. Usage given below:
-```
+```jsx
 /* Inside wrapped form */
 <CustomInput 
   validationError="Should be an email" 
@@ -215,7 +216,7 @@ Unfortunately the __Redux Form__ API does not gives us any built-in validations 
 
 __Adding custom validtion__
 For creating a custom validation __Formsy__ provides ```addValidationRule``` from its API, but the downside comes when we have to use this validation, like a using built-in validation we will have to pass the error with a separate prop ```validationError```. To use this we will have to separately pass the validtion name in validation prop using component.
-```
+```jsx
 /* for defingin validation */
 Formsy.addValidationRule('isPhoneNo', (values, value) => {
   return validPhoneNoRegExPattern.test(value); // assuming validPhoneNoRegExPattern exists
@@ -224,7 +225,7 @@ Formsy.addValidationRule('isPhoneNo', (values, value) => {
 __Redux Form__ provide two major methods for validating values filled by the user in the form.
 
 An overall validation handler passed in options object while wrapping component with Redux Form HOC.
-```
+```jsx
 const validate = values => {
   /* returned object has all errors with name of field as key and error message as value  */
   const errors = {};
@@ -243,7 +244,7 @@ return reduxForm({ validate, ...otherValues })(SampleForm);
 ```
 Field level validation where to each field can be provided with a validation method to validate that particular field with returning value as either error message or undefined if value is valid.
 
- ```
+```jsx
  !value ? 'Please provide user name' : undefined }
   ...otherProps
 />
@@ -253,7 +254,7 @@ __Async validations__
 __Formsy React__ Unfortunately the original API of formsy does not provide us with any way of doing async validations.
 
 In __Redux Form__ async validation can be done at the field level in redux forms, eg: for checking the availability of user name while as soon as the particular field is blurred.
-```
+```jsx
 const asyncValidate = (values) => {
   // ... returns a promise which does the async operation of validating the field.
 };
@@ -280,7 +281,7 @@ __Formsy__ API does not let us initialize form with passing of one single prop t
 Initializing __Redux form__ is possible but only by passing the initialValues prop to HOC component or passing in reduxForm options argument. Initializing fields individually is not possible in Redux Form because Field component doesn’t not support value prop.
 
 ```initialValues``` is an object of default values which will have name of field as key and default value as value
-```
+```jsx
   // or second method is
   return reduxForm({
     initialValues: {{ userName: 'Default User Name' }}
@@ -292,7 +293,7 @@ Interaction between elements is an essential features which let us pre-fill valu
 __Formsy__
 Using value of one input in another can be achieved using getModal available through Formsy.Form
 instance.
-```
+```jsx
  <Formsy.Form ref="form">
   {/* ... input component having value of gender */}
   <GenderDependentComponent
@@ -307,7 +308,7 @@ __Redux Form__
 In __Redux Form__ there are numerous ways to get value of any input that entered by the user. There are selectors, direct methods which gives us access to the entered values and other than the mechanisms provided by the redux-form package since all the values are present in redux store we can access them whenever we want by subscribing to the store for that.
 
 One of the methods i.e is using [formValueSelector](http://redux-form.com/7.0.3/docs/api/FormValueSelector.md/) is given below:
-```
+```jsx
  import { formValueSelector, //...other imports } from 'redux-form';
  import { connect } from 'react-redux';
 
@@ -334,3 +335,7 @@ Both formsy and redux-form have their own merits and de-merits. In terms of supp
 Formsy is not dependent on any external storage library (Everything is present in HOC) whereas Redux Form as name suggest is nothing without redux, a module which has got merits and de-merits of its own.
 
 Trying out both of these form libraries in React will help in identifying the right choice for the right use case.
+
+> Looking for [Read more React JS blogs ](/category/reactjs-experts)?
+
+> Looking for [React JS development company](/react-js-development)?

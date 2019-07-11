@@ -6,13 +6,13 @@ featuredpost: true
 description: >-
   Introduction to Cryptocurrencies
 author: Tarun Batra
-link: /introduction-to-cryptocurrencies
 category:
 - Cryptocurrency
+link: /introduction-to-cryptocurrencies
 tags:
-  - Bitcoins
-  - Cryptocurrency
-  - Fintech
+- Bitcoins
+- Cryptocurrency
+- Fintech
 ---
 Unless you’ve been living under a rock, you’d have heard about cryptocurrencies or Bitcoin atleast. There’s a lot of buzz around it, but disproportionately less clarity regarding what it actually is. In this article we’ll introduce ourselves to the fundamental principles of cryptocurrencies, clear the mist of confusion which surrounds them, and debunking some myths along the way too.
 

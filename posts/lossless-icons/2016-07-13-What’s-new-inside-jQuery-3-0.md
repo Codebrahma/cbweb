@@ -6,9 +6,9 @@ featuredpost: true
 description: >-
   Write Less. Do More.
 author: Balram Khichar
-link: /whats-new-jquery-3-0
 category:
 - jQuery
+link: /whats-new-jquery-3-0
 tags:
 - jQuery 3.0
 ---

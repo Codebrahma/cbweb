@@ -3,14 +3,14 @@ templateKey: 'blog-post'
 title: '‘Swiss knife of analytics’: A Chat With The Founder of Octo.ai'
 date: 2016-10-25
 featuredpost: true
-link: /swiss-knife-analytics-chat-dipankar-founder-octo-ai
 description: >-
   ‘Swiss knife of analytics’: A Chat With The Founder of Octo.ai
 author: Anand Narayan
+link: /swiss-knife-analytics-chat-dipankar-founder-octo-ai
 tags:
-  - analytics
-  - automation in marketing
-  - founders
+- analytics
+- automation in marketing
+- founders
 ---
 
 ![after](./images/after.png)

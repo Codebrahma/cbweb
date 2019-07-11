@@ -8,9 +8,9 @@ description: >-
 author: Anand Narayan
 link: /pr-101-setting-up-your-startup-for-success
 tags:
-  - growth hack
-  - PR
-  - startups
+- growth hack
+- PR
+- startups
 ---
 
 __Public Relations__ is all about creating and managing a favorable relation with your audience. Almost every successful application includes effective PR strategies in their list of growth hacks. One good mention from a reputed journal or blog could give your user acquisition rate, the jump it requires to achieve escape velocity! But traditionally, companies have been relying on PR agencies to help them navigate this jungle – and these agencies are not pocket friendly, especially for cash-strapped startups. There is a growing consensus in the startup community that founders should take PR matters into their own hand, instead of outsourcing. But where do you begin?

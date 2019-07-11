@@ -5,6 +5,7 @@ date: 2017-10-02
 featuredpost: true
 description: >-
   Learn how to optimize bundle and deploy a React application
+link: /deploy-react-application-depth-overview-various-options-deploy
 author: Prasanna
 ---
 A lot of front end application development companies are using React for developing applications. Deploying an application refers to making the application accessible to the world through internet. We will discuss about the various ways to deploy a React application, the platforms to deploy and test the applications. There are a lot of articles describing how to deploy a React application. We will mention about each steps involved in detail as per our experience and various options to how to do it. This article is written assuming webpack as the module bundler to generate the bundled assets for a client side deployment.
@@ -12,7 +13,7 @@ A lot of front end application development companies are using React for develop
 ## What does deployment refers to ? (For Beginners)
 Once you create your React application you want to share it to the whole world. You wouldn’t want to tell every single user of the application to download the repository and ask them to run locally. So to share it and make it open to the entire world we deploy the application in the internet. Also there would be frequent version updates to the application (like bugfixes, feature addition…) that has to happen without informing the end users.
 
-![image](/img/production-optimisation-react.jpg)
+![image](./images/production-optimisation-react.jpg)
 ## What should be the major focus of a deployed application ?
 The major focus of a deployed front end application (in our case it is the React application) is to make the application load faster by minimizing the overhead. This can be achieved by reducing the bundled Javascript files and optimizing the static assets. Imagine downloading 15 MB files for every single network request in our application. The user will feel that the application will be too difficult to use. There are many ways to improve the speed of the application and we have described in upcoming sections.
 
@@ -24,7 +25,7 @@ The main focus in development phase is to make the development process easier by
 ## How does deployment works ?
 In a typical client side deployment we generate files which are actually served over the network.
 
-![image](/img/http-request.png)
+![image](./images/http-request.png)
 In the example you could see that all the necessary files (Javascript / static assets ) are fetched over the network.
 Typically during development using webpack dev server, the server actually stores these files in memory and serves during development. So during deployment we get the following files generated
 
@@ -155,11 +156,11 @@ new webpack.optimize.OccurrenceOrderPlugin(preferEntry)
 
 Webpack provides a great platform to achieve dynamic imports seamlessly. Try opening facebook.com and netflix.com and try using some of their features. You could see that there will be multiple network requests to fetch the JS files. These files will be fetched only when needed. A simple example would be
 
-![image](/img/lazy-loading.gif)
+![image](/images/lazy-loading.gif)
 
 Webpack allows you to import a library only when you actually use it. For example, moment is a heavy library which might not be used everywhere. If there is a Component where you used moment and that component is rendered only in one route, you can dynamically import it like this
 
-```sh
+```js
 import(‘moment’).then() // This will return a promise
 ```
 We can use moment only in the case when it is actually required.
@@ -169,7 +170,7 @@ So if you can identify modules based on the usage, we can reduce bundle size sig
 ### CommonChunk plugin
 
 Most probably you won’t be having multiple entry points in your configuration for webpack, I want to discuss this to show the power of commonChunksPlugin. If you are having a multipage app you can easily bundle with multiple entry points, generate multiple chunks and load them on demand.
-```sh
+```jsx
 module.exports = {
   entry: {
     index: "./index.js",
@@ -185,7 +186,7 @@ This will generate multiple entry chunks: index.entry.chunk.js and dashboard.ent
 
 If your entry chunks have some modules in common then CommonsChunkPlugin identifies common modules and put them into a commons chunk. You need to add two script tags to your page, one for the commons chunk and one for the entry chunk.
 
-```sh
+```js
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 module.exports = {
   entry: {
@@ -213,7 +214,7 @@ This plugin will enable the same concatenation behavior in webpack.
 ### Compression-webpack-plugin:
 
 This is by far the most important plugin. Once you compress with GZIP your bundle size reduces drastically. I will let you down to google to understand what exactly this plugin does
-```sh
+```js
 module.exports = {
  plugins: [
    new CompressionPlugin(),
@@ -230,18 +231,25 @@ Pricing: Free for one year using free tier.
 
 Amazon S3 is object storage built to store and retrieve any amount of data from anywhere. With S3 we can actually store HTML, JS and CSS files thereby serving it as a static website. All you get is a public folder with a bucket (each bucket can be used as a different static webpage). For this you need to create a bucket. With AWS you can get 11 months of free tier with which you can create one.
 
- 
+
 
 ### How to host
 
-1. For Index Document, type the name of the index html file, which is typically named index.html. When you configure a bucket for website hosting, you must specify an index document. Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.
-
-![image](/img/staticwebsitehosting20.png)
-
-2. (Optional) For 4XX class errors, you can optionally provide your own custom error document that provides additional guidance for your users. For Error Document, type the name of the file that contains the custom error document. If an error occurs, Amazon S3 returns an HTML error document. For more information, see Custom Error Document Support in the Amazon Simple Storage. 
-3. (Optional) If you want to specify advanced redirection rules, in the Edit redirection rules text area, use XML to describe the rules. For example, you can conditionally route requests according to specific object key names or prefixes in the request. You can have an advanced redirect rules from here.
-
-4. You can also configure cloudfront for region based delivery and caching.
+![image](./images/staticwebsitehosting20.png)
+<ol>
+  <li>
+    For Index Document, type the name of the index html file, which is typically named index.html. When you configure a bucket for website hosting, you must specify an index document. Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.
+  </li>
+  <li>
+    (Optional) For 4XX class errors, you can optionally provide your own custom error document that provides additional guidance for your users. For Error Document, type the name of the file that contains the custom error document. If an error occurs, Amazon S3 returns an HTML error document. For more information, see Custom Error Document Support in the Amazon Simple Storage.
+  </li>
+  <li>
+    (Optional) If you want to specify advanced redirection rules, in the Edit redirection rules text area, use XML to describe the rules. For example, you can conditionally route requests according to specific object key names or prefixes in the request. You can have an advanced redirect rules from here.
+  </li>
+  <li>
+    You can also configure cloudfront for region based delivery and caching.
+  </li>
+</ol>
 
 If you face any react router issue with S3 we can use advanced Redirection rule to solve it. For example, if you hit the nested route as declared in the React router you won’t be getting the results. Since in static deployments it first looks for the folder based on the route. To avoid this you can write advanced redirection rule for 404 and use Hash URL based on this [stackoverflow](https://stackoverflow.com/questions/16267339/s3-static-website-hosting-route-all-paths-to-index-html) thread.
 
@@ -285,7 +293,7 @@ There are certain tools which helps us to monitor deployed applications. For exa
 
 Using Sentry we can log all errors and maintain its stack trace. All we need to include their CDN / source code with our account credentials on our JS file. We need to push to sentry at all possible error locations (We can use try catch pattern at async fetches or any other potential locations).
 
-![image](/img/sentry-error.jpg)
+![image](./image/sentry-error.jpg)
 ### Log Rocket
 
 Log Rocket is a latest tool by which we can even replay redux states when a bug occurs. It is gaining its popularity of late.

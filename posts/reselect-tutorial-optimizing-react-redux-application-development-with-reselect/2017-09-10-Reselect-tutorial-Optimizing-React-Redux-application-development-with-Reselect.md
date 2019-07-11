@@ -2,16 +2,17 @@
 templateKey: 'blog-post'
 title: 'Reselect tutorial. Optimizing React Redux application development with Reselect.'
 date: 2017-09-10
-featuredpost: true
+featuredpost: false
 description: >-
   Optimizing React Redux application using Reselect
 author: Prasanna
+link: /reselect-tutorial-optimizing-react-redux-application-development-with-reselect
 ---
 
 __React and Redux__ compliment each other well. React Components subscribe to Redux store due to which the child components re renders when the state (Redux state) is changed every time. So any component which is subscribed to Redux re renders when there is a state change (unless and until we mention not to do so). This is a prime reason for which there is a need for optimizing React Redux applications in order to avoid unnecessary re renders. Reselect is a library which can be effectively used in a React Redux application for the same. In this __Reselect tutorial__ we will explore how Reselect will help in optimizing React Redux application.
 
 ## How Redux Subscription works
-![image](/img/Reselect-tutorial.gif)
+![image](./images/Reselect-tutorial.gif)
 
 Before jumping straight away into Reselect, there are certain other ways in optimizing React Redux applications.
 1. Using __React’s PureComponent__, React shallow compares previous props and current props and avoid re rendering if there is no change.
@@ -31,7 +32,7 @@ A memoized selector that recalculates only when that part of the start tree chan
 
 ## What are selectors ?
 In our context, __selectors are nothing but functions which can compute or retrive data from the store__. We usually fetch the state data using mapStateToProps function like this.
-```sh
+```jsx
 const mapStateToProps = (state) => {
   return {
     activeData: getActiveData(state.someData, state.isActive)
@@ -46,13 +47,13 @@ The drawback with this function is, whenever any part of the state state updates
 When we use Reselect it caches the input arguments to the memoized function. So only when the arguments of the function changes from the previous call, the selector recalculates.
 
 For a above mapStateToProps function a normal selector would be written as
-```sh
+```jsx
 const getActiveData = (someData, isActive) {
   // returns by filtering out all someData for which isActive set to true
 }
 ```
 The same with reselect will be
-```sh
+```jsx
 const getActiveData = createSelector([someData, isActive], (data, active) => {
   // callback is called only when someData or isActive changes
 }
@@ -64,7 +65,7 @@ A memoized selector can itself be an input-selector to another memoized selector
 ## Let’s look how Reselect can be utilized to optimize a React Application’s performance with an example
 Assume that there is a list of football player’s statistics displayed in the UI like this.
 
-![image](/img/optimizing-react-redux-application.jpg)
+![image](./images/optimizing-react-redux-application.jpg)
 
 It displays the number of goals scored and the average rating awarded to the players in the last 100 matches .
 The UI has features like
@@ -73,7 +74,7 @@ __2.Sorting by either Goals scored or average rating__. If selected it should so
 
 Considering an API response like this, which is actually stored in Redux once fetched.
 For Each player the last 100 match data will be having a structure like
-```sh
+```jsx
 // Each player data will be an object
 {
   name: ‘Ronaldo’,
@@ -88,7 +89,7 @@ For Each player the last 100 match data will be having a structure like
 ```
 To calculate and convert the data to the format which is required for UI we will structure selectors as follows
 
-![image](/img/optimizing-React-Redux-application-1.jpg)
+![image](./images/optimizing-React-Redux-application-1.jpg)
 
 In the above structure we are chaining footSelector -> calculatePlayerData -> sortSelector. This means
 1.When the API data changes all three selectors re calculates.
@@ -101,13 +102,13 @@ We will assume the redux store is maintained in immutable JS. (Refer How to use 
 So in code the above selectors will be
 
 ### Foot Selector
-```sh
+```jsx
 // Footselector will return if the selectedFoot in the store is either "left" or "right" or "both"
 const footSelector = createSelector([state] => state.get('selectedFoot'));
 ```
 ### calculatePlayerDataSelector
 
-```sh
+```jsx
 // footSelector is input to another selector - chaining
 export const calculatePlayerData = createSelector([apiData, footSelector], (data, foot) => {
   if (!data.isEmpty()) {

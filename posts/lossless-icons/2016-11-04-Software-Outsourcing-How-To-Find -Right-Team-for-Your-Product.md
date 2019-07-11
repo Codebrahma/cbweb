@@ -3,14 +3,14 @@ templateKey: 'blog-post'
 title: 'Software Outsourcing: How To Find The Right Team for Your Product'
 date: 2016-11-04
 featuredpost: true
-link: /software-outsourcing-find-right-tech-team-product
 description: >-
   Software Outsourcing: How To Find The Right Team for Your Product
 author: Anand Narayan
+link: /software-outsourcing-find-right-tech-team-product
 tags:
-  - outsourced software development
-  - web application development
-  - outsourced tech team
+- outsourced software development
+- web application development
+- outsourced tech team
 ---
 
 To build a kickass product, you need a kickass team to work with you. Whether you’re a startup or looking to expand your business, hiring the right technical team is very crucial decision considering that they are going to be the architects of what you’re building.  Finding the right people to work with is not easy (think the ever booming headhunting business). It’s a tiresome job to evaluate your technical requirements, expectations, design aspects and then map them against the people whom you’re trying to work with.

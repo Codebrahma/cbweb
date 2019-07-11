@@ -6,18 +6,18 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a ac
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
 author: Prasanna
+link: /ReactJS+Development+productivity
 ---
 Whether you are a coder who specializes in ReactJS development services, AngularJS development services, or React native Development services this atom editor setup is sure to drastically improve your productivity.
 
- ![image](/img/1508558233_tmp_images__1_-300x115.jpg) 
+ ![image](./images/1508558233_tmp_images__1_.jpg) 
 
 _This list is divided into two sections Utlities and ReactJS Development specific packages:_
 
  
-
 # Utilities:
 
- ![image](/img/1508647118_tmp_3-300x225.jpg) 
+ ![image](./images/1508647118_tmp_3.jpg) 
  
 ## (1) Atom-transposee3
 
@@ -85,7 +85,7 @@ Toggle a single-quoted string to a double-quoted string (and ticks ` in JS!)
 
 # _HTML/CSS/JS/React Specific Packages:_
 These packages are specific for ReactJS development , HTML, and CSS.
-[![image](/img/1508642504_tmp_atom-icon.png)](https://codebrahma.com/wp-content/uploads/2017/10/1508642504_tmp_atom-icon.jpg)
+![image](./images/1508642504_tmp_atom-icon.jpg)
 ## (1) Atom-ternjs
 
 JavaScript code intelligence for atom with Tern. Adds support for ES5, ES6, ES7, Node.js, jQuery, Angular and more. Extendable via plugins. Uses suggestion provider by autocomplete-plus.
@@ -142,7 +142,5 @@ React ES7 snippets for atom
 
 Snippets for Jest testing framework
 
- 
- 
-_Looking to hire a [ReactJS services company ?](https://codebrahma.com/)_
+_Looking to hire a [ReactJS services company ?](/)_
 

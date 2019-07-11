@@ -3,13 +3,13 @@ templateKey: 'blog-post'
 title: '10 Everyday Apps Made Using ReactJS'
 date: 2016-11-11
 featuredpost: true
-link: /apps-made-using-reactjs
 description: >-
   10 Everyday Apps Made Using ReactJS
 author: Anand Narayan
+link: /apps-made-using-reactjs
 tags:
-  - React
-  - ReactJS
+- React
+- ReactJS
 ---
 
 ReactJS is an open-source JavaScript library and is being maintained by Facebook developers, and it has gained exponential popularity over the 3 years since of it’s release.

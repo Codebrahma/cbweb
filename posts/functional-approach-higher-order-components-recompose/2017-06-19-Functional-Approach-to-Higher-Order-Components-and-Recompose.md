@@ -7,7 +7,7 @@ description: >-
   Functional Approach to Higher Order Components and Recompose
 link: /functional-approach-higher-order-components-recompose
 tags:
-  - higher order components in reactjs
+- higher order components in reactjs
 author: Prasanna
 ---
 

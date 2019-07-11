@@ -3,14 +3,14 @@ templateKey: 'blog-post'
 title: 'Beginner’s Guide to App Store Optimization'
 date: 2016-11-16
 featuredpost: true
-link: /beginners-guide-app-store-optimization
 description: >-
   Beginner’s Guide to App Store Optimization
 author: Anand Narayan
+link: /beginners-guide-app-store-optimization
 tags:
-  - ASO
-  - Growth
-  - Startup
+- ASO
+- Growth
+- Startup
 ---
 
 ![App Store Optimization](./images/ASO-01.png)

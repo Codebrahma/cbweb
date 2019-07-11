@@ -2,10 +2,11 @@
 templateKey: 'blog-post'
 title: 'Why the latest ReactJS Development Update is a Game-changer (v16.0)'
 date: 2017-10-16
-featuredpost: true
+featuredpost: false
 description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Prasanna
+link: reactjsdevelopment-v16.0
 ---
 The latest ReactJS development update alters the core React algorithm to offer a ground-up rewrite on how React manages reconciliation.However React will maintain the same public API and that will allow for immediate upgrades for most projects.  This will help improving React JS development process to be more effective than ever and it benefits the companies which adopt React JS. we are also sure this will be true for many of you as well.
 
@@ -18,7 +19,7 @@ In this latest ReactJS development update a new core architecture, named “Fibe
 &nbsp;&nbsp;&nbsp;&nbsp;Async rendering
 Remember that the the API’s are still the same only the internal reconciliation algorithm has been rewritten. Therefore migrating to React 16 is seamless.
 
-![[image](/img/reactjs-development.png)](https://codebrahma.com/wp-content/uploads/2017/10/reactjs-development.png)
+![image](./images/reactjs-development.png)
 
 # Backwards Compatible
 
@@ -34,11 +35,11 @@ The lifecycle event componentDidCatch() can be used to catch errors.
 
 ## Easily readable error logs
 
-![[image](/img/reactjs-development-2-1024x175.png)](https://codebrahma.com/wp-content/uploads/2017/10/reactjs-development-2.png)
+![image](./images/reactjs-development-2.png)
  
 
 New architecture for error boundaries 
-![[image](/img/reactjs-development-3.png)](https://codebrahma.com/wp-content/uploads/2017/10/reactjs-development-3.png)
+![image](./images/reactjs-development-3.png)
 
 reactjs-development-3
 # More Efficient HTML(For server side rendering)
@@ -48,7 +49,7 @@ React 16 also drastically cuts the quantity of SSR overhead in generated HTML. A
 React 16 shows dramatic speed ups in server-side rendering across multiple versions of node. In React 16 the core team rewrote the server renderer from from the ground up, so it doesn’t do any vDOM work at all. This is why it can be significantly faster.
 It has been reported from early adopters that they are witnessing a 1.3x speedup.
 
-![[image](/img/reactjs-development-1-1024x632.png)](https://codebrahma.com/wp-content/uploads/2017/10/reactjs-development-1.png)
+![image](./images/reactjs-development-1.png)
 
 # Portals
 Portals in React 16 will allow us to renders children in any DOM node regardless of it’s location in the DOM.

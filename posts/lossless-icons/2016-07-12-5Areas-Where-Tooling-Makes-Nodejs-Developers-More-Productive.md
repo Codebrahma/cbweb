@@ -6,9 +6,9 @@ featuredpost: true
 description: >-
   5 Areas Where Tooling Makes Node.js Developers More Productive
 author: Aravindan
-link: /5-areas-where-tooling-makes-node-js-developers-more-productive
 category:
 - NodeJS
+link: /5-areas-where-tooling-makes-node-js-developers-more-productive
 tags:
 - node.js
 - Node.js Development

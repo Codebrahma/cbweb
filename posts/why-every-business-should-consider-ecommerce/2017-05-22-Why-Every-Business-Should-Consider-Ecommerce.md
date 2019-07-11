@@ -5,8 +5,8 @@ date: 2017-05-22
 featuredpost: false
 description: >-
   Why Every Business Should Consider Ecommerce
-link: /why-every-business-should-consider-ecommerce
 author: Anand Narayan
+link: /why-every-business-should-consider-ecommerce
 tags:
 - ecommerce development
 ---

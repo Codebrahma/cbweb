@@ -19,8 +19,7 @@ The world of apps is competitive today. Different companies are entering the mar
 
 Some app metrics are simply [vanity metrics](https://www.tableau.com/learn/articles/vanity-metrics). The name might sound harmless enough, but these vanity metrics just look good on paper. They don’t mean anything. You need to quickly identify the metrics that really make a difference when it comes to your functionality and user experience. Here’s a guide to the most important metrics that matter for your app in this day and age.
 
-![image](/img/important-metrics-img2.jpg 'img')
-[Image via Pexels](https://www.pexels.com/photo/blur-close-up-code-computer-546819/)
+![image](./images/important-metrics-img2.jpg)
 
 1.User Retention
 One of the biggest metrics is related to your users. Not just how many users you have, but how many users you’re actually retaining. Think of the number of times you’ve downloaded a new app and never returned to it again. This is a common occurrence, and it’s a sign that you don’t have an effective app.
@@ -37,8 +36,7 @@ Next, it’s time to talk about money. If your app isn’t creating revenue, wha
 
 Once again, this is a great way to monitor the success of your app as well as to attract more revenue. If you don’t know how exactly your app is making money from users, you need to work on this process.
 
-![image](/img/important-metrics-img1.jpg 'img')
-[Image via Pexels](https://www.pexels.com/photo/person-holding-silver-iphone-7-887751/)
+![image](./images/important-metrics-img1.jpg)
 
 4.Conversion Rate
 The conversion rate is a term you usually hear in the marketing world, but it’s relevant to app developers as well. There are a lot of ways users find new apps. With increasingly endless ways to do Advanced Google Search tips becoming available to everyday users, people are discovering new apps every which way. How many of these new users are actually turning into paying customers, however?
