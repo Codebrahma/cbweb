@@ -1,14 +1,16 @@
 ---
 templateKey: 'blog-post'
-title: 'HOW TO USE IMMUTABLE.JS IN A REACT REDUX APPLICATION'
+title: How To Use Immutable.js in a React Redux Application
 date: 2017-05-18
 featuredpost: false
 description: >-
-  HOW TO USE IMMUTABLE.JS IN A REACT REDUX APPLICATION
+  How To Use Immutable.js in a React Redux Application
 link: /how-to-use-immutable-js-in-a-react-redux-application
-tags:
-- immutable.js
 author: Prasanna
+tags:
+- react
+- immutable.js
+- immutablejs
 ---
 ReactJS is one of the more popular Javascript libraries for developing front-end applications. Along with redux it gives good control in persisting the app state in the browser. State can be of anything among user interactions with the app or API data.
 
@@ -31,7 +33,7 @@ There are certain libraries which helps in making this simpler (immutable js, mo
 It’s API is very rich and it provides optimised performance by structural sharing.
 
 With immutable JS we can easily do the same task by:
- 
+
 ```js
 return state.set(‘activeSelected’, updateValue);
  ```
@@ -44,7 +46,7 @@ Although there are really lot of good articles on what is ImmutableJS and why it
 > Hire kickass ReactJS developers
 
 Some of the common questions:
- 
+
 
 __1. Should I maintain my complete Redux state of the application in ImmutableJS ?__
 If we are going to use ImmutableJS in our application, the best way to approach it would be to think of the entire store made of Immutable objects. This helps in:
@@ -71,7 +73,7 @@ const map3 = map1.merge(map2, obj); // merges the given objects
 Updating a deep Object
 ```js
 const map1 = Map({ a: { b: 2 }})
-Map1 = map1.setIn([‘a’,  ‘b’], 3) 
+Map1 = map1.setIn([‘a’,  ‘b’], 3)
 // Map { a: { b: 3 }}
 ```
 There are other useful methods in their API which is useful for solving most of the tasks.
@@ -90,7 +92,7 @@ __4. Should I use it inside components too ?__
 So you are done with redux change. Components which are subscribed to redux will get notifications about the change. If we are using ‘react-redux’ library to connect then the mapStateToProps function will look something like this:
 ```jsx
 mapStateToProps = (state) => {
-  activeSelected: state.get(‘activeSelected’) // Returns a new activeSelected even if data is not changed.     
+  activeSelected: state.get(‘activeSelected’) // Returns a new activeSelected even if data is not changed.
 }
 ```
 Since the component re renders based on comparing the props, if we are using the above mentioned way, then it will re render every time when redux store changes. Since immutable objects returns new reference each time (even if it has same data and remains unchanged during transition) this way will slow down the app due to unnecessary re renders. The best way to avoid this is by writing a HOC something like this:
@@ -113,14 +115,14 @@ const ToJS = (WrappedComponent) => {
     }
 
     // Function to check if immutable object. If so then convert
-    updateNewProps(currentProps) { 
+    updateNewProps(currentProps) {
       const objecEntries = Object.entries(currentProps);
       return reduce(objecEntries, (newProps, entry) => {
         newProps[entry[0]] = Iterable.isIterable(entry[1]) ? entry[1].toJS() : entry[1]; // eslint-disable-line
         return newProps;
       }, {});
     }
-    
+
     // Whenever it receives new props, pass in new props
     componentWillReceiveProps(nextProps) {
       this.newProps = this.updateNewProps(nextProps);
