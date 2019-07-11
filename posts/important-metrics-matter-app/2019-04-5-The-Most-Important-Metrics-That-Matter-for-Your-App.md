@@ -2,14 +2,14 @@
 templateKey: 'blog-post'
 title: 'The Most Important Metrics That Matter for Your App'
 date: 2019-04-19
-featuredpost: true
+featuredpost: false
 description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Anand Narayan
-category: 
+category:
 - Marketing
 link: /important-metrics-matter-app
-tags: 
+tags:
 - business
 - metrics
 - marketing

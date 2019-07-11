@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Functional Approach to Higher Order Components and Recompose'
 date: 2017-06-19
-featuredpost: true
+featuredpost: false
 description: >-
   Functional Approach to Higher Order Components and Recompose
 link: /functional-approach-higher-order-components-recompose

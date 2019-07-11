@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Which Front End Development Framework is number 1?'
 date: 2017-10-24
-featuredpost: true
+featuredpost: false
 description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Prasanna

@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Top 4 Javascript Frameworks For 2017'
 date: 2017-03-14
-featuredpost: true
+featuredpost: false
 description: >-
   Top 4 Javascript Frameworks For 2017
 link: /top-4-javascript-frameworks-for-2017

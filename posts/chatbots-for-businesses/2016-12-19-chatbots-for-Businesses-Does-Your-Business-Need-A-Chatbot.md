@@ -2,7 +2,7 @@
 templateKey: "blog-post"
 title: "Chatbots for Businesses: Does Your Business Need A Chatbot?"
 date: 2016-12-19
-featuredpost: true
+featuredpost: false
 link: /chatbots-for-businesses
 description: >-
   Chatbots for Businesses Does Your Business Need A Chatbot?

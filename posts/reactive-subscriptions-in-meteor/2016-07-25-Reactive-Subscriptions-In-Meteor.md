@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Reactive Subscriptions In Meteor'
 date: 2016-07-25
-featuredpost: true
+featuredpost: false
 description: >-
   Reactive Subscriptions In Meteor
 author: Hari Krishna

@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: '4 Steps to Building a Cloud-Ready Application Architecture'
 date: 2019-04-05
-featuredpost: true
+featuredpost: false
 description: >-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
 author: Anand Narayan

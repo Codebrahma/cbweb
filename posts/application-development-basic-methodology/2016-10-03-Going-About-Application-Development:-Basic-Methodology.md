@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Going About Application Development: Basic Methodology'
 date: 2016-11-03
-featuredpost: true
+featuredpost: false
 description: >-
   Going About Application Development Basic Methodology
 author: Anand Narayan

@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Intro to the Art of Creating Successful Products'
 date: 2017-06-08
-featuredpost: true
+featuredpost: false
 description: >-
   Intro to the Art of Creating Successful Products
 author: Anand Narayan

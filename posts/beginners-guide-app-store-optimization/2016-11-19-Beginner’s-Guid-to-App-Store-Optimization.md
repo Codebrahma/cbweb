@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Beginner’s Guide to App Store Optimization'
 date: 2016-11-16
-featuredpost: true
+featuredpost: false
 description: >-
   Beginner’s Guide to App Store Optimization
 author: Anand Narayan

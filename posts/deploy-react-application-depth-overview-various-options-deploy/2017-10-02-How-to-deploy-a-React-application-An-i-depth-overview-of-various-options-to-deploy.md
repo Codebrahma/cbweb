@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'How to deploy a React application. An in depth overview of various options to deploy.'
 date: 2017-10-02
-featuredpost: true
+featuredpost: false
 description: >-
   Learn how to optimize bundle and deploy a React application
 link: /deploy-react-application-depth-overview-various-options-deploy

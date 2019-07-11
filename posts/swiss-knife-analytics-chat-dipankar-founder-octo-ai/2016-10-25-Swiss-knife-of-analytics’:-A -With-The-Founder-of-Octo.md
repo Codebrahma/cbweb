@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: '‘Swiss knife of analytics’: A Chat With The Founder of Octo.ai'
 date: 2016-10-25
-featuredpost: true
+featuredpost: false
 description: >-
   ‘Swiss knife of analytics’: A Chat With The Founder of Octo.ai
 author: Anand Narayan

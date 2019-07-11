@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Chatbots Can Help You Save Money'
 date: 2017-01-25
-featuredpost: true
+featuredpost: false
 description: >-
   Chatbots Can Help You Save Money
 author: Anand Narayan

@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'E-commerce: Using Spree Commerce To Build Your Online Store'
 date: 2017-03-20
-featuredpost: true
+featuredpost: false
 description: >-
   Intro to the Art of Creating Successful Products
 author: Anand Narayan

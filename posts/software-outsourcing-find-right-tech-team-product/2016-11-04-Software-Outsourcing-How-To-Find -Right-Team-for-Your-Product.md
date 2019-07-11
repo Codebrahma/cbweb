@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Software Outsourcing: How To Find The Right Team for Your Product'
 date: 2016-11-04
-featuredpost: true
+featuredpost: false
 description: >-
   Software Outsourcing: How To Find The Right Team for Your Product
 author: Anand Narayan

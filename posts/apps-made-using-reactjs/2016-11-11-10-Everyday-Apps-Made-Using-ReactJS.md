@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: '10 Everyday Apps Made Using ReactJS'
 date: 2016-11-11
-featuredpost: true
+featuredpost: false
 description: >-
   10 Everyday Apps Made Using ReactJS
 author: Anand Narayan

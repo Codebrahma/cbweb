@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Introduction to Cryptocurrencies'
 date: 2016-08-17
-featuredpost: true
+featuredpost: false
 description: >-
   Introduction to Cryptocurrencies
 author: Tarun Batra

@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Chatbots for Businesses: Metrics and Use Cases'
 date: 2017-02-14
-featuredpost: true
+featuredpost: false
 description: >-
   Chatbots for Businesses: Metrics and Use Cases
 author: Anand Narayan

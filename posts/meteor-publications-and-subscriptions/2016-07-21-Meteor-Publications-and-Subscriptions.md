@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Meteor Publications and Subscriptions'
 date: 2017-02-14
-featuredpost: true
+featuredpost: false
 description: >-
   Meteor Publications and Subscriptions
 author: Tarun Batra

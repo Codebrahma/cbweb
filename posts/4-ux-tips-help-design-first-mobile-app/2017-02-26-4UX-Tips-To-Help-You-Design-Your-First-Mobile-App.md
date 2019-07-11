@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: '4 UX Tips To Help You Design Your First Mobile App'
 date: 2017-02-26
-featuredpost: true
+featuredpost: false
 description: >-
   4 UX Tips To Help You Design Your First Mobile App
 author: Anand Narayan

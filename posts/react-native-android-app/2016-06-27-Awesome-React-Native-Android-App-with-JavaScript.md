@@ -2,12 +2,12 @@
 templateKey: 'blog-post'
 title: 'Awesome React Native: Building Android App with JavaScript'
 date: 2016-06-27
-featuredpost: true
+featuredpost: false
 description: >-
   Awesome React Native: Building Android App with JavaScript
 author: Balram Khichar
 link: /awesome-react-native-building-android-app-javascript
-category: 
+category:
 - React-Native
 tags:
 - React Native

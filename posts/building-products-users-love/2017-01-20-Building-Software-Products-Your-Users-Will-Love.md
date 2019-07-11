@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Building Software Products Your Users Will Love'
 date: 2017-01-20
-featuredpost: true
+featuredpost: false
 description: >-
   Building Software Products Your Users Will Love
 author: Anand Narayan

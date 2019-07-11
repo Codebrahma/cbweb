@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Should You Build A Mobile App or A Responsive Web App'
 date: 2017-02-08
-featuredpost: true
+featuredpost: false
 description: >-
   Should You Build A Mobile App or A Responsive Web App
 author: Anand Narayan

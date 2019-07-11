@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'WWDC 2016: Everything We Know'
 date: 2016-07-13
-featuredpost: true
+featuredpost: false
 description: >-
  Super Quick Highlights of Everything announced at WWDC
 author: Aravindan

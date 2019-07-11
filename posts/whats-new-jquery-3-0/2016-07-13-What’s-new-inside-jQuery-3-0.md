@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'What’s new inside jQuery 3.0'
 date: 2016-07-13
-featuredpost: true
+featuredpost: false
 description: >-
   Write Less. Do More.
 author: Balram Khichar

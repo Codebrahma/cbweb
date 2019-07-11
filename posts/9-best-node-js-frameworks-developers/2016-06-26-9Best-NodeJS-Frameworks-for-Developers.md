@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: '9 Best NodeJS Frameworks for Developers'
 date: 2016-06-26
-featuredpost: true
+featuredpost: false
 description: >-
   9 Best NodeJS Frameworks for Developers
 link: /9-best-node-js-frameworks-developers

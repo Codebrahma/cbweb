@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'Writing a Good Project Brief'
 date: 2017-02-14
-featuredpost: true
+featuredpost: false
 description: >-
   Writing a Good Project Brief
 link: /writing-good-project-brief

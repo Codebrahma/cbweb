@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: '5 Areas Where Tooling Makes Node.js Developers More Productive'
 date: 2016-07-13
-featuredpost: true
+featuredpost: false
 description: >-
   5 Areas Where Tooling Makes Node.js Developers More Productive
 author: Aravindan

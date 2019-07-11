@@ -3,7 +3,7 @@ templateKey: "blog-post"
 title: "A Basic Intro To GIS And It’s Application"
 date: 2016-11-22
 link: /intro-to-gis-and-application
-featuredpost: true
+featuredpost: false
 description: >-
   A Basic Intro To GIS And It’s Application
 author: Pritoj Singh

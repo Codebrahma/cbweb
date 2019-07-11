@@ -2,7 +2,7 @@
 templateKey: 'blog-post'
 title: 'PR 101: Setting Up Your Startup For Success'
 date: 2016-10-13
-featuredpost: true
+featuredpost: false
 description: >-
   PR 101 Setting Up Your Startup For Success
 author: Anand Narayan
