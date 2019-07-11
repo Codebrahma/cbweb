@@ -20,7 +20,7 @@ Here we look at 3 personal finance bots that are already making a splash in the 
 
 ![abe](./images/abe.png)
 
-Abe
+### Abe
 
 [(https://www.abe.ai)](https://www.abe.ai)
 
@@ -32,7 +32,7 @@ The service is completely free to the end user and they’re only serving in the
 
 ![chip](./images/chip.png)
 
-Chip
+### Chip
 
 [(https://getchip.uk/)](https://getchip.uk/)
 
@@ -42,7 +42,7 @@ Chip has developed its own Android and iOS app, while keeping the flow of inform
 
 ![cleo](./images/cleo.png)
 
-Cleo
+### Cleo
 
 [(https://www.meetcleo.com)](https://www.meetcleo.com)
 
