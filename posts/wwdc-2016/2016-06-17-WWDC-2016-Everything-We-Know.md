@@ -4,7 +4,10 @@ title: 'WWDC 2016: Everything We Know'
 date: 2016-07-13
 featuredpost: false
 description: >-
- Super Quick Highlights of Everything announced at WWDC
+  Get all the latest coverage on Apple&#039;s WWDC 2016. iOS 10, MacOS Sierra and a better Siri. Super Quick Highlights from iOS Development Company.
+keywords:
+- Everything about WWDC
+- WWDC 2016,
 author: Aravindan
 link: /wwdc-2016
 tags:

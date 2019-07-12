@@ -4,7 +4,12 @@ title: 'Why Every Business Should Consider Ecommerce'
 date: 2017-05-22
 featuredpost: false
 description: >-
-  Why Every Business Should Consider Ecommerce
+  eCommerce is one of the fastest growing sectors in the recent past. While many businesses have transitioned to ecommerce, many remain resistant. Should you?
+keywords:
+- ecommerce development
+- ecommerce store
+- setting up ecommerce store
+- custom ecommerce store
 author: Anand Narayan
 link: /why-every-business-should-consider-ecommerce
 tags:
