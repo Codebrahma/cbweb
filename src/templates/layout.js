@@ -34,9 +34,13 @@ const Footer = () => (
       in the fast changing front end atmosphere
       </P>
       <Box my='1'>
-        <form>
-          <InputText placeholder='Email address'/>
-          <InputButton/>
+        <form 
+          action="https://codebrahma.us3.list-manage.com/subscribe/post" 
+          method="post" target='/thanks'>
+          <input type="hidden" name="u" value="42069ce8928af0d4afc3fd428"/>
+          <input type="hidden" name="id" value="a540ccf305"/>
+          <InputText name='MERGE0' type='email' placeholder='Email address'/>
+          <InputButton value='Subscribe' name='subscribe'/>
         </form>
       </Box>
     </Box>
