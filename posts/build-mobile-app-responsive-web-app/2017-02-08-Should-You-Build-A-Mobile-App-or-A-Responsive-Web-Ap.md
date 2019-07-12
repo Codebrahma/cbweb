@@ -4,7 +4,12 @@ title: 'Should You Build A Mobile App or A Responsive Web App'
 date: 2017-02-08
 featuredpost: false
 description: >-
-  Should You Build A Mobile App or A Responsive Web App
+  John walks into a mobile development shop and meets Jane, the sales person. John- “I want to build a mobile app”. Jane- “Great, which devices do you want your app on?” John- “Android, iOS and Windows. We obviously want to
+keywords:
+- web app
+- mobile app
+- responsive web app
+- mobile vs web app
 author: Anand Narayan
 link: /build-mobile-app-responsive-web-app
 tags:

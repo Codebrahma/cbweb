@@ -4,7 +4,11 @@ title: 'Beginner’s Guide to App Store Optimization'
 date: 2016-11-16
 featuredpost: false
 description: >-
-  Beginner’s Guide to App Store Optimization
+  Marketing your mobile application can be a challenging task. Implementing some basic ASO checks can do wonders! Read on to know how.
+keywords:
+- ASO
+- app store optimization
+- mobile app marketing
 author: Anand Narayan
 link: /beginners-guide-app-store-optimization
 tags:

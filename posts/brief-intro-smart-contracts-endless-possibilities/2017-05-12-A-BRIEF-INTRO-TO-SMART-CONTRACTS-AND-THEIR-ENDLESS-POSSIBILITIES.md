@@ -4,7 +4,11 @@ title: 'A Brief Intro To Smart Contracts And Their Endless Possibilities'
 date: 2017-05-12
 featuredpost: false
 description: >-
-  A Brief Intro To Smart Contracts And Their Endless Possibilities
+  A look into the mystic world of blockchain and smart contracts. If you&#039;re looking to understand what a smart contract is and how can it change the world, read on.
+keywords:
+- smart contracts
+- future of smart contracts
+- blockchain
 link: /brief-intro-smart-contracts-endless-possibilities
 tags:
 - blockchain
