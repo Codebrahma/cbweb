@@ -79,7 +79,7 @@ const Layout = ({ children }) => {
       render={data => (
         <ThemeProvider theme={theme}>
           <MDXProvider components={comps}>
-            <div style={{background: 'rgb(247,245,242)'}}>
+            <div style={{background: 'rgb(247,245,242)', minHeight: '100vh',}}>
               <Global
                 styles={css`
                         a:visited { 
