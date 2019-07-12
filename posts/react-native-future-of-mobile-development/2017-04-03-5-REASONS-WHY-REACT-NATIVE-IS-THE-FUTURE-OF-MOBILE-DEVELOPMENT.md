@@ -4,9 +4,9 @@ title: '5 REASONS WHY REACT NATIVE IS THE FUTURE OF MOBILE DEVELOPMENT'
 date: 2017-04-03
 featuredpost: false
 description: >-
-  5 REASONS WHY REACT NATIVE IS THE FUTURE OF MOBILE DEVELOPMENT
+  React Native is a popular Javascript framework for developing native applications for iOS and Android. Here are 5 reasons why React Native is the future.
 author: Anand Narayan
-link: react-native-future-of-mobile-development
+link: /react-native-future-of-mobile-development
 tags:
 - React Native
 - react native development

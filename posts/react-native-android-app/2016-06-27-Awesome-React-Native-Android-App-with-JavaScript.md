@@ -4,7 +4,13 @@ title: 'Awesome React Native: Building Android App with JavaScript'
 date: 2016-06-27
 featuredpost: false
 description: >-
-  Awesome React Native: Building Android App with JavaScript
+  Learn how to build an android app with React Native. Build an android movie app Motion using public API provided by themoviedb with React Native.
+keywords:
+- React Native
+- React Native Developers
+- React Native Development
+- React Native Development Company
+- ReactJS Development Company
 author: Balram Khichar
 link: /awesome-react-native-building-android-app-javascript
 category:

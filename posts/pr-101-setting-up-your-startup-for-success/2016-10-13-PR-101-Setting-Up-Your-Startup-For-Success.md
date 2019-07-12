@@ -4,7 +4,11 @@ title: 'PR 101: Setting Up Your Startup For Success'
 date: 2016-10-13
 featuredpost: false
 description: >-
-  PR 101 Setting Up Your Startup For Success
+  Public relations, traditionally about managing favorable relations with your audience, can be a solid growth hack for your new startup. Read on to learn how
+keywords:
+- pr for startups
+- startup pr
+- growth hack
 author: Anand Narayan
 link: /pr-101-setting-up-your-startup-for-success
 tags:
