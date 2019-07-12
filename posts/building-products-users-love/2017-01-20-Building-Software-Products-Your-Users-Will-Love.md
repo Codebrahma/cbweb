@@ -4,7 +4,13 @@ title: 'Building Software Products Your Users Will Love'
 date: 2017-01-20
 featuredpost: false
 description: >-
-  Building Software Products Your Users Will Love
+  Building software products users love is not easy. More than 90% of companies fail to do so. Read on to know how to create apps that your users will love!
+keywords:
+- building great products
+- building apps
+- software engineering
+- designing
+- product development
 author: Anand Narayan
 link: /building-products-users-love
 tags:

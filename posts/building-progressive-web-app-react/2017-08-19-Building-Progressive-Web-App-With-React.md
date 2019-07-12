@@ -4,7 +4,12 @@ title: 'Building Progressive Web App With React'
 date: 2017-08-19
 featuredpost: false
 description: >-
-  Building Progressive Web App With React
+  This article will help in building progressive web App with React JS. Also you can use the boiler plate for your future work.
+keywords:
+- Progressive Web App
+- PWA
+- Progressive Web app
+- PWA with React
 author: Balram Khichar
 link: /building-progressive-web-app-react
 tags:

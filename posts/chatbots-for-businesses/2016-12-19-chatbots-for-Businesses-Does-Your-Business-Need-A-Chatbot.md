@@ -5,7 +5,7 @@ date: 2016-12-19
 featuredpost: false
 link: /chatbots-for-businesses
 description: >-
-  Chatbots for Businesses Does Your Business Need A Chatbot?
+  Chatbots are the all-rage these days. Everyone is gushing about how chatbots can benefit your business. But does your business really need a chatbot?
 author: Anand Narayan
 tags:
 - chatbots
