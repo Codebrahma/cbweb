@@ -4,7 +4,13 @@ title: 'Async operations in React Redux applications'
 date: 2017-07-03
 featuredpost: false
 description: >-
-  structuring asynchronous requests in react redux application.
+  Introduction Javascript is a single thread programming language. That is when you have code something like this The second line doesn’t get executed till the first one gets completed. Mostly this won’t be a problem since millions of calculations are
+keywords:
+- ReactJS
+- async requests
+- redux-saga
+- developing with ReactJS
+- network request
 link: /structuring-async-operations-react-redux-applications
 author: Prasanna
 ---

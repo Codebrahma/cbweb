@@ -2,7 +2,8 @@
 templateKey: blog-post
 title: Atom setup to improve reactJS development productivity
 date: 2017-10-22
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
+description: >-
+  Whether you are a coder who specializes in ReactJS development services, AngularJS development services, or React native Development services this atom editor setup is sure to drastically improve your productivity. &nbsp; &nbsp; This list is divided into two sections Utlities
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
 author: Prasanna
