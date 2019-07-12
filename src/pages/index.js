@@ -1,13 +1,13 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
 // eslint-disable-next-line
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import NonStretchedImage from "../components/nonStretchedImage"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import { Box, Flex, H1, H3, H4, P, ReactIcon } from 'bricks'
-
+import PlainLink from '../components/link'
 
 const IndexPage = ({data}) => (
 <Layout>
@@ -22,9 +22,11 @@ const IndexPage = ({data}) => (
       Our Featured Work
     </H3>
     <Flex flexDirection='column'>
-      <H4>
-        Rippling
-      </H4>
+      <PlainLink to='/rippling/'>
+        <H4>
+          Rippling
+        </H4>
+      </PlainLink>
       <NonStretchedImage fluid={data.rippling_screenshot.childImageSharp.fluid} />
       <P>Codebrahma built the complete browser and mobile app for this fast growing
         Parker Conrad startup, currently valued at $250 million</P>
