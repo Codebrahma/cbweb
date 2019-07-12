@@ -15,7 +15,7 @@ const Sidebar = ({ author, category, tags }) => (
         Written by
       </Flex>
       <Flex justifyContent="center" mt="0.5rem">
-        <PlainLink to={"/journal/author/" + hypenize(author)}>
+        <PlainLink to={"/author/" + hypenize(author)}>
           <I>{author}</I>
           <br />
         </PlainLink>
@@ -27,7 +27,7 @@ const Sidebar = ({ author, category, tags }) => (
           Posted in
         </Flex>
         <Flex justifyContent="center" mt="0.5rem">
-          <CategoryLink to={"/journal/category/" + hypenize(getCategory({ category }))}>
+          <CategoryLink to={"/category/" + hypenize(getCategory({ category }))}>
             {getCategory({ category })}
           </CategoryLink>
         </Flex>
@@ -48,7 +48,7 @@ const Sidebar = ({ author, category, tags }) => (
           >
             {tags.map(tag => (
               <Box key={tag} p="0.125rem">
-                <PlainLink key={tag} to={"/journal/tags/" + hypenize(tag)}>
+                <PlainLink key={tag} to={"/tag/" + hypenize(tag)}>
                   <I>#{hypenize(tag)}</I>
                 </PlainLink>
               </Box>

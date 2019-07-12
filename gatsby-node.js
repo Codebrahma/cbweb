@@ -26,19 +26,19 @@ const groupPostsByUnique = (field, posts) => {
     {},
   );
 };
-const createPages = (type, postArray, parent = 'journal', createPage) => {
+const createPages = (type, postArray, createPage) => {
   const groupedPosts = groupPostsByUnique(type, postArray);
   // returns {['tag']: [post1, post2], ['tag2']: [post3, post4]}
   Object.entries(groupedPosts).forEach(([typeValue, postGroup], index) => {
-    typeValue = typeValue.split(' ').join('-')
+    typeValue = typeValue.split(' ').join('-');
+    type = type == 'tags'? 'tag': type;
     paginate(
       {
         createPage,
         component: require.resolve('./src/templates/preview.js'),
-        pathTemplate: `/${parent}/${type}/${typeValue}/pgnum/`,
+        pathTemplate: `${type}/${typeValue}/pgnum/`,
         type,
         value: typeValue,
-        linkRoot: parent,
       },
       postGroup,
     );
@@ -71,7 +71,7 @@ const paginate = (
       const isFirstPage = index === 0;
       const currentPage = index + 1;
       const totalPages = allGroups.length;
-      let pageNumber = isFirstPage? '' : currentPage ;
+      let pageNumber = isFirstPage? '' : '/page/'+currentPage ;
       let path = pathTemplate.replace('pgnum', pageNumber).replace('//','/');
 
       createPage({
@@ -148,9 +148,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   });
 
   //create pages for tags, category, author
-  createPages('tags', posts, 'journal', createPage);
-  createPages('category', posts, 'journal', createPage);
-  createPages('author', posts, 'journal', createPage);
+  createPages('tags', posts, createPage);
+  createPages('category', posts, createPage);
+  createPages('author', posts, createPage);
 
   //create blogs index
   // TODO sorting to be done in graphql
@@ -158,7 +158,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     {
       createPage,
       component: require.resolve('./src/templates/preview.js'),
-      pathTemplate: '/journal/pgnum/',
+      pathTemplate: '/blog/pgnum/',
       type: 'all',
       value: null,
     },
