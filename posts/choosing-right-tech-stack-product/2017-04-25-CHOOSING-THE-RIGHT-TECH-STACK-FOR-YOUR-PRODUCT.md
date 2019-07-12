@@ -4,7 +4,7 @@ title: 'Choosing The Right Tech Stack For Your Product'
 date: 2017-04-25
 featuredpost: false
 description: >-
-  Choosing The Right Tech Stack For Your Product
+  Choosing the right tech stack for your product can be a challenging task. But how important is getting the right technologies in place from the start?
 author: Anand Narayan
 link: /choosing-right-tech-stack-product
 tags:
