@@ -3,11 +3,15 @@ templateKey: 'blog-post'
 title: 'Introduction to Cryptocurrencies'
 date: 2016-08-17
 featuredpost: false
-description: >-
-  Introduction to Cryptocurrencies
-author: Tarun Batra
 category:
 - Cryptocurrency
+description: >-
+  This blog post takes a simplified look at cryptocurrencies like bitcoin to help everyone understand what it is, how it works, and its implications.
+keywords:
+- cryptocurrencies
+- bitcoins
+- fintech 
+author: Tarun Batra
 link: /introduction-to-cryptocurrencies
 tags:
 - Bitcoins

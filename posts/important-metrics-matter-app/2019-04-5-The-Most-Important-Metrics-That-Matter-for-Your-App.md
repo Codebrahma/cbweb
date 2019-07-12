@@ -4,7 +4,7 @@ title: 'The Most Important Metrics That Matter for Your App'
 date: 2019-04-19
 featuredpost: false
 description: >-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
+  The world of apps is competitive today. Different companies are entering the marketplace every day competing for the same users. When it comes to measuring the success of your app, you need to keep a close eye on the right
 author: Anand Narayan
 category:
 - Marketing

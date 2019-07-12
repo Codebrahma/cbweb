@@ -5,7 +5,11 @@ date: 2016-11-22
 link: /intro-to-gis-and-application
 featuredpost: false
 description: >-
-  A Basic Intro To GIS And It’s Application
+  A quick started guide for anyone looking to get into Geographic Information Systems (GIS). Explanation of related terms and a hands on project. Read on!
+keywords: 
+- intro to GIS
+- geographic information systems
+- gis basics
 author: Pritoj Singh
 tags:
   - postgis

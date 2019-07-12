@@ -4,7 +4,11 @@ title: How To Use Immutable.js in a React Redux Application
 date: 2017-05-18
 featuredpost: false
 description: >-
-  How To Use Immutable.js in a React Redux Application
+  If you&#039;re trying to use Immutable.js with a React Redux application and are having problems, this post can help.
+keywords:
+- ImmutableJS
+- react redux application
+- immutable state redux
 link: /how-to-use-immutable-js-in-a-react-redux-application
 author: Prasanna
 tags:

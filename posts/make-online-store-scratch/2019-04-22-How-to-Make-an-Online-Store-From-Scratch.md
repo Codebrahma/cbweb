@@ -3,11 +3,11 @@ templateKey: 'blog-post'
 title: 'How to Make an Online Store From Scratch'
 date: 2019-04-22
 featuredpost: false
-description: >-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
-author: Anand Narayan
 category:
 - Business
+description: >-
+  E-commerce sales are fast gaining on traditional brick-and-mortar retail revenues. With the current trajectories, it’s only a matter of time before online sales surpass offline sales. It’s not hard to see why. Source Pixabay.com The Internet renders geographical distance and
+author: Anand Narayan
 link: /make-online-store-scratch
 tags:
 - ecommerce
