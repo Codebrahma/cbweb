@@ -20,7 +20,7 @@ import theme from '../theme'
 // due to ambiguity on what gatsby theme ui does, we are yet to implement this
 import { MDXProvider } from "@mdx-js/react";
 import { useThemeUI } from 'bricks';
-
+import  PlainLink  from '../components/link'
 const Footer = () => (
   <Box marginTop='6' pb='6'>
   <HorizontalRule
@@ -42,13 +42,13 @@ const Footer = () => (
     </Box>
     <Box width={[1,1/4]} mt={[2,0]}>
       <P>
-        info@codebrahma.com<br/>
+        <PlainLink as='a' to="mailto:hello@codebrahma.com">hello@codebrahma.com</PlainLink><br/>
         +1 484 506 0634<br/>
       </P>
       <Box mt='1'>
         <P>
-            Twitter<br/>
-            Github<br/>
+            <PlainLink as='a' to="https://twitter.com/codebrahma">Twitter</PlainLink><br/>
+            <PlainLink as='a' to="https://github.com/codebrahma">Github</PlainLink><br/>
         </P>
       </Box>
     </Box>
