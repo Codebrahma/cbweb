@@ -43,7 +43,8 @@ Typically during development using webpack dev server, the server actually store
 1. A root html file
 2. Single or multiple Javascript files [Including styling]
 3. Static assets like images / svgs
-   The html file links the javascript file(s) based on which the application loads. This is a way Single Page applications work. So the first step of deployment is actually creating these files.
+
+The html file links the javascript file(s) based on which the application loads. This is a way Single Page applications work. So the first step of deployment is actually creating these files.
 
 ## Optimizations in creating a bundle
 
@@ -57,7 +58,7 @@ Clashofclans: 3.3MB
 
 Most of these applications use better optimisation techniques to reduce the overhead during initial fetch. For example Facebook / Netflix fetches minimal data (Around 1 MB) when it loads for the first time. Based on the further user interactions, the application will be fetching additional files. So if you feel that your application is slow and have a large bundle size even after performing optimisation, the best technique is to lazy load the modules and provide only when required.
 
-Lets look at the various optimisation techniques one by one. **Remember that you don’t need all of these**. These are just the best available options. You could choose the right ones suitable for your project. We, at Codebrahma typically handpick the appropriate optimisations for the appropriate use case.
+Lets look at the various optimisation techniques one by one. **Remember that you don’t need all of these**. These are just the best available options. You could choose the right ones suitable for your project. We, at [Codebrahma](/) typically handpick the appropriate optimisations for the appropriate use case.
 
 **Setting the right node environment**
 
@@ -78,6 +79,7 @@ plugins: [
 This will avoid all the code which is actually meant for development.
 
 **Minification**
+
 Minification strips a code file of all data that isn’t required in order for the file to be executed. Generally readability is not a concern for the deployed code running on the browser. By Minifying, we compresses the file size by removing the spaces, new lines thereby making the code ugly. Uglify also joins sentences using comma, removes dead code and removes console logs. it also simplifies conditional statements (if), Boolean operations, constants, function declarations etc.
 
 We can use Uglify JS plugin to minify your code. Even though there are a lot of configurations, you can easily identify which one works the best for you.
@@ -109,20 +111,20 @@ plugins: [
 ]
 ```
 
-### Removing dead code using Tree Shaking:
+__Removing dead code using Tree Shaking:__
 
 Tree shaking is a technique by which you can remove the non imported code. This works only with ES2015 module import/export. By using this method we can remove code from libraries which are not imported. So how it works ? During bundle creation, Webpack grabs all of your modules and puts them into a single file but removes the exportfrom code that’s not being imported anywhere.
 
 Even though this is a good technique majority of the libraries don’t publish their code in ES2015. Due to this reason this might not yield results as you expect.
 
-### Dedupe-plugin
+__Dedupe-plugin__
 
 Deduplication as the name suggests, prevents duplicate files being included in the compiled code by creating copies of the duplciate functions instead of redefining them. So in the runtime it includes only one copy of each function thereby removing the duplicates.
 
 ```js
 new webpack.optimize.DedupePlugin()
-Ignore - plugin
 ```
+__Ignore - plugin__
 
 Using this plugin we can ignore modules for import matching the following regular expressions.
 
@@ -136,7 +138,7 @@ For example, in moment library all locales are bundled together with the core li
 new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
 ```
 
-### OccurrenceOrderPlugin
+__OccurrenceOrderPlugin__
 
 Assign the module and chunk ids by occurrence count. Ids that are used often get lower (shorter) ids. This make ids predictable, reduces total file size and is recommended.
 
@@ -144,7 +146,7 @@ Assign the module and chunk ids by occurrence count. Ids that are used often get
 new webpack.optimize.OccurrenceOrderPlugin(preferEntry)
 ```
 
-### Lazy loading and Dynamic imports
+__Lazy loading and Dynamic imports__
 
 Webpack provides a great platform to achieve dynamic imports seamlessly. Try opening facebook.com and netflix.com and try using some of their features. You could see that there will be multiple network requests to fetch the JS files. These files will be fetched only when needed. A simple example would be
 
@@ -164,7 +166,7 @@ So if you can identify modules based on the usage, we can reduce bundle size sig
 
 Most probably you won’t be having multiple entry points in your configuration for webpack, I want to discuss this to show the power of commonChunksPlugin. If you are having a multipage app you can easily bundle with multiple entry points, generate multiple chunks and load them on demand.
 
-```js
+```jsx
 module.exports = {
   entry: {
     index: "./index.js",
@@ -180,7 +182,7 @@ This will generate multiple entry chunks: index.entry.chunk.js and dashboard.ent
 
 If your entry chunks have some modules in common then CommonsChunkPlugin identifies common modules and put them into a commons chunk. You need to add two script tags to your page, one for the commons chunk and one for the entry chunk.
 
-```js
+```jsx
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin")
 module.exports = {
   entry: {
@@ -198,17 +200,17 @@ This will generate all the above JS files plus one commons.chunk.js. First load 
 
 Now comes the question, how to use it with react since it will be a single page application. We can actually create multiple entries with one for the vendor JS file (All your libraries) and the other for the app JS file. Browser generally caches JS files and return the same file from previous request if the name is not changed. Mostly it happens to be the same libraries we will be using once deployed for our application updates. So we can actually use hash IDs of the build to change the name for app.bundle.js dynamically, thereby caching the vendor files by which you can avoid re fetch during new version releases.
 
-### ModuleConcatenation Plugin
+__ModuleConcatenation Plugin__
 
 In the past, one of webpack’s trade-offs was that each module in your bundle would be wrapped in individual function closures. These wrapper functions made it slower for your JavaScript to execute in the browser. In comparison, tools like Closure Compiler and RollupJS ‘hoist’ or concatenate the scope of all your modules into one closure and allow for your code to have a faster execution time in the browser.
 
 This plugin will enable the same concatenation behavior in webpack.
 
-### Compression-webpack-plugin:
+__Compression-webpack-plugin:__
 
 This is by far the most important plugin. Once you compress with GZIP your bundle size reduces drastically. I will let you down to google to understand what exactly this plugin does
 
-```js
+```jsx
 module.exports = {
   plugins: [new CompressionPlugin()],
 }
@@ -275,18 +277,18 @@ Heroku is a popular Platform as a service that enable developers to run build an
 5. Push to heroku master
 6. App will be auto deployed
 
-### Bonus
+__Bonus__
 
-### Production Logging tools.
+__Production Logging tools.__
 
 There are certain tools which helps us to monitor deployed applications. For example if there is a bug in a deployed verion and if we log it we can use their stack trace to easily solve it.
 
-### Sentry:
+__Sentry:__
 
 Using Sentry we can log all errors and maintain its stack trace. All we need to include their CDN / source code with our account credentials on our JS file. We need to push to sentry at all possible error locations (We can use try catch pattern at async fetches or any other potential locations).
 
 ![image](./images/sentry-error.jpg)
 
-### Log Rocket
+__Log Rocket__
 
 Log Rocket is a latest tool by which we can even replay redux states when a bug occurs. It is gaining its popularity of late.

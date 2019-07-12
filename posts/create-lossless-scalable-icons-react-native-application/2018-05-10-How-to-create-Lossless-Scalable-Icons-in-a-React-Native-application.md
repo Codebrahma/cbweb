@@ -62,7 +62,7 @@ Next up, we have to export / save this image. Select the image go to Document Pr
 
 ## Generating the Font
 
-Generating the fonts itself is pretty straightforward at this point. You simply go to IcoMoon’s site and Import your icons and Generate Font. Download it with the Download option at the bottom right. You get a couple of files. The files of significance to us are the selection.json and the iconmoon.ttf files. There’s a bit of work left to bring the icons into your project.
+Generating the fonts itself is pretty straightforward at this point. You simply go to [IcoMoon’s site](https://icomoon.io/app/) and Import your icons and Generate Font. Download it with the Download option at the bottom right. You get a couple of files. The files of significance to us are the selection.json and the iconmoon.ttf files. There’s a bit of work left to bring the icons into your project.
 
 Put the .json and the .ttf files into your assets folder. For Android, you simply want to move it to android/app/src/main/assets/fonts and you are done. For iOS, you have to import the files into your project from XCode.
 
@@ -72,7 +72,7 @@ Put the .json and the .ttf files into your assets folder. For Android, you simpl
 &nbsp; &nbsp; &nbsp; &nbsp;Make sure it shows up in Build Phases under Copy Bundle Resources. Create an entry and point it to your font location.
 ![react native development services 2](./images/react-native-app-development-services-2.png)
 
-If you think you didn’t get it right check out react-native-vector-icons’ git for a more detailed explanation.
+If you think you didn’t get it right check out [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons#installation)’ git for a more detailed explanation.
 
 Don’t forget to re-build after it’s all done.
 

@@ -21,34 +21,40 @@ Some app metrics are simply [vanity metrics](https://www.tableau.com/learn/artic
 
 ![image](./images/important-metrics-img2.jpg)
 
-1.User Retention
+__1.User Retention__
+
 One of the biggest metrics is related to your users. Not just how many users you have, but how many users you’re actually retaining. Think of the number of times you’ve downloaded a new app and never returned to it again. This is a common occurrence, and it’s a sign that you don’t have an effective app.
 
 Your user retention is defined as the percentage of users that keep returning to the application after their first visit. Most apps are only used once. You don’t want to become another statistic, so pay close attention to your loyal users to make sure they keep coming back.
 
-2.Session Length
+__2.Session Length__
+
 Now that you know how many users your app is retaining, how long are users spending on your app? The session length is the amount of time between the open and close of the app. From here, you can determine which users are spending the most time in your app, what’s keeping their attention, and what you can improve.
 
 The session length is particularly important when it comes to monetizing your app. Advertisers and sponsors are interested in knowing not only who is using your app, but how long they’re using it.
 
-3.Average Revenue per User (ARPU)
+__3.Average Revenue per User (ARPU)__
+
 Next, it’s time to talk about money. If your app isn’t creating revenue, what’s it doing? Your Average Revenue per User (ARPU) is how much revenue is earned per user of your app. You’ll calculate this by adding up all of your revenue from users alone and dividing it by your total number of active users.
 
 Once again, this is a great way to monitor the success of your app as well as to attract more revenue. If you don’t know how exactly your app is making money from users, you need to work on this process.
 
 ![image](./images/important-metrics-img1.jpg)
 
-4.Conversion Rate
-The conversion rate is a term you usually hear in the marketing world, but it’s relevant to app developers as well. There are a lot of ways users find new apps. With increasingly endless ways to do Advanced Google Search tips becoming available to everyday users, people are discovering new apps every which way. How many of these new users are actually turning into paying customers, however?
+__4.Conversion Rate__
+
+The conversion rate is a term you usually hear in the marketing world, but it’s relevant to app developers as well. There are a lot of ways users find new apps. With increasingly [endless ways to do Advanced Google Search](https://coforge.com/advanced-google-search-tips/) tips becoming available to everyday users, people are discovering new apps every which way. How many of these new users are actually turning into paying customers, however?
 
 Your conversion rate is calculated by adding up the number of leads and dividing it by the number of new customers within a single session of time. The goal, of course, is to increase your conversion rate.
 
-5.Error Logs
-Last but not least, you need to pay attention to your error logs. Application logging is something modern developers need to take seriously to prevent cyber attacks, increase security, and cut down on errors. Using a tool like Papertrail can automate this process, but it still will take ongoing maintenance from developers.
+__5.Error Logs__
+
+Last but not least, you need to pay attention to your error logs. Application logging is something modern developers need to take seriously to prevent cyber attacks, increase security, and cut down on errors. Using a tool like [Papertrail](https://papertrailapp.com/) can automate this process, but it still will take ongoing maintenance from developers.
 
 Error logs are like breadcrumbs leading back to a problem. Without them, developers might waste time searching for the source of the problem when it could be outlined for them in the first place. Monitoring error logs and error reports are essential to the success of an app.
 
-Final Thoughts
+__Final Thoughts__
+
 If you’re an app developer, it’s time to get serious about your metrics. While you shouldn’t waste time and resources on vanity metrics that do little to push your application further, these metrics above are the lifeline of any good application.
 
 How can you better serve your users? More importantly, how can you increase revenue from your most loyal users? These are the questions your metrics will answer for you.

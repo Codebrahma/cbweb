@@ -42,6 +42,7 @@ React JS is a front end library which is used for making user interfaces. Redux 
 - Code Clarity
 - Scalability
 - Ease of error handling
+
 For each method we will perform these two API calls.
 
  #### 1. Fetching city from userDetails (First API response). 
@@ -55,7 +56,7 @@ userDetails : {
 };
 ```
  #### 2. Based on the user city we will fetch all restaurants in the city 
-Lets say the endpoint is /restuarants/:city. Response will be an array
+Lets say the endpoint is ```/restuarants/:city```. Response will be an array
 ```js
 ['restaurant1', 'restaurant2', ...]
 ```
@@ -126,7 +127,7 @@ If we think of moving our business logic outside of the component then where exa
 
 #### 3. Ensuring to have a separate thread where async code is executed and any change to global state can be retrieved through subscription
 
-![redux architecture](./image/redux-architecture.gif)
+![redux architecture](./images/redux-architecture.gif)
 
 From this we can get an idea that if we are moving all the fetching logic before reducer, that is either action or middlewares then it is possible to dispatch the correct action at the correct time.
 For example once the fetch started we can ```dispatch({ type: ‘FETCH_STARTED’ }) ```and when the fetch completed we can ```dispatch({ type: ‘FETCH_SUCCESS’ })``` .

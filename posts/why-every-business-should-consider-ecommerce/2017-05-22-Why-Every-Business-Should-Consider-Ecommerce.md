@@ -30,8 +30,10 @@ The right marketing strategies coupled with a kickass customer service can rapid
 The basics of setting up an ecommerce store include:
 
 __Recognizable Brand__ – Invest in creating a brand that people will be able to recognize instantly. So many businesses undermine the power of brand, only to realize later on when it’s too late. A brand gives your business it’s own personality – and your businesses’ personality dictates how users interact with your business.
+
 __Solid ecommerce platform__ – Because of the ecommerce boom – a lot of out of box solutions have come into being. They allow you to set up a store within minutes, with minimum investments. While these options are quite good for newer businesses looking experiment, established businesses should always look towards a customized solution.
 Building your own ecommerce store from scratch gives you the power of flexibility. As a business looking to be a global force – you need to have complete control over what your site looks like and how it works.
+
 [Also read: Run Your Online Store Like A Pro.](/ecommerce-run-online-store-like-pro/)
 
 ## Ecommerce Reduces Your Business Overheads

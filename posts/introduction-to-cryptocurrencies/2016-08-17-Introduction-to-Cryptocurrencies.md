@@ -117,7 +117,8 @@ Many people hail Bitcoin as an anonymous mode of payment. But the reality is qui
 The first block of the blockchain is called the Genesis Block. Every bitcoin in circulation is either derived from a coinbase transaction or the Genesis block. See how it looked like [here](https://blockexplorer.com/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f).
 
 Rewards from coinbase transactions are halved after every 210,000 transactions. In fact, the latest __halving event__ occurred recently on 9th July 2016, reducing the reward amount from BTC 25 to BTC 12.5. Check when’s the next halving event [here](http://www.coindesk.com/51-attacks-real-threat-bitcoin/).
-51% attack is a largely feared attack in Bitcoin, where an attacker controls 51% of the computational resources of the network, allowing it to alter the “immutable” blockchain. It ain’t plain theory, Read about Bitcoin’s brush with it here.
+
+__51% attack__ is a largely feared attack in Bitcoin, where an attacker controls 51% of the computational resources of the network, allowing it to alter the “immutable” blockchain. It ain’t plain theory, Read about Bitcoin’s brush with it [here](http://www.coindesk.com/51-attacks-real-threat-bitcoin/).
 ## Altcoins
 Cryptocurrencies other than Bitcoin are know as __altcoins__, or alternative to Bitcoin. Most of the altcoins are similar in principle to Bitcoin with some minor differences. [Litecoin](https://litecoin.org/), [Dogecoin](http://dogecoin.com/), [Namecoin](https://www.namecoin.org/) and Nxt are some prominent altcoins.
 

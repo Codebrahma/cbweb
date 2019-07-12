@@ -24,7 +24,7 @@ Before getting into what they are, and how to use them, let’s find out why mic
 
 > Organisations which design systems … are constrained to produce designs which are copies of the communication structures of these organisations
 
-Until recently majority of companies were used to be giant enterprises, making equally giant enterprise software, or monoliths. Not anymore. Since last 5 years, companies are getting more distributed in nature. In fact, some of the new unicorns like Automattic and Gitlab are entirely distributed. That explains why microservices are rising in popularity.
+Until recently majority of companies were used to be giant enterprises, making equally giant enterprise software, or monoliths. Not anymore. Since last 5 years, companies are getting more distributed in nature. In fact, some of the new unicorns like [Automattic](https://automattic.com/) and [Gitlab](https://about.gitlab.com/) are entirely distributed. That explains why microservices are rising in popularity.
 
 ## Why Microservices?
 

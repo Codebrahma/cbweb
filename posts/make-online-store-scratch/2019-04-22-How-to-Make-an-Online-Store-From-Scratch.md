@@ -19,7 +19,7 @@ Add to that the proliferation of the smartphone which has made browsing the worl
 
 So with the advantages of e-commerce pretty clear, now comes the hard part—how do you set up an online store from scratch? The following are the basic steps to help you do just that.
 
-## 1.You May Need a Business License
+1. You May Need a Business License
 
 An online store is at its core business so you may be required to obtain certain licenses in order to operate it legally. This may come as a bit of a surprise to some given the ease with which one can develop and launch an e-commerce website from virtually anywhere in the world without having to go through any government paperwork.
 
@@ -29,14 +29,16 @@ It’s better to get everything in the clear from the get-go as opposed to getti
 
 Work with an attorney to determine what specific licenses you require depending on the primary country of business and/or where the store is hosted.
 
-## 2.What Do You Want to Sell?
+2. What Do You Want to Sell?
+
 By the time you are thinking about setting up an online store, chances are you already have a couple of products in mind you’d want to sell. Deciding which specific ones to put on your store isn’t easy though. Your choice largely depends on your short, medium and long term financial goals as well as how long you are willing to wait for the business to break even.
 
 Certain types of products are more likely to get your sales going from the start even though they may not have large profit margins per item. Examples include clothing and shoes. On the other hand, there are products that take longer to catch on but the margins are fairly large which can make the wait worth your while. Products that fall into this category include jewelry and high-end fashion.
 
 Make sure the product you choose is in the best interests of your store’s survivability, sustainability, and profitability.
 
-## 3.Bespoke Store of Off-the-Shelf?
+3. Bespoke Store of Off-the-Shelf?
+
 Your online store is the platform on which you will sell your product. Once you have a clear picture of what you want to sell, it’s time to design the website you’ll sell it on. You have three options.
 
 First, you could task a professional web developer to design a bespoke online store for you from the ground up. If you are not tech-savvy, this may seem like the most practical solution. You completely give the headache of building and maintaining the store to a third party. The drawback though is that it’s expensive both in the short and long-term. It also leaves you overly dependent on the developer.
@@ -45,12 +47,10 @@ The second option is to use an e-commerce store builder like WooCommerce or Mage
 
 The third alternative is going for a premade ready-to-go e-commerce website using platforms such as Shoplo that need only some basic customization to be ready for launch. While this allows you to go live in as little as an hour, the end product is rigid and difficult to migrate to another platform.
 
- 
-
 
 Source [Pixabay.com](https://pixabay.com/photos/marketing-digital-marketing-office-3724798/)
 
-## 4.Set Up Payment
+4. Set Up Payment
 
 Your online store can only be deemed successful if it’s raking in an ever increasing volume and value of sales. It’s therefore crucial that you put in place secure and safe avenues through which your customers will pay you.
 

@@ -16,7 +16,7 @@ tags:
 author: Prasanna
 ---
 
-This is a continuation of our previous post where we talked about how Higher Order Components (HOC) help abstraction of logic. This in turn helps simplifying a React application.
+This is a continuation of our [previous post](/using-higher-order-components-react-application/) where we talked about how Higher Order Components (HOC) help abstraction of logic. This in turn helps simplifying a React application.
 
 Now let’s say we have a React Component on which we need to do certain tasks:
 
@@ -26,14 +26,14 @@ Now let’s say we have a React Component on which we need to do certain tasks:
 
 For this the usual way would be writing a HOC for each task separately and combine by using one on top of each other.
 
-Now let’s look at an alternative way for achieving the same using functional programming. We described Higher Order Functions in our previous post as:
+Now let’s look at an alternative way for achieving the same using functional programming. We described Higher Order Functions in our [previous post](/using-higher-order-components-react-application/) as:
 
 __Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.__
 
 If we adopt functional programming, we need to think about composing existing functions as much as possible in order to create new functions. Currying is one major technique used to achieve this.
 
 Currying is a method of constructing functions which facilitates the function to have all arguments passed to it returning a result or have partial arguments to be passed resulting a new function which expects remaining arguments. For example:
-```js
+```jsx
 const fullName = firstName => lastName => {
   return firstName+lastName;
 };
@@ -43,7 +43,7 @@ Now if we use ```fullName(‘Code’)``` it will return another function which e
 const partialName = fullName(‘Code’);
 ```
 When we write
-```js
+```jsx
 const finalName = partialName(‘brahma’); // Returns ‘Codebrahma’
 ```
 ```finalName``` will be assigned with ‘Codebrahma’. This is a useful technique since it uses to create and compose multiple functions.
