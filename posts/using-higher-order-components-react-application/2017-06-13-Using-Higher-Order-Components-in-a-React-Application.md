@@ -4,7 +4,11 @@ title: 'Using Higher Order Components in a React Application'
 date: 2017-06-13
 featuredpost: false
 description: >-
-  Using Higher Order Components in a React Application
+  If you have started using ReactJS recently often you might have felt that you are performing repeated logic in many components. For example consider an app having- Infinite scroll in three different views with all having different data. You want
+keywords:
+- reactjs
+- higher order components
+- react js development
 link: /using-higher-order-components-react-application
 tags:
 - higher order components in reactjs

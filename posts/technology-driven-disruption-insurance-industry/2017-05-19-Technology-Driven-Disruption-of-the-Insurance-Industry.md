@@ -4,7 +4,11 @@ title: 'Technology Driven Disruption of the Insurance Industry'
 date: 2017-05-19
 featuredpost: false
 description: >-
-  How can the insurance companies leverage technology to win customers in the digital age.
+  Insurance companies have a lot to gain from the recent advancements in technology. We take a look at how they can use tech to win their digital customers.
+keywords: 
+- mobile apps for insurance companies
+- insurance technology
+- software for insurance companies
 link: /technology-driven-disruption-insurance-industry
 tags:
 - applications for insurance company

@@ -4,7 +4,7 @@ title: '‘Swiss knife of analytics’: A Chat With The Founder of Octo.ai'
 date: 2016-10-25
 featuredpost: false
 description: >-
-  ‘Swiss knife of analytics’: A Chat With The Founder of Octo.ai
+  As a premium engineering product company we have delivered not just projects, but success stories for entrepreneurs. For every project we take, there is a back story. Story of why it happened and story of the struggle to make
 author: Anand Narayan
 link: /swiss-knife-analytics-chat-dipankar-founder-octo-ai
 tags:

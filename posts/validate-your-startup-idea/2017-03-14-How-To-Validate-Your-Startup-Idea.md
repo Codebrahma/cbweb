@@ -4,9 +4,9 @@ title: 'How To Validate Your Startup Idea'
 date: 2017-03-14
 featuredpost: false
 description: >-
-  How To Validate Your Startup Idea
+  Making a product that people want is the holy grail of the startup world. But how do you validate your idea before actually building it? Here are 3 ways.
 author: Anand Narayan
-link: validate-your-startup-idea
+link: /validate-your-startup-idea
 tags:
 - idea validation
 - product development

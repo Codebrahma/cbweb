@@ -4,7 +4,14 @@ title: 'Top 4 Javascript Frameworks For 2017'
 date: 2017-03-14
 featuredpost: false
 description: >-
-  Top 4 Javascript Frameworks For 2017
+  Javascript frameworks have played a big role in the rise of web and mobile applications. We list the top 4 javascript frameworks to lookout for in this year
+keywords:
+- angularjs
+- reactjs
+- backbonejs
+- meteorjs
+- jquery
+- javascript frameworks
 link: /top-4-javascript-frameworks-for-2017
 author: Anand Narayan
 tags:
