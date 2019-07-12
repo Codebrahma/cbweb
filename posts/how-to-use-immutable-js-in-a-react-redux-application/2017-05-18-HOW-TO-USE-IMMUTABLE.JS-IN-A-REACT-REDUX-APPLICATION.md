@@ -23,9 +23,11 @@ One of the key requirements of redux is that each reducer must be pure. That is 
 This helps in:
 
 __Time Traveling__ – Moving to the Previous states.
+
 __Optimized re rendering__ of react components based on change in redux state. (Since the final state is different from initial based on both reference and value).
+
 The straight forward way of changing redux store based on an action is using spread operators as described. Lets say to update the state’s ```activeSelected``` we can do something like
-```js
+```jsx
 return {...state, { activeSelected: updateValue } }.
 ```
 But this gets complex once the state goes bigger and when you need to do more operations inside each reducer.
@@ -38,7 +40,7 @@ It’s API is very rich and it provides optimised performance by structural shar
 
 With immutable JS we can easily do the same task by:
 
-```js
+```jsx
 return state.set(‘activeSelected’, updateValue);
  ```
 
@@ -58,6 +60,7 @@ If we are going to use ImmutableJS in our application, the best way to approach 
 - Using the API efficiently (due to structural sharing).
 - Efficiency in memory.
 - Lazy Seq to convert into sequencing where can do operations like map, reduce.. and bringing it back to regular Immutable object.
+
 If you encounter any deep nested JS objects, you can use FromJS API to convert them. This will convert every object to Immutable Map and convert every List to Immutable Array.
 ```js
 Const deeplyNestedObject = // any deeply nested object
@@ -149,7 +152,7 @@ So that the container can be exported simply like ```ToJS(<Container />). This w
 __5. What is the advantage of using ImmutableJS over lodash or normal JS objects?__
 The biggest advantage of using Immutable is efficiency. It achieves its efficiency through structural sharing. More efficient processing means faster apps; without the headache of maintaining a huge codebase.
 
-You can read more about this here.
+You can read more about this [here](https://medium.com/@dtinth/immutable-js-persistent-data-structures-and-structural-sharing-6d163fbd73d2).
 
 __6. Should we use immutable JS for our application?__
 It really depends on how big or complex the state is. If we have a state which is just going to deal with API data or static data then it is preferable to not use it. If we are going to do lot of state changes with deep nested objects it is good to use it.

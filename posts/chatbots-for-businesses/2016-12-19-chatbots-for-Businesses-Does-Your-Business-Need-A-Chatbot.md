@@ -63,7 +63,7 @@ Are you running any discounts or offers.
 
 Instead of the customer having to call you on your phone and engaging your employee, you can easily configure a chatbot to answer these questions. The way to go about implementing this would be to compile a list of 10 (or more) most frequently asked questions and program the bot to answer them.
 
-## 2. Shopping Assistant Bots
+__2. Shopping Assistant Bots__
 
 These bots can help you sell more if you’re running an e-commerce store. Let’s say you sell custom footwear. An example conversation that could happen between your chatbot and a potential customer:
 
@@ -97,12 +97,12 @@ These bots can help you sell more if you’re running an e-commerce store. Let�
 
 And the bot lists down the options you have that fit the filters – the customer can see the products, choose to buy or see more options. The possibilities are endless!
 
-##3. Explainer Bots
+ __3. Explainer Bots__
 If you’re running a [SaaS application company](/saas-development-services/), you could use a bot to help people get a feel for your product. These bots would usually live on your website via a chat tool (something like smooch) and help answer queries your potential customers might have.
 
 Using a combination of interactive media like images, videos and using links to drive people to the right pages, a chatbot could be a big boost to your customer success team. Ofcourse, human help should always be at hand, incase your bot has trouble understanding your customers.
 
-## Post Purchase Bots
+### Post Purchase Bots
 
 A good after sales connect with your users can make a big difference in how your brand is perceived, and incidentally, this is where most bigger brands struggle. Implementing chatbots to help your customers post their purchase is something every brand should look at.
 

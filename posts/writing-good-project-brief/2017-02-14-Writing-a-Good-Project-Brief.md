@@ -23,18 +23,21 @@ Start a project brief with a basic introduction of the idea along with the end g
 
 A good project brief must include the following components:
 
-### Scope of work
+__Scope of work__
+
 The scope of work contains what you’re looking to build. Depending on how deeply you’ve thought through the project, your scope of work could be defined with the exact functionality and user flow. For example, if you already have an application developed and are looking to add a few features on top of it – your scope of work would be extremely well defined.
 
 Or you could have a more loosely defined features if you’re still exploring and are looking for inputs from the software agency. For example, you’re looking to build a mobile application that promotes loyalty amongst restaurant patrons.
 
-### Budget
+__Budget__
+
 While it’s difficult for clients to ascertain a certain number to the project, it always helps an agency when an upper cap if defined. Defining a budget within the project brief also helps agencies create a customized solution, that’ll get the work done and fit within your budget.
 
-### Timelines
+__Timelines__
+
 This section communicates how fast you’re looking to hit the market and the kind of urgency the agency will have to work with. Setting a soft deadline, ‘we’re looking to launch the first version of the product within six months’, creates a positive pressure and can help agencies figure how to best allocate resources.
 
-![projectbrief-01](./images/projectbrief-01-768x768.png)
+![projectbrief-01](./images/projectbrief-01-1024x1024.png)
 The scope of a project, timelines and budget are highly interdependent. The more defined the scope of the project is, the easier it is to estimate timelines and budget. If you’re looking to expedite development, costs might go up. Complex projects generally need to keep the timelines and budget flexible, otherwise the quality might be compromised.
 
 Depending on which stage your project is and the level of flexibility you’re open to, the project brief might vary from a single paragraph to a detailed multi-page document.
@@ -82,30 +85,34 @@ Summary: We’re looking to build a mobile application that’ll help foster loy
 
 __User Definition:__
 
-There are two types of users on the application:
+- There are two types of users on the application:
 
-End Users (Diners)
-Partner Users (Restaurants)
+- End Users (Diners)
+
+- Partner Users (Restaurants)
+
 __Application Flow (End Users)__
-End users will be able to:
+
+- End users will be able to:
 
 __Sign Up__
-Primary sign up method for users will be using their mobile numbers.
 
-They will also be able to sign up using Facebook Login
+- Primary sign up method for users will be using their mobile numbers.
 
-They will also be able to sign up using Twitter Login
+- They will also be able to sign up using Facebook Login
 
-In case of social login, users will be prompted to add their mobile numbers.
+- They will also be able to sign up using Twitter Login
+
+- In case of social login, users will be prompted to add their mobile numbers.
 
 __Creating Profile__
-Users will be create their profiles.
+- Users will be create their profiles.
 
-A public profile will include profile picture, location, favourite restaurants.
+- A public profile will include profile picture, location, favourite restaurants.
 
-Incase of social signup, details to be pulled in from social profiles.
+- Incase of social signup, details to be pulled in from social profiles.
 
-Add / edit mobile number, private. Not visible publicly.
+- Add / edit mobile number, private. Not visible publicly.
 __Devices:__
 
 End user application will be an iOS application, built natively.

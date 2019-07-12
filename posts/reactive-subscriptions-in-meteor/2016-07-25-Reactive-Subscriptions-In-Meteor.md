@@ -23,7 +23,7 @@ Publication sends data to the client on subscribing to that end point. The data 
 data after subscribing to it. We can use __subscription handlers__ provided in subscription function as callbacks. ```onReady()``` callback, is called when data is received and available in MiniMongo, then we query collection in MiniMongo and load data into the view. ```onStop()``` callback is called when subscription is stopped. In overview we will have a subset of mongoDB available on client side as MiniMongo.
 
 Code to show how data has to be fetched from MiniMongo collection through subscribing to ```listItems``` publication.
-```js
+```jsx
 if (Meteor.isClient) {
   // create a new instance of MiniMongo collection into which data received
   // from publication will be merged.
@@ -81,7 +81,7 @@ Thus subscription is reactive and updates data into view automaticaly.
 ## Stopping subscription when not in use
 We need to stop the subscription when we are no longer need of its data in MiniMongo.``` .stop() ```handler stops the subscription and removes data from MiniMongo. If we don’t use autorun. we need to call``` .stop() ```manually.
 
-```js
+```jsx
  var itemSub = Meteor.subscribe('listItems');
  
  // fetch data from collection when .ready() returns true
@@ -96,7 +96,7 @@ But if we use autorun it takes care of stopping it when needed. Better explanati
 ## Changing subscription arguments
 Sometimes we need to pass arguments along with subscription call, such as number of items you want or any filter. Publication returns data based on these arguments. Sometimes arguments keep changing. Good examples are pagination, filters etc., In these cases, a new subscription with other set of arguments is needed for new data. When we subscribe to same publication again, but with different arguments, and if it returns different data back then the previous subscription will be stopped and new request is sent to server. If data received by new subscription is same as previous one, then new one is stopped and old one is reused. The autorun works like charm in this case of re-subscribing with other arguments and updates data under the hood.
 
-```js
+```jsx
   Tracker.autorun(() => {
 
     // any means of receiving count or filter, either from

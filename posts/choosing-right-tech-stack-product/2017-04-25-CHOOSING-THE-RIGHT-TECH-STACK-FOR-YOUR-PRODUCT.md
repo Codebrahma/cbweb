@@ -18,10 +18,10 @@ Starting to build a new product and seeing your idea take share can be an exhila
 Let’s start from the basics. A tech (technology) stack is a set of technologies, programming languages and software products that is used to create a functional web (or mobile) application.
 
 A typical web application is divided into two parts:
-
-- Backend (concerning server side)
-- Frontend (concerning the user/client side)
-
+<ul class="unstyled-list">
+  <li> Backend (concerning server side)</li>
+  <li>Frontend (concerning the user/client side)</li>
+</ul>
 ### Backend Tech Stack
 Backend is the umbrella term for programming the business logic, working with the Database, server side hosting and deployments. The client side (website/app) communicates with the backend for processing user requests, accessing the database and executing simple CRUD (create, read, update, delete) operations.
 
@@ -35,11 +35,11 @@ Javascript which was mainly a browser scripting language until a few years ago, 
 
 ## Frontend Tech Stack
 [Frontend](/front-end-development-company/) is the part of the application a user interacts with. It could be a website, web app or a mobile app. When building for the web, the frontend consists of three technologies:
-
-- HTML – the markup language
-- CSS – the style sheet
-- Javascript – browser scripting language
-
+<ul class="unstyled-list">
+  <li>HTML – the markup language</li>
+  <li>CSS – the style sheet</li>
+  <li>Javascript – browser scripting language</li>
+</ul>
 [Google’s AngularJS and Facebook’s [ReactJS](/react-js-development/) are two of the most popular frontend frameworks in the market today. They both are language independent, meaning no matter what tech stack you’ve used for your backend – you could use either of these frameworks to create impressive user interfaces. While we have teams working on both AngularJS and ReactJS – we’re a bit more biased towards using ReactJS for frontend, specially due to the React Native library for mobile.
 ]
 For CSS, Twitter’s Bootstrap has been the goto framework since launch. The interactive components in Bootstrap are built on JQuery.

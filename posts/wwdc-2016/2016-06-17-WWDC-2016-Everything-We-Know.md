@@ -75,7 +75,7 @@ The relatively new TV OS of apple has also undergone its share of upgrades. It n
 
 ### iMessages becomes 'my messages' again!
 
-![OS TV](./images/OS-TV-1024x576.jpg)
+![OS TV](./images/OS-TV.jpg)
 
 In reply to strong competition from messaging apps such as whatsapp and snapchat, the iMessages app  is being completely revamped. The new messaging app will include option for hand-written notes, animated effects such as strobe lights, balloons, and confetti. One more interesting feature is the 'invisible ink'. This features allows the messages to be hidden/blurred until swiped over. In the world of private messages, this is a smart addition to have in the messaging app. Developers are also getting a bonus as they can now develop apps like stickers for the iMessages application.
 

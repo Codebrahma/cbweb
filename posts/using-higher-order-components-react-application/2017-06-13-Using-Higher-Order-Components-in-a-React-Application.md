@@ -48,7 +48,7 @@ Higher Order components are based on this. Given a function (Functional componen
 
 > Function(component) => (component)
 
-### 1. How it benefits in abstracting repeated logic?
+__1. How it benefits in abstracting repeated logic?__
 
 A function (Functional component in React) which takes a component and gives back another component. We do this because we can do something inside the function which can add more power to the resulting component.
 
@@ -59,7 +59,7 @@ We can treat this as inheritance in React. How? We can treat the input functiona
 3. Reuse Logic by maintaining an internal State.
 4. Change the Rendering of component based on any logic.
 
-### 2. How To write a Higher order component.
+__2. How To write a Higher order component.__
 
 Functional components started from React V15. It can be created like
 ```jsx
@@ -84,7 +84,7 @@ export const WrapperComponent(WrappedComponent) => {      // Wrapped Component i
 const FirstHOC = WrapperComponent(FirstComponent); 
 const SecondHOC = WrappedComponent(SecondComponent);
 ```
-### 3. Usage
+__3. Usage__
 
 Lets try to create a Higher order component for a particular use case. Lets consider we have an app which has many tables. Each table can have any number of these three functionality ( can have multiple)
 

@@ -43,7 +43,7 @@ Malwares were initially OS-specific (like Windows only or Mac only). Then they s
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pbG0JGY2U00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Recently, new kind of malwares are being developed which are embedded in basic data files. One such example is specially crafted Subtitle files for VLC Media Player, Kodi and Popcorn Time, which go undetected and upon being used in the mentioned media player softwares, can initiate remote tunnels to a malicious server giving full access of the system.
+Recently, new kind of malwares are being developed which are embedded in basic data files. One such example is specially crafted [Subtitle files for VLC Media Player](http://blog.checkpoint.com/2017/05/23/hacked-in-translation/), Kodi and Popcorn Time, which go undetected and upon being used in the mentioned media player softwares, can initiate remote tunnels to a malicious server giving full access of the system.
 
 The next and even more advanced kind of malwares come in the form of Chrome and Firefox extensions. Initially, these extensions could be developed in C/C++ along with JavaScript using NPAPI. This allowed the extensions to interact with the OS and they could potentially create and modify files on the system.
 
@@ -51,7 +51,7 @@ Ever wondered why the extension for Internet Download Manager was never installe
 
 Now the extensions can only be written in JavaScript and for the extension to be able to access some critical APIs, they need to be installed from the webstore. This check was made mandatory so that the Chromium Team is aware of what extensions use those critical APIs.
 
-Enter HTML5 and the PeerConnection API. HTML5 is not just the next version of HTML, but it opened the doors for a whole new user experience. It brought in native support for playing audio and video files, which meant that there was no longer the need to install QuickTime, VLC or Flash Player plugins to play such content. We have used these functionalities to access camera, microphone access to interact with the browser, in many of our projects. Last year even YouTube made HTML5 as the default video player instead of the Flash player used earlier.
+Enter HTML5 and the PeerConnection API. HTML5 is not just the next version of HTML, but it opened the doors for a whole new user experience. It brought in native support for playing audio and video files, which meant that there was no longer the need to install QuickTime, VLC or Flash Player plugins to play such content. We have used these functionalities to access camera, microphone access to interact with the browser, in many of [our projects](/works). Last year even YouTube made HTML5 as the default video player instead of the Flash player used earlier.
 
 With all the good happening, one would obviously wonder, “So what went wrong?”.
 
