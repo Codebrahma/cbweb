@@ -4,7 +4,12 @@ title: 'What’s new inside jQuery 3.0'
 date: 2016-07-13
 featuredpost: false
 description: >-
-  Write Less. Do More.
+  jQuery got a major update last month with the release of jQuery 3.0 and jQuery Compat 3.0. This release promises a slimmer and faster jQuery, with backward compatibility.
+keywords:
+- jQuery 3.0
+- jQuery 3.0 features
+- jquery 3.0 new features
+- jquery 3.0 download
 author: Balram Khichar
 category:
 - jQuery

@@ -4,7 +4,11 @@ title: 'Ecommerce: How To Run An Online Store Like A Pro'
 date: 2017-03-29
 featuredpost: false
 description: >-
-  How To Run An Online Store Like A Pro
+  If you&#039;re an ecommerce newbie - this article will tell you about the basics of setting up your online store and running it like a pro!
+keywords:
+- ecommerce development
+- ecommerce
+- running an ecommerce store
 author: Anand Narayan
 link: /ecommerce-run-online-store-like-pro
 tags:

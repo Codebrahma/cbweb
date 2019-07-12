@@ -4,7 +4,7 @@ title: 'Which Front End Development Framework is number 1?'
 date: 2017-10-24
 featuredpost: false
 description: >-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
+  VueJS vs ReactJS, Over past few years, the web development arena has witnessed various new developments. New types of frameworks are constantly on the rise. Frameworks are constantly being developed and improved to gain a competitive advantage over counterparts. ReactJS" 
 author: Prasanna
 link: /front-end-development-framework-number-1
 ---

@@ -4,7 +4,7 @@ title: "4 Steps to Building a Cloud-Ready Application Architecture"
 date: 2019-04-05
 featuredpost: false
 description: >-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
+  Most experts agree that by the year 2020, nearly 83 percent of enterprise workloads will be based in the cloud. In just the past few years, the number of businesses using cloud-based tools has exploded. If your company is in
 author: Anand Narayan
 link: /4-steps-building-cloud-ready-application-architecture
 ---

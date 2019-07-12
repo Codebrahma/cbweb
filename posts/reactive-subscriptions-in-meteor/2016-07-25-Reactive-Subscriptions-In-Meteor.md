@@ -4,7 +4,10 @@ title: 'Reactive Subscriptions In Meteor'
 date: 2016-07-25
 featuredpost: false
 description: >-
-  Reactive Subscriptions In Meteor
+  Meteor Subscriptions and Publications- This article shows how to write reactive subscriptions using Meteor&#039;s autorun for effective sync between remote data sources and the view.
+keywords: 
+- Meteor Reactive subscriptions
+- Reactive subscription using Meteor
 author: Hari Krishna
 link: /reactive-subscriptions-in-meteor
 category:

@@ -4,7 +4,14 @@ title: 'Meteor Publications and Subscriptions'
 date: 2017-02-14
 featuredpost: false
 description: >-
-  Meteor Publications and Subscriptions
+  In this blog specifically, we&#039;re going to talk about meteor publications and subscriptions, and to explain these interwoven concepts
+keywords:
+- meteor publications
+- meteor publications and subscribers
+- meteor development
+- meteor developers
+- meteor developers for hire
+- meteor development company
 author: Tarun Batra
 link: /meteor-publications-and-subscriptions
 category:

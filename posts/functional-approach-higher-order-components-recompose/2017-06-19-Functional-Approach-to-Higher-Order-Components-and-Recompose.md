@@ -4,7 +4,12 @@ title: 'Functional Approach to Higher Order Components and Recompose'
 date: 2017-06-19
 featuredpost: false
 description: >-
-  Functional Approach to Higher Order Components and Recompose
+  This is a continuation of our previous post where we talked about how Higher Order Components (HOC) help abstraction of logic. This in turn helps simplifying a React application. Now let’s say we have a React Component on which we
+keywords:
+- reactjs
+- higher order components
+- developing with reactjs
+- recompose
 link: /functional-approach-higher-order-components-recompose
 tags:
 - higher order components in reactjs

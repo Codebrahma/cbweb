@@ -4,9 +4,9 @@ title: 'Microservices for beginners, how to get started with right tools'
 date: 2017-07-18
 featuredpost: false
 description: >-
-  Getting Started with microservices.
+  Microservices for beginners, how to get started with the right tools and when to choose the microservices. An introduction to advantages and disadvantages.
 author: Tarun Batra
-link: microservices-for-beginners
+link: /microservices-for-beginners
 tags:
 - microservices
 ---

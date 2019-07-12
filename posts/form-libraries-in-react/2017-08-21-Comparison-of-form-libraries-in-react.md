@@ -4,7 +4,11 @@ title: 'Comparison of form libraries in react'
 date: 2017-08-21
 featuredpost: false
 description: >-
-  Comparison of form libraries in react
+  Comparison of various form libraries in React JS. Comparison factors include Easiness in creating custom components, validations and error handling
+keywords:
+- redux form
+- forms in react
+- formsy
 author: Anushul Sahni
 link: /form-libraries-in-react
 ---

@@ -4,7 +4,11 @@ title: 'Chrome Permission Flaw: Extensions Can Remotely Monitor User Activity'
 date: 2017-05-30
 featuredpost: false
 description: >-
-  Chrome Permission Flaw: Extensions Can Remotely Monitor User Activity
+  Chrome is a popular browser, with a number of extensions. But one flaw in their permission grants extensions access to your webcam without your knowledge.
+keywords: 
+- chrome bug
+- chrome extension flaw
+- chrome extension bug
 link: /chrome-permission-flaw-allows-extensions-to-remotely-monitor-user-activity-without-indication
 tags:
 - chrome bug

@@ -4,7 +4,7 @@ title: "How to create Lossless scalable icons in a react native application"
 date: 2019-05-10
 featuredpost: false
 description: >-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ex a accusamus facilis aperiam sed ad tenetur molestiae cum ipsam, sunt eius rerum numquam commodi ipsa quas sequi optio molestias?
+  Developing iOS and Android applications by React Native is growing day by day. Stunning UI can be easily achieved by the right combination of images and styled content like icons / texts. SVG is the best available option for rendering
 author: Arivanandan
 link: /create-lossless-scalable-icons-react-native-application
 category:

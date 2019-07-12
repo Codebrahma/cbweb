@@ -4,7 +4,11 @@ title: 'Reselect tutorial. Optimizing React Redux application development with R
 date: 2017-09-10
 featuredpost: false
 description: >-
-  Optimizing React Redux application using Reselect
+  This blog can help in optimizing React Redux application. Reselect is a library which can be used in a React Redux application to optimize performance.
+keywords:
+- Reselect
+- React redux application
+- Optimizing React Redux application
 author: Prasanna
 link: /reselect-tutorial-optimizing-react-redux-application-development-with-reselect
 ---

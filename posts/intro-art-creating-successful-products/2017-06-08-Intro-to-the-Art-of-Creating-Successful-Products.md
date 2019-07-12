@@ -4,7 +4,7 @@ title: 'Intro to the Art of Creating Successful Products'
 date: 2017-06-08
 featuredpost: false
 description: >-
-  Intro to the Art of Creating Successful Products
+  Creating a successful product is seldom a matter of chance. In this article we discuss what it takes to create products that go on to become a hit.
 author: Anand Narayan
 link: /intro-art-creating-successful-products
 tags:

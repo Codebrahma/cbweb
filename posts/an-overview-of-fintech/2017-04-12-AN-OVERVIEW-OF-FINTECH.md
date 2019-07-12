@@ -4,7 +4,7 @@ title: 'AN OVERVIEW OF FINTECH'
 date: 2017-04-12
 featuredpost: false
 description: >-
-  An article covering the basics of FinTech
+  Fintech is the newest, in-vogue term circling the entrepreneurial sector. But a lot of people yet don&#039;t have a firm grasp on Fintech. We&#039;re here to help.
 author: Anand Narayan
 link: /an-overview-of-fintech
 tags:

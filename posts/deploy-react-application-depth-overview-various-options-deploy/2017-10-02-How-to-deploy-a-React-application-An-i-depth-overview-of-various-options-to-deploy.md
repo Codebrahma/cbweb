@@ -4,7 +4,11 @@ title: "How to deploy a React application. An in depth overview of various optio
 date: 2017-10-02
 featuredpost: false
 description: >-
-  Learn how to optimize bundle and deploy a React application
+  There are a variety of ways to deploy a production ready React application. How to bundle, optimize and deploy a React application has been discussed.
+keywords:
+- Deploy react application
+- deployment
+- production ready
 link: /deploy-react-application-depth-overview-various-options-deploy
 author: Prasanna
 ---

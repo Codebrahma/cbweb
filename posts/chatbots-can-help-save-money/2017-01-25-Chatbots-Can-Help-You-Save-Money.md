@@ -4,7 +4,12 @@ title: 'Chatbots Can Help You Save Money'
 date: 2017-01-25
 featuredpost: false
 description: >-
-  Chatbots Can Help You Save Money
+  Lots of financial institutions are getting on the chatbot bandwagon to increase sales, and help with customer service. We ourselves have seen a lot of clients coming in, asking for chatbots. While certain skeptics believe it’s too early and warn
+keywords:
+- chatbots
+- fintech
+- financial assistant
+- conversational banking
 author: Anand Narayan
 link: /chatbots-can-help-save-money
 tags:

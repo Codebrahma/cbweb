@@ -4,7 +4,10 @@ title: 'Going About Application Development: Basic Methodology'
 date: 2016-11-03
 featuredpost: false
 description: >-
-  Going About Application Development Basic Methodology
+  Creating or outsourcing your application development can be a mind boggling. Check out our 5 step methodology for application development.
+keywords:
+- application development,
+- web development
 author: Anand Narayan
 link: /application-development-basic-methodology
 ---

@@ -4,7 +4,11 @@ title: "Implementing Blockchain For Businesses"
 date: 2017-05-30
 featuredpost: false
 description: >-
-  A quick guide to help you understand whether blockchain is the right technology for your business and it’s goals.
+  Blockchain based systems is all the hype nowadays. But do you really need to consider adopting blockchain for your business? Read to find out more.
+keywords: 
+- blockchain development company
+- blockchain for businesses
+- blockchain based systems
 link: /implementing-blockchain-businesses
 tags:
 - mobile app

@@ -4,7 +4,7 @@ title: 'Software Outsourcing: How To Find The Right Team for Your Product'
 date: 2016-11-04
 featuredpost: false
 description: >-
-  Software Outsourcing: How To Find The Right Team for Your Product
+  How do you go about finding the right outsourced tech team for your product, when there are a zillion vendors available. We give you step by step approach.
 author: Anand Narayan
 link: /software-outsourcing-find-right-tech-team-product
 tags:

@@ -4,7 +4,7 @@ title: 'Chatbots for Businesses: Metrics and Use Cases'
 date: 2017-02-14
 featuredpost: false
 description: >-
-  Chatbots for Businesses: Metrics and Use Cases
+  A look at some of the metrics to track when you&#039;re implementing a chatbot for your business, along with a few examples of businesses that use chatbots.
 author: Anand Narayan
 link: /chatbot-business-metrics-use-cases
 tags:
