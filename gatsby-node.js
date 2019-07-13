@@ -92,7 +92,10 @@ const paginate = (
     });
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
+  createRedirect({fromPath: '/deploy-react-application-depth-overview-various-option', toPath: '/deploy-react-application-depth-overview-various-options-deploy', isPermanent: true, redirectInBrowser: true});
+  createRedirect({fromPath: '/reselect-tutorial-optimizing-react-redux-application-d', toPath: '/reselect-tutorial-optimizing-react-redux-application-development-with-reselect', isPermanent: true, redirectInBrowser: true});
+  createRedirect({fromPath: '/completing-react-as-a-mvc-part-1-models', toPath: '/completing-react-as-a-mvc-part-1-models', isPermanent: true, redirectInBrowser: true});
   // get all the markdown files
   const result = await graphql(`
   {
