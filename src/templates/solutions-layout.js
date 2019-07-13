@@ -2,7 +2,7 @@ import React from "react"
 import Layout from './layout'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 import { graphql } from 'gatsby';
-import {H1, Flex, Box} from 'bricks'
+import {Flex, Box} from 'bricks'
 import SEO  from '../components/seo'
 
 const Sidebar = ({author, category, tags})=> (
@@ -10,15 +10,12 @@ const Sidebar = ({author, category, tags})=> (
   </div>
 )
 
-const SolutionLayout = ({title, body, meta, keywords, description}) => {
+const SolutionLayout = ({title, body, keywords, description}) => {
   return (
     <Layout>
-      <SEO title={title} meta={meta} keywords={keywords} description={description}/>
+      <SEO title={title}  keywords={keywords} description={description}/>
       <Flex flexWrap='wrap'>
         <Box width={['100%',2/3]}>
-          <Box mb={4}>
-            <H1>{title}</H1>
-          </Box>
           <MDXRenderer>{body}</MDXRenderer>
         </Box>
         <Box width={['100%',1/3]} marginTop={[1, 5]}>
@@ -31,12 +28,11 @@ const SolutionLayout = ({title, body, meta, keywords, description}) => {
 }
 
 const Transformer = ({data}) => {
-  let {title, meta, keywords, description } = data.post.frontmatter;
+  let {title, keywords, description } = data.post.frontmatter;
   let body = data.post.code.body;
   return (
     <SolutionLayout 
       title={title}
-      meta={meta}
       keywords={keywords}
       description={description}
       body={body}
@@ -56,7 +52,6 @@ export const pageQuery = graphql`
         title
         description
         keywords
-        meta
       }
     }
   }
