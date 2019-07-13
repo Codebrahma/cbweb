@@ -13,6 +13,8 @@ tags:
 - react-native
 - image-manipulation
 - performance
+keywords:
+- react native
 ---
 
 Developing iOS and Android applications by React Native is growing day by day. Stunning UI can be easily achieved by the right combination of images and styled content like icons / texts. SVG is the best available option for rendering an icon in a React Native application development process. Unfortunately React Native does not natively support SVG rendering. Although there are a couple of libraries out there that do it, turning icons into fonts makes it much simpler to display clean-cut icons with consistent dimensions with dynamic styling (including colors / size etc…)
