@@ -457,19 +457,19 @@ ul.unstyled-list{
 }
 /*----------------------RESET OVER----------------------------------*/
 @font-face {
-  src: url("../fonts/TiemposTextTest-Regular.woff") format("woff");
+  src: url("../fonts/TiemposTextWeb-Regular.woff") format("woff");
   font-family: "TiemposText";
 }
 @font-face {
-  src: url("../fonts/TiemposTextTest-RegularItalic.woff") format("woff");
+  src: url("../fonts/TiemposTextWeb-RegularItalic.woff") format("woff");
   font-family: "TiemposItalic";
 }
 @font-face {
-  src: url("../fonts/TiemposTextTest-Bold.woff") format("woff");
+  src: url("../fonts/TiemposTextWeb-Bold.woff") format("woff");
   font-family: "TiemposBold";
 }
 @font-face {
-  src: url("../fonts/TiemposHeadlineTest-Regular.woff") format("woff");
+  src: url("../fonts/TiemposHeadlineWeb-Regular.woff") format("woff");
   font-family: "TiemposHeadline";
 }
 
