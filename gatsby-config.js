@@ -31,6 +31,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-41862404-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+      },
+    },
+    {
       resolve: `gatsby-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
