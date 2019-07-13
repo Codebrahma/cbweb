@@ -10,10 +10,10 @@ const Sidebar = ({author, category, tags})=> (
   </div>
 )
 
-const SolutionLayout = ({title, body, meta, keywords, description}) => {
+const SolutionLayout = ({title, body, keywords, description}) => {
   return (
     <Layout>
-      <SEO title={title} meta={meta} keywords={keywords} description={description}/>
+      <SEO title={title}  keywords={keywords} description={description}/>
       <Flex flexWrap='wrap'>
         <Box width={['100%',2/3]}>
           <Box mb={4}>
@@ -31,12 +31,11 @@ const SolutionLayout = ({title, body, meta, keywords, description}) => {
 }
 
 const Transformer = ({data}) => {
-  let {title, meta, keywords, description } = data.post.frontmatter;
+  let {title, keywords, description } = data.post.frontmatter;
   let body = data.post.code.body;
   return (
     <SolutionLayout 
       title={title}
-      meta={meta}
       keywords={keywords}
       description={description}
       body={body}
@@ -56,7 +55,6 @@ export const pageQuery = graphql`
         title
         description
         keywords
-        meta
       }
     }
   }
