@@ -7,6 +7,7 @@ import { H1, Flex, Box, I } from "bricks"
 import { getCategory, hypenize } from "../utils"
 import CategoryLink from "../components/categorylink"
 import PlainLink from "../components/link"
+import SEO from '../components/seo'
 
 const Sidebar = ({ author, category, tags }) => (
   <div>
@@ -15,7 +16,7 @@ const Sidebar = ({ author, category, tags }) => (
         Written by
       </Flex>
       <Flex justifyContent="center" mt="0.5rem">
-        <PlainLink to={"/journal/author/" + hypenize(author)}>
+        <PlainLink to={"/author/" + hypenize(author)}>
           <I>{author}</I>
           <br />
         </PlainLink>
@@ -27,7 +28,7 @@ const Sidebar = ({ author, category, tags }) => (
           Posted in
         </Flex>
         <Flex justifyContent="center" mt="0.5rem">
-          <CategoryLink to={"/journal/category/" + hypenize(getCategory({ category }))}>
+          <CategoryLink to={"/category/" + hypenize(getCategory({ category }))}>
             {getCategory({ category })}
           </CategoryLink>
         </Flex>
@@ -48,7 +49,7 @@ const Sidebar = ({ author, category, tags }) => (
           >
             {tags.map(tag => (
               <Box key={tag} p="0.125rem">
-                <PlainLink key={tag} to={"/journal/tags/" + hypenize(tag)}>
+                <PlainLink key={tag} to={"/tag/" + hypenize(tag)}>
                   <I>#{hypenize(tag)}</I>
                 </PlainLink>
               </Box>
@@ -73,13 +74,18 @@ class BlogLayout extends React.Component {
   }
 
   render() {
-    const { title, body, category, author, tags, scripts } = this.props
+    const { title, body, category, author, tags, scripts, description, keywords } = this.props
 
     return (
       <Layout>
         <Helmet titleTemplate="%s | Codebrahma">
           <title>{title}</title>
         </Helmet>
+        <SEO 
+          title={title}
+          description={description||''}
+          keywords={keywords||['']}
+        />
         {scripts && (
           <Helmet
             script={scripts.map(src => ({ type: "text/javascript", src }))}
@@ -102,7 +108,7 @@ class BlogLayout extends React.Component {
 }
 
 const Transformer = ({ data }) => {
-  let { title, category, tags, author, scripts } = data.post.frontmatter
+  let { title, category, tags, author, scripts, keywords, description} = data.post.frontmatter
   let body = data.post.code.body
   return (
     <BlogLayout
@@ -112,6 +118,8 @@ const Transformer = ({ data }) => {
       author={author}
       scripts={scripts}
       body={body}
+      keywords={keywords}
+      description={description}
     />
   )
 }
@@ -131,6 +139,7 @@ export const pageQuery = graphql`
         tags
         author
         scripts
+        keywords
         datePublished: date(formatString: "YYYY-MM-DDTHH:mm:ssZ")
       }
     }

@@ -20,7 +20,7 @@ import theme from '../theme'
 // due to ambiguity on what gatsby theme ui does, we are yet to implement this
 import { MDXProvider } from "@mdx-js/react";
 import { useThemeUI } from 'bricks';
-
+import  PlainLink  from '../components/link'
 const Footer = () => (
   <Box marginTop='6' pb='6'>
   <HorizontalRule
@@ -34,21 +34,25 @@ const Footer = () => (
       in the fast changing front end atmosphere
       </P>
       <Box my='1'>
-        <form>
-          <InputText placeholder='Email address'/>
-          <InputButton/>
+        <form 
+          action="https://codebrahma.us3.list-manage.com/subscribe/post" 
+          method="post" target='/thanks'>
+          <input type="hidden" name="u" value="42069ce8928af0d4afc3fd428"/>
+          <input type="hidden" name="id" value="a540ccf305"/>
+          <InputText name='MERGE0' type='email' placeholder='Email address'/>
+          <InputButton value='Subscribe' name='subscribe'/>
         </form>
       </Box>
     </Box>
     <Box width={[1,1/4]} mt={[2,0]}>
       <P>
-        info@codebrahma.com<br/>
+        <PlainLink as='a' to="mailto:hello@codebrahma.com">hello@codebrahma.com</PlainLink><br/>
         +1 484 506 0634<br/>
       </P>
       <Box mt='1'>
         <P>
-            Twitter<br/>
-            Github<br/>
+            <PlainLink as='a' to="https://twitter.com/codebrahma">Twitter</PlainLink><br/>
+            <PlainLink as='a' to="https://github.com/codebrahma">Github</PlainLink><br/>
         </P>
       </Box>
     </Box>
@@ -79,7 +83,7 @@ const Layout = ({ children }) => {
       render={data => (
         <ThemeProvider theme={theme}>
           <MDXProvider components={comps}>
-            <div style={{background: 'rgb(247,245,242)'}}>
+            <div style={{background: 'rgb(247,245,242)', minHeight: '100vh',}}>
               <Global
                 styles={css`
                         a:visited { 

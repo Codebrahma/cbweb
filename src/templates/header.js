@@ -5,10 +5,10 @@ import { Logo } from '../components/logo'
 import { Link } from 'gatsby'
 
 const links = [
-  {title: 'Contact', link: '/contact'},
-  {title: 'Pricing', link: '/pricing'},
+  {title: 'Work', link: '/work'},
   {title: 'FAQ', link: '/faq'},
-  {title: 'Journal', link: '/journal'},
+  {title: 'Blog', link: '/blog'},
+  {title: 'Contact', link: '/contact'},
 ]
 
 const Header = ({ siteTitle }) => {
