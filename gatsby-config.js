@@ -3,6 +3,7 @@ module.exports = {
     title: `Codebrahma`,
     description: `ReactJS and ReactNative based software development studio`,
     author: `@codeanand`,
+    siteUrl: `https://codebrahma.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,6 +17,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
