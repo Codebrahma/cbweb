@@ -1,12 +1,22 @@
 module.exports = {
   siteMetadata: {
     title: `Codebrahma`,
-    description: `ReactJS and ReactNative based software development studio`,
+    description: `ReactJS and ReactNative based software development studio 
+      based out of San Francisco. We take your design files & api docs. 
+      And give you a fast mobile and browser app. 
+      You focus on your backend business logic!
+    `,
     author: `@codeanand`,
     siteUrl: `https://codebrahma.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://codebrahma.com`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

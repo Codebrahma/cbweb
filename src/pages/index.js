@@ -11,7 +11,12 @@ import PlainLink from '../components/link'
 
 const IndexPage = ({data}) => (
 <Layout>
-  <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+
+  <SEO 
+    title="Best ReactJS ReactNative Consultancy in Bay Area" 
+    keywords={[`react`,`react native`, `reactJS`, `consultancy`, `bay area`]} 
+    description=''
+  />
   <Box mt='6' mb='6'>
     <H1 lineHeight='42px'>We build your React &amp;&nbsp;React Native frontend</H1>
     <P>We take your design files &amp; api docs. And give you a fast mobile and browser app.
@@ -46,6 +51,7 @@ const IndexPage = ({data}) => (
       </P>
     </Flex>
   </div>
+
 </Layout>
 )
 

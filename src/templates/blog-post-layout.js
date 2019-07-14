@@ -74,7 +74,7 @@ class BlogLayout extends React.Component {
   }
 
   render() {
-    const { title, body, category, author, tags, scripts, description, keywords } = this.props
+    const { title, body, category, author, tags, scripts, description, keywords, canonical } = this.props
 
     return (
       <Layout>
@@ -85,6 +85,8 @@ class BlogLayout extends React.Component {
           title={title}
           description={description||''}
           keywords={keywords||['']}
+          canonical={canonical}
+
         />
         {scripts && (
           <Helmet
@@ -108,7 +110,7 @@ class BlogLayout extends React.Component {
 }
 
 const Transformer = ({ data }) => {
-  let { title, category, tags, author, scripts, keywords, description} = data.post.frontmatter
+  let { title, category, tags, author, scripts, keywords, description, canonical} = data.post.frontmatter
   let body = data.post.code.body
   return (
     <BlogLayout
@@ -120,6 +122,7 @@ const Transformer = ({ data }) => {
       body={body}
       keywords={keywords}
       description={description}
+      canonical={canonical}
     />
   )
 }
@@ -141,6 +144,7 @@ export const pageQuery = graphql`
         scripts
         keywords
         datePublished: date(formatString: "YYYY-MM-DDTHH:mm:ssZ")
+        canonical
       }
     }
   }
