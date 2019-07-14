@@ -129,6 +129,7 @@ const Transformer = ({ data }) => {
 
 export default Transformer
 
+// TODO add canonical to frontmatter 
 export const pageQuery = graphql`
   query($link: String!) {
     post: mdx(frontmatter: { link: { eq: $link } }) {
@@ -144,7 +145,6 @@ export const pageQuery = graphql`
         scripts
         keywords
         datePublished: date(formatString: "YYYY-MM-DDTHH:mm:ssZ")
-        canonical
       }
     }
   }
