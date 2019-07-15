@@ -21,6 +21,8 @@ import theme from '../theme'
 import { MDXProvider } from "@mdx-js/react";
 import { useThemeUI } from 'bricks';
 import  PlainLink  from '../components/link'
+import {Helmet} from "react-helmet";
+
 const Footer = () => (
   <Box marginTop='6' pb='6'>
   <HorizontalRule
@@ -97,6 +99,9 @@ const Layout = ({ children }) => {
                           color: ${theme.colors.black[1]};
                         }
                   `}/>
+              <Helmet>
+                <meta name="referrer" content="always"/>
+              </Helmet>
               <Container>
                 <Header siteTitle={data.site.siteMetadata.title} />
                 <div>
