@@ -5,7 +5,7 @@ date: 2017-05-30
 featuredpost: false
 description: >-
   Chrome is a popular browser, with a number of extensions. But one flaw in their permission grants extensions access to your webcam without your knowledge.
-keywords: 
+keywords:
 - chrome bug
 - chrome extension flaw
 - chrome extension bug
@@ -19,7 +19,7 @@ author: Punit Gupta
 
 Chrome is one of the most powerful web browsers (if not the most powerful web browser). With its huge marketplace of extensions and apps, it’s more like a platform and has fuelled the creation of ChromiumOS. The Chrome APIs have played a major role in fueling this massive growth. From extensions like AdBlockPlus, that block pestering ads to Grammerly, that help fix grammatical issues in the text we type, numerous utilities have become an integral part of our life.
 
- 
+
 ### TL;DR
 
 A Chrome extension can manage permissions for itself and other extensions. This allows for extensions to grant itself audio/video access, monitor keyboard inputs, access you browser history and even access your camera and mic.
@@ -28,17 +28,26 @@ All this without showing the red dot in tabs, quite unlike websites access your 
 
 Here’s a video showing the Permission Flaw:
 
-<iframe src="https://player.vimeo.com/video/220151318" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/220151318">Chrome Content Settings BUG - Proof of Concept</a> from <a href="https://vimeo.com/user56826339">Punit Gupta</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<div class='embed-wrapper'>
+  <div class='embed-container'>
+    <iframe
+      src="https://player.vimeo.com/video/220151318"
+      frameBorder="0"
+      allow="autoplay; fullscreen"
+      style="max-width: 100%;"
+      allowFullScreen
+    />
+  </div>
+</div>
 
 ## Evolution of Malwares
 According to chrome “Malware is any software or mobile application specifically designed to harm a computer, a mobile device, the software it’s running, or its users. Malware exhibits malicious behavior that can include installing software without user consent and installing harmful software such as viruses.”
 
- 
+
 ![Malware](./images/malware.png)
 Have you ever seen this?
 
- 
+
 Malwares were initially OS-specific (like Windows only or Mac only). Then they started becoming application-specific, like Macro viruses for Word, Excel and other business applications. Both these type of malwares are easily detectable by Anti-virus softwares.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pbG0JGY2U00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -55,7 +64,7 @@ Enter HTML5 and the PeerConnection API. HTML5 is not just the next version of HT
 
 With all the good happening, one would obviously wonder, “So what went wrong?”.
 
- 
+
 ## Chrome contentSettings pattern-matching Bug
 The answer to this lies in the ever-growing power of Chrome APIs. As of now, a chrome extension can inject scripts in tabs, read the cookies, create desktop notifications, and convert text to speech and read it out for you. Obviously, when installing any extension using these APIs, certain permissions are asked for and only upon being granted by the user are they installed. But there is one API, ‘contentSettings’ which can potentially grant full access to a chrome extension to modify permissions for any website.
 
