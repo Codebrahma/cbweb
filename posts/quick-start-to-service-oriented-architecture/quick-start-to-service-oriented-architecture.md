@@ -5,7 +5,7 @@ date: 2013-06-18
 featuredpost: false
 description: >-
   Codebrahma demystifies Service Oriented Architecture for dummies.
-author: Nithin Krishna 
+author: Anand Narayan
 link: /quick-start-to-service-oriented-architecture
 tags:
 - web application development
@@ -44,5 +44,5 @@ Pros:
 3. Very Responsive.
 4. Server Resources are freed and its easier to scale.
 
-  
+
 Have you used SOA in your architecture. What Messaging Queue did you use?
