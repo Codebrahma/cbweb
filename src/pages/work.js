@@ -28,21 +28,21 @@ const WorkPage = ({data})=> (
   <SEO title="Our Work" keywords={[`gatsby`, `application`, `react`]} />
   <H1>Our Work</H1>
   <P>We have built 50+ apps over the last 6 years. We have listed a few</P>
-  <Project 
+  <Project
     title='Rippling'
     description='Codebrahma built the complete browser and mobile app for this fast growing
           Parker Conrad startup, currently valued at $250 million'
     image={data.rippling_screenshot.childImageSharp.fluid}
     link='/rippling/'
   />
-  <Project 
+  <Project
     title='Serverless'
-    description='Codebrahma helped serverless implement their new design in Gatsby, 
+    description='Codebrahma helped serverless implement their new design in Gatsby,
                  in a sharp deadline for press release date'
     image={data.serverless_screenshot.childImageSharp.fluid}
     link='/serverless/'
   />
-  <Project 
+  <Project
     title='Harmoney'
     description='A Peer to peer lending portal, which has originated 1 Billion USD in loans. Codebrahma helped
       build the complete frontend for Harmoney'
