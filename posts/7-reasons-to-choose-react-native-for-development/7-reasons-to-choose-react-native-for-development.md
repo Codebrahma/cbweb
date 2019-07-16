@@ -33,7 +33,7 @@ React native has the major drawback covered i.e. developing apps for two differe
 
 This is the most remarkable feature of react native, as it can save developers a lot of time and efforts. Reusing a code can help developers focus more on providing its users with better user interface and new applications.
 
-3. ** Efficiency**
+3. **Efficiency**
 
 React is known to be effective in providing agility, speed and an overall good user experience. It uses the ReactJS framework to provide native experience to its users.
 

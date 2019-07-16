@@ -39,24 +39,26 @@ function getRestaurants(){
 Fair enough? What if after I got the list of restaurants I needed to make another API call to order them based on rating. I'd do something like
     
 ```js    
-function getRestaurants(){
-  navigator.geolocation.getCurrentPosition(function(position){
-    $.get("http://myurl.com/getrestaurants",{ 
-            coordinates: position 
-        }, function(restaurants){
-      $.get("http://myurl.com/orderRestaurants",{ 
-                restaurants: restaurants
-            }, function(orderedRestaurants){
-        console.log(orderedRestaurants)
-      },function(){
-        console.log("Unable to process request")
-      })
-    },function(){
+function getRestaurants() {
+  navigator.geolocation.getCurrentPosition(
+    function(position) {
+      $.get(
+        "http://myurl.com/getrestaurants",
+        {
+          coordinates: position,
+        },
+        function(restaurants) {
+          console.log(restaurants)
+        },
+        function() {
+          console.log("Unable to process request")
+        }
+      )
+    },
+    function() {
       console.log("Unable to process request")
-    })
-  }, function(){
-    console.log("Unable to process request")
-  })
+    }
+  )
 }
 ```
 

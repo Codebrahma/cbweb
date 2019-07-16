@@ -22,7 +22,7 @@ To this date, this trend has been increasing positively and more and more people
 
 On one hand, Local Business,across the globe, are looking for the right technology know-hows/ tools for growing their business and to implement them in a cost-effective way. Start-ups, working in time strapped and rapidly changing business environments, find themselves not able to spend time on the development of their Technology Product. **_Developing Quality Software that caters perfectly to the problem_** is a Time & Effort consuming task. Also Startups and Local Business are bound by the amount of money they could spend on Technology and thus extending their ROI Period on online sales and marketing even further.
 
-`"If you are facing any of the above difficulties, Then Bangalore is the place for you. Look No Further"`
+> "If you are facing any of the above difficulties, Then Bangalore is the place for you. Look No Further"
 
 ## Why you should consider Bangalore for your technology needs
 
@@ -56,10 +56,8 @@ Now its your turn to tell us what you think? Leave your comments below.
 
 * * *
 
-If you are looking for [Ruby on Rails Developers in Bangalore][1], Node.js development company, [AngularJS Development company][2] or [Android App Development company][3] then contact us today! We are here to help!
+If you are looking for  Node.js development company, [AngularJS Development company][2] then contact us today! We are here to help!
 
-[1]: https://oldwebsite.codebrahma.com/oldwebsite.codebrahma.com/ruby-on-rails-developers-consulting-bangalore/
-[2]: https://oldwebsite.codebrahma.com/angularjs-development-company/
-[3]: https://oldwebsite.codebrahma.com/android-development-company-in-bangalore/
+[2]: /angularjs-development-company
 
   

@@ -46,5 +46,3 @@ Pros:
 
   
 Have you used SOA in your architecture. What Messaging Queue did you use?
-
-  

@@ -112,4 +112,3 @@ If you’re selling high end watches, you could implement a bot that would help 
 
 Advancement in chatbots have opened up a whole new platform for businesses. And this is just the beginning. The next year will see a majority of businesses adapting chatbots in some form.
 
-Our suggestion: be ahead of the curve. [Get a chatbot developed for your business today.](/chatbot-development-company-bangalore/)

@@ -27,8 +27,6 @@ function network(){
 ```
 ![network][2]
 
- 
-
 With a little more customization.
     
 ```js    

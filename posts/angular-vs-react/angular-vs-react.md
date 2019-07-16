@@ -113,7 +113,6 @@ The clash of titans in the world of web development is an epic battle that has b
 
 We hope the comparison here helps you make a smarter decision on which one to use. Post your comments and queries in the comments section below and we will be glad to address them. Stay tuned for more amazing info from the world of web development.
 
- 
 
 **Looking for [React JS development company ?][2]**
 

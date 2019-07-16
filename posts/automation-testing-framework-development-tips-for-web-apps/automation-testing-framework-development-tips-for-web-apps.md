@@ -18,7 +18,6 @@ tags:
 - web application development
 ---
 
-
 While every automation tester is familiar with Selenium RC, Selenium IDE and Selenium WebDriver, when it comes to automation framework development a whole new methodology swoops in. How to implement a POM(Page Object Model)? Which unit testing framework to use? Is framework development dependent on every language? Which reporting tool should be included in the framework? Which type of framework needs to be used for different types of applications? etc., are some of the questions that arises when developing a framework. I will continue writing this blog using Java as my language.
 
 ![Seleniumlogo][1]  
@@ -91,7 +90,6 @@ It depends on what type of framework you are going for. In most cases, yes agree
 Coming to the next important topic, would be naive in paper but it is a pretty good question. Let me just dive into to the answer. The framework development is NOT dependent on the language, but having said that the way we implement the framework might differ. Here is what I mean, Page Object Model can be achieved using the PageFactory class in Java but WebDriver for Python API doesn't include PageFactory. Having said this it doesn't mean that we cannot implement POM. Here is a [link][2] to implement the same.
 
  
-
 ![night-computer-hdd-hard-drive \(1\)][3]
 
 **Reporting tool**
@@ -101,7 +99,6 @@ Next topic that I would like to discuss is about the Reporting tool integration 
 If we are using maven as the build management tool I would highly recommend that the reporting tool to be Allure. It is an elegant reporting tool which provides a lot of clarity about the test suite. The best part is that they have provided their adapters for popular languages like Java, PHP, Ruby, Python and C# test frameworks.
 
  
-
 If we are using Cucumber, this is the best reporting tool. It provides a separate section for feature files. Right now, I can easily say that Allure is the best reporting tool available. If we are not using Cucumber, then the best reporting tool would be Extent reports by Anshoo Arora. Provides coherence for the testing coverage pretty well. Also one advantage of this reporting tool is that it is independent of the build management tool.
 
 Of course, there are other good reporting tools but in my opinion these two are the best available today.

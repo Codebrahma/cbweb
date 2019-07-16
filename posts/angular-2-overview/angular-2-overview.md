@@ -50,9 +50,6 @@ Over the years, through the various stages of evolution, a number of modules hav
 
 Angular JS is not a very user-friendly framework. The learning curve for the framework is also quite steep. The range of new features from derivatives to controller have been bolted on to Angular JS framework. This is the reason it still remains a framework of nerds. The angular 2 is designed with all the essential features in its core that would definitely be more user-friendly and much easy to learn.
 
- 
- 
-
 ## Mixed Reaction
 
 "Change is the only thing that never changes"

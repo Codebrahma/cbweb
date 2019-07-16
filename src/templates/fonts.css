@@ -455,6 +455,12 @@ ul.unstyled-list{
   list-style-type: none;
   padding-left: 30px;
 }
+code.language-text.css-0 {
+  background: transparent !important;
+  color: #4a2fff;
+  padding: 2px 4px !important;
+  margin: 2px;
+}
 /*----------------------RESET OVER----------------------------------*/
 @font-face {
   src: url("../fonts/TiemposTextWeb-Regular.woff") format("woff");

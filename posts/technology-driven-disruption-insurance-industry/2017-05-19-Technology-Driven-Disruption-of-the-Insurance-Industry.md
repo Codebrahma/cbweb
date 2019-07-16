@@ -48,7 +48,7 @@ Quite like the banks, insurance companies can do well with adapting a mobile fir
 ## Automation To Reduce Redundancy
 Key to winning in the digital age is to replace manual, time-consuming processes with intelligent automations. Insurance agents could do better with spending more time interacting and onboarding new customers rather than sifting and scrolling through documents.
 
-Automating customer service through intelligent [customized chatbots](/chatbot-development-company-bangalore) is one of the fastest growing trends this year. We have seen a lot of interest from clients, both old and new, willing to experiment by partially replacing their customer interactions with a chatbot. Another class of chatbots that help people manage their personal wealth have seen a lot of interest. Insurance companies could as well look at intelligent, automated systems that help people with their insurance applications, renewals as well as claims.
+Automating customer service through intelligent customized chatbots is one of the fastest growing trends this year. We have seen a lot of interest from clients, both old and new, willing to experiment by partially replacing their customer interactions with a chatbot. Another class of chatbots that help people manage their personal wealth have seen a lot of interest. Insurance companies could as well look at intelligent, automated systems that help people with their insurance applications, renewals as well as claims.
 
 Winning in the digital age would require companies to adopt a leaner, more agile approach towards processes, marketing as well as selling. Quality of products offered can also be dramatically improved and personalized by leveraging data and technology.
 

@@ -16,11 +16,6 @@ tags:
 - Ruby on rails development
 ---
 
-
-[Source](https://oldwebsite.codebrahma.com/best-gems-for-ruby-on-rails-web-applications/ "Permalink to Best Gems for Ruby on Rails web applications")
-
-# Best Gems for Ruby on Rails web applications
-
 Ruby is a breakthrough in allowing web development as one can make use of `Gems` to fill in functionalities. This allows one to build a web app in matter of days which would usually take months to develop. Gems are highly modular and perform a specific function, which makes integrating them into new applications extremely easy. Out of the multitudes of gems created by the Ruby community at large for use, we pick fifteen which, in our opinion, are the recommend ones that should be present in every web application.
 
 1. **Rails**
@@ -51,7 +46,7 @@ Devise is a flexible authentication solution for Rails based on Warden. It compr
 
 Carrier Wave is a classy approach to enabling file uploads for Rails, Sinatra and other Ruby web frameworks. Paperclip enables easy file attachment for ActiveRecord. Both these gems provide access to the file system within the web application environment. 
 
-> If you are looking for reputed [ruby on rails development companies][1] then check out Codebrahma. 
+> If you are looking for reputed then check out Codebrahma. 
 
 8. **CanCanCan (inspired by CanCan)**
 
@@ -84,9 +79,3 @@ Sass-rails adds CSS assets to integrate the Sass stylesheet language(An extensio
 15. **ActiveModelSerializers**
 
 Most widely used library for designing JSON APIs through Rails. It has two chief components: serializers that describe which attributes or relationships to serialize and adapters that describe how the concerned attribute or relationship should be serialized. 
-
-[1]: /ruby-on-rails-developers-consulting-bangalore/
-
-  
-
-

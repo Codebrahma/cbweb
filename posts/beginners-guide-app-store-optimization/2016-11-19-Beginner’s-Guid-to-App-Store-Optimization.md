@@ -115,5 +115,3 @@ Google collects data about installs, uninstalls, install retention and app engag
 Apps that have good number of ‘+1’ in Google plus or are shared in any kind of social media get a general rank boost
 
 App store optimization is important, and can give the boost your app needs to get hugely popular. Have you tried using these tactics for your app? How has your experience been? We’d love to hear your thoughts in the comments section below.
-
-PS: If you are looking for [iOS app development company](/iphone-ios-app-development-company-in-bangalore), then we have one of the best!

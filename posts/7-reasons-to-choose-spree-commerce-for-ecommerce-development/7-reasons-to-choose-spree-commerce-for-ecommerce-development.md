@@ -23,7 +23,7 @@ Setting up an e-commerce venture is a difficult and challenging. In addition to 
 ![spree-commerce][1]  
 **RAPID DEVELOPMENT**
 
-Spree commerce implementation covers all the core functionalities of the [e-commerce platform][2]. A developer can just build the website by adding spree commerce to the project. Spree comes with far more supported payment gateways and language modules right out of the box. Spree also has lot of free extensions which supports additional features like blogging, multi-domain support and etc.
+Spree commerce implementation covers all the core functionalities of the e-commerce platform. A developer can just build the website by adding spree commerce to the project. Spree comes with far more supported payment gateways and language modules right out of the box. Spree also has lot of free extensions which supports additional features like blogging, multi-domain support and etc.
 
 **SUBSET OF RUBY ON RAILS**
 
@@ -52,12 +52,8 @@ Spree is open source software, meaning that it has a large public body of users 
 Spree is an extremely robust framework and is capable of handling huge amount of traffic. Several industry standard benchmarks using NewRelic or Google Analytics show in a standard volume-testing scenario, which simulates a large number of users simultaneously accessing the website, response time does not increase by any significant margin. Spree is capable of handling large amounts of traffic better than most paid development solutions.
 
  
-
-In conclusion, we would like to recommend you the team of professional [Ruby on Rails developers][4] that focuses on creating robust and efficient e-commerce systems. Codebrahma team has already implemented and launched several successful e-commerce projects. Whether you are an e-commerce beginner or a large-scale businessman, you will get a cost-effective solution for your budget. Be smart, use Spree Commerce and boost your sales to space.
+In conclusion, we would like to recommend you the team of professional Ruby on Rails developers that focuses on creating robust and efficient e-commerce systems. Codebrahma team has already implemented and launched several successful e-commerce projects. Whether you are an e-commerce beginner or a large-scale businessman, you will get a cost-effective solution for your budget. Be smart, use Spree Commerce and boost your sales to space.
 
 [1]: ./images/spree-commerce.jpg
-[2]: /ecommerce-development-company
 [3]: ./images/shopping-cart-1080841_1920-1-1024x681.jpg
-[4]: /ruby_rails_developers
-
   

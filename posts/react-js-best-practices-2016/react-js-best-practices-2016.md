@@ -84,8 +84,6 @@ console.log( book.get('price'), book.get( 'price' ) );
 //123 200
 ```    
 
- 
-
 First, a book is created with the author, genre and price attributes. The `changePrice` function returns a new immutable map. When the `changePrice `function is executed, book`2` is created as a return value, and book`2` is strictly different than book. The price of each book map can be accessed via the `get` method. The properties of the maps are hidden behind the `get`/`set `interface, therefore they cannot be directly accessed or modified.
 
 The immutable.js is a fast and intelligent way of developing immutability in your code.

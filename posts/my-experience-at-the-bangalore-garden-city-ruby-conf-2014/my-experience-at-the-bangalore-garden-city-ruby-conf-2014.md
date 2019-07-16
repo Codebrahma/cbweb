@@ -11,7 +11,6 @@ tags:
 - Ruby on rails
 ---
 
-
 Starting off in a predominantly [Ruby on Rails consulting firm][1] like Codebrahma, whilst still in college and with no prior ruby experience seemed daunting at first. I spent most of last month getting used to the 'Ruby Way' of doing things. I'm far form mastering ruby, but I'm able to enjoy and appriciate turse and elegant ruby code. "Coding in Ruby makes me happy because it's one of the shortest paths between my brain and a computer", Indeed it is.
 
 An absolute newbie to the ruby world, participating in an event like GCRC'14 filled with giants like [Chad Fowler][2] 'out of place' was the opposite of what I was feeling. The ruby world in warm and welcoming. 'The more The merrier' quoting one of the sepakers. The Bangalore garden City Ruby Conference was not aimed to be just a conference and It didn't turn out to be just that. There is nothing more exciting than a group of like minded people coming together and talking about their passion. In that sense, the last couple of days were immensely exciting. I most enjoyed bouncing product ideas off others, critiquing, being critiqued and understanding how different people approached similar problems. I ended up expanding my scope of thought and pushing myself to ponder about things which I wouldn't normally think about, be it because it was too trivial or too complex.
@@ -34,12 +33,11 @@ All in all, It was an interesting couple of days. The best conferences are the o
 
 * * *
 
-If you are looking for any [ruby on rails development company][5] then do contact us for quality work. 
+If you are looking for any then do contact us for quality work. 
 
 [1]: /
 [2]: http://twitter.com/chadfowler
 [3]: http://www.slideshare.net/gautamrege/gcrc-2014-the-dark-side-of-ruby-29681735
 [4]: http://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil
-[5]: /ruby-on-rails-developers-consulting-bangalore/
 
   

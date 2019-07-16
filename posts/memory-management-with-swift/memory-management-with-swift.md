@@ -61,10 +61,7 @@ Hope you found this article useful. Drop in a comment if you have any questions.
 References:   
 [developer.apple.com][2]
 
-PS: If you are looking to [hire iOS app development company][3], then we have one of the best!
-
 [1]: http://lists.apple.com/archives/objc-language/2011/Jun/msg00013.html
 [2]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html
-[3]: /iphone-ios-app-development-company-in-bangalore
 
   

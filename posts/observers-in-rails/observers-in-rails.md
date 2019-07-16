@@ -18,7 +18,7 @@ tags:
 
 Let's say you need to listen to changes in a model's attributes and trigger some events based on those changes. If you look at the following example, I've done exaclty that. If the status of application is changed an email is sent.
     
-```py    
+```ruby    
 class Application < ActiveRecord::Base
   
   after_save :email_confirmation
@@ -54,7 +54,7 @@ The above piece of code _violates_ the **Single Responsibility Principle**, whic
 
 We can delegate the responsiblity of observing changes in model attibutes and responding to those changes, to a seperate Observer class. Model specific event handling is much cleaner this way. This way, we can refrain from polluting the model by adding not un-necessary methods.
     
-```py    
+```ruby  
 class ApplicationObserver < ActiveRecord::Observer
 
   def after_save(appl)
@@ -73,8 +73,6 @@ You can read more about the observer design pattern [here][1].
 
 _ _
 
-If you are looking for [rails development company][2], contact us. We have one of the best rails developers.
-
 ## Note
 
 1. Observer names are infered form the model names. So if you name your observer as `ApplicationObserver`, rails knows that it's observing the `Application`model.
@@ -88,7 +86,6 @@ Refrences:
 [nithinkrishna.github.io][3]
 
 [1]: http://sourcemaking.com/design_patterns/observer
-[2]: /ruby-on-rails-developers-consulting-bangalore/
 [3]: http://nithinkrishna.github.io/blog/Active-record-observers/
 [4]: http://api.rubyonrails.org/v3.2.13/classes/ActiveRecord/Observer.html
 

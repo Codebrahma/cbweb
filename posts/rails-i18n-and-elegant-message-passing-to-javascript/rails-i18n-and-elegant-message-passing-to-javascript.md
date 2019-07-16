@@ -33,7 +33,7 @@ As our projects grow, such practices contribute to greater software entropy and 
 
 Write a simple message handler service which takes in a language, parses the corresponding `language.yml` file _(from config/locales/*.yml)_ and returns it's contents as a hash.
     
-```py    
+```ruby    
 class MessageHandler
   class << self
 
@@ -69,15 +69,15 @@ end
 
 Use gon to set the contents of your language files to a javascript variable, in the application conroller.
     
- ```py  
+ ```ruby  
 #EN.YML
 welcome_message: 'Welcome!'
 ```
-```py
+```ruby
 class ApplicationController < ActionController::Base
   before_filter :set_messages
 ```
-```py
+```ruby
 private
   def set_messages
     I18n.locale = params[:locale] || I18n.default_locale
@@ -102,7 +102,7 @@ While this approach works great, when ever we add/modify our YAML files we need 
 
 Everytime our Language-YAML files are changed, `load!` has to be invoked. This can be done by using Rails' `ActiveSupport::FileUpdateChecker` service which Rails uses to reload code dynamically during runtime.
     
-```py    
+```ruby    
 def data_in(language)
   load! if !@@data[language] or files_changed?
   @@data[language][language.to_s]

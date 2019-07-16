@@ -68,9 +68,6 @@ Founded in 1999 as a crowdsourced dictionary of online slang to help newcomers a
 AirBnb is the latest platform to disrupt established business by allowing travellers and visitors to find accommodations in "homes" and for homeowners to rent out spare rooms to individuals. It uses Ruby on Rails.  
 ![airbnb][10]
 
- 
-Contact us, if you are looking for [ruby on rails development companies][11]. So there you have it. Some of the most popular websites on the internet handling extreme traffic on a day to day basis use Ruby on Rails. It is stable and has a plethora of third party add-ons and plenty of developer support. You simply cannot go wrong with this! 
-
 [1]: ./images/twitter-1024x591.png
 [2]: ./images/2.-Shopify-sites-built-with-Ruby-on-Rails-1024x656.png
 [3]: ./images/3.basecamp-ruby-on-rails-sites-1024x719.png
@@ -81,6 +78,5 @@ Contact us, if you are looking for [ruby on rails development companies][11]. So
 [8]: ./images/groupon-1024x569.png
 [9]: ./images/urban-dictonary-1024x572.png
 [10]: ./images/airbnb-1024x581.png
-[11]: /ruby-on-rails-developers-consulting-bangalore/
 
   

@@ -60,8 +60,6 @@ It’s a complete framework that uses Javascript on both client side and server 
 
 Since its launch in 2012, Meteor has drastically grown in popularity and is currently being used by some big names like Honeywell, IKEA and Qualcomm.
 
-[Hire Best MeteorJS Developers](/meteor-js-development-company)
-
  
 ![JavascriptDevelopers](./images/TopJSFrameworks-Backbone-1024x342.png)
 
@@ -74,5 +72,4 @@ Backbone is based on the MVP (model – view – presenter) design paradigm whic
 With over 26,000 stars on the Github repo, Backbone is being used by some really big names like Airbnb, Pinterest, Trello and Reddit.
 
  
-
 There are a ton of Javascript frameworks, and choosing these 4 are purely a personal / professional preference. If you have a personal favourite that we haven’t listed above, do let us know in the comments section below!

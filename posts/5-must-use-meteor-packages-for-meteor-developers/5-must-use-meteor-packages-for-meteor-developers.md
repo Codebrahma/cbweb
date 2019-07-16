@@ -43,8 +43,4 @@ There are a large number of Meteor packages out there for adding a variety of fu
 
 However, from a general and overall perspective, the highlighted packages are the ones that are can be used in a wide variety of scenarios and provide functionality for a great number of applications and not only niche ones.
 
-If you are looking to [hire meteor developers][1] you can definitely check out Codebrahma.
-
-[1]: https://oldwebsite.codebrahma.com/meteor-js-development-company/
-
   

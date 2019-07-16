@@ -59,5 +59,4 @@ Currently in a private alpha mode, Cleo plans to offer a whole range of financia
 
 Fintech chatbots are just beginning to create a serious market for themselves. The possibilities with conversational banking are endless. There’s no wonder that Fintech chatbots are one of the hottest market to look for in this year.
 
-[If you’re looking to create a chatbot for your financial business, drop us a message here.](/chatbot-development-company-bangalore/)
 

@@ -60,9 +60,8 @@ Building a product is not a discrete one step activity as many entrepreneurs who
 
 What process did you follow when you offshored? What worked for you and what didnt? Leave a comment
 
-If you are looking for [AngularJS Development Company][1] or [Ruby on Rails Developers bangalore][2], just send us a mail and we will take it forward. 
+If you are looking for [AngularJS Development Company][1], just send us a mail and we will take it forward. 
 
-[1]: https://oldwebsite.codebrahma.com/angularjs-development-company/
-[2]: https://oldwebsite.codebrahma.com/ruby-on-rails-developers-consulting-bangalore/
+[1]: /angularjs-development-company
 
   

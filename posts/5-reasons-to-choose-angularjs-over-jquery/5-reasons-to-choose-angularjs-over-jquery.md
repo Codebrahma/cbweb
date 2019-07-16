@@ -18,7 +18,6 @@ tags:
 - web application development
 ---
 
-
 AngularJS is a very powerful JavaScript framework designed and maintained by Google. It is used primarily to develop and run web applications on the client machine. AngularJS is built specifically to overcome the various limitations of existing technologies like HTML, CSS and JavaScript in one seamlessly integrated package. jQuery, on the other hand, is a JavaScript library comprising a modular set of platform agnostic methods for handling various requirements of the dynamic web, such as running calls on AJAX, traversing and selecting DOM elements, parsing animations and transition effects, manipulating page elements etc. It standardize the task of front-end development and user interaction elements.
 
 ![Angular_Tutoria][1]
@@ -53,5 +52,3 @@ So there you have it; five reasons why AngularJS trounces jQuery in front end de
 
 [1]: ./images/Angular_Tutoria.png
 [2]: /hire-angularjs-development-company/
-
-  

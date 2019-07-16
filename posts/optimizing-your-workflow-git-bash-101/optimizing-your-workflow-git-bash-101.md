@@ -11,8 +11,6 @@ link: /optimizing-your-workflow-git-bash-101
 
 Git is a developer’s best friend. When ever you screw up, git is always there to save the day. Here are some cool bash scripts to optimize your git workflow. Add the following snippets to your `.bash_profile` and voila.
 
-
-
 ## 1.Know where you are.
 Often you forget which branch you are working on. It will be great if you always knew which branch you are on currently.
 ```js

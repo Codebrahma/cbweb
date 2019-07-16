@@ -15,8 +15,7 @@ Let us consider a problem in which we have a Car class. The top speed of any car
 
 ## Solving using Inheritance
     
-    
-```py   
+```ruby   
 class Car
   def top_speed
     100 
@@ -55,9 +54,7 @@ The decorator pattern allows you to attach additional responsibilities to an obj
 
 Now that we have identified what decorators we need let's write it
     
-    
-    
-```py    
+```ruby    
 class Nitro
   # Wrapping the component class, Car object in this case 
   def initialize(component)
@@ -86,7 +83,6 @@ end
 Now we can start using our decorators to add new packs to a car object.
     
     
-    
 ```java    
 Nitro.new(Car.new).top_speed #130 
 
@@ -97,9 +93,3 @@ Boost.new(Nitro.new(Car.new)).top_speed #180
     
 
 That's it, our shiny new power packed cars are ready to be driven 😉
-
-If you are looking for [ruby on rails development companies][1], then do contact us. We have one of the best rails developers!
-
-[1]: https://oldwebsite.codebrahma.com/ruby-on-rails-developers-consulting-bangalore/
-
-  

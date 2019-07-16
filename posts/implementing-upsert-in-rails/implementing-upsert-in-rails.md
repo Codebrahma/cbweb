@@ -17,7 +17,7 @@ An upsert is ```update``` or ```insert```. Upsert in database terms refers to an
 ## The ActiveRecordExtension
 
 1. Create a file ```active_record_extension```.rb in ```app/extensions```.
-```py
+```ruby
 module ActiveRecordExtension
   extend ActiveSupport::Concern
 
@@ -31,7 +31,7 @@ end
 ActiveRecord::Base.send(:include, ActiveRecordExtension)
 ```
 2. Set up an initializer ```extenstions.rb``` in ```config/initializers``` which initializes your extension.
-```py
+```ruby
 require "active_record_extension"
 ```
 
@@ -40,7 +40,7 @@ require "active_record_extension"
 As I see it there are two ways to implement upsert. Lets look at both and run through some numbers.
 
 ## 1. Playing it safe
-```py
+```ruby
 def upsert(attributes)
   where(:primary_key => attributes['primary_key']).
   first_or_initialize.
@@ -49,7 +49,7 @@ end
 ```
 
 ## 2. Rescue from failure
-```py
+```ruby
 def upsert(attributes)
   begin
   	create(attributes)
