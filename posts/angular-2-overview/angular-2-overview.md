@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Completing React as a MVC – Part 1 – Models'
+title: 'ANGULAR JS 2 : The Overview'
 date: 2016-05-16
 featuredpost: false
 description: >-
