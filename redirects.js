@@ -16,4 +16,8 @@ module.exports = [
     from: "/pricing",
     to: "/faq#pricing",
   },
+  {
+    from: "/services",
+    to: "/solutions",
+  },
 ]
