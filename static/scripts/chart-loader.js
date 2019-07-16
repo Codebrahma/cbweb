@@ -1,3 +1,4 @@
+// Script to load the block chain chart on DOM element with the id 'google-chart'
 document.onreadystatechange = function() {
   if (document.readyState === 'complete') {
     var chartContainer = document.getElementById("google-chart")
