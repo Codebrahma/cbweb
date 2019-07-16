@@ -26,22 +26,6 @@ function SEO({ description, lang, meta, keywords, title, canonical }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  
-  const structuredData = `{
-    "@context" : "http://schema.org",
-    "@type" : "LocalBusiness",
-    "name" : "Codebrahma",
-    "image" : "https://codebrahma.com/static/690ea05ce05812b0bc0798a71a210f4b/d042c/rippling_screenshot.png",
-    "telephone" : "+1 484 506 0634",
-    "email" : "hello@codebrahma.com",
-    "address" : {
-      "@type" : "PostalAddress",
-      "streetAddress" : "156, 2nd Street",
-      "addressLocality" : "San Francisco,",
-      "addressRegion" : "CA",
-      "postalCode" : "94105"
-    }
-  }`
 
   return (
     <Helmet
@@ -94,11 +78,7 @@ function SEO({ description, lang, meta, keywords, title, canonical }) {
             : []
         )
         .concat(meta)}
-    >
-      <script type="application/ld+json">
-        {structuredData}
-      </script>
-    </Helmet>
+    />
   )
 }
 
