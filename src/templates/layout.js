@@ -116,7 +116,7 @@ const Layout = ({ children }) => {
                     color: inherit;
                   }
                   a:hover {
-                    cursor: grab;
+                    cursor: pointer;
                   }
                   body {
                     font-family: ${theme.fonts.body};

@@ -19,7 +19,7 @@ tags:
 
 E commerce is one of the biggest outcomes of the rapid technology advances over the past few years. Better & more secure payment gateways, powerful mobile browsers, advent of the internet – have all made ecommerce a mainstream industry. If you have a brick and mortar store – complementing it with an online store can instantly open up the world for you. But with all the noise surrounding ecommerce and the number of players in the market – it can get a bit difficult to carve an identity for yourself.
 
-In this article, we’ve dig into our combined years of experience working with and [setting up ecommerce stores](/ecommerce-development-company) to present you 3 tips on ecommerce. They’ll help you run your store like a pro and dominate the online sales business!
+In this article, we’ve dig into our combined years of experience working with and setting up ecommerce stores to present you 3 tips on ecommerce. They’ll help you run your store like a pro and dominate the online sales business!
 
 ## 1. UI and UX of your e-commerce store
 The moment a potential customer lands on your website, they’ll make assumptions about your brand based on the design, look & feel and the functionality. That’s why is absolutely essential to ensure that your ecommerce website is designed keeping your customer’s experience in mind. A few components that you should pay special attention to:

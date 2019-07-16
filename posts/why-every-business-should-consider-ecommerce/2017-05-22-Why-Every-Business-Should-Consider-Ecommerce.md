@@ -17,7 +17,7 @@ tags:
 ---
 Ecommerce has been one of the most talked about sectors in the new age. While the majority of the internet blog space has been occupied by the giants, the likes of Amazon and Alibaba – it’s really the smaller (comparatively) businesses that stand to gain the most. Independent merchants looking to go online have two options at their behest – become a seller on one of the platforms (like Amazon) or set up their own ecommerce store.
 
-Joining hands with a platform like Amazon has a lot of benefits and makes the whole process rather easy. They even take care of shipping and returns, allowing you to solely focus on production and handling operations. But if you’re looking to build your own brand and be in complete control of every aspect of your business, you’re better off [setting up your own ecommerce store](/ecommerce-development-company).
+Joining hands with a platform like Amazon has a lot of benefits and makes the whole process rather easy. They even take care of shipping and returns, allowing you to solely focus on production and handling operations. But if you’re looking to build your own brand and be in complete control of every aspect of your business, you’re better off setting up your own ecommerce store.
 
 Businesses that have been flirting with the idea of ecommerce for sometime now should consider getting serious about it. The advantages of having your own ecommerce far outweigh the amount of time, effort and money you’d spend on setting it up. Here are some of the reasons why every retail business should consider an ecommerce store:
 
@@ -56,4 +56,4 @@ The world is moving towards digital. There are more mobile phones in the world t
 A study by UPS in 2015 revealed that a staggering 93% people prefer local businesses that have an online store. It gives them the convenience of online shopping with a promise of better service and unique products.
 
  
-Getting an online store for your business could very well be the difference between a double digit growth versus a slow 5% growth. If you’re still not convinced – [research more](/category/ecommerce-development-company/) or [drop us a message](/contact). With the way things are moving, the future of shopping could be very different from what it is currently. You wouldn’t want to miss out this this opportunity!
+Getting an online store for your business could very well be the difference between a double digit growth versus a slow 5% growth. If you’re still not convinced – research more or [drop us a message](/contact). With the way things are moving, the future of shopping could be very different from what it is currently. You wouldn’t want to miss out this this opportunity!

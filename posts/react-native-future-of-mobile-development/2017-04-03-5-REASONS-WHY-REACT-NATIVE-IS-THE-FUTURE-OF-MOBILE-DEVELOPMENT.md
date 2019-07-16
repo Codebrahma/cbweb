@@ -20,7 +20,7 @@ While there’s a new Javascript framework or library doing the rounds every oth
 ## 1. Cross Platform Compatibility
 Majority of the React Native APIs are cross platform, which means that your one component will work on both iOS and Android. You can develop complete, full blown applications that look, run and feel native – without writing a single line of platform specific code.
 
-There are instances, though, when you need to be platform specific. Design implications, for instance, are different on [Android](/android-development-company-in-bangalore/) and [iOS](/iphone-ios-app-development-company-in-bangalore/). React provides for such cases with its Platform module and Platform specific file extensions. The Platform module can detect the OS the app is running on, which can then be used to define platform specific implementations. Platform specific file extensions let you define files for specific platforms. React automatically picks up the correct file depending on the OS the app is running on.
+There are instances, though, when you need to be platform specific. Design implications, for instance, are different on Android and iOS. React provides for such cases with its Platform module and Platform specific file extensions. The Platform module can detect the OS the app is running on, which can then be used to define platform specific implementations. Platform specific file extensions let you define files for specific platforms. React automatically picks up the correct file depending on the OS the app is running on.
 
  
 ## 2. Shorter Development Cycles

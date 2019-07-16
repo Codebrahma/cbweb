@@ -196,7 +196,6 @@ const WrappedTable = PaginationWrapper(SortingWrapper(ChangeLimitWrapper(< Table
 But there are certain disadvantages in this method. This will create three React classes as supposed to one in the previous method. Also HOCs in common might have performance issues if there are too many props linking each functionality. One must use ShouldComponentUpdate lifecycle in order to avoid that.
 
  
-
 But apart from that if we are careful enough we can have an architecture which can abstract logic that can be shared across other presentational components using HOC has great benefits.
 
 Proceed to next part of this blog for a more [functional approach to Higher Order Components](/functional-approach-higher-order-components-recompose/)
