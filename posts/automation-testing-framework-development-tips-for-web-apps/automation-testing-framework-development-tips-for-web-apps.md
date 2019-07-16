@@ -1,7 +1,7 @@
 ---
 templateKey: 'blog-post'
 title: 'Automation Testing Framework Development Tips For Web Apps'
-date: 2015-02-03
+date: 2015-12-28
 featuredpost: false
 description: >-
  Here are some of the tips on automation testing framework development. We help startups with offshore web application development.
