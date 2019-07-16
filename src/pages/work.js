@@ -25,7 +25,6 @@ const Project = ({title, image, description, link})=>(
 
 const WorkPage = ({data})=> (
 <Layout>
-  {console.log(data)}
   <SEO title="Our Work" keywords={[`gatsby`, `application`, `react`]} />
   <H1>Our Work</H1>
   <P>We have built 50+ apps over the last 6 years. We have listed a few</P>
