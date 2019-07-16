@@ -1,4 +1,11 @@
-import {Flex, Box, InputText, InputButton} from 'bricks'
+import { Flex, Box, InputText, InputButton } from 'bricks'
+import SEO from './../components/seo'
+
+<SEO
+  title="Contact Us – Get in Touch | Codebrahma"
+  description="We provide quality services – We build creative websites and develop interactive Web &amp; Mobile applications. Contact us anytime as we are here to assist you."
+  keywords={["ruby on rails", "Ruby on Rails development", "angularjs framework", "angularjs code", "meteor js", "react js", "reactjs native", "node js development", "node js website", "spree commerce", "ruby on rails developer", "react js components", "javascript meteor", "Angular javascript", "angular framework", "js angular", "angular website", "Android Website", "ios app development", "mobile web app", "javascript android app", "web application development company"]}
+/>
 
 # Contact
 
@@ -6,22 +13,22 @@ import {Flex, Box, InputText, InputButton} from 'bricks'
 <br/>
 <br/>
 
-
-Mail  : <a href="mailto:hello@codebrahma.com">hello@codebrahma.com</a>
+Mail : <a href="mailto:hello@codebrahma.com">hello@codebrahma.com</a>
 
 Phone : +1 484 506 0634
 
 or drop in for some **Green Tea** <br/>
-156 2nd Street, 
+156 2nd Street,
 San Francisco
 
 <br/>
 
 #### Or leave us a msg :)
-<form 
-action="https://formspree.io/anand@codebrahma.com" 
-method="post" target='/thanks'>
-  <Flex flexWrap='wrap' flexDirection='column'>
+
+<form
+  action="https://formspree.io/anand@codebrahma.com"
+  method="post" target='/thanks'>
+    <Flex flexWrap='wrap' flexDirection='column'>
       <Box width={[1,1/3]}>
         <InputText size='25' rows="5" style={{width:'100%'}} required as='textarea' name='msg' placeholder='Tell us about your idea'/>
       </Box>
@@ -31,5 +38,5 @@ method="post" target='/thanks'>
       <Box width={[1,1/3]} mt={1}>
         <InputButton/>
       </Box>
-  </Flex>
+    </Flex>
 </form>

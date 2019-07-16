@@ -485,3 +485,28 @@ a:visited {
 /* TODO add the css for prism line highlighting
     https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/#optional-add-line-highlighting-styles
 */
+
+/* Vimeo style style starts */
+.embed-wrapper {
+  width: 100%;
+  max-width: 640px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+/* Vimeo style ends */

@@ -1,15 +1,20 @@
+const redirects = require("./redirects")
+
 // TODO move perpage variable outside to a config file
-let ppage = 7;
+let ppage = 7
 const getUnique = (field, posts) =>
   posts.reduce((uniques, post) => {
-    let values = post.childMdx.frontmatter[field];
-    values = ( typeof values != 'undefined' && values instanceof Array ) ? values : [values]
+    let values = post.childMdx.frontmatter[field]
+    values =
+      typeof values != "undefined" && values instanceof Array
+        ? values
+        : [values]
 
-    return uniques.concat(values.filter(val => !uniques.includes(val)));
-  }, []);
+    return uniques.concat(values.filter(val => !uniques.includes(val)))
+  }, [])
 
 const groupPostsByUnique = (field, posts) => {
-  const uniqueValues = getUnique(field, posts);
+  const uniqueValues = getUnique(field, posts)
 
   return uniqueValues.reduce(
     (grouped, unique) => ({
@@ -17,33 +22,32 @@ const groupPostsByUnique = (field, posts) => {
       [unique]: posts.filter(post => {
         try {
           return post.childMdx.frontmatter[field].includes(unique)
-        } catch(err) {
+        } catch (err) {
           return false
         }
-      }
-      ),
+      }),
     }),
-    {},
-  );
-};
+    {}
+  )
+}
 const createPages = (type, postArray, createPage) => {
-  const groupedPosts = groupPostsByUnique(type, postArray);
+  const groupedPosts = groupPostsByUnique(type, postArray)
   // returns {['tag']: [post1, post2], ['tag2']: [post3, post4]}
   Object.entries(groupedPosts).forEach(([typeValue, postGroup], index) => {
-    typeValue = typeValue.split(' ').join('-');
-    type = type == 'tags'? 'tag': type;
+    typeValue = typeValue.split(" ").join("-")
+    type = type == "tags" ? "tag" : type
     paginate(
       {
         createPage,
-        component: require.resolve('./src/templates/preview.js'),
+        component: require.resolve("./src/templates/preview.js"),
         pathTemplate: `${type}/${typeValue}/pgnum/`,
         type,
         value: typeValue,
       },
-      postGroup,
-    );
-  });
-};
+      postGroup
+    )
+  })
+}
 
 // Add paginated blog preview pages. Here’s how it works:
 //
@@ -56,23 +60,24 @@ const createPages = (type, postArray, createPage) => {
 //
 // Adapted from https://github.com/pixelstew/gatsby-paginate
 const paginate = (
-  { pathTemplate, createPage, component, type, value, linkRoot = 'blog' },
-  posts, perpage = ppage
+  { pathTemplate, createPage, component, type, value, linkRoot = "blog" },
+  posts,
+  perpage = ppage
 ) =>
   posts
     // 1 group them by page number and posts in that page
     .map((_, index, allPosts) =>
-      index % perpage === 0 ? allPosts.slice(index, index + perpage) : null,
+      index % perpage === 0 ? allPosts.slice(index, index + perpage) : null
     )
     // 2 filter the null items in the array
     .filter(item => item)
     // 3
     .forEach((postGroup, index, allGroups) => {
-      const isFirstPage = index === 0;
-      const currentPage = index + 1;
-      const totalPages = allGroups.length;
-      let pageNumber = isFirstPage? '' : '/page/'+currentPage ;
-      let path = pathTemplate.replace('pgnum', pageNumber).replace('//','/');
+      const isFirstPage = index === 0
+      const currentPage = index + 1
+      const totalPages = allGroups.length
+      let pageNumber = isFirstPage ? "" : "/page/" + currentPage
+      let path = pathTemplate.replace("pgnum", pageNumber).replace("//", "/")
 
       createPage({
         path,
@@ -85,95 +90,111 @@ const paginate = (
           totalPages,
           isFirstPage,
           linkRoot,
-          linkBase: pathTemplate.replace('pgnum','').replace('//','/'),
+          linkBase: pathTemplate.replace("pgnum", "").replace("//", "/"),
           isLastPage: currentPage === totalPages,
         },
-      });
-    });
+      })
+    })
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage, createRedirect } = actions;
-  createRedirect({fromPath: '/deploy-react-application-depth-overview-various-option', toPath: '/deploy-react-application-depth-overview-various-options-deploy', isPermanent: true, redirectInBrowser: true});
-  createRedirect({fromPath: '/reselect-tutorial-optimizing-react-redux-application-d', toPath: '/reselect-tutorial-optimizing-react-redux-application-development-with-reselect', isPermanent: true, redirectInBrowser: true});
-  createRedirect({fromPath: '/completing-react-as-a-mvc-part-1-models', toPath: '/completing-react-as-a-mvc-part-1-models', isPermanent: true, redirectInBrowser: true});
+  const { createPage, createRedirect } = actions
+  redirects.forEach(({ from, to, ...config }) =>
+    createRedirect({
+      fromPath: from,
+      toPath: to,
+      isPermanent: true,
+      redirectInBrowser: true,
+      ...config,
+    })
+  )
   // get all the markdown files
   const result = await graphql(`
-  {
-    posts: allFile(
-      filter: {
-        sourceInstanceName: {eq: "posts"},
-        ext: {in: [".md",".mdx"]
-      }
-    }) {
-      nodes {
-        id
-        childMdx {
-          frontmatter {
-            title
-            description
-            tags
-            category
-            link
-            author
-            date
-            scripts
+    {
+      posts: allFile(
+        filter: {
+          sourceInstanceName: { eq: "posts" }
+          ext: { in: [".md", ".mdx"] }
+        }
+      ) {
+        nodes {
+          id
+          childMdx {
+            frontmatter {
+              title
+              description
+              tags
+              category
+              link
+              author
+              date
+              scripts
+            }
           }
         }
       }
     }
-  }
-
-  `);
+  `)
 
   // remove the unpublished and posts which dont have a URL and is not published
-  let posts = result.data.posts.nodes.filter((post) => {
+  let posts = result.data.posts.nodes.filter(post => {
     try {
-      let fm = post.childMdx.frontmatter;
-      return fm.publish !== false && fm.link != null;
-    } catch(err) {
+      let fm = post.childMdx.frontmatter
+      return fm.publish !== false && fm.link != null
+    } catch (err) {
       return false
     }
-  });
+  })
 
   // TODO move this into graphql
-  posts = posts.sort((a,b)=> new Date(b.childMdx.frontmatter.date) - new Date(a.childMdx.frontmatter.date));
+  posts = posts.sort(
+    (a, b) =>
+      new Date(b.childMdx.frontmatter.date) -
+      new Date(a.childMdx.frontmatter.date)
+  )
 
   //create each individual blog post
   posts.forEach(post => {
-    const { link } = post.childMdx.frontmatter;
+    const { link } = post.childMdx.frontmatter
     createPage({
       path: `${link}/`,
-      component: require.resolve('./src/templates/blog-post-layout.js'),
+      component: require.resolve("./src/templates/blog-post-layout.js"),
       context: {
         link,
       },
-    });
-  });
+    })
+  })
 
   //create pages for tags, category, author
-  createPages('tags', posts, createPage);
-  createPages('category', posts, createPage);
-  createPages('author', posts, createPage);
+  createPages("tags", posts, createPage)
+  createPages("category", posts, createPage)
+  createPages("author", posts, createPage)
 
   //create blogs index
   // TODO sorting to be done in graphql
   paginate(
     {
       createPage,
-      component: require.resolve('./src/templates/preview.js'),
-      pathTemplate: '/blog/pgnum/',
-      type: 'all',
+      component: require.resolve("./src/templates/preview.js"),
+      pathTemplate: "/blog/pgnum/",
+      type: "all",
       value: null,
     },
-    posts.sort((a,b)=> new Date(b.childMdx.frontmatter.date) - new Date(a.childMdx.frontmatter.date)),
-  );
+    posts.sort(
+      (a, b) =>
+        new Date(b.childMdx.frontmatter.date) -
+        new Date(a.childMdx.frontmatter.date)
+    )
+  )
 
   let folders = {
-    solutions: { templateName: 'solutions-layout.js', frontmatter: 'title link'},
-    projects: {templateName: 'project-layout.js', frontmatter: 'title link'}
+    solutions: {
+      templateName: "solutions-layout.js",
+      frontmatter: "title link",
+    },
+    projects: { templateName: "project-layout.js", frontmatter: "title link" },
   }
 
-  Object.keys(folders).map(async (folder)=>{
+  Object.keys(folders).map(async folder => {
     let result = await graphql(`
     {
       x: allFile(
@@ -195,16 +216,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `)
     //create each individual blog post
     result.data.x.nodes.forEach(node => {
-      const { link } = node.childMdx.frontmatter;
+      const { link } = node.childMdx.frontmatter
       createPage({
         path: `${link}/`,
-        component: require.resolve(`./src/templates/${folders[folder].templateName}`),
+        component: require.resolve(
+          `./src/templates/${folders[folder].templateName}`
+        ),
         context: {
           link,
         },
-      });
-    });
-
+      })
+    })
   })
-
 }
