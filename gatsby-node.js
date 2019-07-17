@@ -34,7 +34,7 @@ const createPages = (type, postArray, createPage) => {
   const groupedPosts = groupPostsByUnique(type, postArray)
   // returns {['tag']: [post1, post2], ['tag2']: [post3, post4]}
   Object.entries(groupedPosts).forEach(([typeValue, postGroup], index) => {
-    typeValue = typeValue.split(" ").join("-")
+    typeValue = typeValue.replace(/\.|\s/g, '-').toLowerCase()
     type = type == "tags" ? "tag" : type
     paginate(
       {
