@@ -45,7 +45,9 @@ const SolutionPage = ({ data }) => (
     <SEO 
       title="Our Solutions" 
       description="Codebrahma specializes in building custom web applications using technologies - ReactJS, Ruby on Rails, NodeJS, React Native, Android, iOS, Serverless"
-      keywords={[`ruby on rails`, `Ruby on Rails development`, `angularjs framework`, `angularjs code`, `meteor js`, `react js`, `reactjs native`, `node js development`, `node js website`, `spree commerce`, `ruby on rails developer`, `react js components`, `javascript meteor`, `Angular javascript`, `angular framework`, `js angular`, `angular website`, `Android Website`, `ios app development`, `mobile web app`, `javascript android app`, `web application development company`]} 
+      keywords={[`ruby on rails`, `Ruby on Rails development`, `angularjs framework`, `angularjs code`, `meteor js`, `react js`, `reactjs native`, `node js development`, `node js website`, `spree commerce`, `ruby on rails developer`, `react js components`, `javascript meteor`, `Angular javascript`, `angular framework`, `js angular`, `angular website`, `Android Website`, `ios app development`, `mobile web app`, `javascript android app`, `web application development company`]}
+      image="https://codebrahma.com/static/40e053c59830488fb86e5427205788cf/6a612/react-colored.png"
+      url="https://codebrahma.com/solutions" 
     />
     <H1>Our Solutions</H1>
     <P>We have great expertise in building web and mobile apps.</P>

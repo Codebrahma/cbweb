@@ -38,6 +38,8 @@ const IndexPage = ({data}) => (
     title="Best ReactJS ReactNative Consultancy in Bay Area" 
     keywords={[`react`,`react native`, `reactJS`, `consultancy`, `bay area`]} 
     description=''
+    image="https://codebrahma.com/static/690ea05ce05812b0bc0798a71a210f4b/d042c/rippling_screenshot.png"
+    url="https://codebrahma.com"
   />
   <Box mt='6' mb='6'>
     <H1 lineHeight='42px'>We build your React &amp;&nbsp;React Native frontend</H1>
