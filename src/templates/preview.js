@@ -11,7 +11,6 @@ import Pagination from '../components/pagination'
 import { getCategory, getTags, hypenize } from '../utils'
 import { space } from 'styled-system'
 import CategoryLink from '../components/categorylink'
-import SEO from "../components/seo"
 
 const isLast = (arr, index)=> arr.length-1 === index
 const getHeading = ({
