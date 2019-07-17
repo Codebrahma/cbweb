@@ -127,11 +127,6 @@ const JournalPage = ({
   let blogs = postGroup
   return(
   <Layout>
-    <SEO 
-      title="The Entrepreneur's Blog | Codebrahma"
-      description="Codebrahma, premium engineering company specializing in web and mobile applications. Blog is where we talk about products, growth and everything startup."
-      keywords={[`ruby on rails`, `Ruby on Rails development`, `angularjs framework`, `angularjs code`, `meteor js`, `react js`, `reactjs native`, `node js development`, `node js website`, `spree commerce`, `ruby on rails developer`, `react js components`, `javascript meteor`, `Angular javascript`, `angular framework`, `js angular`, `angular website`, `Android Website`, `ios app development`, `mobile web app`, `javascript android app`, `web application development company`]}
-    />
     <H4 css={css({color: 'black.1'})}>
     {getHeading({
           isFirstPage,
