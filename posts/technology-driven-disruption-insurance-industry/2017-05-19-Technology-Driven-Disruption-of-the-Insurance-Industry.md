@@ -11,7 +11,9 @@ keywords:
 - software for insurance companies
 link: /technology-driven-disruption-insurance-industry
 tags:
-- applications for insurance company
+- applications for insurance companies
+- fintech
+- insurance tech
 author: Anand Narayan
 ---
 Rapid advancements in technology has changed the way businesses run their processes and interact with their customers. Every sector, no matter how tradition – is seeing a radical change. Cloud based services have made even the most revered technologies, like machine learning and artificial intelligence, accessible to the every business. Commodification has allowed every business, no matter the size, to experiment with the latest advancements.

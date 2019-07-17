@@ -17,6 +17,7 @@ author: Anand Narayan
 tags:
 - Angular.js
 - backbone.js
+- backboneJS
 - javascript
 - meteor.js
 - ReactJS

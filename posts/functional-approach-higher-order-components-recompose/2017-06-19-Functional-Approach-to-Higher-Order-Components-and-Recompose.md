@@ -13,6 +13,8 @@ keywords:
 link: /functional-approach-higher-order-components-recompose
 tags:
 - higher order components in reactjs
+- react js
+- reactjs
 author: Prasanna
 ---
 

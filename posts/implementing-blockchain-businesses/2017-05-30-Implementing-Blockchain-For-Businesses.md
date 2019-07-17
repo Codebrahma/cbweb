@@ -11,7 +11,9 @@ keywords:
 - blockchain based systems
 link: /implementing-blockchain-businesses
 tags:
-- mobile app
+- blockchain
+- databases
+- fintech
 author: Anand Narayan
 scripts:
 - https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js
