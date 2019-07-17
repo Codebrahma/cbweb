@@ -56,22 +56,22 @@ The most recurrent thing on web nowadays is web forms. Every time you log in, co
 
 CB React Forms is available through npm/yarn.
 
-```
+```bash
 $ npm install --save cb-react-forms
 ```
-```
+```bash
 $ yarn add cb-react-forms
 ```
 
 Once you have the module installed include it in your project.
 
-```
+```jsx
 import { FormBuilder } from ‘cb-react-forms’;
 ```
 
  **Usage:**
 
-```
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -113,7 +113,7 @@ Select the list of available form fields from the  [docs](https://github.com/Cod
 
 You can pass a function as the onSubmit prop to your Form-Builder component to listen to when the form is submitted. It will be passed a JSON array having a list of form fields you chose.
 
-```
+```jsx
 const onSubmit = (formData) => console.log(formData);
 ```
 
@@ -130,7 +130,7 @@ Form-Generator component is meant to automatically generate a React form based o
 
 **Usage:**
 
-```
+```jsx
 import React from "react";
 import ReactDOM from "react-dom";
 import { FormGenerator } from 'cb-react-forms';
