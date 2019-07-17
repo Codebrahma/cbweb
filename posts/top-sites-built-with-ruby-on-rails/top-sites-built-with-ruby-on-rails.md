@@ -11,7 +11,7 @@ keywords:
 - Rails Development consulting
 - sites built on Rails
 - Ruby on Rails Examples
-link: /top-10-sites-powered-by-node-js
+link: /top-sites-built-with-ruby-on-rails
 author: Raviraj Hegde 
 tags:
 - Ruby on rails
