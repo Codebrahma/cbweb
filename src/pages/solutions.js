@@ -42,7 +42,11 @@ const Solution = ({ title, image, link }) => (
 
 const SolutionPage = ({ data }) => (
   <Layout>
-    <SEO title="Our Solutions" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO 
+      title="Our Solutions" 
+      description="Codebrahma specializes in building custom web applications using technologies - ReactJS, Ruby on Rails, NodeJS, React Native, Android, iOS, Serverless"
+      keywords={[`ruby on rails`, `Ruby on Rails development`, `angularjs framework`, `angularjs code`, `meteor js`, `react js`, `reactjs native`, `node js development`, `node js website`, `spree commerce`, `ruby on rails developer`, `react js components`, `javascript meteor`, `Angular javascript`, `angular framework`, `js angular`, `angular website`, `Android Website`, `ios app development`, `mobile web app`, `javascript android app`, `web application development company`]} 
+    />
     <H1>Our Solutions</H1>
     <P>We have great expertise in building web and mobile apps.</P>
 
