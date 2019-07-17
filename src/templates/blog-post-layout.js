@@ -47,13 +47,16 @@ const Sidebar = ({ author, category, tags }) => (
             justifyContent="center"
             flexWrap="wrap"
           >
-            {tags.map(tag => (
-              <Box key={tag} p="0.125rem">
-                <PlainLink key={tag} to={"/tag/" + hypenize(tag)}>
-                  <I>#{hypenize(tag)}</I>
-                </PlainLink>
-              </Box>
-            ))}
+            {tags.map(tag => {
+              const slug = hypenize(tag).toLowerCase()
+              return (
+                <Box key={tag} p="0.125rem">
+                  <PlainLink key={tag} to={`/tag/${slug}`}>
+                    <I>#{slug}</I>
+                  </PlainLink>
+                </Box>
+              )
+            })}
           </Flex>
         </Flex>
       </Box>

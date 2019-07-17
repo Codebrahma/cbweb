@@ -95,11 +95,14 @@ const Blog = ({frontmatter})=>(
           <P>{frontmatter.description}</P>
           <Box marginTop='1'>
             <Text fontSize={[0,0]} color='black.2'>
-              {getTags(frontmatter) && getTags(frontmatter).map((tag,i)=>(
-                <TagLink key={tag} to={'/tag/' + hypenize(tag)}>
-                  <I>#{hypenize(tag)}</I>
-                </TagLink>
-              ))}
+              {getTags(frontmatter) && getTags(frontmatter).map((tag,i)=> {
+                const slug = hypenize(tag).toLowerCase()
+                return (
+                  <TagLink key={tag} to={`/tag/${slug}`}>
+                    <I>#{slug}</I>
+                  </TagLink>
+                )
+              })}
             </Text>
           </Box>
         </Box>
