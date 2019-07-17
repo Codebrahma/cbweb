@@ -20,4 +20,28 @@ module.exports = [
     from: "/services",
     to: "/solutions",
   },
+  {
+    from: "/develop-react-applications",
+    to: "/react-js-development",
+  },
+  {
+    from: "/ruby-consultants",
+    to: "/ruby-on-rails-developers-consulting-bangalore",
+  },
+  {
+    from: "/rails_consultants",
+    to: "/ruby-on-rails-developers-consulting-bangalore",
+  },
+  {
+    from: "/ruby_developers",
+    to: "/ruby-on-rails-developers-consulting-bangalore",
+  },
+  {
+    from: "/ruby_rails_developers",
+    to: "/ruby-on-rails-developers-consulting-bangalore",
+  },
+  {
+    from: "/mobile-application-development-company-bangalore",
+    to: "/react-native-development-company",
+  },
 ]
