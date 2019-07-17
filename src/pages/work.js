@@ -25,10 +25,10 @@ const Project = ({title, image, description, link})=>(
 
 const WorkPage = ({data})=> (
 <Layout>
-  <SEO 
+  <SEO
     title="Innovative Products based on ReactJS, React Native, Ruby on Rails Developemt"
     description="Examples of interactive website and application development | Codebrahma"
-    keywords={[`ruby on rails`, `Ruby on Rails development`, `angularjs framework`, `angularjs code`, `meteor js`, `react js`, `native`, `node js development`, `node js website`, `spree commerce`, `ruby on rails developer`, `react js components`, `javascript meteor`, `Angular javascript`, `angular framework`, `js angular`, `angular website`, `Android Website`, `ios app development`, `mobile web app`, `javascript android app`, `web application development company`]}  
+    keywords={[`ruby on rails`, `Ruby on Rails development`, `angularjs framework`, `angularjs code`, `meteor js`, `react js`, `native`,, `node js development`, `node js website`, `spree commerce`, `ruby on rails developer`, `react js components`, `javascript meteor`, `Angular javascript`, `angular framework`, `js angular`, `angular website`, `Android Website`, `ios app development`, `mobile web app`, `javascript android app`, `web application development company`]}
   />
   <H1>Our Work</H1>
   <P>We have built 50+ apps over the last 6 years. We have listed a few</P>
