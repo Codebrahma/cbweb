@@ -8,7 +8,7 @@ import PlainLink  from '../components/link'
 import { css } from 'bricks'
 import { Link } from 'gatsby'
 import Pagination from '../components/pagination'
-import { getCategory, getTags, hypenize } from '../utils'
+import { getCategory, getTags, slugify } from '../utils'
 import { space } from 'styled-system'
 import CategoryLink from '../components/categorylink'
 
@@ -87,8 +87,8 @@ const Blog = ({frontmatter})=>(
           </HeadingLink>
         </H3>
         {getCategory(frontmatter) && (
-          <CategoryLink to={'/category/' + hypenize(getCategory(frontmatter))}>
-              {getCategory(frontmatter)}
+          <CategoryLink to={`/category/${slugify(getCategory(frontmatter))}`}>
+            {getCategory(frontmatter)}
           </CategoryLink>
         )}
         <Box marginTop='2'>
@@ -96,7 +96,7 @@ const Blog = ({frontmatter})=>(
           <Box marginTop='1'>
             <Text fontSize={[0,0]} color='black.2'>
               {getTags(frontmatter) && getTags(frontmatter).map((tag,i)=> {
-                const slug = hypenize(tag).toLowerCase()
+                const slug = slugify(tag)
                 return (
                   <TagLink key={tag} to={`/tag/${slug}`}>
                     <I>#{slug}</I>

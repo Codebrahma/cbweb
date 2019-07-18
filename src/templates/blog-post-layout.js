@@ -4,7 +4,7 @@ import MDXRenderer from "gatsby-mdx/mdx-renderer"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import { H1, Flex, Box, I } from "bricks"
-import { getCategory, hypenize } from "../utils"
+import { getCategory, slugify } from "../utils"
 import CategoryLink from "../components/categorylink"
 import PlainLink from "../components/link"
 import SEO from '../components/seo'
@@ -16,7 +16,7 @@ const Sidebar = ({ author, category, tags }) => (
         Written by
       </Flex>
       <Flex justifyContent="center" mt="0.5rem">
-        <PlainLink to={"/author/" + hypenize(author)}>
+        <PlainLink to={`/author/${slugify(author)}`}>
           <I>{author}</I>
           <br />
         </PlainLink>
@@ -28,7 +28,7 @@ const Sidebar = ({ author, category, tags }) => (
           Posted in
         </Flex>
         <Flex justifyContent="center" mt="0.5rem">
-          <CategoryLink to={"/category/" + hypenize(getCategory({ category }))}>
+          <CategoryLink to={`/category/${slugify(getCategory({ category }))}`}>
             {getCategory({ category })}
           </CategoryLink>
         </Flex>
@@ -48,7 +48,7 @@ const Sidebar = ({ author, category, tags }) => (
             flexWrap="wrap"
           >
             {tags.map(tag => {
-              const slug = hypenize(tag).toLowerCase()
+              const slug = slugify(tag)
               return (
                 <Box key={tag} p="0.125rem">
                   <PlainLink key={tag} to={`/tag/${slug}`}>
