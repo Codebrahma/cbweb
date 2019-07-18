@@ -3,6 +3,8 @@ templateKey: 'blog-post'
 title: 'Bangalore – The Globe’s startup hub'
 date: 2014-01-04
 featuredpost: false
+category:
+- General
 description: >-
   Anand, Codebrahma CEO&#039;s view on silicon valley of India, Bangalore. Explaining how Bangalore is catering various startups with technology needs.
 author: Anand Narayan 

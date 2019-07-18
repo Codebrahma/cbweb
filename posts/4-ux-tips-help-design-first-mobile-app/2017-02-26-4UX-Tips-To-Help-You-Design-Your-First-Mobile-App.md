@@ -3,6 +3,8 @@ templateKey: 'blog-post'
 title: '4 UX Tips To Help You Design Your First Mobile App'
 date: 2017-02-26
 featuredpost: false
+category:
+- General
 description: >-
   As of June 2016, there were over 2.2 million apps on the Google Play store. Another study published by Google, states that only a fourth of the apps installed on a smartphone are used on a daily basis. Overcoming such
 author: Anand Narayan
