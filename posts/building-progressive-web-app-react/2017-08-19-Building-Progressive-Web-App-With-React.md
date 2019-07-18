@@ -13,6 +13,8 @@ keywords:
 author: Balram Khichar
 link: /building-progressive-web-app-react
 tags:
+- react js
+- reactjs
 - pwa
 - pwa app development
 - app development

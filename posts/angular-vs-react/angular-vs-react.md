@@ -15,6 +15,8 @@ link: /angular-vs-react
 tags:
 - AngularJS Development
 - React
+- react js
+- reactjs
 - React js development company
 - Reactjs Developers
 - web application development

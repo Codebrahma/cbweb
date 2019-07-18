@@ -14,7 +14,7 @@ category:
 - Meteor
 tags:
 - Meteor Development
-- Reactive subscription
+- Reactive subscriptions
 ---
 
 Publication and subscription concepts are as important as its getting misunderstood. Recently my friend Tarun wrote a tutorial on[ Meteor publications](/meteor-publications-and-subscriptions/), Now let’s dive deeper into subscriptions, but in a simpler way. This article shows how to write reactive subscriptions using Meteor’s autorun for effective sync between remote data sources and the view.

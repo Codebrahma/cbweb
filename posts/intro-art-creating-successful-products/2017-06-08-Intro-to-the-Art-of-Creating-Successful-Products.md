@@ -9,6 +9,9 @@ author: Anand Narayan
 link: /intro-art-creating-successful-products
 tags:
 - mobile app
+- product development
+- web app
+- web application dev
 ---
 
 > ‘Creating a successful product is seldom a matter of chance.’

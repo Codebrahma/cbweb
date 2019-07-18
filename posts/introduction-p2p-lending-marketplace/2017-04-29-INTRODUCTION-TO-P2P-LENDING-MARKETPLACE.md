@@ -8,6 +8,11 @@ description: >-
 link: /introduction-p2p-lending-marketplace
 tags:
 - Fintech
+- fintech software
+- p2p lending
+- p2p lending marketplace
+- peer to peer lending
+- peer to peer lending marketplace
 author: Anand Narayan
 ---
 P2P lending or Peer to Peer lending is the practice of borrowing money through online platforms that match borrowers with lenders. It’s a popular alternative to the more traditional practice of borrowing money from banks and non-banking financial institutions (NBFIs). One of the biggest advantages of using an [online P2P lending platform](/financial-software-development-company/)is that the loans are usually cheaper as the platforms operate with lower overheads and software powered automation. The P2P lenders charge money for the platform and doing credit checks for borrowers.

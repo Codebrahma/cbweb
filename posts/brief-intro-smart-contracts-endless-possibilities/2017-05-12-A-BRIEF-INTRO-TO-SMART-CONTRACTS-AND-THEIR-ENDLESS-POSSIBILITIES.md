@@ -11,7 +11,10 @@ keywords:
 - blockchain
 link: /brief-intro-smart-contracts-endless-possibilities
 tags:
-- blockchain
+- blockchain 
+- fintech
+- fintech software
+- smart contracts
 author: Anand Narayan
 ---
 ![what-is-smart-contract](./images/Smart-contracts-01.png)

@@ -16,6 +16,7 @@ author: Raviraj Hegde
 link: /7-reasons-to-choose-react-native-for-development
 tags:
 - React
+- react native
 - React js development company
 - Reactjs Developers
 - Reactjs experts

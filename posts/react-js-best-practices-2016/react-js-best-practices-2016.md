@@ -15,6 +15,8 @@ author: ARAVINDAN
 link: /react-js-best-practices-2016
 tags:
 - React
+- react js
+- reactjs
 - React js development company
 - Reactjs Developers
 ---
