@@ -60,21 +60,23 @@ const Footer = () => (
       </Box>
       <Box width={[1, 1 / 4]} mt={[2, 0]}>
         <P>
-          <PlainLink as="a" to="mailto:hello@codebrahma.com">
+          <PlainLink as="a" href="mailto:hello@codebrahma.com">
             hello@codebrahma.com
           </PlainLink>
           <br />
-          +1 484 506 0634
+					<PlainLink href="tel:+14845060634">
+          	+1 484 506 0634
+					</PlainLink>
           <br />
         </P>
         <Box mt="1">
           <P>
-            <PlainLink as="a" to="https://twitter.com/codebrahma">
+            <PlainLink as="a" href="https://twitter.com/codebrahma" target="_blank">
               Twitter
             </PlainLink>
             <br />
-            <PlainLink as="a" to="https://github.com/codebrahma">
-              Github
+            <PlainLink as="a" href="https://github.com/codebrahma" target="_blank">
+              GitHub
             </PlainLink>
             <br />
           </P>
@@ -82,10 +84,16 @@ const Footer = () => (
       </Box>
       <Box width={[1, 1 / 4]} mt={[2, 0]}>
         <P>
-          156, 2nd Street
-          <br />
-          San Francisco, CA 94105
-          <br />
+					<PlainLink 
+						as="a" 
+						href="http://maps.google.com/?q=Codebrahma 156, 2nd Street San Francisco, CA 94105" 
+						target="_blank"
+					>
+						156, 2nd Street
+						<br />
+						San Francisco, CA 94105
+						<br />
+					</PlainLink>
         </P>
       </Box>
     </Flex>
