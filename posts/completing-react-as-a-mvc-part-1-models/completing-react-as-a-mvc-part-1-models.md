@@ -14,6 +14,8 @@ keywords:
 - react as mvc
 author: ARAVINDAN 
 link: /completing-react-as-a-mvc-part-1-models
+category:
+- Development
 tags:
 - flux
 - React

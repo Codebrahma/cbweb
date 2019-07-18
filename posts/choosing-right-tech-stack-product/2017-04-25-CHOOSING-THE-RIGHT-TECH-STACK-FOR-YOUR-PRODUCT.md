@@ -7,6 +7,8 @@ description: >-
   Choosing the right tech stack for your product can be a challenging task. But how important is getting the right technologies in place from the start?
 author: Anand Narayan
 link: /choosing-right-tech-stack-product
+category:
+- Development
 tags:
 - Product development
 - programming languages

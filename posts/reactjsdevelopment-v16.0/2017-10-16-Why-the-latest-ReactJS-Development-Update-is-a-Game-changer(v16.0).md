@@ -7,6 +7,8 @@ description: >-
   The latest ReactJS development update uses a brand new core architecture called &quot;Fiber&quot;. It is faster and makes error handling much easier.
 author: Prasanna
 link: /reactjsdevelopment-v16.0
+category:
+- Development
 tags:
 - react js
 - reactjs

@@ -12,7 +12,7 @@ keywords:
 - jquery 3.0 download
 author: Balram Khichar
 category:
-- jQuery
+- Development
 link: /whats-new-jquery-3-0
 tags:
 - jQuery 3.0

@@ -8,6 +8,8 @@ featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
 author: Prasanna
 link: /ReactJS+Development+productivity
+category:
+- Development
 tags: 
 - react js
 - reactjs

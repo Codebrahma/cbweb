@@ -12,6 +12,8 @@ keywords:
 - mobile vs web app
 author: Anand Narayan
 link: /build-mobile-app-responsive-web-app
+category:
+- Development
 tags:
 - mobile app
 - product development

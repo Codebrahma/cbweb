@@ -10,6 +10,8 @@ keywords:
 - higher order components
 - react js development
 link: /using-higher-order-components-react-application
+category:
+- Development
 tags:
 - higher order components in reactjs
 author: Prasanna

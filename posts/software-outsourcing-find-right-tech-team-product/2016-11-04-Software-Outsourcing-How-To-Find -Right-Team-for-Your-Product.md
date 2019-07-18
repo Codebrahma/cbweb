@@ -7,6 +7,8 @@ description: >-
   How do you go about finding the right outsourced tech team for your product, when there are a zillion vendors available. We give you step by step approach.
 author: Anand Narayan
 link: /software-outsourcing-find-right-tech-team-product
+category:
+- Development
 tags:
 - outsourced software development
 - web application development

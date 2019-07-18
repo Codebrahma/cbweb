@@ -7,6 +7,8 @@ description: >-
   VueJS vs ReactJS, Over past few years, the web development arena has witnessed various new developments. New types of frameworks are constantly on the rise. Frameworks are constantly being developed and improved to gain a competitive advantage over counterparts. ReactJS" 
 author: Prasanna
 link: /front-end-development-framework-number-1
+category:
+- Development
 ---
 ## VueJS vs ReactJS,
 

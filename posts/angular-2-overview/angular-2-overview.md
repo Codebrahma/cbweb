@@ -9,6 +9,8 @@ keywords:
 - Angular 2 overview
 author: ARAVINDAN 
 link: /angular-2-overview
+category:
+- Development
 tags:
 - Angular.js
 - Angular2
