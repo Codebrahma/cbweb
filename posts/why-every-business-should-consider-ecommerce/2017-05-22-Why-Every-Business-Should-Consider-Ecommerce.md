@@ -12,6 +12,8 @@ keywords:
 - custom ecommerce store
 author: Anand Narayan
 link: /why-every-business-should-consider-ecommerce
+category:
+- Business
 tags:
 - ecommerce development
 ---

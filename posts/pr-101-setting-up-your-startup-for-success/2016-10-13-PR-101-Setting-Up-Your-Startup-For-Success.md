@@ -11,6 +11,8 @@ keywords:
 - growth hack
 author: Anand Narayan
 link: /pr-101-setting-up-your-startup-for-success
+category:
+- Business
 tags:
 - growth hack
 - PR

@@ -7,6 +7,8 @@ description: >-
   Making a product that people want is the holy grail of the startup world. But how do you validate your idea before actually building it? Here are 3 ways.
 author: Anand Narayan
 link: /validate-your-startup-idea
+category:
+- Business
 tags:
 - idea validation
 - product development

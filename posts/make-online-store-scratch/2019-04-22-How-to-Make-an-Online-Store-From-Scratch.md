@@ -9,6 +9,8 @@ description: >-
   E-commerce sales are fast gaining on traditional brick-and-mortar retail revenues. With the current trajectories, it’s only a matter of time before online sales surpass offline sales. It’s not hard to see why. Source Pixabay.com The Internet renders geographical distance and
 author: Anand Narayan
 link: /make-online-store-scratch
+category:
+- Business
 tags:
 - ecommerce
 - apps
