@@ -13,6 +13,8 @@ keywords:
 - react js experts
 author: ARAVINDAN 
 link: /react-js-best-practices-2016
+category:
+- Research and Articles
 tags:
 - React
 - react js

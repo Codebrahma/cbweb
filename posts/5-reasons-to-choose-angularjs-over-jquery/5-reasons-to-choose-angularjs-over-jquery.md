@@ -13,6 +13,8 @@ keywords:
 - why choose AngularJS
 author: Raviraj Hegde  
 link: /5-reasons-to-choose-angularjs-over-jquery
+category:
+- Research and Articles
 tags:
 - AngularJS Development
 - web application development

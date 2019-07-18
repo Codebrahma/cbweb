@@ -7,6 +7,8 @@ description: >-
   Learn what key factors to consider before hiring an offshore web development partner. Codebrahma is an offshore web application development firm.
 author: Anand Narayan 
 link: /7-practices-to-follow-when-you-offshore-development
+category:
+- Research and Articles
 tags:
 - web application development
 ---

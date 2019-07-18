@@ -13,6 +13,8 @@ keywords:
 - jquery
 - javascript frameworks
 link: /top-4-javascript-frameworks-for-2017
+category:
+- Research and Articles
 author: Anand Narayan
 tags:
 - Angular.js

@@ -7,6 +7,8 @@ description: >-
   Codebrahma demystifies Service Oriented Architecture for dummies.
 author: Anand Narayan
 link: /quick-start-to-service-oriented-architecture
+category:
+- Research and Articles
 tags:
 - web application development
 ---

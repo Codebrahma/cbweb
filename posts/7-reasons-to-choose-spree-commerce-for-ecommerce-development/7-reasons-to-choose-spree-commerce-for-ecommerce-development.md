@@ -11,6 +11,8 @@ keywords:
 - Choosing spree commerce
 author: Raviraj Hegde  
 link: /7-reasons-to-choose-spree-commerce-for-ecommerce-development
+category:
+- Research and Articles
 tags:
 - Rails Ecommerce Development
 - Ruby on rails development

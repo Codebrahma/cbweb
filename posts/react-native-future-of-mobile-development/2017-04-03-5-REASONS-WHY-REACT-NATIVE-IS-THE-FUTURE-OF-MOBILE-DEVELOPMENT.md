@@ -7,6 +7,8 @@ description: >-
   React Native is a popular Javascript framework for developing native applications for iOS and Android. Here are 5 reasons why React Native is the future.
 author: Anand Narayan
 link: /react-native-future-of-mobile-development
+category:
+- Research and Articles
 tags:
 - React Native
 - react native development

@@ -7,6 +7,8 @@ description: >-
   Codebrahma explaining different types of exception handling in ruby. Comparision between Ruby Rescue vs Try vs ternary.
 author: Nithin Krishna 
 link: /ruby-rescue-vs-try-vs-ternary
+category:
+- Research and Articles
 tag:
 - Ruby on rails development
 ---
