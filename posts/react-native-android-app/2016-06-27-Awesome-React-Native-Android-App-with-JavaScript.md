@@ -14,7 +14,7 @@ keywords:
 author: Balram Khichar
 link: /awesome-react-native-building-android-app-javascript
 category:
-- React-Native
+- Tutorial
 tags:
 - React Native
 - React Native Tutorial

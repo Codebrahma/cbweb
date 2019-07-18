@@ -7,6 +7,8 @@ description: >-
   Explaining implementation of Javascript promises API
 author: Nithin Krishna 
 link: /javascript-promises
+category:
+- Tutorial
 tags:
 - Javascript
 - web application development

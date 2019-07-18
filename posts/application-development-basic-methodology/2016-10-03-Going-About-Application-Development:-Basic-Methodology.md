@@ -10,6 +10,8 @@ keywords:
 - web development
 author: Anand Narayan
 link: /application-development-basic-methodology
+category:
+- Tutorial
 ---
 
 Idea, designs, business model, investor meetings, user acquisition, sales, product development…. – starting a web/mobile application business can be daunting. And if you’re getting into this for the first time, the amount of information and the work involved can be mind boggling.

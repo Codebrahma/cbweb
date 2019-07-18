@@ -11,6 +11,8 @@ keywords:
 - geographic information systems
 - gis basics
 author: Pritoj Singh
+category:
+- Tutorial
 tags:
   - postgis
   - postgres

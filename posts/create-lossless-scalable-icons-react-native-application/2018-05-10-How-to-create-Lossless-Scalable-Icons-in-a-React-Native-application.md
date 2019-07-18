@@ -8,7 +8,7 @@ description: >-
 author: Arivanandan
 link: /create-lossless-scalable-icons-react-native-application
 category:
-- React-Native
+- Tutorial
 tags:
 - react-native
 - image-manipulation

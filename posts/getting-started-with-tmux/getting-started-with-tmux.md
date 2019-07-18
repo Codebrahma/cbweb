@@ -7,6 +7,8 @@ description: >-
   Tmux has become an essential development tool for many programmers. Here is a brief tutorial on getting started with Tmux.
 author: Yuvaraja Balamurugan
 link: /getting-started-with-tmux
+category:
+- Tutorial
 tags:
 - tmux
 ---

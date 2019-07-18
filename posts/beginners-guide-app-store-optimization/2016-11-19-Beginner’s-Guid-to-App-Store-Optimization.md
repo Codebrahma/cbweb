@@ -11,6 +11,8 @@ keywords:
 - mobile app marketing
 author: Anand Narayan
 link: /beginners-guide-app-store-optimization
+category:
+- Tutorial
 tags:
 - ASO
 - Growth
