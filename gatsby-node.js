@@ -4,7 +4,7 @@ const redirects = require("./redirects")
 let ppage = 7
 const getUnique = (field, posts) =>
   posts.reduce((uniques, post) => {
-    let values = post.childMdx.frontmatter[field]
+    let values = post.frontmatter[field]
     values =
       typeof values != "undefined" && values instanceof Array
         ? values
@@ -21,7 +21,7 @@ const groupPostsByUnique = (field, posts) => {
       ...grouped,
       [unique]: posts.filter(post => {
         try {
-          return post.childMdx.frontmatter[field].includes(unique)
+          return post.frontmatter[field].includes(unique)
         } catch (err) {
           return false
         }
@@ -110,25 +110,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // get all the markdown files
   const result = await graphql(`
     {
-      posts: allFile(
+      posts: allMdx(
         filter: {
-          sourceInstanceName: { eq: "posts" }
-          ext: { in: [".md", ".mdx"] }
+          frontmatter: {
+            templateKey: {
+              eq: "blog-post"
+            }
+          }
+        },
+        sort: {
+          fields: frontmatter___date, order: DESC
         }
       ) {
         nodes {
           id
-          childMdx {
-            frontmatter {
-              title
-              description
-              tags
-              category
-              link
-              author
-              date
-              scripts
-            }
+          frontmatter {
+            title
+            description
+            tags
+            category
+            link
+            author
+            date
+            scripts
           }
         }
       }
@@ -138,23 +142,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // remove the unpublished and posts which dont have a URL and is not published
   let posts = result.data.posts.nodes.filter(post => {
     try {
-      let fm = post.childMdx.frontmatter
+      let fm = post.frontmatter
       return fm.publish !== false && fm.link != null
     } catch (err) {
       return false
     }
   })
 
-  // TODO move this into graphql
-  posts = posts.sort(
-    (a, b) =>
-      new Date(b.childMdx.frontmatter.date) -
-      new Date(a.childMdx.frontmatter.date)
-  )
+  // // TODO move this into graphql
+  // posts = posts.sort(
+  //   (a, b) =>
+  //     new Date(b.childMdx.frontmatter.date) -
+  //     new Date(a.childMdx.frontmatter.date)
+  // )
 
   //create each individual blog post
   posts.forEach(post => {
-    const { link } = post.childMdx.frontmatter
+    const { link } = post.frontmatter
     createPage({
       path: `${link}/`,
       component: require.resolve("./src/templates/blog-post-layout.js"),
@@ -179,11 +183,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       type: "all",
       value: null,
     },
-    posts.sort(
-      (a, b) =>
-        new Date(b.childMdx.frontmatter.date) -
-        new Date(a.childMdx.frontmatter.date)
-    )
+    posts
   )
 
   let folders = {
