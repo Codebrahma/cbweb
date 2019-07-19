@@ -127,12 +127,12 @@ const Layout = ({ children }) => {
                       }
                 `}/>
             <Container>
-							<Helmet meta={[{ name: "referrer", content: "origin" }]} />
+              <Helmet meta={[{ name: "referrer", content: "origin" }]} />
               <Header siteTitle={data.site.siteMetadata.title} />
               <div>
                 <main>{ children }</main>
                 <footer>
-                  <Footer></Footer>
+                  <Footer />
                 </footer>
               </div>
             </Container>
