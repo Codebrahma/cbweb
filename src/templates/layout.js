@@ -64,7 +64,7 @@ const Footer = () => (
             hello@codebrahma.com
           </PlainLink>
           <br />
-          <PlainLink href="tel:+14845060634">
+          <PlainLink as="a" href="tel:+14845060634">
             +1 484 506 0634
           </PlainLink>
           <br />
