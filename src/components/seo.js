@@ -18,9 +18,9 @@ function SEO({
   title,
   canonical,
   image,
-  url 
+  url, 
 }) {
-  const { site } = useStaticQuery(
+  const { site, cbLogo } = useStaticQuery(
     graphql`
       query {
         site {
@@ -29,6 +29,9 @@ function SEO({
             description
             author
           }
+        }
+        cbLogo: file(relativePath: { eq: "logos/cb.png" }) {
+          publicURL
         }
       }
     `
@@ -63,7 +66,7 @@ function SEO({
         },
         {
           property: `og:image`,
-          content: image
+          content: image === '' ? `https://codebrahma.com${cbLogo.publicURL}` : image
         },
         {
           property: `og:url`,
