@@ -136,6 +136,22 @@ module.exports = [
     from: "/category/web-development-tools",
     to: "/category/tutorial",
   },
+  {
+    from: "/category/data-room-reviews/",
+    to: "/category/general",
+  },
+  {
+    from: "/category/vdr-business/",
+    to: "/category/business",
+  },
+  {
+    from: "/category/video/",
+    to: "/category/general",
+  },
+  {
+    from: "/category/virtual-data-storage/",
+    to: "/category/development",
+  },
 
 
   /**
