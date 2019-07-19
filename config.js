@@ -1,4 +1,4 @@
 // per page variable for blog page 
-const ppage = 7;
+const itemsPerPage = 7;
 
-module.exports = { ppage };
+module.exports = { itemsPerPage };
