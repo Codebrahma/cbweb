@@ -24,14 +24,10 @@ import {
 } from "bricks"
 import { Global, css } from "@emotion/core"
 import Header from "./header"
-import theme from "../theme"
-// TODO MDXProvider need not be used as theme ui set the components automatically
-// due to ambiguity on what gatsby theme ui does, we are yet to implement this
-import { MDXProvider } from "@mdx-js/react"
-import { useThemeUI } from "bricks"
-import PlainLink from "../components/link"
 import { Helmet } from "react-helmet"
-
+import theme from '../theme'
+import { useThemeUI } from 'bricks';
+import  PlainLink  from '../components/link'
 const Footer = () => (
   <Box marginTop="6" pb="6">
     <HorizontalRule width={1} />
@@ -115,35 +111,32 @@ const Layout = ({ children }) => {
         }
       `}
       render={data => (
-        <ThemeProvider theme={theme}>
-          <MDXProvider components={comps}>
-            <div style={{ background: "rgb(247,245,242)", minHeight: "100vh" }}>
-              <Global
-                styles={css`
-                  a:visited {
-                    color: inherit;
-                  }
-                  a:hover {
-                    cursor: pointer;
-                  }
-                  body {
-                    font-family: ${theme.fonts.body};
-                    color: ${theme.colors.black[1]};
-                  }
-                `}
-              />
-              <Helmet meta={[{ name: "referrer", content: "origin" }]} />
-              <Container>
-                <Header siteTitle={data.site.siteMetadata.title} />
-                <div>
-                  <main>{children}</main>
-                  <footer>
-                    <Footer></Footer>
-                  </footer>
-                </div>
-              </Container>
-            </div>
-          </MDXProvider>
+        <ThemeProvider theme={theme} components={comps}>
+          <div style={{background: 'rgb(247,245,242)', minHeight: '100vh',}}>
+            <Global
+              styles={css`
+                      a:visited { 
+                        color: inherit;
+                      }
+                      a:hover {
+                        cursor: grab;  
+                      }
+                      body {
+                        font-family: ${theme.fonts.body};
+                        color: ${theme.colors.black[1]};
+                      }
+                `}/>
+            <Container>
+							<Helmet meta={[{ name: "referrer", content: "origin" }]} />
+              <Header siteTitle={data.site.siteMetadata.title} />
+              <div>
+                <main>{ children }</main>
+                <footer>
+                  <Footer></Footer>
+                </footer>
+              </div>
+            </Container>
+          </div>
         </ThemeProvider>
       )}
     />
