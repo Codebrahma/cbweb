@@ -9,131 +9,131 @@ module.exports = [
       "/reselect-tutorial-optimizing-react-redux-application-development-with-reselect",
   },
   {
-    from: "/blogs",
+    from: "/blogs/",
     to: "/blog",
   },
   {
-    from: "/pricing",
+    from: "/pricing/",
     to: "/faq#pricing",
   },
   {
-    from: "/services",
+    from: "/services/",
     to: "/solutions",
   },
   {
-    from: "/develop-react-applications",
+    from: "/develop-react-applications/",
     to: "/react-js-development",
   },
   {
-    from: "/ruby-consultants",
+    from: "/ruby-consultants/",
     to: "/ruby-on-rails-developers-consulting-bangalore",
   },
   {
-    from: "/rails_consultants",
+    from: "/rails_consultants/",
     to: "/ruby-on-rails-developers-consulting-bangalore",
   },
   {
-    from: "/ruby_developers",
+    from: "/ruby_developers/",
     to: "/ruby-on-rails-developers-consulting-bangalore",
   },
   {
-    from: "/ruby_rails_developers",
+    from: "/ruby_rails_developers/",
     to: "/ruby-on-rails-developers-consulting-bangalore",
   },
   {
-    from: "/mobile-application-development-company-bangalore",
+    from: "/mobile-application-development-company-bangalore/",
     to: "/react-native-development-company",
   },
   {
-    from: "/category/angularjs-development",
+    from: "/category/angularjs-development/",
     to: "/category/development",
   },
   {
-    from: "/category/application-development",
+    from: "/category/application-development/",
     to: "/category/development",
   },
   {
-    from: "/category/chatbot-development",
+    from: "/category/chatbot-development/",
     to: "/category/development",
   },
   {
-    from: "/category/product-development",
+    from: "/category/product-development/",
     to: "/category/development",
   },
   {
-    from: "/category/ruby-on-rails-development",
+    from: "/category/ruby-on-rails-development/",
     to: "/category/development",
   },
   {
-    from: "/category/react-js-developments",
+    from: "/category/react-js-developments/",
     to: "/category/development",
   },
   {
-    from: "/category/react-native-development",
+    from: "/category/react-native-development/",
     to: "/category/development",
   },
   {
-    from: "/category/reactjs-experts",
+    from: "/category/reactjs-experts/",
     to: "/category/development",
   },
   {
-    from: "/category/ruby-on-rails",
+    from: "/category/ruby-on-rails/",
     to: "/category/development",
   },
   {
-    from: "/category/ecommerce-development-company",
+    from: "/category/ecommerce-development-company/",
     to: "/category/business",
   },
   {
-    from: "/category/fintech-development-company",
+    from: "/category/fintech-development-company/",
     to: "/category/business",
   },
   {
-    from: "/category/ios-development-company",
+    from: "/category/ios-development-company/",
     to: "/category/business",
   },
   {
-    from: "/category/meteor-development-company",
+    from: "/category/meteor-development-company/",
     to: "/category/business",
   },
   {
-    from: "/category/node-js-development-company",
+    from: "/category/node-js-development-company/",
     to: "/category/business",
   },
   {
-    from: "/category/startup",
+    from: "/category/startup/",
     to: "/category/business",
   },
   {
-    from: "/category/founder-interviews",
+    from: "/category/founder-interviews/",
     to: "/category/research-and-articles",
   },
   {
-    from: "/category/growth-hacks",
+    from: "/category/growth-hacks/",
     to: "/category/research-and-articles",
   },
   {
-    from: "/category/new-technologies",
+    from: "/category/new-technologies/",
     to: "/category/research-and-articles",
   },
   {
-    from: "/category/technology-trends",
+    from: "/category/technology-trends/",
     to: "/category/general",
   },
   {
-    from: "/category/uncategorized",
+    from: "/category/uncategorized/",
     to: "/category/general",
   },
   {
-    from: "/category/git-hub",
+    from: "/category/git-hub/",
     to: "/category/tutorial",
   },
   {
-    from: "/category/offshore-web-development-services",
+    from: "/category/offshore-web-development-services/",
     to: "/category/tutorial",
   },
   {
-    from: "/category/web-development-tools",
+    from: "/category/web-development-tools/",
     to: "/category/tutorial",
   },
   {
