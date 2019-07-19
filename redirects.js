@@ -152,6 +152,10 @@ module.exports = [
     from: "/category/virtual-data-storage/",
     to: "/category/development",
   },
+  {
+    from: "/author/anand-narayan",
+    to: "/author/anand",
+  },
 
 
   /**
