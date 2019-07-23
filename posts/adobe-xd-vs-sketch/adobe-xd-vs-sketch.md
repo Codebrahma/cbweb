@@ -12,6 +12,8 @@ keywords:
 - sketch
 - UI development
 link: /adobe-xd-vs-sketch
+category:
+- Development
 author: ARAVINDAN 
 tags:
 - adobe xd

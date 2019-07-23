@@ -11,6 +11,8 @@ keywords:
 - developing with reactjs
 - recompose
 link: /functional-approach-higher-order-components-recompose
+category:
+- Development
 tags:
 - higher order components in reactjs
 - react js

@@ -11,7 +11,7 @@ keywords:
 author: Hari Krishna
 link: /reactive-subscriptions-in-meteor
 category:
-- Meteor
+- Tutorial
 tags:
 - Meteor Development
 - Reactive subscriptions

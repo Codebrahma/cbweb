@@ -12,6 +12,8 @@ keywords:
 - developing with ReactJS
 - network request
 link: /structuring-async-operations-react-redux-applications
+category:
+- Development
 author: Prasanna
 ---
 

@@ -10,6 +10,8 @@ keywords:
 - react redux application
 - immutable state redux
 link: /how-to-use-immutable-js-in-a-react-redux-application
+category:
+- Tutorial
 author: Prasanna
 tags:
 - react

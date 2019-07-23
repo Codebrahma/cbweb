@@ -10,6 +10,8 @@ keywords:
 - insurance technology
 - software for insurance companies
 link: /technology-driven-disruption-insurance-industry
+category:
+- Business
 tags:
 - applications for insurance companies
 - fintech

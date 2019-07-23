@@ -12,6 +12,8 @@ keywords:
 - react js developersevelopment company
 author: ARAVINDAN 
 link: /angular-vs-react
+category:
+- Development
 tags:
 - AngularJS Development
 - React

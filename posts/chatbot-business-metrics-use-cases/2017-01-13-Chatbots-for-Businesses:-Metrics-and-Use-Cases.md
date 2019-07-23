@@ -7,6 +7,8 @@ description: >-
   A look at some of the metrics to track when you&#039;re implementing a chatbot for your business, along with a few examples of businesses that use chatbots.
 author: Anand Narayan
 link: /chatbot-business-metrics-use-cases
+category:
+- Business
 tags:
 - Chatbot Developers bangalore
 - chatbot

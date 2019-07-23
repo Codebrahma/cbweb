@@ -10,6 +10,8 @@ keywords:
 - blockchain for businesses
 - blockchain based systems
 link: /implementing-blockchain-businesses
+category:
+- Business
 tags:
 - blockchain
 - databases

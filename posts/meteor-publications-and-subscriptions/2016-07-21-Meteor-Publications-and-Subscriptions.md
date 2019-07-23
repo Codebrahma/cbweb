@@ -15,7 +15,7 @@ keywords:
 author: Tarun Batra
 link: /meteor-publications-and-subscriptions
 category:
-- Meteor
+- Tutorial
 tags:
 - Meteor development
 ---

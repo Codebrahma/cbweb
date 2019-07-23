@@ -10,6 +10,8 @@ keywords:
 - chrome extension flaw
 - chrome extension bug
 link: /chrome-permission-flaw-allows-extensions-to-remotely-monitor-user-activity-without-indication
+category:
+- Development
 tags:
 - chrome bug
 - chrome extension

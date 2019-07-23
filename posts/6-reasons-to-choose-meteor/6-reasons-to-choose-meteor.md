@@ -12,6 +12,8 @@ keywords:
 - Meteor Development
 author: Raviraj Hegde  
 link: /6-reasons-to-choose-meteor
+category:
+- Research and Articles
 tags:
 - Meteor Development
 - Node.js Development

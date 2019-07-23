@@ -11,6 +11,8 @@ keywords:
 - running an ecommerce store
 author: Anand Narayan
 link: /ecommerce-run-online-store-like-pro
+category:
+- Business
 tags:
 - ecommerce development
 - Rails Ecommerce Devlopment

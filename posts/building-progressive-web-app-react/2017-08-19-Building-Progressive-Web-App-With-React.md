@@ -12,6 +12,8 @@ keywords:
 - PWA with React
 author: Balram Khichar
 link: /building-progressive-web-app-react
+category:
+- Tutorial
 tags:
 - react js
 - reactjs

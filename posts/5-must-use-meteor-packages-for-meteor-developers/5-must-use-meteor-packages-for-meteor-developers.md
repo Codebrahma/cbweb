@@ -11,6 +11,8 @@ keywords:
 - Meteor developers
 author: Raviraj Hegde  
 link: /5-must-use-meteor-packages-for-meteor-developers
+category:
+- Research and Articles
 tags:
 - Meteor Development
 ---

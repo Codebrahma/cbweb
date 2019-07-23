@@ -3,6 +3,8 @@ templateKey: 'blog-post'
 title: 'Writing a Good Project Brief'
 date: 2017-02-14
 featuredpost: false
+category:
+- General
 description: >-
   If you&#039;re wondering how a good project brief looks like, you&#039;ve come to the right place. Learn the components and structuring of a solid project brief.
 link: /writing-good-project-brief

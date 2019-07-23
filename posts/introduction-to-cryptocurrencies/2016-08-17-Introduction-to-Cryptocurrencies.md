@@ -4,7 +4,7 @@ title: 'Introduction to Cryptocurrencies'
 date: 2016-08-17
 featuredpost: false
 category:
-- Cryptocurrency
+- Business
 description: >-
   This blog post takes a simplified look at cryptocurrencies like bitcoin to help everyone understand what it is, how it works, and its implications.
 keywords:

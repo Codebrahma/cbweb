@@ -7,6 +7,8 @@ description: >-
   Should I hire an in-house team or outsource my MVP development? Every entrepreneur faces this question at some point. Read on to know whats best for you.
 author: Anand Narayan
 link: /hiring-in-house-tech-team-vs-outsourcing-mvp-development
+category:
+- Business
 tags:
 - outsourced software development
 - outsouced tech team

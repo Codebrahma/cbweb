@@ -10,6 +10,8 @@ keywords:
 - deployment
 - production ready
 link: /deploy-react-application-depth-overview-various-options-deploy
+category:
+- Tutorial
 author: Prasanna
 tags:
 - react js

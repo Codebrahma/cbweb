@@ -3,6 +3,8 @@ templateKey: 'blog-post'
 title: '10 Everyday Apps Made Using ReactJS'
 date: 2016-11-11
 featuredpost: false
+category:
+- General 
 description: >-
   React is an open-source JavaScript library and is being maintained by Facebook developers. A lot of big names have adopted it. We tell you 10 such apps.
 keywords:

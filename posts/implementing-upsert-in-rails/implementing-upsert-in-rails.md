@@ -7,6 +7,8 @@ description: >-
   Tutorial on implementing upserts in rails. An upsert is update or insert. Upsert in database terms refers to an operation which should insert a row into a database table if it doesn’t not already exist, or update it if it does.
 author: Nithin Krishna 
 link: /implementing-upsert-in-rails
+category:
+- Tutorial
 tags:
 - Ruby on rails development
 - upsert in rails

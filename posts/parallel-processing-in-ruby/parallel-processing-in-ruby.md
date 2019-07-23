@@ -7,6 +7,8 @@ description: >-
   Ruby on rails developers explaining how parallel processing works in ruby with code snippets.
 author: Nithin Krishna  
 link: /parallel-processing-in-ruby
+category:
+- Development
 tags:
 - Parallel processing in ruby
 - Ruby on rails development

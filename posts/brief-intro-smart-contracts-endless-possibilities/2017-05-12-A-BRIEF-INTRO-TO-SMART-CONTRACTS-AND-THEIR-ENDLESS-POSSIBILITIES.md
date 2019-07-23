@@ -10,6 +10,8 @@ keywords:
 - future of smart contracts
 - blockchain
 link: /brief-intro-smart-contracts-endless-possibilities
+category:
+- Business
 tags:
 - blockchain 
 - fintech

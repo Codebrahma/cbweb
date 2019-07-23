@@ -7,6 +7,8 @@ description: >-
   Creating a successful product is seldom a matter of chance. In this article we discuss what it takes to create products that go on to become a hit.
 author: Anand Narayan
 link: /intro-art-creating-successful-products
+category:
+- Business
 tags:
 - mobile app
 - product development

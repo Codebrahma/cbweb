@@ -7,6 +7,8 @@ description: >-
   Experiences of Bangalore Garden City Ruby Conf 2014 by Nitin Krishna, Developer at Ruby on rails consulting firm Codebrahma.
 author: Nithin Krishna 
 link: /my-experience-at-the-bangalore-garden-city-ruby-conf-2014
+category:
+- General
 tags:
 - Ruby on rails
 ---

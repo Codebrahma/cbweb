@@ -7,6 +7,8 @@ description: >-
   Decorators allow us to add behavior to objects without affecting other objects of the same class. Codebrahma explaining ruby decorators, a key feature of ruby on rails.
 author: Abhishek Sarkar
 link: /ruby-decorators
+category:
+- Development
 tags: 
 - Ruby on rails development
 ---

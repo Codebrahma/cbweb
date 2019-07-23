@@ -9,6 +9,8 @@ keywords:
 - angularJS developers
 - hire angularjs developers
 link: /top-10-sites-built-with-angularjs-development
+category:
+- Research and Articles
 author: Raviraj Hegde 
 tags:
 - AngularJS Development

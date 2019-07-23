@@ -7,6 +7,8 @@ description: >-
   Codebrahma explaining Git Hunks, one of the awesome tools in git. Git Hunks, git bisect and git cherrypick.
 author: Yuvaraja Balamurugan
 link: /git-hunks
+category:
+- Research and Articles
 ---
 
 Git is one of my favorite software. It always impresses me. Here is one of the awesome tools in git.

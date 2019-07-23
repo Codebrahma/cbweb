@@ -9,6 +9,8 @@ keywords:
 - rails observers
 author: Nithin Krishna 
 link: /observers-in-rails
+category:
+- Tutorial
 tags:
 - rails observers
 - Ruby on rails development

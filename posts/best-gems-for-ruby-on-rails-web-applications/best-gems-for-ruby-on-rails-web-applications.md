@@ -11,6 +11,8 @@ keywords:
 - rails development companies,
 author: Raviraj Hegde  
 link: /best-gems-for-ruby-on-rails-web-applications
+category:
+- Research and Articles
 tags:
 - Ruby on rails
 - Ruby on rails development

@@ -3,12 +3,12 @@ templateKey: 'blog-post'
 title: 'How to Make an Online Store From Scratch'
 date: 2019-04-22
 featuredpost: false
-category:
-- Business
 description: >-
   E-commerce sales are fast gaining on traditional brick-and-mortar retail revenues. With the current trajectories, it’s only a matter of time before online sales surpass offline sales. It’s not hard to see why. Source Pixabay.com The Internet renders geographical distance and
 author: Anand Narayan
 link: /make-online-store-scratch
+category:
+- Business
 tags:
 - ecommerce
 - apps

@@ -14,6 +14,8 @@ keywords:
 - Reactjs hackers
 author: Raviraj Hegde  
 link: /7-reasons-to-choose-react-native-for-development
+category:
+- Research and Articles
 tags:
 - React
 - react native

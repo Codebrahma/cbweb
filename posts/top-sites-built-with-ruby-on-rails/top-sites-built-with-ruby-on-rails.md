@@ -12,6 +12,8 @@ keywords:
 - sites built on Rails
 - Ruby on Rails Examples
 link: /top-sites-built-with-ruby-on-rails
+category:
+- Research and Articles
 author: Raviraj Hegde 
 tags:
 - Ruby on rails

@@ -13,6 +13,8 @@ keywords:
 - application development company
 author: Hemanth 
 link: /automation-testing-framework-development-tips-for-web-apps
+category:
+- Development
 tags:
 - automation testing
 - web application development

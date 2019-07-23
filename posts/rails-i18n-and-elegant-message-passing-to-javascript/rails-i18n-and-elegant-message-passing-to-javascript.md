@@ -7,6 +7,8 @@ description: >-
   Internationalization is the process of abstracting all strings out of your application. Rails provides excellent support for Internationalization.
 author: Nithin Krishna  
 link: /rails-i18n-and-elegant-message-passing-to-javascript
+category:
+- Research and Articles
 tags:
 - Ruby on rails development
 ---

@@ -7,6 +7,8 @@ description: >-
   Codebrahma sharing cool bash scripts to optimize your git workflow. Git workflow for web development
 author: Nithin Krishna 
 link: /optimizing-your-workflow-git-bash-101
+category:
+- Tutorial
 ---
 
 Git is a developer’s best friend. When ever you screw up, git is always there to save the day. Here are some cool bash scripts to optimize your git workflow. Add the following snippets to your `.bash_profile` and voila.

@@ -17,6 +17,8 @@ keywords:
 - Instruments, ARC, Reference, Retain Cycles1
 author: Mohonish 
 link: /memory-management-with-swift
+category:
+- Research and Articles
 tags:
 - Instruments
 - iOS

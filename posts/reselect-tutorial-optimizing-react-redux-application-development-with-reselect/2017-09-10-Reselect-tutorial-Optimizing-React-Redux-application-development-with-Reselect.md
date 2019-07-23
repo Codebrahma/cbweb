@@ -9,6 +9,8 @@ keywords:
 - Reselect
 - React redux application
 - Optimizing React Redux application
+category:
+- Tutorial
 author: Prasanna
 link: /reselect-tutorial-optimizing-react-redux-application-development-with-reselect
 ---
