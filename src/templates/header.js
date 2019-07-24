@@ -42,7 +42,14 @@ class Header extends Component {
               localStorage.setItem('userDetails', JSON.stringify({}))
               document.getElementById('contact-submit').disabled = false
               navigate('/thank-you')
+            } else {
+              document.getElementById('contact-submit').disabled = false
+              alert('Sorry! something went wrong while processing your request. Please try again later')
             }
+          }
+          http.onerror = () => {
+            document.getElementById('contact-submit').disabled = false
+            alert('Sorry! something went wrong while processing your request. Please try again later')
           }
           http.send(JSON.stringify(formSubmitData))
       }))
