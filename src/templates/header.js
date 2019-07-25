@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Nav } from 'bricks'
 import { Logo } from '../components/logo'
 import { Link, navigate } from 'gatsby'
-import hooksUrl from '../../config'
+import { hooksUrl } from '../../config'
 
 const links = [
   {title: 'Work', link: '/work'},
@@ -42,9 +42,6 @@ class Header extends Component {
               localStorage.setItem('userDetails', JSON.stringify({}))
               document.getElementById('contact-submit').disabled = false
               navigate('/thank-you')
-            } else {
-              document.getElementById('contact-submit').disabled = false
-              alert('Sorry! something went wrong while processing your request. Please try again later')
             }
           }
           http.onerror = () => {
