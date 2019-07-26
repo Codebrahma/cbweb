@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
           `consultancy`,
           `bay area`,
         ]}
-        description=""
+        description="Codebrahma provides best in class custom web and mobile application development. Our expertise include React JS, NodeJS, React Native"
         image={`https://codebrahma.com${data.rippling_screenshot.publicURL}`}
         url="https://codebrahma.com"
       />
