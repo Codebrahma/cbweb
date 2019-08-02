@@ -81,10 +81,10 @@ class BlogLayout extends React.Component {
 
     return (
       <Layout>
-        <Helmet titleTemplate="%s | Codebrahma">
+        <Helmet>
           <title>{title}</title>
         </Helmet>
-        <SEO 
+        <SEO
           title={title}
           description={description||''}
           keywords={keywords||['']}
