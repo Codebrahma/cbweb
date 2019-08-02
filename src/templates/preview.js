@@ -139,9 +139,9 @@ const JournalPage = ({
         })}</H4>
     <Box marginTop={6} width={[1, 2/3]}>
     {blogs.map((blog,i) => (
-      <div key={blog.childMdx.frontmatter.title}>
-        <Blog frontmatter={blog.childMdx.frontmatter} />
-        { isLast(blogs, i)? '': 
+      <div key={blog.frontmatter.title}>
+        <Blog frontmatter={blog.frontmatter} />
+        { isLast(blogs, i)? '':
         <HorizontalRule
           width={1}
           borderWidth={1}
