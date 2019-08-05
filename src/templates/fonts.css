@@ -488,10 +488,6 @@ a:visited {
   color: inherit;
 }
 
-/* 
-    https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/#optional-add-line-highlighting-styles
-*/
-
 /* Vimeo style style starts */
 .embed-wrapper {
   width: 100%;
@@ -516,6 +512,10 @@ a:visited {
   background: #000;
 }
 /* Vimeo style ends */
+
+/*
+  https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/#optional-add-line-highlighting-styles
+*/
 .gatsby-highlight {
   background-color: #1b1b1a;
   border-radius: 0.3em;
@@ -529,6 +529,6 @@ a:visited {
   margin: 0;
   padding: 0;
   overflow: initial;
-  float: left; /* 1 */
-  min-width: 100%; /* 2 */
+  float: left;
+  min-width: 100%;
 }
