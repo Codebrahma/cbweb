@@ -132,7 +132,6 @@ const Transformer = ({ data }) => {
 
 export default Transformer
 
-// TODO add canonical to frontmatter 
 export const pageQuery = graphql`
   query($link: String!) {
     post: mdx(frontmatter: { link: { eq: $link } }) {
