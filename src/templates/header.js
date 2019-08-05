@@ -7,6 +7,7 @@ import { hooksUrl } from '../../config'
 
 const links = [
   {title: 'Work', link: '/work'},
+  {title: 'Services', link: '/solutions'},
   {title: 'FAQ', link: '/faq'},
   {title: 'Blog', link: '/blog'},
   {title: 'Contact', link: '/contact'},

@@ -1,7 +1,6 @@
 const redirects = require("./redirects")
+const { itemsPerPage } = require("./config")
 
-// TODO move perpage variable outside to a config file
-let ppage = 7
 const getUnique = (field, posts) =>
   posts.reduce((uniques, post) => {
     let values = post.childMdx.frontmatter[field]
@@ -62,7 +61,7 @@ const createPages = (type, postArray, createPage) => {
 const paginate = (
   { pathTemplate, createPage, component, type, value, linkRoot = "blog" },
   posts,
-  perpage = ppage
+  perpage = itemsPerPage
 ) =>
   posts
     // 1 group them by page number and posts in that page
@@ -145,7 +144,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   })
 
-  // TODO move this into graphql
   posts = posts.sort(
     (a, b) =>
       new Date(b.childMdx.frontmatter.date) -
@@ -170,7 +168,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   createPages("author", posts, createPage)
 
   //create blogs index
-  // TODO sorting to be done in graphql
+
   paginate(
     {
       createPage,
