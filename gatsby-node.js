@@ -1,5 +1,5 @@
 const redirects = require("./redirects")
-const { itemsPerPage }  = require('./config')
+const { itemsPerPage } = require("./config")
 
 const getUnique = (field, posts) =>
   posts.reduce((uniques, post) => {
@@ -59,8 +59,9 @@ const createPages = (type, postArray, createPage) => {
 //
 // Adapted from https://github.com/pixelstew/gatsby-paginate
 const paginate = (
-  { pathTemplate, createPage, component, type, value, linkRoot = 'blog' },
-  posts, perpage = itemsPerPage
+  { pathTemplate, createPage, component, type, value, linkRoot = "blog" },
+  posts,
+  perpage = itemsPerPage
 ) =>
   posts
     // 1 group them by page number and posts in that page
@@ -143,8 +144,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   })
 
-
-  posts = posts.sort((a,b)=> new Date(b.childMdx.frontmatter.date) - new Date(a.childMdx.frontmatter.date));
+  posts = posts.sort(
+    (a, b) =>
+      new Date(b.childMdx.frontmatter.date) -
+      new Date(a.childMdx.frontmatter.date)
+  )
 
   //create each individual blog post
   posts.forEach(post => {
