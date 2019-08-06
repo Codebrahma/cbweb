@@ -6,7 +6,6 @@ import { Link } from 'gatsby'
 
 const links = [
   {title: 'Work', link: '/work'},
-  {title: 'Services', link: '/solutions'},
   {title: 'FAQ', link: '/faq'},
   {title: 'Blog', link: '/blog'},
   {title: 'Contact', link: '/contact'},
