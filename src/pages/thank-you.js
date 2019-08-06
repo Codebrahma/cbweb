@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Box, P } from 'bricks'
-import CenteredDiv from '../components/centeredDiv'
+import { Main } from 'theme-ui'
 
-const ThankYou = () => {  
+const ThankYou = () => {
   return (
-    <CenteredDiv>
+    <Main mt="7">
       <Box textAlign="center">
         <P fontSize="6" mb="4">Thank You!</P>
         <P fontSize="3" mb="4">
@@ -17,7 +17,7 @@ const ThankYou = () => {
           </Link>
         </P>
       </Box>
-    </CenteredDiv>
+    </Main>
   )
 }
 

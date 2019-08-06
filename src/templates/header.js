@@ -27,9 +27,7 @@ class Header extends Component {
           const idea = document.getElementById('idea').value
           const email = document.getElementById('email').value
           document.getElementById('contact-submit').disabled = true
-          document.getElementById('idea').value = ""
-          document.getElementById('email').value = ""
-  
+
           const formSubmitData = {
             email,
             idea,
@@ -41,6 +39,8 @@ class Header extends Component {
           http.onreadystatechange = function() {
             if(http.readyState === XMLHttpRequest.DONE && http.status === 200) {
               localStorage.setItem('userDetails', JSON.stringify({}))
+              document.getElementById('idea').value = ""
+              document.getElementById('email').value = ""
               document.getElementById('contact-submit').disabled = false
               navigate('/thank-you')
             }
