@@ -153,8 +153,8 @@ module.exports = [
     to: "/category/development",
   },
   {
-    from: "/author/anand-narayan",
-    to: "/author/anand",
+    from: "/author/anand",
+    to: "/author/anand-narayan",
   },
 
 
