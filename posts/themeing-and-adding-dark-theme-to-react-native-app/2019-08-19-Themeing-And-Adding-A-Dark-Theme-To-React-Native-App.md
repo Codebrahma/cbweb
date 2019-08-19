@@ -29,15 +29,40 @@ This article will use [styled-components](https://github.com/styled-components/s
 
 Let’s start with the simple stuff. We shall have two themes for the user to pick from. I shall start with a way to approach this and then provide alternatives.
 
-![Color constants](./images/color-constants.png) *Color constants file*
+```js
+// This file defines all the color constants
+export const PRIMARY_THEME = {
+  name: 'default',
+  default: 'rgba(0, 0, 0, 0.5)',
+  spectrum: 'light',
+  spectrumInverted: 'dark',
+  TRANSPARENT: '#000000',
+  SUCCESS: '#7ED321',
+  FAILURE: '#F45454',
+  PRIMARY_TEXT: '#201734',
+  PRIMARY_APP: 'rgba(67, 23, 175, 1)',
+}
+
+export const DARK_THEME = {
+  name: 'default',
+  default: 'rgba(255, 255, 255, 0.5)',
+  spectrum: 'dark',
+  spectrumInverted: 'light',
+  TRANSPARENT: '#000000',
+  SUCCESS: '#812CDE',
+  FAILURE: '#0BABAB',
+  PRIMARY_TEXT: '#DFE8CB',
+  PRIMARY_APP: 'rgba(188, 232, 80, 1)',
+}
+```
 
 Create objects corresponding to each them and let each property in the object be a color in the theme. You can also drop in some meta-data associated with the theme. I have a key called *spectrum* and *spectrumInverted* in my theme color files. I use these constants to set the StatusBar icon colors.
 
 ```js
-  <StatusBar
-    backgroundColor={theme.PRIMARY_BACKGROUND}
-    barStyle={`${theme.spectrumInverted}-content`} // light-content
-  />
+<StatusBar
+  backgroundColor={theme.PRIMARY_BACKGROUND}
+  barStyle={`${theme.spectrumInverted}-content`} // light-content
+/>
 ```
 
 ## Get colors into your app
@@ -68,18 +93,18 @@ We do not have any reducer functions but we do have an initial state and our def
 Now we get the theme object constant at the root level of our app. Since we use redux we’ll do it right inside our *Provider*.
 
 ```js
-  import { connect } from 'react-redux';
-  import { ThemeProvider } from 'styled-components';
+import { connect } from 'react-redux';
+import { ThemeProvider } from 'styled-components';
 
-  const RootComponent = ({ app }) => (
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        {/* app router / all other components*/}
-      </ThemeProvider>
-    </Provider>
-  );
+const RootComponent = ({ app }) => (
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      {/* app router / all other components*/}
+    </ThemeProvider>
+  </Provider>
+);
 
-  export default connect(({ app }) => ({ app }))(RootComponent);
+export default connect(({ app }) => ({ app }))(RootComponent);
 ```
 
 I recommend you do a little reading on how redux works if some terminology is not super clear. I’ve imported *connect* which will let me access my redux store from inside my component. In connect I gain access to my *app* reducer, which holds my theme object, under the key **theme**! Also I’ve imported something else called the *ThemeProvider*.
@@ -110,9 +135,9 @@ export default styled.View`
 When this is ready, you can import *StyledView* anywhere inside your app as long as it’s inside the *ThemeProvider* component. It should have access to the theme object. Invoking it is simple and works as below:
 
 ```js
-  <StyledView backgroundColor="PRIMARY_BACKGROUND">
-    {/*content*/}
-  </StyledView>
+<StyledView backgroundColor="PRIMARY_BACKGROUND">
+  {/* content */}
+</StyledView>
 ```
 
 There we have it! Our first completely themed component. Anywhere where you’d normally use *View*, you might want to use *StyledView* now. Unless, the View doesn’t have any theme based coloring going on. It’s best to have these base components as clutter-free as possible and keep props to a minimum. Unless you see something being used everywhere (that doesn’t have to do with colors), it’s best left to the local styles of that component.
@@ -120,8 +145,21 @@ There we have it! Our first completely themed component. Anywhere where you’d 
 
 With that, you should be able to theme all your components. Some of them do not have a native styled component. For instance, to use our theme colors with a third-party component such as *LinearGradient, *the construction goes as follows:
 
-![StyledLinearGradient using withTheme](./images/styled-linear-gradient.png) *StyledLinearGradient using withTheme*
+```js
+import React from 'react';
+import LinearGradient from 'react-native-linear-gradient';
+import { withTheme } from 'styled-components';
 
+const StyledLinearGradient = ({
+  children, colors, style, theme,
+}) => (
+  <LinearGradient colors={colors.map(c => theme && theme[c])} style={style}>
+    {children}
+  </LinearGradient>
+);
+
+export default withTheme(StyledLinearGradient);
+```
 
 We import the *withTheme* HOC and wrap it around our component. This gives access to the theme object as long as we are within confines of the *ThemeProvider*.
 
@@ -138,21 +176,21 @@ Colors names shouldn’t be *Purple* or *Blue* since they might not be that when
 Sometimes you might want a color. Then you might want the same color but with a lower opacity. Then maybe an even lower opacity. This paves way for namespace pollution with multiple names and your files grows bigger. You can manage this by having a function within your styled-components that manipulates the opacity value before applying it.
 
 ```js
-  const OPACITY_REGEX = /^([A-Z_]*)\.(\d+)$/;
+const OPACITY_REGEX = /^([A-Z_]*)\.(\d+)$/;
 
-  const backgroundColor = ({ theme, backgroundColor }) => {
-    if (!backgroundColor) return theme.TRANSPARENT;
+const backgroundColor = ({ theme, backgroundColor }) => {
+  if (!backgroundColor) return theme.TRANSPARENT;
 
-    const hasOpacity = backgroundColor.match(OPACITY_REGEX);
+  const hasOpacity = backgroundColor.match(OPACITY_REGEX);
 
-    if (!hasOpacity) return theme[backgroundColor] || theme.TRANSPARENT;
+  if (!hasOpacity) return theme[backgroundColor] || theme.TRANSPARENT;
 
-    const color = theme[hasOpacity[1]];
-    return color.replace('1)', `0.${hasOpacity[2]})`);
-  };
+  const color = theme[hasOpacity[1]];
+  return color.replace('1)', `0.${hasOpacity[2]})`);
+};
 
-  // usage
-  <StyledView backgroundColor="PRIMARY_APP.85" />
+// usage
+<StyledView backgroundColor="PRIMARY_APP.85" />
 ```
 
 For this to work your theme colors should have colors as *rgba *strings.
