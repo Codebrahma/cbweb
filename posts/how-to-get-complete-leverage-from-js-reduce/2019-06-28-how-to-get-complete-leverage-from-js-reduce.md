@@ -62,7 +62,6 @@ console.log(sumTheArray(numbers)) //100
 But wait,
 
 - Can reduce() be used only with an array of primitive elements (numbers in this case)?
-
 - As JavaScript functions are first-class variables, why can’t we use reduce() with an array of functions?
 
 ## API Data — Processing
@@ -134,9 +133,7 @@ console.log(filteredTasks)
 This looks clean as each function takes care of a specific logic without impacting others. But wait, there is an issue here. What if the filter logic changes a bit?
 
 - complete -> incomplete
-
 - last 7 days -> last 14 days
-
 - tags [“Work”, “Personal”] -> [“Urgent”]
 
 Chaining anonymous functions won’t work in this case as the filter attributes are defined inside the function body. It can be made reusable only when the filter attributes are made configurable.
@@ -208,9 +205,7 @@ console.log(monthlyReportTasks)
 What about the problem statement alongside the following changes?
 
 - Tasks which are incomplete instead of completed
-
 - Tasks created within the last 2 months instead of last one week/month
-
 - Priority Levels can be ignored
 
 Solving these problems using this approach will result in a lot of redundant functions with slight changes. _Even though this approach is completely configurable, it’s not composable (combining functions to create a new function)._
@@ -327,7 +322,6 @@ This approach looks cleaner. But is it composable in nature?
 Let’s apply the following changes discussed in the previous approach.
 
 - Complete -> Incomplete
-
 - P̶r̶i̶o̶r̶i̶t̶y̶ ̶L̶e̶v̶e̶l̶
 
 ```javascript
@@ -396,7 +390,5 @@ And it all started with reduce()!!!
 ## Further References
 
 - [Lodash — flow()](https://lodash.com/docs/4.17.11#flow)
-
 - [Pipeline Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Pipeline_operator)
-
 - [Point-Free Style Programming](https://en.wikipedia.org/wiki/Tacit_programming)
