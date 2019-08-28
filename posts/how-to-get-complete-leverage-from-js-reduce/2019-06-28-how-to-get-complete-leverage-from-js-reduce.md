@@ -19,8 +19,6 @@ tags:
 author: Kalidas
 ---
 
-# How to get complete leverage from JavaScript reduce()
-
 ![Modularity with reduce()](./images/reduce_leverage.png)
 
 Functional Programming is the heart of JavaScript. Any complex problem can be nailed by proper application of functional programming concepts.
