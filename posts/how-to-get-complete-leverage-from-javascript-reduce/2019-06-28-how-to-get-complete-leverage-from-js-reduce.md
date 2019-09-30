@@ -219,11 +219,8 @@ The tasks is an array which is processed by a series of functions. Each function
 ### pipe()
 
 ```javascript
-const pipe = (...functions) => (value) => (
-  **functions.reduce**((currValue, currFunc) => (
-    currFunc(currValue)
-  ), value)
-);
+const pipe = (...functions) => value =>
+  functions.reduce((currValue, currFunc) => currFunc(currValue), value)
 ```
 
 > Provided a series of functions and an argument, the basic concept of pipe() is that the initial argument will be passed to the first function in the series (starting from left to right) and the result of the first function will be passed as an argument to the second function until the flow reached the last function in the series. Then the result from the last function in the series is returned as the result of pipe().
