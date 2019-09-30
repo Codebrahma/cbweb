@@ -282,7 +282,7 @@ In the current implementation, the alert dialogs can be removed only by the end-
 
 - The timer [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)`(this.props.handleOnClose, timeout)` should be started once AlertDialog is rendered on the screen.
 
-_This logic can be placed incomponentDidMount() as this lifecycle method will be invoked immediately after the initial render_
+_This logic can be placed in componentDidMount() as this lifecycle method will be invoked immediately after the initial render_
 
 - Clearing out the configured timer inside componentWillUnmount()
 
