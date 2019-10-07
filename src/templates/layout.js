@@ -80,9 +80,9 @@ const Footer = () => (
       </Box>
       <Box width={[1, 1 / 4]} mt={[2, 0]}>
         <P>
-          <PlainLink 
-            as="a" 
-            href="http://maps.google.com/?q=Codebrahma 156, 2nd Street San Francisco, CA 94105" 
+          <PlainLink
+            as="a"
+            href="http://maps.google.com/?q=Codebrahma 156, 2nd Street San Francisco, CA 94105"
             target="_blank"
           >
             156, 2nd Street
@@ -115,11 +115,11 @@ const Layout = ({ children }) => {
           <div style={{background: 'rgb(247,245,242)', minHeight: '100vh',}}>
             <Global
               styles={css`
-                      a:visited { 
+                      a:visited {
                         color: inherit;
                       }
                       a:hover {
-                        cursor: grab;  
+                        cursor: pointer;
                       }
                       body {
                         font-family: ${theme.fonts.body};
