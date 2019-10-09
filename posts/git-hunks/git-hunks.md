@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Git Hunks'
+title: 'Git Hunks: Stage hunks of code'
 date: 2014-05-05
 featuredpost: false
 description: >-

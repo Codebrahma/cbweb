@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Parallel processing in ruby'
+title: 'Parallel processing in Ruby - How it works'
 date: 2014-08-15
 featuredpost: false
 description: >-

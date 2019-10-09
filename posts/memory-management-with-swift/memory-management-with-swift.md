@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Memory Management with Swift'
+title: 'Memory Management with Swift Programming Language'
 date: 2015-11-19
 featuredpost: false
 description: >-

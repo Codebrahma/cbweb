@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Javascript Promises'
+title: 'Javascript Promises Implementation'
 date: 2014-05-02
 featuredpost: false
 description: >-

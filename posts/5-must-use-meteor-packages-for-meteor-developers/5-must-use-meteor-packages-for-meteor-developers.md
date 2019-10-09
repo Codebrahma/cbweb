@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: '5 MUST USE METEOR PACKAGES'
+title: '5 MUST USE METEOR PACKAGES FOR METEOR DEVELOPERS'
 date: 2016-02-08
 featuredpost: false
 description: >-

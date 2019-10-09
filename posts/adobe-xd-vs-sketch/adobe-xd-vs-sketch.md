@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Adobe XD vs Sketch'
+title: 'Quick overview of Adobe XD vs Sketch'
 date: 2016-06-23
 featuredpost: false
 description: >-

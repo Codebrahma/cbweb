@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'ANGULAR JS 2 : The Overview'
+title: 'ANGULAR JS 2 : The Framework Overview'
 date: 2016-05-16
 featuredpost: false
 description: >-

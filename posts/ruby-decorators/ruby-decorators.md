@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Ruby Decorators'
+title: 'Ruby Decorators: Add behavior to objects'
 date: 2014-04-28
 featuredpost: false
 description: >-
@@ -38,7 +38,7 @@ end
 ```    
     
 
-The drawback of this pattern is * The subclasses are tightly coupled to the super class. Suppose if the we change the name of the method in the super class we need to make these changes to our subclasses as well. * No way of adding any packs to a car dynamically. If in a certain scenario we need a car with two nitro packs and three boost packs it's not easy with this architecture.
+The drawback of this pattern is * The Ruby Decoratorssubclasses are tightly coupled to the super class. Suppose if the we change the name of the method in the super class we need to make these changes to our subclasses as well. * No way of adding any packs to a car dynamically. If in a certain scenario we need a car with two nitro packs and three boost packs it's not easy with this architecture.
 
 ## Enter the decorator pattern
 

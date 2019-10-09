@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'WWDC 2016: Everything We Know'
+title: 'WWDC 2016 - Everything We Know'
 date: 2016-07-13
 featuredpost: false
 category:

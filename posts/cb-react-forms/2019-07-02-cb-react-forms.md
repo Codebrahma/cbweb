@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'CB React Forms'
+title: 'CB React Forms: A React Form Builder'
 date: 2019-07-02
 featuredpost: false
 description: >-
