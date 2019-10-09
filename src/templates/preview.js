@@ -7,6 +7,7 @@ import { P, H3, H4, I,
 import PlainLink  from '../components/link'
 import { css } from 'bricks'
 import { Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
 import Pagination from '../components/pagination'
 import { getCategory, getTags, slugify } from '../utils'
 import { space } from 'styled-system'
@@ -129,6 +130,15 @@ const JournalPage = ({
   let blogs = postGroup
   return(
   <Layout>
+    <Helmet title={
+      getHeading({
+        isFirstPage,
+        currentPage,
+        totalPages,
+        type,
+        value,
+      })
+    } />
     <H4 css={css({color: 'black.1'})}>
     {getHeading({
           isFirstPage,
