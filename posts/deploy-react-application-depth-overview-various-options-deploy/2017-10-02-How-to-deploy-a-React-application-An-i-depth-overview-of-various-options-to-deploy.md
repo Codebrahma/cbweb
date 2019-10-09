@@ -1,6 +1,6 @@
 ---
 templateKey: "blog-post"
-title: "How to deploy a React application. An in depth overview of various options to deploy."
+title: "How to deploy a React application: An in-depth overview"
 date: 2017-10-02
 featuredpost: false
 description: >-

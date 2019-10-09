@@ -1,6 +1,6 @@
 ---
 templateKey: "blog-post"
-title: "How to create Lossless scalable icons in a react native application"
+title: "How to create Lossless scalable icons in react native"
 date: 2019-05-10
 featuredpost: false
 description: >-

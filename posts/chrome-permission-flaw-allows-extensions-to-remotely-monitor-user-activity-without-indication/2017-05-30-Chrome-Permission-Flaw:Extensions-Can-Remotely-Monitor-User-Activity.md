@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Chrome Permission Flaw: Extensions Can Remotely Monitor User Activity'
+title: 'Chrome Permission Flaw: Extensions Can Monitor User Activity'
 date: 2017-05-30
 featuredpost: false
 description: >-
