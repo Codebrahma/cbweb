@@ -11,7 +11,7 @@ const Project = ({title, image, description, link})=>(
   <Flex flexWrap='wrap' marginTop={6}>
     <Box width={[1,1/2]} order={[1,1]}>
       <PlainLink to={link}>
-        <NonStretchedImage fluid={image}/>
+        <NonStretchedImage alt={title} fluid={image}/>
       </PlainLink>
     </Box>
     <Flex flexDirection='column' width={[1,1/2]} order={[0,1]}>

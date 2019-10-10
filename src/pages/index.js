@@ -62,6 +62,7 @@ const IndexPage = ({ data }) => {
             <H4>Rippling</H4>
           </PlainLink>
           <NonStretchedImage
+            alt="Rippling"
             fluid={data.rippling_screenshot.childImageSharp.fluid}
           />
           <P>
