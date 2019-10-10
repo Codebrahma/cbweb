@@ -87,25 +87,31 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-git`,
       options: {
         name: `posts`,
-        path: `${__dirname}/posts/`,
-      },
+        remote: `https://github.com/sachinmjadhav/codebrahma-content.git`,
+        branch: `master`,
+        patterns: `posts/**`
+      }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-git`,
       options: {
         name: `solutions`,
-        path: `${__dirname}/solutions/`,
-      },
+        remote: `https://github.com/sachinmjadhav/codebrahma-content.git`,
+        branch: `master`,
+        patterns: `solutions/**`
+      }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-git`,
       options: {
         name: `projects`,
-        path: `${__dirname}/projects/`,
-      },
+        remote: `https://github.com/sachinmjadhav/codebrahma-content.git`,
+        branch: `master`,
+        patterns: `projects/**`
+      }
     },
     {
       resolve: 'gatsby-plugin-crisp-chat',
