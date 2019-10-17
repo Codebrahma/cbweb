@@ -52,6 +52,10 @@ function SEO({
           content: metaDescription,
         },
         {
+          name: `ahrefs-site-verification`,
+          content: `4dd117a5c522115a6aa883a771053c24404e9c9e31c411ef8e3698eab7b65aa6`,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -59,6 +63,7 @@ function SEO({
           property: `og:description`,
           content: metaDescription,
         },
+    
         {
           property: `og:type`,
           content: `website`,
