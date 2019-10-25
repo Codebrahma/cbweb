@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Angular Vs React'
+title: 'Angular Vs React: A Complete Analysis'
 date: 2016-04-19
 featuredpost: false
 description: >-

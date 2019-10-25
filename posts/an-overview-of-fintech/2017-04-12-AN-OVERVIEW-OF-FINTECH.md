@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'AN OVERVIEW OF FINTECH'
+title: 'AN OVERVIEW OF FINTECH - FINANCE & TECHNOLOGY'
 date: 2017-04-12
 featuredpost: false
 description: >-

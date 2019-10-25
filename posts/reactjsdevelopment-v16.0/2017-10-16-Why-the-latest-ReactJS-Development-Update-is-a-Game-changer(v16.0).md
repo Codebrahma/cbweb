@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Why the latest ReactJS Development Update is a Game-changer (v16.0)'
+title: 'Why the latest ReactJS Update is a Game-changer (v16.0)'
 date: 2017-10-16
 featuredpost: false
 description: >-

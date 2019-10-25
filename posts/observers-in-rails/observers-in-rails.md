@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Observers in Rails'
+title: 'Observers in Rails: Ruby on Rails Development'
 date: 2014-07-30
 featuredpost: false
 description: >-

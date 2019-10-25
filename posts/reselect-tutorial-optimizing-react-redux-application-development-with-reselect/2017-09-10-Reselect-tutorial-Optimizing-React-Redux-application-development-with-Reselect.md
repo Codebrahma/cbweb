@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Reselect tutorial. Optimizing React Redux application development with Reselect.'
+title: 'Reselect tutorial: Optimizing React-Redux application'
 date: 2017-09-10
 featuredpost: false
 description: >-

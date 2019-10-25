@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Getting Started with Tmux'
+title: 'Getting Started with Tmux: Development Tool'
 date: 2014-08-04
 featuredpost: false
 description: >-

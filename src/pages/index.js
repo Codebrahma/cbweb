@@ -19,6 +19,7 @@ const IndexPage = ({ data }) => {
     "image" : "https://codebrahma.com${data.rippling_screenshot.publicURL}",
     "telephone" : "+1 484 506 0634",
     "email" : "hello@codebrahma.com",
+    "priceRange" : "$$$",
     "address" : {
       "@type" : "PostalAddress",
       "streetAddress" : "156, 2nd Street",
@@ -62,6 +63,7 @@ const IndexPage = ({ data }) => {
             <H4>Rippling</H4>
           </PlainLink>
           <NonStretchedImage
+            alt="Rippling"
             fluid={data.rippling_screenshot.childImageSharp.fluid}
           />
           <P>

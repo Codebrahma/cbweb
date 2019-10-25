@@ -11,7 +11,7 @@ const Project = ({title, image, description, link})=>(
   <Flex flexWrap='wrap' marginTop={6}>
     <Box width={[1,1/2]} order={[1,1]}>
       <PlainLink to={link}>
-        <NonStretchedImage fluid={image}/>
+        <NonStretchedImage alt={title} fluid={image}/>
       </PlainLink>
     </Box>
     <Flex flexDirection='column' width={[1,1/2]} order={[0,1]}>
@@ -26,7 +26,7 @@ const Project = ({title, image, description, link})=>(
 const WorkPage = ({data})=> (
 <Layout>
   <SEO
-    title="Innovative Products based on ReactJS, React Native, Ruby on Rails Developemt"
+    title="Innovative Products based on ReactJS, React Native Developemt"
     description="Examples of interactive website and application development"
     keywords={[`ruby on rails`, `Ruby on Rails development`, `angularjs framework`, `angularjs code`, `meteor js`, `react js`, `native`, `node js development`, `node js website`, `spree commerce`, `ruby on rails developer`, `react js components`, `javascript meteor`, `Angular javascript`, `angular framework`, `js angular`, `angular website`, `Android Website`, `ios app development`, `mobile web app`, `javascript android app`, `web application development company`]}
     image={`https://codebrahma.com${data.serverless_screenshot.publicURL}`}

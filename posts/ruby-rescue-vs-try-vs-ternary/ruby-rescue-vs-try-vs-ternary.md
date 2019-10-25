@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Ruby rescue vs try vs ternary'
+title: 'Ruby rescue vs try vs ternary | Ruby exception handling'
 date: 2014-07-15
 featuredpost: false
 description: >-

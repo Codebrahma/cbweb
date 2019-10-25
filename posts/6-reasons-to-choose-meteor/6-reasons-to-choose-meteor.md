@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: '6 Reasons to Choose Meteor'
+title: 'Six Reasons to Choose MeteorJS'
 date: 2015-12-28
 featuredpost: false
 description: >-

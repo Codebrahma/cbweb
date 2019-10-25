@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'What’s new inside jQuery 3.0'
+title: 'What’s new inside jQuery 3.0 - Slimmer and faster'
 date: 2016-07-13
 featuredpost: false
 description: >-

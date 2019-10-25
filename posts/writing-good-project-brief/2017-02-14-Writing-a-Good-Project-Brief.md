@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Writing a Good Project Brief'
+title: 'Writing a Good Project Brief - Codebrahma'
 date: 2017-02-14
 featuredpost: false
 category:

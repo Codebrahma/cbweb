@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Implementing Upsert in Rails'
+title: 'Implementing Upsert in Rails: Tutorial'
 date: 2014-08-01
 featuredpost: false
 description: >-
