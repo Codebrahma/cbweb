@@ -39,6 +39,11 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/logos/cb.png`, // This path is relative to the root of the site.
       },
+    },{
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-41862404-6"
+      }
     },
     {
       resolve: `gatsby-plugin-google-gtag`,
