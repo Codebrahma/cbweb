@@ -1,3 +1,1 @@
-import Layout from '../../templates/layout';
-
-export default Layout;
+export { default } from '../../templates/layout';
