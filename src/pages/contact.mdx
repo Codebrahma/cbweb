@@ -28,7 +28,8 @@ San Francisco
 
 <form
   action="https://formspree.io/anand@codebrahma.com"
-  method="post" target='/thanks'>
+  method="post">
+  <input type="hidden" name="_next" value="https://codebrahma.com/thank-you"/>
     <Flex flexWrap='wrap' flexDirection='column'>
       <Box width={[1,1/3]}>
         <InputText size='25' rows="5" style={{width:'100%'}} required as='textarea' name='msg' placeholder='Tell us about your idea'/>
