@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "./layout"
-import MDXRenderer from "gatsby-mdx/mdx-renderer"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import { H1, Flex, Box, I } from "bricks"
@@ -70,14 +70,9 @@ const Sidebar = ({ author, category, tags }) => (
 )
 
 class BlogLayout extends React.Component {
-  componentDidMount() {
-    const scripts = document.querySelectorAll("[data-inline-script]")
-    // eslint-disable-next-line
-    scripts.forEach(script => eval(script.innerHTML))
-  }
 
   render() {
-    const { title, body, category, author, tags, scripts, description, keywords, canonical } = this.props
+    const { title, body, category, author, tags, description, keywords, canonical } = this.props
 
     return (
       <Layout>
@@ -91,11 +86,6 @@ class BlogLayout extends React.Component {
           canonical={canonical}
 
         />
-        {scripts && (
-          <Helmet
-            script={scripts.map(src => ({ type: "text/javascript", src }))}
-          />
-        )}
         <Flex flexWrap="wrap">
           <Box width={["100%", 2 / 3]}>
             <Box mb={4}>
@@ -113,15 +103,14 @@ class BlogLayout extends React.Component {
 }
 
 const Transformer = ({ data }) => {
-  let { title, category, tags, author, scripts, keywords, description, canonical} = data.post.frontmatter
-  let body = data.post.code.body
+  let { title, category, tags, author, keywords, description, canonical} = data.post.frontmatter
+  let body = data.post.body
   return (
     <BlogLayout
       title={title}
       category={category}
       tags={tags}
       author={author}
-      scripts={scripts}
       body={body}
       keywords={keywords}
       description={description}
@@ -135,16 +124,13 @@ export default Transformer
 export const pageQuery = graphql`
   query($link: String!) {
     post: mdx(frontmatter: { link: { eq: $link } }) {
-      code {
-        body
-      }
+      body
       frontmatter {
         title
         description
         category
         tags
         author
-        scripts
         keywords
         datePublished: date(formatString: "YYYY-MM-DDTHH:mm:ssZ")
       }

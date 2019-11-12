@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from './layout'
-import MDXRenderer from 'gatsby-mdx/mdx-renderer';
-import { graphql } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { graphql } from 'gatsby'
 import {Flex, Box} from 'bricks'
 import SEO  from '../components/seo'
 
@@ -28,8 +28,8 @@ const SolutionLayout = ({title, body, keywords, description}) => {
 }
 
 const Transformer = ({data}) => {
-  let {title, keywords, description } = data.post.frontmatter;
-  let body = data.post.code.body;
+  let {title, keywords, description } = data.post.frontmatter
+  let body = data.post.body
   return (
     <SolutionLayout 
       title={title}
@@ -45,9 +45,7 @@ export default Transformer
 export const pageQuery = graphql`
   query($link: String!){
     post: mdx(frontmatter: { link: { eq: $link } }) {
-      code {
-        body
-      }
+      body
       frontmatter {
         title
         description
