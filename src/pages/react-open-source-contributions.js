@@ -3,17 +3,23 @@ import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
 import Layout from "../templates/layout"
 import { Flex, H1, H4, P, HorizontalRule, css } from "bricks"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import Img from 'gatsby-image'
 import projects from "../data/open-source-projects.json"
 
-const CardBox = styled(Flex)`
-  flex-direction: column;
-  width: 20rem;
-  border: 2px solid #ddd;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  margin: 1rem;
-`
+const CardBox = styled(Flex)(
+  css({
+    flexDirection: "column",
+    width: "20rem",
+    border: "2px solid #ddd",
+    justifyContent: "space-between",
+    padding: "0.5rem 1rem",
+    margin: "1rem",
+    "&:hover": {
+      boxShadow: "0px 0px 7px #ddd",
+    },
+  })
+)
 
 const FlexWrap = styled(Flex)`
   flex-wrap: wrap;
@@ -47,17 +53,33 @@ const OutboundLink = styled(Link, {
   })
 )
 
-const FlexRow = styled(Flex)`
+const ImageRow = styled(Flex)`
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: center;
   margin: 0.5rem 1rem;
 `
 
-const Card = ({ name, description, github, demo }) => {
+const FlexRow = styled(Flex)`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 1rem;
+`
+
+const Card = ({ name, description, github, demo, image }) => {
   return (
     <CardBox>
       <div>
-        <H4 padding="1">{name}</H4>
+        <ImageRow>
+          <Img 
+            fixed={image.childImageSharp.fixed}
+            objectFit="contain"
+            objectPosition="50% 50%"
+            alt={name}
+          />
+          <H4 padding="1">{name}</H4>
+        </ImageRow>
         <HorizontalRule />
       </div>
       <P padding="1">{description}</P>
@@ -75,18 +97,20 @@ const Card = ({ name, description, github, demo }) => {
   )
 }
 
-const OpenSource = () => {
+const OpenSource = props => {
   return (
     <Layout>
       <H1>Our Open Source Contributions</H1>
       <P pt="2">Some of our contributions to the Open Source Community:</P>
       <FlexWrap>
-        {projects.map(({ name, description, github, demo }) => (
+        {projects.map(({ name, description, github, demo, image }) => (
           <Card
+            key={name}
             name={name}
             description={description}
             github={github}
             demo={demo}
+            image={props.data[image]}
           />
         ))}
       </FlexWrap>
@@ -95,3 +119,72 @@ const OpenSource = () => {
 }
 
 export default OpenSource
+
+export const query = graphql`
+  query {
+    serverless: file(relativePath: { eq: "open-source/serverless.png" }) {
+      childImageSharp {
+        fixed(width: 180, height: 128) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+    multiSelect: file(relativePath: { eq: "open-source/multi-select.png" }) {
+      childImageSharp {
+        fixed(width: 60, height: 60) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+    networkStatusNotifier: file(relativePath: { eq: "open-source/network-status-notifier.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 64) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+    reactForms: file(relativePath: { eq: "open-source/react-forms.png" }) {
+      childImageSharp {
+        fixed(width: 80, height: 35) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+    liteUi: file(relativePath: { eq: "open-source/react-lite-ui.png" }) {
+      childImageSharp {
+        fixed(width: 60, height: 64) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+    reduxAction: file(relativePath: { eq: "open-source/redux-action.png" }) {
+      childImageSharp {
+        fixed(width: 80, height: 80) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+    csvToGraphql: file(relativePath: { eq: "open-source/csv-graphql.png" }) {
+      childImageSharp {
+        fixed(width: 100, height: 40) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+    gatsbyBlog: file(relativePath: { eq: "open-source/gatsby-blog.png" }) {
+      childImageSharp {
+        fixed(width: 66, height: 64) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+  }
+`
