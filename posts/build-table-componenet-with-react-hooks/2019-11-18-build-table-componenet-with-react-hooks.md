@@ -40,6 +40,7 @@ function TableHeader({ headers }) {
   )
 }
 ```
+
 and it consumes something similar to
 ```js
 const meta = [
@@ -85,7 +86,8 @@ function TableData({ data, meta }) {
   )
 }
 ```
-and it consumes somethinig like
+
+and it consumes something like
 ```js
 const data = [
   { name: 'Porsche', age: 2, color: 'Blue' },
