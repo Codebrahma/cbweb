@@ -21,8 +21,6 @@ tags:
 author: Arivanandan
 ---
 
-# Make your React Native app lighter and faster
-
 React Native apps naturally run heavy, compared to a similar app implemented optimally on native. However, given the fast develoment time and how far smartphones have come along in terms of processor power and memory, it is one of the best options for mobile development. Let's look at some ways to make your app faster and lighter. Starting from making the app smaller, run on lesser memory to using web benchmarks like time to interact and time to first paint to make the app feel smoother.
 
 ## Assets
