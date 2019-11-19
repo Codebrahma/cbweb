@@ -88,6 +88,7 @@ function TableData({ data, meta }) {
 ```
 
 and it consumes something like
+
 ```js
 const data = [
   { name: 'Porsche', age: 2, color: 'Blue' },
@@ -116,10 +117,7 @@ function TableCell ({ data }) {
   )
 }
 ```
-
- ![A plain simplistic table](./images/plain-table.png)
-
- Putting all of these together and with a little bit of styling, we finally have.
+ Putting all of these together and with a little bit of styling, we finally have:
 
  ```js
 function Table({ normalizeData }) {
@@ -140,6 +138,11 @@ function Table({ normalizeData }) {
 }
  ```
 
+ Which gives:
+
+ ![A plain simplistic table](./images/plain-table.png)
+
+
  Normalization function for the data we have declared above
  ```js
  function normalizeData(data) {
@@ -149,6 +152,8 @@ function Table({ normalizeData }) {
   });
 }
 ```
+
+## useState and useEffect
 
  For the uninitiated, there're two little things here that might be new - **useState** and **useEffect**. *useState* is simply adding a state variable to your classless component. It takes an inital value, in our case, for the *headerMeta* it is the initial meta defined earlier and for the *tableData* it is simply an empty array. The *useState* function returns an array which is being destructured into the data and the setter function in positions 0 and 1 respectively. You can use the setter function to set the data similar to the *setState* which you might be used to and get the data back on the appropriate keys that've been defined, it being *headerMeta* and *tableData* in our case.
 
