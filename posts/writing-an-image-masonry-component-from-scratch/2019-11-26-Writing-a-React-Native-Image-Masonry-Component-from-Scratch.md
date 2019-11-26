@@ -197,6 +197,9 @@ const layoutBricks = (images) => {
 
       newCols[shortestColumnIndex] = { bricks: [...shortestColumn.bricks, currentImage], colHeight: shortestColumn.colHeight + ht };
     });
+
+  setCols(newCols);
+}
 ```
 
 After dropping an image in the column, it also increases the **colHeight** value appropriately.
