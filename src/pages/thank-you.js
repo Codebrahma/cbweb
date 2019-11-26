@@ -3,10 +3,25 @@ import { Link } from "gatsby"
 import { Box, P } from "bricks"
 import { Main } from "theme-ui"
 import SEO from "../components/seo"
+import { Helmet } from "react-helmet"
 
 const ThankYou = () => {
   return (
     <>
+      <Helmet>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"></script>
+        <script>
+          {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-700131916');
+  gtag('event', 'conversion', {'send_to': 'AW-700131916/5XWgCK_ymrMBEMzU7M0C'});
+          `}
+        </script>
+
+      </Helmet>
       <SEO
         title="Thank You"
         description="Thank you for contacting us."

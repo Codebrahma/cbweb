@@ -128,6 +128,25 @@ const Layout = ({ children }) => {
                 `}/>
             <Container>
               <Helmet meta={[{ name: "referrer", content: "origin" }]} />
+              <Helmet>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"></script>
+                <script>
+                  {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                  
+                    gtag('config', 'AW-700131916');
+
+                    document.addEventListener('click',function(e){
+                      if(e.target.matches('[href="tel:+14845060634"]')){
+                        gtag('event', 'conversion', {'send_to': 'AW-700131916/co9tCKqOrLUBEMzU7M0C'});
+                        ga('send','event','button','click','phone');
+                      }
+                    })
+                  `}
+                </script>
+              </Helmet>
               <Header siteTitle={data.site.siteMetadata.title} />
               <div>
                 <main>{ children }</main>
