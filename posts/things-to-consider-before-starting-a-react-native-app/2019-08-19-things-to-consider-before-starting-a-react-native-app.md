@@ -34,7 +34,7 @@ React Native is still a maturing framework. Although you can do a lot of beautif
 Routing in React Native has come a long way. As opposed to how in web, pages are independent and might even be reloaded from the stack, in React Native they are simply stacked on top of each other. So navigating from one screen to another keeps the older screens in memory. Finding a good stable router before you start development of your application is vital.
 
 ## Themeing your app
-At some point you might want to have a dark mode. Changing styles or adding colors at this point might be a major pain point. Having extensible base components such as View, Text, TextInput and Image might go a long way in saving time. There are plenty of ways to do this. You can check out a good method here.
+At some point you might want to have a dark mode. Changing styles or adding colors at this point might be a major pain point. Having extensible base components such as View, Text, TextInput and Image might go a long way in saving time. There are plenty of ways to do this. You can check out a good method [here](https://codebrahma.com/themeing-and-adding-a-dark-theme-to-react-native-app/ "Themeing blog").
 
 ## Memory Leaks
 Improperly handing unmouting can seriously impact app performance. When components mount, not only do you have to cancel setTimeouts or setIntervals, but also other async operations such as network requests, espescially if it calls a class method. Timers or async operations prevents the component from being garabge cleaned and as a result your application might end up using more memory than it requires and result in a sluggish user experience.

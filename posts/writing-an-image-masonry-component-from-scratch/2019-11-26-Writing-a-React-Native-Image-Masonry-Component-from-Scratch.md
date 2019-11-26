@@ -335,3 +335,5 @@ function App({ columns = 2 }) {
 
 export default App;
 ```
+
+The wide images are obviously not as good as they can be. Watch out the next iteration on the component that handles these in a much better fashion.
