@@ -172,7 +172,7 @@ function App({ columns = 2 }) {
 
 The function accepts the number of columns it is about to render, with the default being 2. Then we split up the width of the device by the columns and fix the width of the images to this number. The height, however is dynamic and this leads to some pretty interesting images.
 
-![Wall of Long Images](./images/2.png)
+![Wall of Long Images](./images/2.gif)
 
 Let's start from the top. First of all we create the columns. It simply creates an array of objects where each of the array element represents a column and they have their height set to 0 and the images (**bricks**) set to nothing (an empty array).
 
@@ -206,7 +206,7 @@ Don't forget to take a look at the **renderItem** function which has changed ver
 ## Masonry!
 Finally for the crescendo we have the complete masonry done.
 
-![Image masonry has arrived](./images/3.png)
+![Image masonry has arrived](./images/3.gif)
 
 Going from the previous step to here is actually very very simple. All that's left to be done is to figure out the height of our images. Basically, we force the images to be of a particular width because of our columns restrictions. Similarly the image has to be scaled by the same factor. This is easy peasy to do.
 
