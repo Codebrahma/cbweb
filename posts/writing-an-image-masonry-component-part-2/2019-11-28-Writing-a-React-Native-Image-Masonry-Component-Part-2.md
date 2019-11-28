@@ -19,7 +19,7 @@ tags:
 author: Arivanandan
 ---
 
-Do check out the column-based masonry layout to start with [here]( "Column based image masonry component").
+Do check out the column-based masonry layout to start with [here](https://codebrahma.com/writing-a-react-native-image-masonry-component "Column based image masonry component"). Skip to the end for the complete code.
 
 ![Column based masonry](./images/start.gif)
 
