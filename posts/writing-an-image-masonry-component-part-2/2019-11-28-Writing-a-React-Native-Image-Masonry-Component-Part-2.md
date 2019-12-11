@@ -19,11 +19,11 @@ tags:
 author: Arivanandan
 ---
 
-Do check out the column-based masonry layout to start with [here](https://codebrahma.com/writing-a-react-native-image-masonry-component "Column based image masonry component"). Skip to the end for the complete code.
+Do check out the column-based masonry layout to start with [here](https://codebrahma.com/writing-a-react-native-image-masonry-component "Column based image masonry component").
 
 ![Column based masonry](./images/start.gif)
 
-This one is going to be a different approach. While the column based approach looks decent, it isn't the best on a mobile screen which is tall and not wide. A row based approach where wide images and left to have their own rows and longer ones share space with more evenly spaces images is a better approach. This is what we're talking about:
+This one is going to be a different approach. While the column based approach might look good on a computer which has a wide screen, a row based layout is better for mobile phones which have more height than width. This allows wide images to occupy a row completely while long images can share space in a row. This is what we're talking about:
 
 ![Row based masonry layout](./images/layout.png)
 
@@ -77,7 +77,17 @@ const processImages = async images => {
 
 I get the width : height ratio of the device and use it to figure out the block dimensions. This can be done in other ways. To figure out what works best for you, try playing around with the three threshold values - **w3Threshold**, **h2Threshold** and **h3Threshold**. These can be constants as well.
 
-Our **renderImage** function is the same as last time.
+Our **renderItem** function is pretty much the same as in part 1.
+
+```js
+const renderItem = ({ url }, ht, wd, imageSpacing = 0) => (
+  <Image
+    source={{ uri: url }}
+    style={{ width: wd, height: ht, marginBottom: imageSpacing }}
+    resizeMode="cover"
+  />
+);
+```
 
 However, the **layoutBricks** functions changes drastically.
 
