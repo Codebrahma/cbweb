@@ -44,9 +44,9 @@ Introduced in 2013, this futuristic framework is used to make the process of wri
 
 One of the most used frameworks in the Node.js world. Backed by a huge community of  developers, tutorials, custom packages and documentation, this framework is used to create some great web and mobile applications for only Javascript only.
 
-[Mojito](https://github.com/yahoo/mojito)
+[Lad](https://lad.js.org)
 
-Yahoo!cocktail is a mobile development platform. Mojito is a framework loosely based on the Yahoo!cocktail. Since the Yahoo!cocktail is completely written in javascript, the mojito can run both on the server side as well as client side. Mojito is an MVC (model-view-controller) framework having a host of features.
+Lad is a full blown koa based api framework. Build by Nick Baugh, Express Technical Committee Member and Core Member of the Koa team, this framework has support for auth, mailers and many more. It sticks to MVC, KISS, DRY, YAGNI and Twelve Factor patters. If you are bootstrapper aiming to be ramen profitable. This is a good framework to consider!
 
 [Derby](http://derbyjs.com/)
 
