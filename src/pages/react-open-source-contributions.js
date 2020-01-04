@@ -180,7 +180,7 @@ export const query = graphql`
     }
     gatsbyBlog: file(relativePath: { eq: "open-source/gatsby-blog.png" }) {
       childImageSharp {
-        fixed(width: 66, height: 60) {
+        fixed(width: 66, height: 64) {
           ...GatsbyImageSharpFixed
         }
       }
