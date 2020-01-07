@@ -9,6 +9,7 @@ keywords:
 - Spree commerce
 - Ecommerce platform
 - Choosing spree commerce
+image: ./images/spree-commerce.jpg
 author: Raviraj Hegde  
 link: /7-reasons-to-choose-spree-commerce-for-ecommerce-development
 category:

@@ -10,6 +10,7 @@ keywords:
 - Reasons to choose Meteor
 - Features of Meteor
 - Meteor Development
+image: ./images/meteor.png
 author: Raviraj Hegde  
 link: /6-reasons-to-choose-meteor
 category:

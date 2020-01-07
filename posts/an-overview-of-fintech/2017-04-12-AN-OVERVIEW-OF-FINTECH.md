@@ -5,6 +5,7 @@ date: 2017-04-12
 featuredpost: false
 description: >-
   Fintech is the newest, in-vogue term circling the entrepreneurial sector. But a lot of people yet don&#039;t have a firm grasp on Fintech. We&#039;re here to help.
+image: ./images/overview-fintech-1.jpg
 author: Anand Narayan
 link: /an-overview-of-fintech
 category:

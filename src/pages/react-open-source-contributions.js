@@ -186,9 +186,19 @@ export const query = graphql`
       }
       publicURL
     }
+
     menubar: file(relativePath: { eq: "open-source/menu-bar.png" }) {
       childImageSharp {
         fixed(width: 130, height: 110) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+
+    notificationsMenu: file(relativePath: { eq: "open-source/notifications-menu.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 50) {
           ...GatsbyImageSharpFixed
         }
       }

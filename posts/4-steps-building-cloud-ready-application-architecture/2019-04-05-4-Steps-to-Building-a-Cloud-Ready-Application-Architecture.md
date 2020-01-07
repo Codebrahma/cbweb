@@ -5,6 +5,7 @@ date: 2019-04-05
 featuredpost: false
 description: >-
   Most experts agree that by the year 2020, nearly 83 percent of enterprise workloads will be based in the cloud. In just the past few years, the number of businesses using cloud-based tools has exploded. If your company is in
+image: ./images/cloud-ready-image1.jpg
 author: Anand Narayan
 link: /4-steps-building-cloud-ready-application-architecture
 category:

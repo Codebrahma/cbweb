@@ -10,6 +10,7 @@ keywords:
 - Angularjs development company
 - angularjs developers
 - react js developersevelopment company
+image: ./images/vs.png
 author: ARAVINDAN 
 link: /angular-vs-react
 category:

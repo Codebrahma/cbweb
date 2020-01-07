@@ -67,5 +67,12 @@
     "github":"https://github.com/Codebrahma/react-responsive-multi-level-menu",
     "demo":"https://react-responsive-multi-level-menu-demo.netlify.com/",
     "image":"menubar"
-  }	 
+  },
+  {
+    "name": "React Notifications Menu",
+    "description": "Customizable React component for Notifications.",
+    "github": "https://github.com/Codebrahma/react-notifications-menu",
+    "demo": "https://react-notifications-menu.netlify.com/",
+    "image": "notificationsMenu"
+  }
 ]
