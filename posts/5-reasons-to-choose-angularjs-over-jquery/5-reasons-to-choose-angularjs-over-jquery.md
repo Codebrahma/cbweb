@@ -11,6 +11,7 @@ keywords:
 - angularJS over jquery
 - choosing angularjs
 - why choose AngularJS
+image: ./images/Angular_Tutoria.png
 author: Raviraj Hegde  
 link: /5-reasons-to-choose-angularjs-over-jquery
 category:

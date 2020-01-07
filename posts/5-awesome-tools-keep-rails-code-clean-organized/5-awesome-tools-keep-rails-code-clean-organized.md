@@ -10,6 +10,7 @@ keywords:
 - ruby on rails companies
 - ruby on rails developers
 - hire ruby on rails developers
+image: ./images/rails.png
 author: ARAVINDAN 
 link: /5-awesome-tools-keep-rails-code-clean-organized
 category:

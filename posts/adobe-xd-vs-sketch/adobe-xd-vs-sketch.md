@@ -11,6 +11,7 @@ keywords:
 - adobe xd
 - sketch
 - UI development
+image: ./images/XD-1.jpg
 link: /adobe-xd-vs-sketch
 category:
 - Development
