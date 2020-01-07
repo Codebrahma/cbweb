@@ -60,5 +60,12 @@
     "github": "https://github.com/helsey33/react-native-multi-level-selector",
     "demo": "https://snack.expo.io/rJkQhPtsH",
     "image": "multiSelect"
-  }
+  },
+  {
+  "name": "React Notifications Menu",
+  "description": "Customizable React component for Notifications.",
+  "github": "https://github.com/Codebrahma/react-notifications-menu",
+  "demo": "https://react-notifications-menu.netlify.com/",
+  "image": "notificationsMenu"
+}
 ]
