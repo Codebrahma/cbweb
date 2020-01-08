@@ -74,5 +74,12 @@
     "github": "https://github.com/Codebrahma/react-notifications-menu",
     "demo": "https://react-notifications-menu.netlify.com/",
     "image": "notificationsMenu"
+  },
+  {
+    "name": "React Flexible Sliding Menu",
+    "description": "A React library which provides Flexible Sliding Menu with an easy to use API.",
+    "github": "https://github.com/Codebrahma/react-flexible-sliding-menu",
+    "demo": "https://react-flexible-sliding-menu.netlify.com/",
+    "image": "flexibleSlidingMenu"
   }
 ]
