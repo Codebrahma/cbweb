@@ -5,6 +5,7 @@ date: 2016-10-25
 featuredpost: false
 description: >-
   As a premium engineering product company we have delivered not just projects, but success stories for entrepreneurs. For every project we take, there is a back story. Story of why it happened and story of the struggle to make
+image: ./images/after.png
 author: Anand Narayan
 link: /swiss-knife-analytics-chat-dipankar-founder-octo-ai
 category:

@@ -10,6 +10,7 @@ keywords:
 - PWA
 - Progressive Web app
 - PWA with React
+image: ./images/pwa-reliable-1024x577.png
 author: Balram Khichar
 link: /building-progressive-web-app-react
 category:

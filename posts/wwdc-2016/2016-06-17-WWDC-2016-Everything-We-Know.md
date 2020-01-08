@@ -21,7 +21,7 @@ tags:
 
 Apple's World Wide Developer Conference, the holy grail of all developers is back. Here is the quick overview of everything that happened at WWDC 2016.
 
-Right from the day the dates for the Apple conference was announced as June 13th to 17th, the expectations for the new launches was quite high. With all the excitement, thousands of Apple fans turned to their best friend  Siri for titbits on what's coming. Here's what Siri had to say:
+Right from the day the dates for the Apple conference was announced as June 13th to 17th, the expectations for the new launches was quite high. With all the excitement, thousands of Apple fans turned to their best friend Siri for titbits on what's coming. Here's what Siri had to say:
 
 ![siri](./images/siri-578x1024.jpg)
 

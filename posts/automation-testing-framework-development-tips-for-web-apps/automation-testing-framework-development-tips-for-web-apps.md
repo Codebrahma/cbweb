@@ -11,6 +11,7 @@ keywords:
 - offshore web development
 - offshore mobile app development
 - application development company
+image: ./images/test-automation.png
 author: Hemanth 
 link: /automation-testing-framework-development-tips-for-web-apps
 category:

@@ -10,7 +10,8 @@ description: >-
 keywords:
 - cryptocurrencies
 - bitcoins
-- fintech 
+- fintech
+image: ./images/Promise-To-Pay-300x200.jpg
 author: Tarun Batra
 link: /introduction-to-cryptocurrencies
 tags:

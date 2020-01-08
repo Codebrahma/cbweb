@@ -7,6 +7,7 @@ description: >-
  The Angular 2 has reached release candidate stage. This Angular 2 Overview provides all you need to know to stay updated with the framework.
 keywords:
 - Angular 2 overview
+image: ./images/angular2.png
 author: ARAVINDAN 
 link: /angular-2-overview
 category:

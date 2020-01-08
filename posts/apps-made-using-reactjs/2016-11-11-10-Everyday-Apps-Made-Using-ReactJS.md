@@ -13,6 +13,7 @@ keywords:
 - reactjs apps
 - 10 apps on reactjs
 - apps built with reactjs
+image: ./images/reactjs.png
 author: Anand Narayan
 link: /apps-made-using-reactjs
 tags:

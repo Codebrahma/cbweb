@@ -7,6 +7,7 @@ category:
 - General
 description: >-
   If you&#039;re wondering how a good project brief looks like, you&#039;ve come to the right place. Learn the components and structuring of a solid project brief.
+image: ./images/projectbrief-01-1024x1024.png
 link: /writing-good-project-brief
 author: Anand Narayan
 tags:

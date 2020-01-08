@@ -5,6 +5,7 @@ date: 2019-04-19
 featuredpost: false
 description: >-
   The world of apps is competitive today. Different companies are entering the marketplace every day competing for the same users. When it comes to measuring the success of your app, you need to keep a close eye on the right
+image: ./images/important-metrics-img2.jpg
 author: Anand Narayan
 category:
 - Development

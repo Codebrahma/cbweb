@@ -72,8 +72,6 @@ Imagine having to do the exact same flow via a web browser. Open the browser –
 > Software applications that primarily work with location and time sensitivity need to be a mobile app and not a web app.
 
 
-
-
 ## 3. Frequency of Use
 Last year, the American clothing company Patagonia bid farewell to their native mobile app, urging users to use the website on their mobile web browsers.
 

@@ -5,6 +5,7 @@ date: 2017-03-20
 featuredpost: false
 description: >-
   Spree commerce is an open source e commerce software built on top Ruby on Rails. Should you choose Spree for your online store? Read on to learn why Spree ..
+image: ./images/spree-commerce.jpg
 author: Anand Narayan
 link: /e-commerce-using-spree-commerce-build-online-store
 category:

@@ -9,6 +9,7 @@ keywords:
 - smart contracts
 - future of smart contracts
 - blockchain
+image: ./images/Smart-contracts-01.png
 link: /brief-intro-smart-contracts-endless-possibilities
 category:
 - Business

@@ -11,6 +11,7 @@ keywords:
 - pagination
 - sort
 - filters
+image: ./images/plain-table.png
 link: /build-table-componenet-with-react-hooks
 category:
 - Technology

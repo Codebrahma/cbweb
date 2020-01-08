@@ -5,6 +5,7 @@ date: 2014-12-11
 featuredpost: false
 description: >-
   Github&#039;s network graph is one most elegant tools to track your project&#039;s progress. Here is a brief tutorial on how to open github network graph from command line
+image: ./images/network-1024x398.png
 author: Nithin Krishna  
 link: /open-github-network-graph-from-command-line
 category:
