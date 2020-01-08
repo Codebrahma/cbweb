@@ -81,5 +81,12 @@
     "github": "https://github.com/Codebrahma/react-flexible-sliding-menu",
     "demo": "https://react-flexible-sliding-menu.netlify.com/",
     "image": "flexibleSlidingMenu"
+  },
+  {
+    "name": "React Multi Level Selector",
+    "description": "A React library for Multi level options Selector for your application..",
+    "github": "https://github.com/Codebrahma/react-multi-level-selector",
+    "demo": "https://react-multi-level-selector.netlify.com/",
+    "image": "multiLevelSelector"
   }
 ]

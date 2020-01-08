@@ -220,5 +220,14 @@ export const query = graphql`
       }
       publicURL
     }
+
+    multiLevelSelector: file(relativePath: { eq: "open-source/multi-level-selector.png" }) {
+      childImageSharp {
+        fixed(height: 54, width: 80) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
   }
 `
