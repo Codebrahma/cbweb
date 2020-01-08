@@ -84,7 +84,7 @@
   },
   {
     "name": "React Multi Level Selector",
-    "description": "A React library for multi level selector for your application..",
+    "description": "A React library for multi level selector for your application.",
     "github": "https://github.com/Codebrahma/react-multi-level-selector",
     "demo": "https://react-multi-level-selector.netlify.com/",
     "image": "multiLevelSelector"
