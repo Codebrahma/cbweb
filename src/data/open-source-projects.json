@@ -77,7 +77,7 @@
   },
   {
     "name": "React Flexible Sliding Menu",
-    "description": "A React library which provides flexible sliding menu with an easy to use API.",
+    "description": "A Simple React library which provides flexible sliding menu with an easy to use API.",
     "github": "https://github.com/Codebrahma/react-flexible-sliding-menu",
     "demo": "https://react-flexible-sliding-menu.netlify.com/",
     "image": "flexibleSlidingMenu"
