@@ -74,5 +74,19 @@
     "github": "https://github.com/Codebrahma/react-notifications-menu",
     "demo": "https://react-notifications-menu.netlify.com/",
     "image": "notificationsMenu"
+  },
+  {
+    "name": "React Flexible Sliding Menu",
+    "description": "A Simple React library which provides flexible sliding menu with an easy to use API.",
+    "github": "https://github.com/Codebrahma/react-flexible-sliding-menu",
+    "demo": "https://react-flexible-sliding-menu.netlify.com/",
+    "image": "flexibleSlidingMenu"
+  },
+  {
+    "name": "React Multi Level Selector",
+    "description": "A React library for multi level selector for your application.",
+    "github": "https://github.com/Codebrahma/react-multi-level-selector",
+    "demo": "https://react-multi-level-selector.netlify.com/",
+    "image": "multiLevelSelector"
   }
 ]

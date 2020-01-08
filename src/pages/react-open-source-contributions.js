@@ -2,7 +2,7 @@ import { jsx } from "@emotion/core"
 /** @jsx jsx */
 import styled from "@emotion/styled"
 import Layout from "../templates/layout"
-import { Flex, H1, H4, P, HorizontalRule, css } from "bricks"
+import { Box, Flex, H1, H4, P, HorizontalRule, css } from "bricks"
 import { Link, graphql } from "gatsby"
 import Img from 'gatsby-image'
 import projects from "../data/open-source-projects.json"
@@ -23,6 +23,10 @@ const CardBox = styled(Flex)(
 
 const FlexWrap = styled(Flex)`
   flex-wrap: wrap;
+`
+
+const InlineBox = styled(Box)`
+  display: inline;
 `
 
 const OutboundLink = styled(Link, {
@@ -68,16 +72,19 @@ const FlexRow = styled(Flex)`
 `
 
 const Card = ({ name, description, github, demo, image }) => {
+  const imageData = image.childImageSharp.fixed;
   return (
     <CardBox>
       <div>
         <ImageRow>
-          <Img 
-            fixed={image.childImageSharp.fixed}
-            objectFit="contain"
-            objectPosition="50% 50%"
-            alt={name}
-          />
+          <InlineBox minWidth={imageData.width}>
+            <Img
+              fixed={imageData}
+              objectFit="contain"
+              objectPosition="50% 50%"
+              alt={name}
+            />
+          </InlineBox>
           <H4 padding="1">{name}</H4>
         </ImageRow>
         <HorizontalRule />
@@ -189,7 +196,7 @@ export const query = graphql`
 
     menubar: file(relativePath: { eq: "open-source/menu-bar.png" }) {
       childImageSharp {
-        fixed(width: 130, height: 110) {
+        fixed(width: 65, height: 65) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -199,6 +206,24 @@ export const query = graphql`
     notificationsMenu: file(relativePath: { eq: "open-source/notifications-menu.png" }) {
       childImageSharp {
         fixed(width: 64, height: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+
+    flexibleSlidingMenu: file(relativePath: { eq: "open-source/react-flexible-sliding-menu.png" }) {
+      childImageSharp {
+        fixed(height: 95, width: 68) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
+
+    multiLevelSelector: file(relativePath: { eq: "open-source/multi-level-selector.png" }) {
+      childImageSharp {
+        fixed(height: 54, width: 80) {
           ...GatsbyImageSharpFixed
         }
       }
