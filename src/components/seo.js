@@ -18,6 +18,7 @@ function SEO({
   title,
   canonical,
   image,
+  link,
   url, 
 }) {
   const { site, cbLogo } = useStaticQuery(
@@ -28,6 +29,7 @@ function SEO({
             title
             description
             author
+            siteUrl
           }
         }
         cbLogo: file(relativePath: { eq: "logos/cb.png" }) {
@@ -38,6 +40,7 @@ function SEO({
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const pageUrl = url || `${site.siteMetadata.siteUrl}${link}`
 
   return (
     <Helmet
@@ -70,11 +73,11 @@ function SEO({
         },
         {
           property: `og:image`,
-          content: image === '' ? `https://codebrahma.com${cbLogo.publicURL}` : image
+          content: `https://codebrahma.com${image || cbLogo.publicURL}`
         },
         {
           property: `og:url`,
-          content: url
+          content: pageUrl
         },
         {
           name: `twitter:card`,
