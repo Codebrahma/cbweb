@@ -71,6 +71,14 @@ const Footer = () => (
               Twitter
             </PlainLink>
             <br />
+            <PlainLink as="a" href="https://www.linkedin.com/company/codebrahma" target="_blank">
+              LinkedIn
+            </PlainLink>
+            <br />
+            <PlainLink as="a" href="https://facebook.com/codebrahma" target="_blank">
+              Facebook
+            </PlainLink>
+            <br />
             <PlainLink as="a" href="https://github.com/codebrahma" target="_blank">
               GitHub
             </PlainLink>
