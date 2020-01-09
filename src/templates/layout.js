@@ -208,7 +208,15 @@ const Layout = ({ children }) => {
               `}
             />
             <Container>
-              <Helmet meta={[{ name: "referrer", content: "origin" }]} />
+              <Helmet
+                meta={[
+                  { name: "referrer", content: "origin" },
+                  {
+                    name: "google-site-verification",
+                    content: "M4VnkYHL0o4WjZUo7XZO-_HUIjsZGo2Bvw-SGI3VF80",
+                  },
+                ]}
+              />
               <Helmet>
                 <script
                   async
