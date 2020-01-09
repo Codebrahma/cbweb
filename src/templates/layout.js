@@ -22,13 +22,48 @@ import {
   HorizontalRule,
   B,
 } from "bricks"
+import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
 import Header from "./header"
 import { Helmet } from "react-helmet"
-import theme from '../theme'
-import { useThemeUI } from 'bricks';
-import  PlainLink  from '../components/link'
-const Footer = () => (
+import theme from "../theme"
+import { useThemeUI } from "bricks"
+import PlainLink from "../components/link"
+import Img from "gatsby-image"
+
+const socialLinks = [
+  {
+    name: "Twitter",
+    link: "https://twitter.com/codebrahma",
+    image: "twitter",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/company/codebrahma",
+    image: "linkedin",
+  },
+  {
+    name: "Facebook",
+    link: "https://facebook.com/codebrahma",
+    image: "facebook",
+  },
+  {
+    name: "GitHub",
+    link: "https://github.com/codebrahma",
+    image: "github",
+  },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/codebrahma1",
+    image: "instagram",
+  },
+]
+
+const StyledLink = styled(PlainLink)`
+  margin-right: 15px;
+`
+
+const Footer = ({ images }) => (
   <Box marginTop="6" pb="6">
     <HorizontalRule width={1} />
     <Flex
@@ -66,24 +101,21 @@ const Footer = () => (
           <br />
         </P>
         <Box mt="1">
-          <P>
-            <PlainLink as="a" href="https://twitter.com/codebrahma" target="_blank">
-              Twitter
-            </PlainLink>
-            <br />
-            <PlainLink as="a" href="https://www.linkedin.com/company/codebrahma" target="_blank">
-              LinkedIn
-            </PlainLink>
-            <br />
-            <PlainLink as="a" href="https://facebook.com/codebrahma" target="_blank">
-              Facebook
-            </PlainLink>
-            <br />
-            <PlainLink as="a" href="https://github.com/codebrahma" target="_blank">
-              GitHub
-            </PlainLink>
-            <br />
-          </P>
+          <Flex flexDirection={["row"]} alignItems="center">
+            {socialLinks.map(({ name, link, image }) => {
+              const imageData = images[image].childImageSharp.fixed
+              return (
+                <StyledLink as="a" href={link} target="_blank" key={name}>
+                  <Img
+                    fixed={imageData}
+                    objectFit="contain"
+                    objectPosition="50% 50%"
+                    alt={name}
+                  />
+                </StyledLink>
+              )
+            })}
+          </Flex>
         </Box>
       </Box>
       <Box width={[1, 1 / 4]} mt={[2, 0]}>
@@ -116,28 +148,72 @@ const Layout = ({ children }) => {
               title
             }
           }
+
+          facebook: file(relativePath: { eq: "logos/facebook.png" }) {
+            childImageSharp {
+              fixed(width: 33, height: 33) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+
+          twitter: file(relativePath: { eq: "logos/twitter.png" }) {
+            childImageSharp {
+              fixed(width: 32, height: 32) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+
+          linkedin: file(relativePath: { eq: "logos/linkedin.png" }) {
+            childImageSharp {
+              fixed(width: 32, height: 32) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+
+          github: file(relativePath: { eq: "logos/github.png" }) {
+            childImageSharp {
+              fixed(width: 36, height: 36) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+
+          instagram: file(relativePath: { eq: "logos/instagram.png" }) {
+            childImageSharp {
+              fixed(width: 32, height: 32) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
         }
       `}
       render={data => (
         <ThemeProvider theme={theme} components={comps}>
-          <div style={{background: 'rgb(247,245,242)', minHeight: '100vh',}}>
+          <div style={{ background: "rgb(247,245,242)", minHeight: "100vh" }}>
             <Global
               styles={css`
-                      a:visited {
-                        color: inherit;
-                      }
-                      a:hover {
-                        cursor: pointer;
-                      }
-                      body {
-                        font-family: ${theme.fonts.body};
-                        color: ${theme.colors.black[1]};
-                      }
-                `}/>
+                a:visited {
+                  color: inherit;
+                }
+                a:hover {
+                  cursor: pointer;
+                }
+                body {
+                  font-family: ${theme.fonts.body};
+                  color: ${theme.colors.black[1]};
+                }
+              `}
+            />
             <Container>
               <Helmet meta={[{ name: "referrer", content: "origin" }]} />
               <Helmet>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"></script>
+                <script
+                  async
+                  src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"
+                ></script>
                 <script>
                   {`
                     window.dataLayer = window.dataLayer || [];
@@ -157,9 +233,9 @@ const Layout = ({ children }) => {
               </Helmet>
               <Header siteTitle={data.site.siteMetadata.title} />
               <div>
-                <main>{ children }</main>
+                <main>{children}</main>
                 <footer>
-                  <Footer />
+                  <Footer images={data} />
                 </footer>
               </div>
             </Container>
