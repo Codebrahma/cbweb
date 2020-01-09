@@ -2,7 +2,7 @@ import { jsx } from "@emotion/core"
 /** @jsx jsx */
 import styled from "@emotion/styled"
 import Layout from "../templates/layout"
-import { Box, Flex, H1, H4, P, HorizontalRule, css } from "bricks"
+import { Box, Flex, H2, H4, P, HorizontalRule, css } from "bricks"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
@@ -71,6 +71,9 @@ const FlexRow = styled(Flex)`
   align-items: center;
   margin: 0.5rem 1rem;
 `
+const Paragraph = styled(P)`
+  max-width: max-content;
+`;
 
 const Card = ({ name, description, github, demo, image }) => {
   const imageData = image.childImageSharp.fixed;
@@ -108,7 +111,7 @@ const Card = ({ name, description, github, demo, image }) => {
 const OpenSource = props => {
   return (
     <Layout>
-      <H1>Our Open Source Contributions</H1>
+      <H2>Our Open Source Contributions</H2>
       <SEO
         title="Our Open Source Contributions | Codebrahma"
         description="Codebrahma specializes in building custom web applications using technologies - ReactJS, Ruby on Rails, NodeJS, React Native, Android, iOS, Serverless. Checkout our open source contributions."
@@ -127,7 +130,9 @@ const OpenSource = props => {
         ]}
         url="https://codebrahma.com/solutions"
       />
-      <P pt="2">Some of our contributions to the Open Source Community:</P>
+      <Paragraph pt="2">
+        Codebrahma dev team regularly contributes to open source. Some of our contributions can be found below. For more, you can checkout our <a href="https://github.com/Codebrahma">github page</a>.
+      </Paragraph>
       <FlexWrap>
         {projects.map(({ name, description, github, demo, image }) => (
           <Card
@@ -140,6 +145,10 @@ const OpenSource = props => {
           />
         ))}
       </FlexWrap>
+      <br />
+      <blockquote>
+        <Link to="/contact">Contact Us</Link> to work with the best React.js / React Native consultancy :)
+      </blockquote>
     </Layout>
   )
 }
