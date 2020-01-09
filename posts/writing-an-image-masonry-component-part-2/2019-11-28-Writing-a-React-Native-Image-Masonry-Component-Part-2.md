@@ -4,7 +4,7 @@ title: 'Writing a React Native Image Masonry Component Part 2'
 date: 2019-11-26
 featuredpost: false
 description: >-
-  Writing a pure JS React / React Native image masonry component without any third party libraries
+  Check out this blog to understand how to write a pure JS React / React Native image masonry component without any third party libraries - Part 2.
 keywords:
 - react
 - react native app
