@@ -263,5 +263,14 @@ export const query = graphql`
       }
       publicURL
     }
+
+    reactStatelessModal: file(relativePath: { eq: "open-source/react-stateless-modal.png" }) {
+      childImageSharp {
+        fixed(height: 70, width: 70) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
+    }
   }
 `

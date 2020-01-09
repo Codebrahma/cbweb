@@ -88,5 +88,12 @@
     "github": "https://github.com/Codebrahma/csv-to-graphql",
     "demo": "http://csv-to-graphql.herokuapp.com/",
     "image": "csvToGraphql"
+  },
+  {
+    "name": "react-stateless-modal",
+    "description": "A modal library that eliminates the need to maintain states",
+    "github": "https://github.com/Codebrahma/react-stateless-modal",
+    "demo": "https://cb-react-modal-docs.netlify.com/",
+    "image": "reactStatelessModal"
   }
 ]
