@@ -73,13 +73,13 @@ const IndexPage = ({ data }) => {
         </Flex>
       </div>
       <div>
-        <H3>React & ReactNative</H3>
+        <H3>React & React Native</H3>
         <Flex flexDirection="column">
           <Box alignSelf={["center", "flex-start"]} width={1}>
             <ReactIcon width="200" height="200" />
           </Box>
           <P>
-            We have been building on React/ReactNative for 3 years now, and we
+            We have been building on React / React Native for 3 years now, and we
             absolutely love its declarative and functional philosophy. We
             strongly believe that a good react codebase is conducive for rapid
             UI iteration
