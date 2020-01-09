@@ -125,7 +125,6 @@ const OpenSource = props => {
           'react js development company in san francisco',
           'react js dev shop in USA'
         ]}
-        image={`https://codebrahma.com`}
         url="https://codebrahma.com/solutions"
       />
       <P pt="2">Some of our contributions to the Open Source Community:</P>
