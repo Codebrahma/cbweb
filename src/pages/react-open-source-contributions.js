@@ -4,7 +4,8 @@ import styled from "@emotion/styled"
 import Layout from "../templates/layout"
 import { Box, Flex, H1, H4, P, HorizontalRule, css } from "bricks"
 import { Link, graphql } from "gatsby"
-import Img from 'gatsby-image'
+import Img from "gatsby-image"
+import SEO from "../components/seo"
 import projects from "../data/open-source-projects.json"
 
 const CardBox = styled(Flex)(
@@ -108,6 +109,25 @@ const OpenSource = props => {
   return (
     <Layout>
       <H1>Our Open Source Contributions</H1>
+      <SEO
+        title="Our Open Source Contributions | Codebrahma"
+        description="Codebrahma specializes in building custom web applications using technologies - ReactJS, Ruby on Rails, NodeJS, React Native, Android, iOS, Serverless. Checkout our open source contributions."
+        keywords={[
+          'react',
+          'react native',
+          'reactJS',
+          'consultancy',
+          'bay area',
+          'React JS development Company',
+          'React JS development company in USA',
+          'react js consulting company',
+          'react js bay area consulting company',
+          'react js development company in san francisco',
+          'react js dev shop in USA'
+        ]}
+        image={`https://codebrahma.com`}
+        url="https://codebrahma.com/solutions"
+      />
       <P pt="2">Some of our contributions to the Open Source Community:</P>
       <FlexWrap>
         {projects.map(({ name, description, github, demo, image }) => (
@@ -145,7 +165,9 @@ export const query = graphql`
       }
       publicURL
     }
-    networkStatusNotifier: file(relativePath: { eq: "open-source/network-status-notifier.png" }) {
+    networkStatusNotifier: file(
+      relativePath: { eq: "open-source/network-status-notifier.png" }
+    ) {
       childImageSharp {
         fixed(width: 64, height: 64) {
           ...GatsbyImageSharpFixed
@@ -203,7 +225,9 @@ export const query = graphql`
       publicURL
     }
 
-    notificationsMenu: file(relativePath: { eq: "open-source/notifications-menu.png" }) {
+    notificationsMenu: file(
+      relativePath: { eq: "open-source/notifications-menu.png" }
+    ) {
       childImageSharp {
         fixed(width: 64, height: 50) {
           ...GatsbyImageSharpFixed
