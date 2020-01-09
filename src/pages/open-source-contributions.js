@@ -6,6 +6,7 @@ import { Box, Flex, H2, H4, P, HorizontalRule, css } from "bricks"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
+import PlainLink from "../components/link"
 import projects from "../data/open-source-projects.json"
 
 const CardBox = styled(Flex)(
@@ -131,7 +132,8 @@ const OpenSource = props => {
         url="https://codebrahma.com/open-source-contributions"
       />
       <Paragraph pt="2">
-        Codebrahma dev team regularly contributes to open source. Some of our contributions can be found below. For more, you can checkout our <a href="https://github.com/Codebrahma">github page</a>.
+        Codebrahma dev team regularly contributes to open source. Some of our contributions can be found below. For more, you can checkout our&nbsp;
+        <PlainLink as="a" href="https://github.com/Codebrahma" target="_blank" withUnderline>github page</PlainLink>.
       </Paragraph>
       <FlexWrap>
         {projects.map(({ name, description, github, demo, image }) => (
