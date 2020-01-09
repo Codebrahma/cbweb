@@ -45,6 +45,10 @@ module.exports = [
     to: "/react-native-development-company",
   },
   {
+    from: "/react-open-source-contributions",
+    to: "/open-source-contributions",
+  },
+  {
     from: "/category/angularjs-development/",
     to: "/category/development",
   },
