@@ -128,7 +128,7 @@ const OpenSource = props => {
           'react js development company in san francisco',
           'react js dev shop in USA'
         ]}
-        url="https://codebrahma.com/solutions"
+        url="https://codebrahma.com/open-source-contributions"
       />
       <Paragraph pt="2">
         Codebrahma dev team regularly contributes to open source. Some of our contributions can be found below. For more, you can checkout our <a href="https://github.com/Codebrahma">github page</a>.
