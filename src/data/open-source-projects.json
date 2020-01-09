@@ -7,13 +7,6 @@
     "image": "serverless"
   },
   {
-    "name": "CSV to GraphQL",
-    "description": "Simple Node.js app which provides graphql APIs for CSV input.",
-    "github": "https://github.com/Codebrahma/csv-to-graphql",
-    "demo": "http://csv-to-graphql.herokuapp.com/",
-    "image": "csvToGraphql"
-  },
-  {
     "name": "React Lite UI",
     "description": "A set of React components. Themable / Customizable / Light weight library.",
     "github": "https://github.com/Codebrahma/react-lite-ui",
@@ -62,11 +55,11 @@
     "image": "multiSelect"
   },
   {
-    "name":"React Responsive Multi-level Menu",
-    "description":"Simple Customizable multi-level menu component",
-    "github":"https://github.com/Codebrahma/react-responsive-multi-level-menu",
-    "demo":"https://react-responsive-multi-level-menu-demo.netlify.com/",
-    "image":"menubar"
+    "name": "React Responsive Multi-level Menu",
+    "description": "Simple Customizable multi-level menu component",
+    "github": "https://github.com/Codebrahma/react-responsive-multi-level-menu",
+    "demo": "https://react-responsive-multi-level-menu-demo.netlify.com/",
+    "image": "menubar"
   },
   {
     "name": "React Notifications Menu",
@@ -88,5 +81,12 @@
     "github": "https://github.com/Codebrahma/react-multi-level-selector",
     "demo": "https://react-multi-level-selector.netlify.com/",
     "image": "multiLevelSelector"
+  },
+  {
+    "name": "CSV to GraphQL",
+    "description": "Simple Node.js app which provides graphql APIs for CSV input.",
+    "github": "https://github.com/Codebrahma/csv-to-graphql",
+    "demo": "http://csv-to-graphql.herokuapp.com/",
+    "image": "csvToGraphql"
   }
 ]
