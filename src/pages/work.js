@@ -29,7 +29,7 @@ const WorkPage = ({data})=> (
     title="Innovative Products based on ReactJS, React Native Developemt"
     description="Examples of interactive website and application development"
     keywords={[`ruby on rails`, `Ruby on Rails development`, `angularjs framework`, `angularjs code`, `meteor js`, `react js`, `native`, `node js development`, `node js website`, `spree commerce`, `ruby on rails developer`, `react js components`, `javascript meteor`, `Angular javascript`, `angular framework`, `js angular`, `angular website`, `Android Website`, `ios app development`, `mobile web app`, `javascript android app`, `web application development company`]}
-    image={`https://codebrahma.com${data.serverless_screenshot.publicURL}`}
+    image={data.serverless_screenshot.publicURL}
     url="https://codebrahma.com/work"
   />
   <H1>Our Work</H1>

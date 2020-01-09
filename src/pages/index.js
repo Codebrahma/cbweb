@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
           `bay area`,
         ]}
         description="Codebrahma provides best in class custom web and mobile application development. Our expertise include React JS, NodeJS, React Native"
-        image={`https://codebrahma.com${data.rippling_screenshot.publicURL}`}
+        image={data.rippling_screenshot.publicURL}
         url="https://codebrahma.com"
       />
       <Box mt="6" mb="6">
