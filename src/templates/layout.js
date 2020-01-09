@@ -158,7 +158,7 @@ const Footer = (props) => (
                 return socialLinks.map(({name, link, image}) => {
                   const imageData = data[image].childImageSharp.fixed;
                   return (
-                    <StyledLink as="a" href={link} target="_blank">
+                    <StyledLink as="a" href={link} target="_blank" key={name}>
                       <Img
                         fixed={imageData}
                         objectFit="contain"
