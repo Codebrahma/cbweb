@@ -8,7 +8,7 @@ import { ThemeProvider as TP } from 'emotion-theming'
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import "./fonts.css"
 
 import {
@@ -23,52 +23,47 @@ import {
   B,
 } from "bricks"
 import styled from "@emotion/styled"
-import { Global, css } from "@emotion/core";
+import { Global, css } from "@emotion/core"
 import Header from "./header"
 import { Helmet } from "react-helmet"
-import theme from '../theme'
-import { useThemeUI, css as bricksCss } from 'bricks';
-import  PlainLink  from '../components/link';
+import theme from "../theme"
+import { useThemeUI } from "bricks"
+import PlainLink from "../components/link"
 import Img from "gatsby-image"
-
 
 const socialLinks = [
   {
-    name: 'Twitter',
-    link: 'https://twitter.com/codebrahma',
-    image: 'twitter'
+    name: "Twitter",
+    link: "https://twitter.com/codebrahma",
+    image: "twitter",
   },
   {
-    name: 'LinkedIn',
-    link: 'https://www.linkedin.com/company/codebrahma',
-    image: 'linkedin'
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/company/codebrahma",
+    image: "linkedin",
   },
   {
-    name: 'Facebook',
-    link: 'https://facebook.com/codebrahma',
-    image: 'facebook'
+    name: "Facebook",
+    link: "https://facebook.com/codebrahma",
+    image: "facebook",
   },
   {
-    name: 'GitHub',
-    link: 'https://github.com/codebrahma',
-    image: 'github'
+    name: "GitHub",
+    link: "https://github.com/codebrahma",
+    image: "github",
   },
   {
-    name: 'Instagram',
-    link: 'https://www.instagram.com/codebrahma1',
-    image: 'instagram'
+    name: "Instagram",
+    link: "https://www.instagram.com/codebrahma1",
+    image: "instagram",
   },
 ]
 
-const StyledLink = styled(Link, {
-  shouldForwardProp: prop => prop !== "as",
-})(
-  bricksCss({
-    marginRight: "15px",
-  })
-)
+const StyledLink = styled(PlainLink)`
+  margin-right: 15px;
+`
 
-const Footer = (props) => (
+const Footer = ({ images }) => (
   <Box marginTop="6" pb="6">
     <HorizontalRule width={1} />
     <Flex
@@ -106,70 +101,20 @@ const Footer = (props) => (
           <br />
         </P>
         <Box mt="1">
-          <Flex
-            flexDirection={["row"]}
-            alignItems="center"
-          >
-            <StaticQuery
-              query={graphql`
-                query {
-                  facebook: file(relativePath: { eq: "logos/facebook.png" }) {
-                    childImageSharp {
-                      fixed(width: 33, height: 33) {
-                        ...GatsbyImageSharpFixed
-                      }
-                    }
-                  }
-
-                  twitter: file(relativePath: { eq: "logos/twitter.png" }) {
-                    childImageSharp {
-                      fixed(width: 32, height: 32) {
-                        ...GatsbyImageSharpFixed
-                      }
-                    }
-                  }
-
-                  linkedin: file(relativePath: { eq: "logos/linkedin.png" }) {
-                    childImageSharp {
-                      fixed(width: 32, height: 32) {
-                        ...GatsbyImageSharpFixed
-                      }
-                    }
-                  }
-
-                  github: file(relativePath: { eq: "logos/github.png" }) {
-                    childImageSharp {
-                      fixed(width: 36, height: 36) {
-                        ...GatsbyImageSharpFixed
-                      }
-                    }
-                  }
-
-                  instagram: file(relativePath: { eq: "logos/instagram.png" }) {
-                    childImageSharp {
-                      fixed(width: 32, height: 32) {
-                        ...GatsbyImageSharpFixed
-                      }
-                    }
-                  }
-                }
-              `}
-              render={data => {
-                return socialLinks.map(({name, link, image}) => {
-                  const imageData = data[image].childImageSharp.fixed;
-                  return (
-                    <StyledLink as="a" href={link} target="_blank" key={name}>
-                      <Img
-                        fixed={imageData}
-                        objectFit="contain"
-                        objectPosition="50% 50%"
-                        alt={name}
-                      />
-                    </StyledLink>
-                  )
-                })
-              }}
-            />
+          <Flex flexDirection={["row"]} alignItems="center">
+            {socialLinks.map(({ name, link, image }) => {
+              const imageData = images[image].childImageSharp.fixed
+              return (
+                <StyledLink as="a" href={link} target="_blank" key={name}>
+                  <Img
+                    fixed={imageData}
+                    objectFit="contain"
+                    objectPosition="50% 50%"
+                    alt={name}
+                  />
+                </StyledLink>
+              )
+            })}
           </Flex>
         </Box>
       </Box>
@@ -203,28 +148,72 @@ const Layout = ({ children }) => {
               title
             }
           }
+
+          facebook: file(relativePath: { eq: "logos/facebook.png" }) {
+            childImageSharp {
+              fixed(width: 33, height: 33) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+
+          twitter: file(relativePath: { eq: "logos/twitter.png" }) {
+            childImageSharp {
+              fixed(width: 32, height: 32) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+
+          linkedin: file(relativePath: { eq: "logos/linkedin.png" }) {
+            childImageSharp {
+              fixed(width: 32, height: 32) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+
+          github: file(relativePath: { eq: "logos/github.png" }) {
+            childImageSharp {
+              fixed(width: 36, height: 36) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+
+          instagram: file(relativePath: { eq: "logos/instagram.png" }) {
+            childImageSharp {
+              fixed(width: 32, height: 32) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
         }
       `}
       render={data => (
         <ThemeProvider theme={theme} components={comps}>
-          <div style={{background: 'rgb(247,245,242)', minHeight: '100vh',}}>
+          <div style={{ background: "rgb(247,245,242)", minHeight: "100vh" }}>
             <Global
               styles={css`
-                      a:visited {
-                        color: inherit;
-                      }
-                      a:hover {
-                        cursor: pointer;
-                      }
-                      body {
-                        font-family: ${theme.fonts.body};
-                        color: ${theme.colors.black[1]};
-                      }
-                `}/>
+                a:visited {
+                  color: inherit;
+                }
+                a:hover {
+                  cursor: pointer;
+                }
+                body {
+                  font-family: ${theme.fonts.body};
+                  color: ${theme.colors.black[1]};
+                }
+              `}
+            />
             <Container>
               <Helmet meta={[{ name: "referrer", content: "origin" }]} />
               <Helmet>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"></script>
+                <script
+                  async
+                  src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"
+                ></script>
                 <script>
                   {`
                     window.dataLayer = window.dataLayer || [];
@@ -244,9 +233,9 @@ const Layout = ({ children }) => {
               </Helmet>
               <Header siteTitle={data.site.siteMetadata.title} />
               <div>
-                <main>{ children }</main>
+                <main>{children}</main>
                 <footer>
-                  <Footer />
+                  <Footer images={data} />
                 </footer>
               </div>
             </Container>
