@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => {
         <script type="application/ld+json">{structuredData}</script>
       </Helmet>
       <SEO
-        title="Best ReactJS ReactNative Consultancy in Bay Area"
+        title="Best ReactJS and React Native Consultancy in Bay Area"
         keywords={[
           `react`,
           `react native`,
@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => {
           `consultancy`,
           `bay area`,
         ]}
-        description="Codebrahma provides best in class custom web and mobile application development. Our expertise include React JS, NodeJS, React Native"
+        description="Codebrahma provides best in class custom web and mobile application development rapidly. Our expertise include React JS, NodeJS, React Native."
         image={data.rippling_screenshot.publicURL}
         url="https://codebrahma.com"
       />
