@@ -62,4 +62,4 @@ Availability of developers who are going to build your product is one of the mos
 
 If you’re concerned about the scalability of your product, known that unless you have very specific & extreme requirements, almost all languages would be able to handle your traffic. More often than not, applications don’t scale well because of poor architecture and product design rather that the choice of programming language.
 
-In our humble opinion, a bias towards decision is way more important that fretting about the right tech stack early on. Choose whatever tech stack you and your dev team feel most confident with. If, however, you have any specific concerns don’t hesitate to [drop us a line here](/contacts).
+In our humble opinion, a bias towards decision is way more important that fretting about the right tech stack early on. Choose whatever tech stack you and your dev team feel most confident with. If, however, you have any specific concerns don’t hesitate to [drop us a line here](/contact).

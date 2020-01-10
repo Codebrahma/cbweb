@@ -57,4 +57,4 @@ Couple of years back I asked a developer friend, “Why would good developers jo
 
 Let me clarify – working with an agency gives developers a chance to work on multiple projects. It just keeps things more interesting and because they work iteratively on multiple projects – they level up much faster than their peers. Developers who work in agencies have “seen it all”, as some say.
 
-In conclusion, if you’re having a hard time finding developers to hire for your product, looking towards [outsourced product development](/outsourced-product-development/) agencies to get your MVP done is actually a very viable idea. If you want to learn more about finding the right agency for your product, [this article will help](/software-outsourcing-find-right-tech-team-product/).
+In conclusion, if you’re having a hard time finding developers to hire for your product, looking towards [outsourced product development](/outsourced-product-development) agencies to get your MVP done is actually a very viable idea. If you want to learn more about finding the right agency for your product, [this article will help](/software-outsourcing-find-right-tech-team-product/).

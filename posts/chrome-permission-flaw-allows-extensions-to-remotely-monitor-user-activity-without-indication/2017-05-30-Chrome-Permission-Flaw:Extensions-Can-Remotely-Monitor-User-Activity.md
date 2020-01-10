@@ -62,7 +62,7 @@ Ever wondered why the extension for Internet Download Manager was never installe
 
 Now the extensions can only be written in JavaScript and for the extension to be able to access some critical APIs, they need to be installed from the webstore. This check was made mandatory so that the Chromium Team is aware of what extensions use those critical APIs.
 
-Enter HTML5 and the PeerConnection API. HTML5 is not just the next version of HTML, but it opened the doors for a whole new user experience. It brought in native support for playing audio and video files, which meant that there was no longer the need to install QuickTime, VLC or Flash Player plugins to play such content. We have used these functionalities to access camera, microphone access to interact with the browser, in many of [our projects](/works). Last year even YouTube made HTML5 as the default video player instead of the Flash player used earlier.
+Enter HTML5 and the PeerConnection API. HTML5 is not just the next version of HTML, but it opened the doors for a whole new user experience. It brought in native support for playing audio and video files, which meant that there was no longer the need to install QuickTime, VLC or Flash Player plugins to play such content. We have used these functionalities to access camera, microphone access to interact with the browser, in many of [our projects](/work). Last year even YouTube made HTML5 as the default video player instead of the Flash player used earlier.
 
 With all the good happening, one would obviously wonder, “So what went wrong?”.
 

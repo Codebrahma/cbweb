@@ -21,6 +21,10 @@ module.exports = [
     to: "/contact",
   },
   {
+    from: "/nodejs-development-company",
+    to: "/node-js-development-company",
+  },
+  {
     from: "/pricing/",
     to: "/faq#pricing",
   },
@@ -169,7 +173,6 @@ module.exports = [
     to: "/author/anand-narayan",
   },
 
-
   /**
    * TEMPORARY REDIRECTS TO AVOID GOOGLE'S PENALTY
    *
@@ -297,7 +300,39 @@ module.exports = [
     to: "/",
   },
   {
+    from: "/works",
+    to: "/work",
+  },
+  {
+    from: "/category/react",
+    to: "/tag/react-js",
+  },
+  {
+    from: '/tag/angularjs',
+    to: '/'
+  },
+  {
+    from: '/tag/financial',
+    to: '/'
+  },
+  {
+    from: '/tag/rails',
+    to: '/'
+  },
+  {
+    from: "/tag/nodejs",
+    to: "/tag/node-js",
+  },
+  {
+    from: "/category/react-native",
+    to: "/tag/react-native",
+  },
+  {
     from: "/mobile-chat-solution/",
+    to: "/",
+  },
+  {
+    from: "outsourced-product-development",
     to: "/",
   },
   {
