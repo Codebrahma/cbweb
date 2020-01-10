@@ -2,9 +2,9 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
 const link = styled(Link, {
-  shouldForwardProp: prop => prop !== "as",
+  shouldForwardProp: prop => !["as", "withUnderline"].includes(prop),
 })`
-  text-decoration: ${(props) => props.withUnderline ? 'underline' : 'none'};
+  text-decoration: ${props => (props.withUnderline ? "underline" : "none")};
   color: inherit;
   &:visited {
     color: inherit;
@@ -13,9 +13,5 @@ const link = styled(Link, {
     text-decoration: underline;
   }
 `
-
-Link.defaultProps = {
-  withUnderline: false,
-};
 
 export default link
