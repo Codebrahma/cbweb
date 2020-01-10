@@ -48,4 +48,4 @@ There’s a lot of excitement when it comes to Fintech. People who are closely r
 
 The other improvement that we’re likely to see is better, data-driven decision making. Technology companies are able to identify better loan prospects based on algorithms driven by millions of data points. This is effectively able to overcome human bias and prejudice.
 
-Fintech is at a very nascent stage. There is a huge opportunity for entrepreneurs, as well as companies dealing in financial sector to take advantage of. If you have any ideas around Fintech that you’d like us to help you shape up –[ drop us a line](/contact-us). We’re firm believers of technology making people’s lives easier!
+Fintech is at a very nascent stage. There is a huge opportunity for entrepreneurs, as well as companies dealing in financial sector to take advantage of. If you have any ideas around Fintech that you’d like us to help you shape up –[ drop us a line](/contact). We’re firm believers of technology making people’s lives easier!
