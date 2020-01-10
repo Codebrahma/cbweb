@@ -14,7 +14,12 @@ const Project = ({ title, image, description, link }) => (
         <NonStretchedImage alt={title} fluid={image} />
       </PlainLink>
     </Box>
-    <Flex flexDirection="column" width={[1, 1 / 2]} order={[0, 1]}>
+    <Flex
+      flexDirection="column"
+      width={[1, 1 / 2]}
+      order={[0, 1]}
+      justifyContent="center"
+    >
       <PlainLink to={link}>
         <H2 style={{ marginTop: 0 }}>{title}</H2>
       </PlainLink>
