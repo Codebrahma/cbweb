@@ -5,6 +5,7 @@ date: 2020-01-08
 featuredpost: false
 description: >-
   Functional Chaining on Array creates intermediate collections. How to avoid this inefficient scenario by iterating array elements only once!
+image: ./images/assembly-line-processing.jpeg
 keywords:
   - JavaScript
   - Functional Programming
