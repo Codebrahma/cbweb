@@ -90,7 +90,7 @@
     "image": "csvToGraphql"
   },
   {
-    "name": "react-stateless-modal",
+    "name": "React Stateless Modal",
     "description": "A simple responsive modal library that eliminates the overhead of maintaining state for modal management",
     "github": "https://github.com/Codebrahma/react-stateless-modal",
     "demo": "https://cb-react-modal-docs.netlify.com/",

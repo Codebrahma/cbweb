@@ -31,6 +31,10 @@ const InlineBox = styled(Box)`
   display: inline;
 `
 
+const Title = styled(H4)`
+  margin: 0;
+`
+
 const OutboundLink = styled(Link, {
   shouldForwardProp: prop => prop !== "as",
 })(
@@ -90,7 +94,7 @@ const Card = ({ name, description, github, demo, image }) => {
               alt={name}
             />
           </InlineBox>
-          <H4 padding="1">{name}</H4>
+          <Title padding="1">{name}</Title>
         </ImageRow>
         <HorizontalRule />
       </div>
