@@ -13,6 +13,14 @@ module.exports = [
     to: "/blog",
   },
   {
+    from: "/contact-us/",
+    to: "/contact",
+  },
+  {
+    from: "/contact-us",
+    to: "/contact",
+  },
+  {
     from: "/pricing/",
     to: "/faq#pricing",
   },
