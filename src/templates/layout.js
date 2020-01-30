@@ -54,7 +54,7 @@ const socialLinks = [
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/codebrahma1",
+    link: "https://www.instagram.com/codebrahma",
     image: "instagram",
   },
 ]
