@@ -1,4 +1,5 @@
 import SEO from './../components/seo'
+import VimeoVideoContainer from './../components/vimeoVideoContainer'
 import { Flex, H4, Box, P } from "bricks"
 
 <SEO
@@ -27,7 +28,7 @@ import { Flex, H4, Box, P } from "bricks"
   </Box>
 </Flex>
 
-## What we deliver
+## What we build and deliver
 
 <Flex flexDirection="column" mt="2" >
   <Box width={1} pr="1">
@@ -45,11 +46,31 @@ import { Flex, H4, Box, P } from "bricks"
   </Box>
 </Flex>
 
+<Flex flexDirection="column" mt="2" >
+  <Box width={1} pr="1">
+    <H4>2. Backend API tests and documentation on Postman</H4>
+    <P>
+      Our backend developers builds API schema and tests on Postman before the actual API development starts. 
+      The frontend development team starts development with no wait, by making use of the mock API server and documentation provided by Postman for our API schema. 
+    </P>
+  </Box>
+  <VimeoVideoContainer>
+    <iframe
+      src="https://player.vimeo.com/video/390805379"
+      width="100%"
+      height="400"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    >
+    </iframe>
+</VimeoVideoContainer>
+</Flex>
 
 <Flex flexDirection="column" mt="3">
   <Box width={1} pr="1">
     <H4>2. App developed with React</H4>
-    <P>Based on the design, a complete React app developed with the help of design-system and preserve with Airbnb code standards</P>
+    <P>Based on the design, a complete React app developed with the help of design-system and APIs created above. The code will comply with Airbnb standards.</P>
   </Box>
   <Box width={1}>
     <iframe
@@ -78,7 +99,6 @@ import { Flex, H4, Box, P } from "bricks"
     ></iframe>
   </Box>
 </Flex>
-
 
 <br/>
 <br/>
