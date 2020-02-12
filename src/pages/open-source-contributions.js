@@ -165,7 +165,7 @@ export const query = graphql`
   query {
     serverless: file(relativePath: { eq: "open-source/serverless.png" }) {
       childImageSharp {
-        fixed(width: 180, height: 128) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
