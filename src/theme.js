@@ -36,7 +36,7 @@ colors.primary = colors.black[1]
 colors.secondary = colors.tint
 
 const styles = {
-  body:{
+  body: {
     fontFamily: 'body',
     fontSize: [1, 'desktop.1'],
     lineHeight: 1,
