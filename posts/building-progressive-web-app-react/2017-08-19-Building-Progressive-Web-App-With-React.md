@@ -31,14 +31,14 @@ We’re going to build a simple PWA in this article. You can use this code as bo
 
 ## Getting Started with PWA
 First let’s generate a React application with create-react-app. You can run the following commands to generate the React app.
-```sh
+```bash
 npm install -g create-react-app
 
 create-react-app pwa-app
 ```
 Next we will install React Router:
 
-```sh
+```bash
 cd pwa-app
 
 npm install --save react-router@3.0.5
@@ -320,7 +320,7 @@ We also need to add these meta tags to inform the browser that our app is a PWA.
 ## Let’s Deploy
 We’re now only missing HTTPS and caching which will be fixed after deploy. Update the __doCache__ flag to __true__ in worker.js file. Next, create a new project in firebase-console with name __Pwa App__. Run the following commands in project directory.
 
-```sh
+```bash
 npm install -g firebase-tools
 firebase login
 firebase init
@@ -341,7 +341,7 @@ Make sure your __firebase.json__ looks like this-
 }
  ```
 After initialisation build the app and deploy.
-```sh
+```bash
 npm run build
 firebase deploy
  ```
