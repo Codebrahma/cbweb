@@ -31,6 +31,7 @@ import Header from "./header"
 import theme from "../theme"
 import PlainLink from "../components/link"
 import TextWithIcon from "../components/textWithIcon"
+import cbLogo from './../images/logos/cb.png'
 import mailIcon from './../images/logos/mail.svg'
 import phoneIcon from './../images/logos/phone.svg'
 import locationIcon from './../images/logos/location.svg'
@@ -140,6 +141,20 @@ const Footer = ({ images }) => (
             San Francisco, CA 94105
           </PlainLink>
         </TextWithIcon>
+      </Box>
+    </Flex>
+
+    <Flex mt={[2, 3]}>
+      <Box mr={1} display={['none', 'block']}>
+        <img src={cbLogo} height="48px" />
+      </Box>
+      <Box>
+        <Box mb={1}>
+          Codebrahma is an independent company. Mentioned brands and companies are trademarked brands.
+        </Box>
+        <Box mt={1}>
+          &copy; 2020 codebrahma.com. All rights reserved.
+        </Box>
       </Box>
     </Flex>
   </Box>
