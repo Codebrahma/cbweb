@@ -94,7 +94,7 @@ const Footer = ({ images }) => (
           </form>
         </Box>
       </Box>
-      <Box width={[1, 1 / 4]} mt={[2, 0]}>
+      <Flex flexDirection={["column-reverse", "column"]} width={[1, 1 / 4]} mt={[2, 0]}>
         <TextWithIcon>
           <img src={mailIcon} />
           &nbsp;
@@ -102,14 +102,14 @@ const Footer = ({ images }) => (
             hello@codebrahma.com
           </PlainLink>
         </TextWithIcon>
-        <TextWithIcon>
+        <TextWithIcon mt={[1, 0]}>
           <img src={phoneIcon} />
           &nbsp;
           <PlainLink as="a" href="tel:+14845060634">
             +1 484 506 0634
           </PlainLink>
         </TextWithIcon>
-        <Box mt="1">
+        <Box mt={[1, 0]}>
           <Flex flexDirection={["row"]} alignItems="center">
             {socialLinks.map(({ name, link, image }) => {
               const imageData = images[image].childImageSharp.fixed
@@ -126,8 +126,8 @@ const Footer = ({ images }) => (
             })}
           </Flex>
         </Box>
-      </Box>
-      <Box width={[1, 1 / 4]} mt={[2, 0]}>
+      </Flex>
+      <Box width={[1, 1 / 4]} mb={[2, 0]}>
         <TextWithIcon>
           <img src={locationIcon} />
           &nbsp;
@@ -144,7 +144,7 @@ const Footer = ({ images }) => (
       </Box>
     </Flex>
 
-    <Flex mt={[2, 3]}>
+    <Flex mt={[0, 3]}>
       <Box mr={1} display={['none', 'block']}>
         <img src={cbLogo} height="48px" />
       </Box>
