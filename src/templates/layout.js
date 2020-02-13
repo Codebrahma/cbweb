@@ -24,12 +24,16 @@ import {
 } from "bricks"
 import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
-import Header from "./header"
-import { Helmet } from "react-helmet"
-import theme from "../theme"
-import { useThemeUI } from "bricks"
-import PlainLink from "../components/link"
 import Img from "gatsby-image"
+import { Helmet } from "react-helmet"
+import { useThemeUI } from "bricks"
+import Header from "./header"
+import theme from "../theme"
+import PlainLink from "../components/link"
+import TextWithIcon from "../components/textWithIcon"
+import mailIcon from './../images/logos/mail.svg'
+import phoneIcon from './../images/logos/phone.svg'
+import locationIcon from './../images/logos/location.svg'
 
 const socialLinks = [
   {
@@ -90,16 +94,20 @@ const Footer = ({ images }) => (
         </Box>
       </Box>
       <Box width={[1, 1 / 4]} mt={[2, 0]}>
-        <P>
+        <TextWithIcon>
+          <img src={mailIcon} />
+          &nbsp;
           <PlainLink as="a" href="mailto:hello@codebrahma.com">
             hello@codebrahma.com
           </PlainLink>
-          <br />
+        </TextWithIcon>
+        <TextWithIcon>
+          <img src={phoneIcon} />
+          &nbsp;
           <PlainLink as="a" href="tel:+14845060634">
             +1 484 506 0634
           </PlainLink>
-          <br />
-        </P>
+        </TextWithIcon>
         <Box mt="1">
           <Flex flexDirection={["row"]} alignItems="center">
             {socialLinks.map(({ name, link, image }) => {
@@ -119,7 +127,9 @@ const Footer = ({ images }) => (
         </Box>
       </Box>
       <Box width={[1, 1 / 4]} mt={[2, 0]}>
-        <P>
+        <TextWithIcon>
+          <img src={locationIcon} />
+          &nbsp;
           <PlainLink
             as="a"
             href="http://maps.google.com/?q=Codebrahma 156, 2nd Street San Francisco, CA 94105"
@@ -128,9 +138,8 @@ const Footer = ({ images }) => (
             156, 2nd Street
             <br />
             San Francisco, CA 94105
-            <br />
           </PlainLink>
-        </P>
+        </TextWithIcon>
       </Box>
     </Flex>
   </Box>
