@@ -48,7 +48,6 @@ const styles = {
     marginTop: [3, 4], 
     marginBottom: 1,
     padding: 0,
-    display: 'table',
   },
   h2: {
     fontFamily: 'heading',
@@ -57,7 +56,6 @@ const styles = {
     marginTop: [3, 4],
     marginBottom: 1,
     padding: 0,
-    display: 'table',
   },
   h3: {
     fontFamily: 'heading',
@@ -66,7 +64,6 @@ const styles = {
     marginTop: [ 2,3 ],
     marginBottom: 1,
     padding: 0,
-    display: 'table',
   },
   h4: {
     fontFamily: 'heading',
@@ -75,7 +72,6 @@ const styles = {
     marginTop: 2,
     marginBottom: 1,
     padding: 0,
-    display: 'table',
   },
   h5: {
     fontFamily: 'heading',
@@ -84,7 +80,6 @@ const styles = {
     marginTop: 2,
     marginBottom: 1,
     padding: 0,
-    display: 'table',
   },
   p: {
     fontFamily: 'body',

@@ -1,9 +1,33 @@
+import React from 'react';
 import styled from '@emotion/styled';
-import { H2 } from 'bricks';
+import { fontFamily, fontSize, lineHeight, space, border } from 'styled-system';
 
 export const withTitleStyle = (comp) => styled(comp)`
-  padding-bottom: 5px;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.black[1]};
+  ${fontFamily}
+  ${fontSize}
+  ${lineHeight}
+  ${space}
+  ${border}
 `;
 
-export default withTitleStyle(H2);
+const Title = ({ comp, ...otherProps }) => {
+  const TitleComponent = withTitleStyle(comp || 'span');
+
+  return (
+    <TitleComponent
+      fontFamily="heading"
+      fontSize={[4, 'desktop.4']}
+      lineHeight={2}
+      marginTop={[3, 4]}
+      marginBottom={1}
+      px={0}
+      pt={0}
+      pb="2px"
+      borderBottom={`1px solid`}
+      borderColor="black.0"
+      {...otherProps}
+    />
+  );
+}
+
+export default Title;
