@@ -85,7 +85,6 @@ const styles = {
     fontFamily: 'body',
     fontSize: [1, 'desktop.1'],
     lineHeight: 1,
-    maxWidth: '40rem',
     marginBottom: [2,2]
   },
   b: {

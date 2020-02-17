@@ -47,14 +47,16 @@ const IndexPage = ({ data }) => {
         image={data.rippling_screenshot.publicURL}
         url="https://codebrahma.com"
       />
-      <Box my={6}>
-        <H1 lineHeight="42px">
+      <Box my={[3, 6]} textAlign="center">
+        <H1>
           We build your React &amp;&nbsp;React Native frontend
         </H1>
-        <P>
-          We take your design files &amp; api docs. And give you a fast mobile
-          and browser app. You focus on your backend business&nbsp;logic!
-        </P>
+        <Box width={[1, 2/3]} mt={2} mx="auto">
+          <P>
+            We take your design files &amp; api docs. And give you a fast mobile
+            and browser app. You focus on your backend business&nbsp;logic!
+          </P>
+        </Box>
       </Box>
       <Box>
         <Box width={1} textAlign="center" mb={1}>
