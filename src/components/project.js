@@ -26,7 +26,7 @@ export default ({ title, image, description, link, reverse = false }) => (
       mt={[1, 0]}
     >
       <PlainLink to={link}>
-        <Title style={{ marginTop: 0 }}>{title}</Title>
+        <Title>{title}</Title>
       </PlainLink>
 
       <Box mt={[1, 2]}>

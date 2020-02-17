@@ -55,8 +55,11 @@ const IndexPage = ({ data }) => {
           and browser app. You focus on your backend business&nbsp;logic!
         </P>
       </Box>
-      <div>
-        <Title>Our Featured Work</Title>
+      <Box>
+        <Box width={1} textAlign="center" mb={1}>
+          <Title>Our Featured Work</Title>
+        </Box>
+
         <Project
           title="Rippling"
           description="Codebrahma built the complete browser and mobile app for this fast growing Parker Conrad startup, currently valued at $250 million"
@@ -70,8 +73,8 @@ const IndexPage = ({ data }) => {
           image={data.rippling_screenshot.childImageSharp.fluid}
           link="/rippling/"
         />
-      </div>
-      <div>
+      </Box>
+      <Box>
         <H3>React & React Native</H3>
         <Flex flexDirection="column">
           <Box alignSelf={["center", "flex-start"]} width={1}>
@@ -84,7 +87,7 @@ const IndexPage = ({ data }) => {
             UI iteration
           </P>
         </Flex>
-      </div>
+      </Box>
     </Layout>
   )
 }
