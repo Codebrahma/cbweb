@@ -95,10 +95,10 @@ const IndexPage = ({ data }) => {
           reverse
         />
         <Project
-          title="Rippling"
-          description="Codebrahma built the complete browser and mobile app for this fast growing Parker Conrad startup, currently valued at $250 million"
-          image={data.rippling_screenshot.childImageSharp.fluid}
-          link="/rippling/"
+          title="Serverless"
+          description="Codebrahma helped serverless implement their new design in Gatsby, in a sharp deadline for press release date"
+          image={data.serverless_screenshot.childImageSharp.fluid}
+          link="/serverless/"
         />
 
         <Box width={1} textAlign="center">
@@ -136,6 +136,18 @@ export const query = graphql`
   query {
     rippling_screenshot: file(
       relativePath: { eq: "screenshots/rippling_screenshot.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 550, quality: 100) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+      publicURL
+    }
+
+    serverless_screenshot: file(
+      relativePath: { eq: "screenshots/serverless_screenshot.png" }
     ) {
       childImageSharp {
         fluid(maxWidth: 550, quality: 100) {
