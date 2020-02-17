@@ -3,15 +3,14 @@ import { jsx } from "@emotion/core"
 // eslint-disable-next-line
 import { graphql } from "gatsby"
 
-import NonStretchedImage from "../components/nonStretchedImage"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
 import { Box, Flex, H1, H3, H4, P, ReactIcon } from "bricks"
-import PlainLink from "../components/link"
+import Title from "../components/title"
+import Project from "../components/project"
 
 const IndexPage = ({ data }) => {
-  
   const structuredData = `{
     "@context" : "http://schema.org",
     "@type" : "LocalBusiness",
@@ -28,7 +27,7 @@ const IndexPage = ({ data }) => {
       "postalCode" : "94105"
     }
   }`
-  
+
   return (
     <Layout>
       <Helmet>
@@ -47,7 +46,7 @@ const IndexPage = ({ data }) => {
         image={data.rippling_screenshot.publicURL}
         url="https://codebrahma.com"
       />
-      <Box mt="6" mb="6">
+      <Box my={6}>
         <H1 lineHeight="42px">
           We build your React &amp;&nbsp;React Native frontend
         </H1>
@@ -57,20 +56,20 @@ const IndexPage = ({ data }) => {
         </P>
       </Box>
       <div>
-        <H3>Our Featured Work</H3>
-        <Flex flexDirection="column">
-          <PlainLink to="/rippling/">
-            <H4>Rippling</H4>
-          </PlainLink>
-          <NonStretchedImage
-            alt="Rippling"
-            fluid={data.rippling_screenshot.childImageSharp.fluid}
-          />
-          <P>
-            Codebrahma built the complete browser and mobile app for this fast
-            growing Parker Conrad startup, currently valued at $250 million
-          </P>
-        </Flex>
+        <Title>Our Featured Work</Title>
+        <Project
+          title="Rippling"
+          description="Codebrahma built the complete browser and mobile app for this fast growing Parker Conrad startup, currently valued at $250 million"
+          image={data.rippling_screenshot.childImageSharp.fluid}
+          link="/rippling/"
+          reverse
+        />
+        <Project
+          title="Rippling"
+          description="Codebrahma built the complete browser and mobile app for this fast growing Parker Conrad startup, currently valued at $250 million"
+          image={data.rippling_screenshot.childImageSharp.fluid}
+          link="/rippling/"
+        />
       </div>
       <div>
         <H3>React & React Native</H3>
@@ -79,8 +78,8 @@ const IndexPage = ({ data }) => {
             <ReactIcon width="200" height="200" />
           </Box>
           <P>
-            We have been building on React / React Native for 3 years now, and we
-            absolutely love its declarative and functional philosophy. We
+            We have been building on React / React Native for 3 years now, and
+            we absolutely love its declarative and functional philosophy. We
             strongly believe that a good react codebase is conducive for rapid
             UI iteration
           </P>

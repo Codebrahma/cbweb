@@ -1,32 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
 import { graphql } from "gatsby"
-import NonStretchedImage from "../components/nonStretchedImage"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
-import { Box, Flex, H1, H2, I, P } from "bricks"
-import PlainLink from "../components/link"
-
-const Project = ({ title, image, description, link }) => (
-  <Flex flexWrap="wrap" marginTop={6}>
-    <Box width={[1, 1 / 2]} order={[1, 1]}>
-      <PlainLink to={link}>
-        <NonStretchedImage alt={title} fluid={image} />
-      </PlainLink>
-    </Box>
-    <Flex
-      flexDirection="column"
-      width={[1, 1 / 2]}
-      order={[0, 1]}
-      justifyContent="center"
-    >
-      <PlainLink to={link}>
-        <H2 style={{ marginTop: 0 }}>{title}</H2>
-      </PlainLink>
-      <P>{description}</P>
-    </Flex>
-  </Flex>
-)
+import Project from "../components/project"
+import { H1, I, P } from "bricks"
 
 const WorkPage = ({ data }) => (
   <Layout>
