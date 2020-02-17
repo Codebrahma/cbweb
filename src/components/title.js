@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { fontFamily, fontSize, lineHeight, space, border } from 'styled-system';
+import { fontFamily, fontSize, fontWeight, lineHeight, space, border } from 'styled-system';
 
 export const withTitleStyle = (comp) => styled(comp)`
   ${fontFamily}
   ${fontSize}
+  ${fontWeight}
   ${lineHeight}
   ${space}
   ${border}

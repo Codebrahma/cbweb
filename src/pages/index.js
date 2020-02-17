@@ -6,7 +6,7 @@ import { graphql, navigate } from "gatsby"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
-import { Box, Flex, H1, H3, P, ReactIcon } from "bricks"
+import { Box, InputButton, Flex, H1, P, ReactIcon } from "bricks"
 import Title from "../components/title"
 import Project from "../components/project"
 import OutlineButton from '../components/outlineButton'
@@ -63,6 +63,7 @@ const IndexPage = ({ data }) => {
           flexDirection="column"
           alignItems="center"
         >
+          <ReactIcon width="200" height="200" />
           <Title
             fontSize={[3, 'desktop.3']}
             lineHeight={2}
@@ -71,7 +72,6 @@ const IndexPage = ({ data }) => {
           >
             React & React Native
           </Title>
-          <ReactIcon width="200" height="200" />
           <Box width={[1, 2/3]}>
             <P textAlign="center">
               We have been building on React / React Native for 3 years now, and
@@ -107,6 +107,25 @@ const IndexPage = ({ data }) => {
           </OutlineButton>
         </Box>
       </Box>
+
+      <Flex mt={[3, 6]} flexDirection="column" alignItems="center">
+        <Title
+          fontSize={[3, 'desktop.3']}
+          fontWeight="bold"
+          lineHeight={2}
+          borderWidth={0}
+          mt={0}
+        >
+          WE ARE ALL EARS
+        </Title>
+        <Box width={[1, 2/3]} textAlign="center">
+          <P>
+            Whether it's a code review or a project, that you want to discuss or just want to say hello, We would love to hear from you.
+            We cordially welcome your ideas, suggestions, and reviews regarding our work.
+          </P>
+          <InputButton value="say hello!" onClick={() => navigate('/work')} />
+        </Box>
+      </Flex>
     </Layout>
   )
 }
