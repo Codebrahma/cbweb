@@ -123,7 +123,7 @@ const IndexPage = ({ data }) => {
             Whether it's a code review or a project, that you want to discuss or just want to say hello, We would love to hear from you.
             We cordially welcome your ideas, suggestions, and reviews regarding our work.
           </P>
-          <InputButton value="say hello!" onClick={() => navigate('/work')} />
+          <InputButton value="say hello!" onClick={() => navigate('/contact')} />
         </Box>
       </Flex>
     </Layout>
