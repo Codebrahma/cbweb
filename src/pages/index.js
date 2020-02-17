@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
 // eslint-disable-next-line
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
@@ -9,6 +9,7 @@ import Helmet from "react-helmet"
 import { Box, Flex, H1, H3, H4, P, ReactIcon } from "bricks"
 import Title from "../components/title"
 import Project from "../components/project"
+import OutlineButton from '../components/outlineButton';
 
 const IndexPage = ({ data }) => {
   const structuredData = `{
@@ -73,6 +74,12 @@ const IndexPage = ({ data }) => {
           image={data.rippling_screenshot.childImageSharp.fluid}
           link="/rippling/"
         />
+
+        <Box width={1} textAlign="center">
+          <OutlineButton onClick={() => navigate('/work')}>
+            More work
+          </OutlineButton>
+        </Box>
       </Box>
       <Box>
         <H3>React & React Native</H3>
