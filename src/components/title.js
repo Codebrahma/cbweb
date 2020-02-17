@@ -18,8 +18,8 @@ const Title = ({ comp, ...otherProps }) => {
       fontFamily="heading"
       fontSize={[4, 'desktop.4']}
       lineHeight={2}
-      marginTop={[3, 4]}
-      marginBottom={1}
+      mt={[3, 4]}
+      mb={1}
       px={0}
       pt={0}
       pb="2px"
