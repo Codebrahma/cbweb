@@ -24,6 +24,7 @@ export default ({ title, image, description, link, reverse = false }) => (
       width={[1, '43%']}
       order={[0, 1]}
       mt={[1, 0]}
+      justifyContent="center"
     >
       <PlainLink to={link}>
         <Title>{title}</Title>
