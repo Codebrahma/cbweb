@@ -90,7 +90,7 @@ const Footer = ({ images }) => (
             <input type="hidden" name="u" value="42069ce8928af0d4afc3fd428" />
             <input type="hidden" name="id" value="a540ccf305" />
             <InputText name="MERGE0" type="email" placeholder="Email address" />
-            <InputButton value="Subscribe" name="subscribe" />
+            <InputButton value="Subscribe" name="subscribe" px={2} />
           </form>
         </Box>
       </Box>

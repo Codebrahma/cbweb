@@ -1,5 +1,5 @@
 import React from "react"
-import { Flex, Box, InputText, InputButton } from "bricks"
+import { Flex, Box, InputText, OutlinedButton } from "bricks"
 
 const ContactForm = ({ referrer }) => {
   return (
@@ -19,6 +19,9 @@ const ContactForm = ({ referrer }) => {
             required
             as="textarea"
             name="msg"
+            backgroundColor="black.4"
+            borderWidth={0}
+            borderRadius={3}
             placeholder="&#128172; Tell us about your idea"
           />
         </Box>
@@ -28,11 +31,16 @@ const ContactForm = ({ referrer }) => {
             name="email"
             type="email"
             required
+            backgroundColor="black.4"
+            borderWidth={0}
+            borderRadius={3}
             placeholder="@ Email address"
           />
         </Box>
         <Box width={[1, 1 / 3]} mt={1}>
-          <InputButton />
+          <OutlinedButton borderRadius={3}>
+            Submit
+          </OutlinedButton>
         </Box>
       </Flex>
     </form>

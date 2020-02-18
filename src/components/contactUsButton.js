@@ -5,6 +5,7 @@ import { InputButton } from "bricks"
 
 const ContactUsButton = ({ text }) => (
   <InputButton
+    borderRadius={3}
     value={text}
     onClick={() => navigate("/contact")}  
   />

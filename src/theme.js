@@ -18,6 +18,7 @@ const fonts = {
   bold: 'TiemposBold',
   italic: 'TiemposItalic'
 }
+const radii = [0, 1, 2, 4, 8, 16];
 const lineHeights = [
   0.5 * baseLineHeight + 'rem',
   1 * baseLineHeight + 'rem', 
@@ -30,7 +31,7 @@ const space = [0,...lineHeights];
 
 const colors = {
   tint: '#F8F4F2',
-  black: ['#0F0F0F','#333333', '#666666', '#999999'],
+  black: ['#0F0F0F','#333333', '#666666', '#999999', '#E0E0E0'],
 }
 colors.primary = colors.black[1]
 colors.secondary = colors.tint
@@ -125,6 +126,7 @@ const theme = {
   breakpoints,
   space,
   fontSizes,
+  radii,
   lineHeights,
   maxContainerWidth,
   fonts,
