@@ -96,14 +96,14 @@ const Footer = ({ images }) => (
       </Box>
       <Flex flexDirection={["column-reverse", "column"]} width={[1, 1 / 4]} mt={[2, 0]}>
         <TextWithIcon>
-          <img src={mailIcon} />
+          <img src={mailIcon} alt="Mail" />
           &nbsp;
           <PlainLink as="a" href="mailto:hello@codebrahma.com">
             hello@codebrahma.com
           </PlainLink>
         </TextWithIcon>
         <TextWithIcon mt={[1, 0]}>
-          <img src={phoneIcon} />
+          <img src={phoneIcon} alt="Phone" />
           &nbsp;
           <PlainLink as="a" href="tel:+14845060634">
             +1 484 506 0634
@@ -129,7 +129,7 @@ const Footer = ({ images }) => (
       </Flex>
       <Box width={[1, 1 / 4]} mb={[2, 0]}>
         <TextWithIcon>
-          <img src={locationIcon} />
+          <img src={locationIcon} alt="Address" />
           &nbsp;
           <PlainLink
             as="a"
@@ -146,7 +146,7 @@ const Footer = ({ images }) => (
 
     <Flex mt={[0, 3]}>
       <Box mr={1} display={['none', 'block']}>
-        <img src={cbLogo} height="48px" />
+        <img src={cbLogo} height="48px" alt="Codebrahma Logo" />
       </Box>
       <Box>
         <Box mb={1}>
