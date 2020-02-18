@@ -15,20 +15,20 @@ const ContactForm = ({ referrer }) => {
           <InputText
             size="25"
             rows="5"
-            style={{ width: "100%" }}
+            width={1}
             required
             as="textarea"
             name="msg"
-            placeholder="Tell us about your idea"
+            placeholder="&#128172; Tell us about your idea"
           />
         </Box>
         <Box width={[1, 1 / 2]} mt={1}>
           <InputText
-            style={{ width: "100%" }}
+            width={1}
             name="email"
             type="email"
             required
-            placeholder="Email address"
+            placeholder="@ Email address"
           />
         </Box>
         <Box width={[1, 1 / 3]} mt={1}>
