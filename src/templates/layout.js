@@ -229,6 +229,9 @@ const Layout = ({ children }) => {
                   font-family: ${theme.fonts.body};
                   color: ${theme.colors.black[1]};
                 }
+                * {
+                  box-sizing: border-box;
+                }
               `}
             />
             <Container>
