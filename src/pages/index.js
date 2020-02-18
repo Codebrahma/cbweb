@@ -6,10 +6,11 @@ import { graphql, navigate } from "gatsby"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
-import { Box, InputButton, Flex, H1, P, ReactIcon } from "bricks"
+import { Box, Flex, H1, P, ReactIcon } from "bricks"
 import Title from "../components/title"
 import Project from "../components/project"
 import OutlineButton from '../components/outlineButton'
+import ContactUsButton from '../components/contactUsButton';
 
 const IndexPage = ({ data }) => {
   const structuredData = `{
@@ -123,7 +124,7 @@ const IndexPage = ({ data }) => {
             Whether it's a code review or a project, that you want to discuss or just want to say hello, We would love to hear from you.
             We cordially welcome your ideas, suggestions, and reviews regarding our work.
           </P>
-          <InputButton value="say hello!" onClick={() => navigate('/contact')} />
+          <ContactUsButton text="say hello!" />
         </Box>
       </Flex>
     </Layout>
