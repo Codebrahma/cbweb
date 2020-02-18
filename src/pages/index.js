@@ -6,10 +6,9 @@ import { graphql, navigate } from "gatsby"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
-import { Box, Flex, H1, P, ReactIcon } from "bricks"
+import { Box, Flex, H1, P, ReactIcon, OutlinedButton } from "bricks"
 import Title from "../components/title"
 import Project from "../components/project"
-import OutlineButton from '../components/outlineButton'
 import ContactUsButton from '../components/contactUsButton';
 
 const IndexPage = ({ data }) => {
@@ -103,9 +102,9 @@ const IndexPage = ({ data }) => {
         />
 
         <Box width={1} textAlign="center">
-          <OutlineButton onClick={() => navigate('/work')}>
+          <OutlinedButton borderRadius={3} onClick={() => navigate('/work')}>
             More work
-          </OutlineButton>
+          </OutlinedButton>
         </Box>
       </Box>
 
