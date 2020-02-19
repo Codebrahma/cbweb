@@ -89,8 +89,24 @@ const Footer = ({ images }) => (
           >
             <input type="hidden" name="u" value="42069ce8928af0d4afc3fd428" />
             <input type="hidden" name="id" value="a540ccf305" />
-            <InputText name="MERGE0" type="email" placeholder="Email address" />
-            <InputButton value="Subscribe" name="subscribe" px={2} />
+            <InputText
+              name="MERGE0"
+              type="email"
+              placeholder="Email address"
+              backgroundColor="black.4"
+              borderWidth={0}
+              borderRadius={[3, "4px 0 0 4px"]}
+              placeholder="@ Email address"
+              width={[1, 'auto']}
+            />
+            <InputButton
+              value="Subscribe"
+              name="subscribe"
+              px={2}
+              py="10px"
+              mt={1}
+              borderRadius={[3, "0 4px 4px 0"]}
+            />
           </form>
         </Box>
       </Box>
