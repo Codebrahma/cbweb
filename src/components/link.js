@@ -10,7 +10,7 @@ const link = styled(Link, {
     color: inherit;
   }
   &:hover {
-    text-decoration: underline;
+    text-decoration: ${props => (props.withUnderline ? "underline" : "none")};
   }
 `
 

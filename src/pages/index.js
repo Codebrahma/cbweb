@@ -1,17 +1,17 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
 // eslint-disable-next-line
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 
-import NonStretchedImage from "../components/nonStretchedImage"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
-import { Box, Flex, H1, H3, H4, P, ReactIcon } from "bricks"
-import PlainLink from "../components/link"
+import { Box, Flex, H1, P, ReactIcon, OutlinedButton } from "bricks"
+import Title from "../components/title"
+import Project from "../components/project"
+import ContactUsButton from '../components/contactUsButton';
 
 const IndexPage = ({ data }) => {
-  
   const structuredData = `{
     "@context" : "http://schema.org",
     "@type" : "LocalBusiness",
@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
       "postalCode" : "94105"
     }
   }`
-  
+
   return (
     <Layout>
       <Helmet>
@@ -47,45 +47,85 @@ const IndexPage = ({ data }) => {
         image={data.rippling_screenshot.publicURL}
         url="https://codebrahma.com"
       />
-      <Box mt="6" mb="6">
-        <H1 lineHeight="42px">
+      <Box mt={[3, 6]} textAlign="center">
+        <H1>
           We build your React &amp;&nbsp;React Native frontend
         </H1>
-        <P>
-          We take your design files &amp; api docs. And give you a fast mobile
-          and browser app. You focus on your backend business&nbsp;logic!
-        </P>
-      </Box>
-      <div>
-        <H3>Our Featured Work</H3>
-        <Flex flexDirection="column">
-          <PlainLink to="/rippling/">
-            <H4>Rippling</H4>
-          </PlainLink>
-          <NonStretchedImage
-            alt="Rippling"
-            fluid={data.rippling_screenshot.childImageSharp.fluid}
-          />
+        <Box width={[1, 2/3]} mt={2} mx="auto">
           <P>
-            Codebrahma built the complete browser and mobile app for this fast
-            growing Parker Conrad startup, currently valued at $250 million
+            We take your design files &amp; api docs. And give you a fast mobile
+            and browser app. You focus on your backend business&nbsp;logic!
           </P>
-        </Flex>
-      </div>
-      <div>
-        <H3>React & React Native</H3>
-        <Flex flexDirection="column">
-          <Box alignSelf={["center", "flex-start"]} width={1}>
-            <ReactIcon width="200" height="200" />
+        </Box>
+        <Flex
+          mt={1}
+          mb={3}
+          flexDirection="column"
+          alignItems="center"
+        >
+          <ReactIcon width="200" height="200" />
+          <Title
+            fontSize={[3, 'desktop.3']}
+            lineHeight={2}
+            borderWidth={0}
+            mt={0}
+          >
+            React & React Native
+          </Title>
+          <Box width={[1, 2/3]}>
+            <P textAlign="center">
+              We have been building on React / React Native for 3 years now, and
+              we absolutely love its declarative and functional philosophy. We
+              strongly believe that a good react codebase is conducive for rapid
+              UI iteration
+            </P>
           </Box>
-          <P>
-            We have been building on React / React Native for 3 years now, and we
-            absolutely love its declarative and functional philosophy. We
-            strongly believe that a good react codebase is conducive for rapid
-            UI iteration
-          </P>
         </Flex>
-      </div>
+      </Box>
+      <Box>
+        <Box width={1} textAlign="center" mb={1}>
+          <Title>Our Featured Work</Title>
+        </Box>
+
+        <Project
+          title="Rippling"
+          description="Codebrahma built the complete browser and mobile app for this fast growing Parker Conrad startup, currently valued at $250 million"
+          image={data.rippling_screenshot.childImageSharp.fluid}
+          link="/rippling/"
+          reverse
+        />
+        <Project
+          title="Serverless"
+          description="Codebrahma helped serverless implement their new design in Gatsby, in a sharp deadline for press release date"
+          image={data.serverless_screenshot.childImageSharp.fluid}
+          link="/serverless/"
+        />
+
+        <Box width={1} textAlign="center">
+          <OutlinedButton borderRadius={3} onClick={() => navigate('/work')}>
+            More work
+          </OutlinedButton>
+        </Box>
+      </Box>
+
+      <Flex mt={[3, 6]} flexDirection="column" alignItems="center">
+        <Title
+          fontSize={[3, 'desktop.3']}
+          fontWeight="bold"
+          lineHeight={2}
+          borderWidth={0}
+          mt={0}
+        >
+          WE ARE ALL EARS
+        </Title>
+        <Box width={[1, 2/3]} textAlign="center">
+          <P>
+            Whether it's a code review or a project, that you want to discuss or just want to say hello, We would love to hear from you.
+            We cordially welcome your ideas, suggestions, and reviews regarding our work.
+          </P>
+          <ContactUsButton text="say hello!" />
+        </Box>
+      </Flex>
     </Layout>
   )
 }
@@ -96,6 +136,18 @@ export const query = graphql`
   query {
     rippling_screenshot: file(
       relativePath: { eq: "screenshots/rippling_screenshot.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 550, quality: 100) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+      publicURL
+    }
+
+    serverless_screenshot: file(
+      relativePath: { eq: "screenshots/serverless_screenshot.png" }
     ) {
       childImageSharp {
         fluid(maxWidth: 550, quality: 100) {

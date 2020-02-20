@@ -89,21 +89,37 @@ const Footer = ({ images }) => (
           >
             <input type="hidden" name="u" value="42069ce8928af0d4afc3fd428" />
             <input type="hidden" name="id" value="a540ccf305" />
-            <InputText name="MERGE0" type="email" placeholder="Email address" />
-            <InputButton value="Subscribe" name="subscribe" />
+            <InputText
+              name="MERGE0"
+              type="email"
+              placeholder="Email address"
+              backgroundColor="black.4"
+              borderWidth={0}
+              borderRadius={[3, "4px 0 0 4px"]}
+              placeholder="@ Email address"
+              width={[1, 'auto']}
+            />
+            <InputButton
+              value="Subscribe"
+              name="subscribe"
+              px={2}
+              py="10px"
+              mt={1}
+              borderRadius={[3, "0 4px 4px 0"]}
+            />
           </form>
         </Box>
       </Box>
       <Flex flexDirection={["column-reverse", "column"]} width={[1, 1 / 4]} mt={[2, 0]}>
         <TextWithIcon>
-          <img src={mailIcon} />
+          <img src={mailIcon} alt="Mail" />
           &nbsp;
           <PlainLink as="a" href="mailto:hello@codebrahma.com">
             hello@codebrahma.com
           </PlainLink>
         </TextWithIcon>
         <TextWithIcon mt={[1, 0]}>
-          <img src={phoneIcon} />
+          <img src={phoneIcon} alt="Phone" />
           &nbsp;
           <PlainLink as="a" href="tel:+14845060634">
             +1 484 506 0634
@@ -129,7 +145,7 @@ const Footer = ({ images }) => (
       </Flex>
       <Box width={[1, 1 / 4]} mb={[2, 0]}>
         <TextWithIcon>
-          <img src={locationIcon} />
+          <img src={locationIcon} alt="Address" />
           &nbsp;
           <PlainLink
             as="a"
@@ -146,7 +162,7 @@ const Footer = ({ images }) => (
 
     <Flex mt={[0, 3]}>
       <Box mr={1} display={['none', 'block']}>
-        <img src={cbLogo} height="48px" />
+        <img src={cbLogo} height="48px" alt="Codebrahma Logo" />
       </Box>
       <Box>
         <Box mb={1}>
@@ -228,6 +244,9 @@ const Layout = ({ children }) => {
                 body {
                   font-family: ${theme.fonts.body};
                   color: ${theme.colors.black[1]};
+                }
+                * {
+                  box-sizing: border-box;
                 }
               `}
             />

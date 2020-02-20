@@ -32,7 +32,7 @@ module.exports = {
       resolve: `@codebrahma/gatsby-theme-blog`,
       options: {
         contentPath: `posts`,
-        itemsPerPage: 7,
+        itemsPerPage: 8,
         mdx: false
       }
     },
