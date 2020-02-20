@@ -6,37 +6,52 @@ import Img from "gatsby-image"
 import Layout from "../templates/layout"
 import Link from "../components/link"
 import SEO from "../components/seo"
-import { Flex, H1, H2, H4, P } from "bricks"
+import Title from "../components/title"
+import { Flex, H1, H2, H4, P ,Box} from "bricks"
 
 const SolutionsContainer = ({ title, children }) => (
-  <React.Fragment>
-    <H2>{title}</H2>
+  <Box mb='5'>
+    <Box
+      bg='#ddd'
+      width={[1, 1/2]}
+      padding={1}
+      borderRadius={4}
+      mb="1"
+    >
+      <Title mt={0} borderWidth={0} fontSize={3}>{title}</Title>
+    </Box>
     <Flex flexWrap="wrap" justifyContent={["center", "flex-start"]}>
       {children}
     </Flex>
-  </React.Fragment>
+  </Box>
 )
 
 const Solution = ({ title, image, link }) => (
   <Link to={link}>
-    <Flex
-      alignItems="center"
-      justifyContent="center"
-      flexDirection="column"
-      padding={2}
+    <Box
+      bg='#fff'
       margin={1}
-      height={250}
-      width={250}
+      borderRadius={4}
       border="1px solid #ddd"
     >
-      <Img
-        fixed={image}
-        objectFit="contain"
-        objectPosition="50% 50%"
-        alt={title}
-      />
-      <H4 textAlign="center">{title}</H4>
-    </Flex>
+      <Flex
+        alignItems="center"
+        justifyContent="center"
+        flexDirection="column"
+        padding={2}
+        height={250}
+        width={250}
+        borderRadius={3}
+      >
+        <Img
+          fixed={image}
+          objectFit="contain"
+          objectPosition="50% 50%"
+          alt={title}
+        />
+        <H4 textAlign="center">{title}</H4>
+      </Flex>
+    </Box>
   </Link>
 )
 
@@ -72,8 +87,10 @@ const SolutionPage = ({ data }) => (
       image={data.reactLogo.publicURL}
       url="https://codebrahma.com/solutions"
     />
-    <H1>Our Solutions</H1>
-    <P>We have great expertise in building web and mobile apps.</P>
+    <Box mb='4'>
+      <H1>Our Solutions</H1>
+      <P>We have great expertise in building web and mobile apps.</P>
+    </Box>
 
     <SolutionsContainer title="Web">
       <Solution
@@ -85,16 +102,6 @@ const SolutionPage = ({ data }) => (
         title="Node.js"
         image={data.nodejsLogo.childImageSharp.fixed}
         link="/node-js-development-company"
-      />
-      <Solution
-        title="Rails"
-        image={data.railsLogo.childImageSharp.fixed}
-        link="/ruby-on-rails-developers-consulting-bangalore"
-      />
-      <Solution
-        title="Angular"
-        image={data.angularLogo.childImageSharp.fixed}
-        link="/angularjs-development-company"
       />
       <Solution
         title="Serverless"
@@ -113,14 +120,6 @@ const SolutionPage = ({ data }) => (
         title="Progressive Web App"
         image={data.pwaLogo.childImageSharp.fixed}
         link="/serviceprogressive-web-applications"
-      />
-    </SolutionsContainer>
-
-    <SolutionsContainer title="Others">
-      <Solution
-        title="Financial Software Development"
-        image={data.financeLogo.childImageSharp.fixed}
-        link="/financial-software-development-company"
       />
     </SolutionsContainer>
   </Layout>
