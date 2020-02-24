@@ -47,11 +47,11 @@ const IndexPage = ({ data }) => {
         image={data.rippling_screenshot.publicURL}
         url="https://codebrahma.com"
       />
-      <Box mt={[3, 6]} textAlign="center">
+      <Box mt={[3, 6]} >
         <H1>
           We build your React &amp;&nbsp;React Native frontend
         </H1>
-        <Box width={[1, 2/3]} mt={2} mx="auto">
+        <Box width={[1, 2/3]} mt={2} >
           <P>
             We take your design files &amp; api docs. And give you a fast mobile
             and browser app. You focus on your backend business&nbsp;logic!
@@ -61,7 +61,6 @@ const IndexPage = ({ data }) => {
           mt={1}
           mb={3}
           flexDirection="column"
-          alignItems="center"
         >
           <ReactIcon width="200" height="200" />
           <Title
@@ -73,7 +72,7 @@ const IndexPage = ({ data }) => {
             React & React Native
           </Title>
           <Box width={[1, 2/3]}>
-            <P textAlign="center">
+            <P>
               We have been building on React / React Native for 3 years now, and
               we absolutely love its declarative and functional philosophy. We
               strongly believe that a good react codebase is conducive for rapid
@@ -83,7 +82,7 @@ const IndexPage = ({ data }) => {
         </Flex>
       </Box>
       <Box>
-        <Box width={1} textAlign="center" mb={1}>
+        <Box width={1} mb={1}>
           <Title>Our Featured Work</Title>
         </Box>
 
@@ -108,7 +107,7 @@ const IndexPage = ({ data }) => {
         </Box>
       </Box>
 
-      <Flex mt={[3, 6]} flexDirection="column" alignItems="center">
+      <Flex mt={[3, 6]} flexDirection="column" >
         <Title
           fontSize={[3, 'desktop.3']}
           fontWeight="bold"
@@ -118,7 +117,7 @@ const IndexPage = ({ data }) => {
         >
           WE ARE ALL EARS
         </Title>
-        <Box width={[1, 2/3]} textAlign="center">
+        <Box width={[1, 2/3]} >
           <P>
             Whether it's a code review or a project, that you want to discuss or just want to say hello, We would love to hear from you.
             We cordially welcome your ideas, suggestions, and reviews regarding our work.
