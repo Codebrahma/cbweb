@@ -35,7 +35,7 @@ Here is the Completed Component Gist - [RenderSmoothImage](https://gist.github
 
 I have published this as an `npm` package [render-smooth-image-react](https://www.npmjs.com/package/render-smooth-image-react). The source code is available on [GitHub](https://github.com/KRRISH96/render-smooth-image-react).
 
-<hr>
+---
 
 ## **Little Back Story**
 
@@ -49,7 +49,7 @@ Overall customer satisfaction will take a hit with such poor loading UX (even if
 
 Alright, Let’s see what we can do to fix this.
 
-<hr>
+---
 
 ## **Load and Fire** 🔫
 
@@ -113,7 +113,7 @@ Then we use `imageLoaded` state to conditionally add classes to the `img` tag, `
 
 That’s it! No more printer simulators on the page.
 
-<hr>
+---
 
 ## **What if Image Download Fails / Invalid Src?**
 
