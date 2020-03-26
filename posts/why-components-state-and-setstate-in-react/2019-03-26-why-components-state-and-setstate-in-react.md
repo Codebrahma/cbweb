@@ -42,7 +42,7 @@ Assume a simple webpage with a button having the following business logic
   (<a href='https://codepen.io/kalidasm'>@kalidasm</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-_A minimalistic version of how it can be implemented in React_
+#### Minimalistic version of how it can be implemented in React
 
 ```jsx
   state = {
@@ -98,9 +98,13 @@ Notice how the **functionality** `handleButtonClick, fetchAPIData, enableSpinner
 
 Based on the internal/user events such as button clicks, the Functionality Manager `handleButtonClick()` _will operate on the state_. Whenever the state has been changed, the Visual Manager `render()` will _consume the updated state and paint UI_ on the screen accordingly (re-rendering).
 
-**Functionality: **Before initiating an API call, set the loading to true and after fetching the data, set the API Data to state and set loading to false.
+#### Functionality
 
-**Visual Representation (UI):** In `render()` function, when loading is true, show the spinner. When loading is false, hide the spinner, display the button and API Data.
+Before initiating an API call, set the loading to true and after fetching the data, set the API Data to state and set loading to false.
+
+#### Visual Representation (UI)
+
+In `render()` function, when loading is true, show the spinner. When loading is false, hide the spinner, display the button and API Data.
 
 In this way, the functionality does not need to focus on visual representation and vice-versa.
 
@@ -123,6 +127,8 @@ Another example is _API Data from our example_. The Component can never predict 
 Example: _(`state.loading` from our example)_. The loading state is based on the initiation (true) and completion (false) of API Request. The value of loading state changes between false and true over a period of time.
 
 Even though the data is predictable (true or false at any point in time), the Component can never know the exact time when the loading will be set to true (when the end-user clicks the button) and it can also never know the exact time when the loading will be set to false (when the API Request will return the response). Hence, the loading data deserves the state.
+
+---
 
 ## Why setState()
 
@@ -215,13 +221,13 @@ But, when you try to increment the counter by 3 by clicking the button, it alway
 
 Both scenarios use `incrementCounterBy3()` to update the state. But the results are different.
 
-**Why?**
+#### Why?
 
 The nature of the `setState()` is purely dependent on the execution context. _State Updates inside event handlers context are batched by default._ The button click produced an incorrect response because the `setState()` is executed under the `onClick` event context.
 
 The reason [why `setState()` is asynchronous inside the event handlers](https://github.com/facebook/react/issues/11527#issuecomment-360199710) may require us to dive into Parent and Child components and how `props` are also used to re-render the components. Hence, we can conclude asynchronous state updates prevent components from unnecessary re-rendering and improve rendering performance.
 
-**How State is Updated During Batching**
+#### How State is Updated During Batching
 
 When the button `Increment By 3` is clicked, it calls `handleIncrement()` which in turn calls `incrementCounterBy3()` . This function call, in turn, calls three `setState()` statements. As the state update has been batched, this is how React would update the state.
 
