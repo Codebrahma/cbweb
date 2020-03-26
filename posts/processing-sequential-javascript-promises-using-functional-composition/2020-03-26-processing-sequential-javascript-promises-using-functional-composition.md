@@ -220,9 +220,9 @@ const pipe = (...functions) => value =>
 Applying pipe() ,
 
 ```jsx
-    const consoleTheNumber => n => console.log(n);
-    const h = pipe(incrementNumber, doubleTheNumber, consoleTheNumber);
-    h(20); //=> 42
+const consoleTheNumber => n => console.log(n);
+const h = pipe(incrementNumber, doubleTheNumber, consoleTheNumber);
+h(20); //=> 42
 ```
 
 ### Simulating Nested Promises with Functional Composition
@@ -337,68 +337,68 @@ getFollowersForUser(userId).then(userFollowers => {
 Iteration 1
 
 ```jsx
-currFunc: lookupUser
-nextFunc: lookupFollowerIDs
+  currFunc: lookupUser
+  nextFunc: lookupFollowerIDs
 
-internalPromisePipe(f: lookupUser, g: lookupFollowerIDs)
+  internalPromisePipe(f: lookupUser, g: lookupFollowerIDs)
 
-// Returns =>
+  // Returns =>
 
-function() {
-  var ctx = this;
+  function() {
+    var ctx = this;
 
-  return lookupUser.call(
-    ctx, ...arguments
-  ).then(function(resolvedV) {
-    return lookupFollowerIDs.call(ctx, resolvedV);
-  });
-};
+    return lookupUser.call(
+      ctx, ...arguments
+    ).then(function(resolvedV) {
+      return lookupFollowerIDs.call(ctx, resolvedV);
+    });
+  };
 ```
 
 Iteration 2
 
 ```jsx
-currFunc: internalPromisePipe(lookupUser, lookupFollowerIDs)
-nextFunc: lookupUsers
+  currFunc: internalPromisePipe(lookupUser, lookupFollowerIDs)
+  nextFunc: lookupUsers
 
-internalPromisePipe(
-  f: internalPromisePipe(lookupUser, lookupFollowerIDs),
-  g: lookupUsers
-)
+  internalPromisePipe(
+    f: internalPromisePipe(lookupUser, lookupFollowerIDs),
+    g: lookupUsers
+  )
 
-function() {
-  var ctx = this;
+  function() {
+    var ctx = this;
 
-  return internalPromisePipe(lookupUser, lookupFollowerIDs).call(
-    ctx, ...arguments
-  ).then(function(resolvedV) {
-    return lookupUsers.call(ctx, resolvedV);
-  });
-};
+    return internalPromisePipe(lookupUser, lookupFollowerIDs).call(
+      ctx, ...arguments
+    ).then(function(resolvedV) {
+      return lookupUsers.call(ctx, resolvedV);
+    });
+  };
 ```
 
 Breaking down the anonymous function returned by the second iteration will provide us the required implementation of nested promises.
 
 ```jsx
-function() {
-  var ctx = this;
+  function() {
+    var ctx = this;
 
-  return (
-    function() {
-      var ctx = this;
+    return (
+      function() {
+        var ctx = this;
 
-      return lookupUser.call(
+        return lookupUser.call(
+          ctx, ...arguments
+        ).then(function(resolvedV) {
+          return lookupFollowerIDs.call(ctx, resolvedV);
+        });
+      }.call(
         ctx, ...arguments
       ).then(function(resolvedV) {
-        return lookupFollowerIDs.call(ctx, resolvedV);
-      });
-    }.call(
-      ctx, ...arguments
-    ).then(function(resolvedV) {
-      return lookupUsers.call(ctx, resolvedV);
-    })
-  );
-};
+        return lookupUsers.call(ctx, resolvedV);
+      })
+    );
+  };
 ```
 
 **Inner functions involved in `internalPromisePipe()` retains the corresponding values of `f` and `g` due to closures.**
