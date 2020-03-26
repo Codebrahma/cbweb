@@ -5,6 +5,7 @@ date: 2019-11-19
 featuredpost: false
 description: >-
   How to efficiently operate on request and response objects with almost zero changes to the container components!
+image: ./images/snakes_vs_camels.png
 keywords:
   - JavaScript
   - Functional Programming

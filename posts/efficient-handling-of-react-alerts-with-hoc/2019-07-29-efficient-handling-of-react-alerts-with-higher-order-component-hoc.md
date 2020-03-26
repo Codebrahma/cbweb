@@ -5,6 +5,7 @@ date: 2019-07-29
 featuredpost: false
 description: >-
   How to efficiently handle Alert Messages in React by taking leverage on Functional Composition and HOC
+image: ./images/withAlertHOC.png
 keywords:
   - javascript
   - functional programming

@@ -5,6 +5,7 @@ date: 2019-06-28
 featuredpost: false
 description: >-
   Solving Complex Problems with composition of small and reusable functions in JavaScript
+image: ./images/reduce_leverage.png
 keywords:
   - javascript
   - functional programming
