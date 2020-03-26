@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
 title: "Why Components -> State -> setState() in React"
-date: 2019-03-26
+date: 2020-03-26
 featuredpost: false
 description: >-
   A webpage as a collection of React Components and a Component as an implementation of Functionality and UI with State as a medium
