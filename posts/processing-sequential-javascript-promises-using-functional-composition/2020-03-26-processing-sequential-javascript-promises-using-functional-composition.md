@@ -308,12 +308,12 @@ Preserving reference to `this` — Promise fulfilling function does not have acc
 
 ```jsx
 const promisePipe = (...functions) => (...initialArgs) => {
-      return functions
-        .reduce((currFunc, nextFunc) => {
-          return **promiseChainer(currFunc, nextFunc);**
-        })
-        .call(this, ...initialArgs);
-    };
+  return functions
+    .reduce((currFunc, nextFunc) => {
+      return promiseChainer(currFunc, nextFunc)
+    })
+    .call(this, ...initialArgs)
+}
 ```
 
 Let’s apply `promisePipe` to our problem.

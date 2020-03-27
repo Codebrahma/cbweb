@@ -11,7 +11,6 @@ keywords:
   - Functional Programming
   - React
   - Http Client
-image: ./images/snakes_vs_camels.png
 link: /intercepting-the-case-battle-between-snakes-and-camels-in-front-end-javascript
 category:
   - Tutorial
