@@ -13,7 +13,6 @@ keywords:
   - react
   - higher order components
   - react alerts
-image: ./images/withAlertHOC.png
 link: /efficient-handling-of-react-alerts-with-higher-order-component-hoc
 category:
   - Tutorial
