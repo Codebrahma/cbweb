@@ -3,7 +3,7 @@ import { Flex, Box, InputText, OutlinedButton } from "bricks"
 
 const ContactForm = ({ referrer }) => {
   return (
-    <form action="https://formspree.io/anand@codebrahma.com" method="post">
+    <form action="https://api.formik.com/submit/codebrahma/contact" method="post">
       <input
         type="hidden"
         name="_next"
