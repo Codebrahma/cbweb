@@ -1,9 +1,35 @@
-import React from "react"
-import { Flex, Box, InputText, OutlinedButton } from "bricks"
+import React, { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+import { Flex, Box, InputText, OutlinedButton } from "bricks";
+import { navigate } from "gatsby";
 
 const ContactForm = ({ referrer }) => {
+  const [isCaptchaVerified, setCaptchaVerified] = useState(false);
+  const [formValues, setFormvalues] = useState({
+    email: '',
+    msg: '',
+  })
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    
+    if(isCaptchaVerified) {
+      let xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+          navigate('/thank-you')
+        }
+      };
+      xhttp.open("POST", "https://api.formik.com/submit/codebrahma/contact", true);
+      xhttp.setRequestHeader("Content-Type", "application/json");
+      xhttp.send(JSON.stringify(formValues));
+    }
+  }
+
+  const onChange = ({target: { name, value }}) => setFormvalues({ ...formValues, [name]: value})
+
   return (
-    <form action="https://api.formik.com/submit/codebrahma/contact" method="post">
+    <form onSubmit={onSubmit}>
       <input
         type="hidden"
         name="_next"
@@ -23,6 +49,8 @@ const ContactForm = ({ referrer }) => {
             borderWidth={0}
             borderRadius={3}
             placeholder="&#128172; Tell us about your idea"
+            value={formValues.msg}
+            onChange={onChange}
           />
         </Box>
         <Box width={[1, 1 / 2]} mt={1}>
@@ -35,6 +63,14 @@ const ContactForm = ({ referrer }) => {
             borderWidth={0}
             borderRadius={3}
             placeholder="@ Email address"
+            value={formValues.email}
+            onChange={onChange}
+          />
+        </Box>
+        <Box mt='1'>
+          <ReCAPTCHA
+            sitekey="6LeFW-8UAAAAABYFkKUu6fKNwYFL-p6JngDJV4jI"
+            onChange={() => setCaptchaVerified(!isCaptchaVerified)}
           />
         </Box>
         <Box width={[1, 1 / 3]} mt={1}>
