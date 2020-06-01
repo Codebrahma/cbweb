@@ -1,16 +1,19 @@
-import { H2 } from "bricks"
 import Link from "./link"
 import React from "react"
+import { Box } from "@chakra-ui/core"
 
 export const Logo = ({ title }) => (
-  <H2 marginTop={[0, 0]}>
+  <Box
+    as='h2'
+    marginTop={[0, 0]}
+    fontFamily='TiemposHeadline'
+    fontSize={[4, 'sm']}
+    p={1}
+  >
     <Link
       to="/"
-      style={{
-        textDecoration: `none`,
-      }}
     >
       {title}
     </Link>
-  </H2>
+  </Box>
 )

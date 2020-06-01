@@ -1,29 +1,26 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { Nav } from 'bricks'
+import Nav from '../components/nav'
 import { Logo } from '../components/logo'
 import { Link } from 'gatsby'
 
 const links = [
   {title: 'Work', link: '/work'},
+  {title: 'Process', link: '/our-process'},
   {title: 'FAQ', link: '/faq'},
   {title: 'Blog', link: '/blog'},
   {title: 'Contact', link: '/contact'},
 ]
 
-const Header = ({ siteTitle }) => {
-  return (
+const Header = ({ siteTitle }) => (
   <header>
-    <div>
-      <Nav 
-        logo={Logo({title: siteTitle})}
-        links={links}
-        GatsbyLink={Link}
-      />
-    </div>
+    <Nav
+      logo={Logo({title: siteTitle})}
+      links={links}
+      GatsbyLink={Link}
+    />
   </header>
 )
-}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

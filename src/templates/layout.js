@@ -12,23 +12,24 @@ import { StaticQuery, graphql } from "gatsby"
 import "./fonts.css"
 
 import {
-  ThemeProvider,
-  Flex,
-  Container,
-  Box,
-  P,
+  // ThemeProvider,
+  // Flex,
+  // Container,
+  // Box,
+  // P,
   InputButton,
   InputText,
-  HorizontalRule,
-  B,
+  // HorizontalRule,
+  // B,
 } from "bricks"
+import { ThemeProvider, ColorModeProvider, Box, Flex, Text } from "@chakra-ui/core"
 import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
 import Img from "gatsby-image"
 import { Helmet } from "react-helmet"
-import { useThemeUI } from "bricks"
+// import { useThemeUI } from "bricks"
 import Header from "./header"
-import theme from "../theme"
+import customTheme from "../theme"
 import PlainLink from "../components/link"
 import TextWithIcon from "../components/textWithIcon"
 import cbLogo from './../images/logos/cb.png'
@@ -70,17 +71,17 @@ const StyledLink = styled(PlainLink)`
 
 const Footer = ({ images }) => (
   <Box marginTop="6" pb="6">
-    <HorizontalRule width={1} />
+    <Box height='2px' bg='black.1'/>
     <Flex
       flexDirection={["column", "row"]}
       justifyContent="space-between"
       mt="3"
     >
       <Box width={[1, 1 / 3]}>
-        <P>
-          Join our <B>NEW</B> newsletter to learn about the latest trends in the
+        <Text lineHeight='1'>
+          Join our <Text fontWeight='black'>NEW</Text> newsletter to learn about the latest trends in the
           fast changing front end atmosphere
-        </P>
+        </Text>
         <Box my="1">
           <form
             action="https://codebrahma.us3.list-manage.com/subscribe/post"
@@ -177,8 +178,9 @@ const Footer = ({ images }) => (
 )
 
 const Layout = ({ children }) => {
-  const context = useThemeUI()
-  const comps = context.components
+  // const context = useThemeUI()
+  // const comps = context.components
+  console.log(customTheme)
   return (
     <StaticQuery
       query={graphql`
@@ -231,66 +233,70 @@ const Layout = ({ children }) => {
         }
       `}
       render={data => (
-        <ThemeProvider theme={theme} components={comps}>
-          <div style={{ background: "rgb(247,245,242)", minHeight: "100vh" }}>
-            <Global
-              styles={css`
-                a:visited {
-                  color: inherit;
-                }
-                a:hover {
-                  cursor: pointer;
-                }
-                body {
-                  font-family: ${theme.fonts.body};
-                  color: ${theme.colors.black[1]};
-                }
-                * {
-                  box-sizing: border-box;
-                }
-              `}
-            />
-            <Container>
-              <Helmet
-                meta={[
-                  { name: "referrer", content: "origin" },
-                  {
-                    name: "google-site-verification",
-                    content: "M4VnkYHL0o4WjZUo7XZO-_HUIjsZGo2Bvw-SGI3VF80",
-                  },
-                ]}
+        <ThemeProvider theme={customTheme}>
+          <ColorModeProvider>
+            <Box bg="rgb(247,245,242)" minHeigh="100vh">
+              <Global
+                styles={css`
+                  a:visited {
+                    color: inherit;
+                  }
+                  a:hover {
+                    cursor: pointer;
+                  }
+                  body {
+                    font-family: ${customTheme.fonts.body};
+                    color: ${customTheme.colors.primary};
+                  }
+                  * {
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin: 0;
+                  }
+                `}
               />
-              <Helmet>
-                <script
-                  async
-                  src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"
-                ></script>
-                <script>
-                  {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                  
-                    gtag('config', 'AW-700131916');
+              <Box maxWidth='6xl' m='auto'>
+                <Helmet
+                  meta={[
+                    { name: "referrer", content: "origin" },
+                    {
+                      name: "google-site-verification",
+                      content: "M4VnkYHL0o4WjZUo7XZO-_HUIjsZGo2Bvw-SGI3VF80",
+                    },
+                  ]}
+                />
+                <Helmet>
+                  <script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"
+                  ></script>
+                  <script>
+                    {`
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                    
+                      gtag('config', 'AW-700131916');
 
-                    document.addEventListener('click',function(e){
-                      if(e.target.matches('[href="tel:+14845060634"]')){
-                        gtag('event', 'conversion', {'send_to': 'AW-700131916/co9tCKqOrLUBEMzU7M0C'});
-                        ga('send','event','button','click','phone');
-                      }
-                    })
-                  `}
-                </script>
-              </Helmet>
-              <Header siteTitle={data.site.siteMetadata.title} />
-              <div>
-                <main>{children}</main>
-                <footer>
-                  <Footer images={data} />
-                </footer>
-              </div>
-            </Container>
-          </div>
+                      document.addEventListener('click',function(e){
+                        if(e.target.matches('[href="tel:+14845060634"]')){
+                          gtag('event', 'conversion', {'send_to': 'AW-700131916/co9tCKqOrLUBEMzU7M0C'});
+                          ga('send','event','button','click','phone');
+                        }
+                      })
+                    `}
+                  </script>
+                </Helmet>
+                <Header siteTitle={data.site.siteMetadata.title} />
+                <Box>
+                  <main>{children}</main>
+                  <footer>
+                    <Footer images={data} />
+                  </footer>
+                </Box>
+              </Box>
+            </Box>
+          </ColorModeProvider>
         </ThemeProvider>
       )}
     />
