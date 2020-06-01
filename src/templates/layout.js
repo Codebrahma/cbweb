@@ -178,8 +178,6 @@ const Footer = ({ images }) => (
 )
 
 const Layout = ({ children }) => {
-  // const context = useThemeUI()
-  // const comps = context.components
   console.log(customTheme)
   return (
     <StaticQuery
@@ -247,15 +245,19 @@ const Layout = ({ children }) => {
                   body {
                     font-family: ${customTheme.fonts.body};
                     color: ${customTheme.colors.primary};
+                    line-height: ${customTheme.lineHeights[2]};
                   }
                   * {
                     box-sizing: border-box;
                     padding: 0;
                     margin: 0;
                   }
+                  p,h1,h2,h3,h4,h5 {
+                    line-height: ${customTheme.lineHeights[1]};
+                  }
                 `}
               />
-              <Box maxWidth='6xl' m='auto'>
+              <Box maxWidth='6xl' m='auto' fontSize={[1,'sm']}>
                 <Helmet
                   meta={[
                     { name: "referrer", content: "origin" },

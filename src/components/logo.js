@@ -7,7 +7,7 @@ export const Logo = ({ title }) => (
     as='h2'
     marginTop={[0, 0]}
     fontFamily='TiemposHeadline'
-    fontSize={[4, 'sm']}
+    fontSize={[4, 'xl']}
     p={1}
   >
     <Link

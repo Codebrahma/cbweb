@@ -13,12 +13,12 @@ const scale = [
 
 const fontSizes = scale.map(n=> n*mobileBaseSize + 'rem')
 //desktops
-fontSizes['xs'] = scale[0]*2 + 'rem'
-fontSizes['sm'] = scale[1]*2 + 'rem'
-fontSizes['md'] = scale[2]*2 + 'rem'
-fontSizes['lg'] = scale[3]*2 + 'rem'
-fontSizes['xl'] = scale[4]*2 + 'rem'
-fontSizes['2xl'] = scale[5]*2 + 'rem'
+fontSizes['xs'] = scale[0]*desktopBaseSize + 'rem'
+fontSizes['sm'] = scale[1]*desktopBaseSize + 'rem'
+fontSizes['md'] = scale[2]*desktopBaseSize + 'rem'
+fontSizes['lg'] = scale[3]*desktopBaseSize + 'rem'
+fontSizes['xl'] = scale[4]*desktopBaseSize + 'rem'
+fontSizes['2xl'] = scale[5]*desktopBaseSize + 'rem'
 
 const fonts = {
   heading: 'TiemposHeadline',
