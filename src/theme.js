@@ -139,7 +139,7 @@ const customTheme = {
   space,
   fontSizes,
   radii,
-  // lineHeights,
+  lineHeights,
   // maxContainerWidth,
   fonts,
   colors,
