@@ -235,29 +235,30 @@ const Layout = ({ children }) => {
           <ColorModeProvider>
             <Box bg="rgb(247,245,242)" minHeigh="100vh">
               <Global
-                styles={css`
-                  a:visited {
-                    color: inherit;
+                styles={{
+                  'a:visited': {
+                    color: 'inherit',
+                  },
+                  'a:hover': {
+                    cursor: 'pointer',
+                  },
+                  'body': {
+                    fontFamily: customTheme.fonts.body,
+                    color: customTheme.colors.primary,
+                    lineHeight: customTheme.lineHeights[2],
+                  },
+                  '*': {
+                    boxSizing: 'border-box',
+                    padding: 0,
+                    margin: 0,
+                  },
+                  'p': {
+                    lineHeight: customTheme.lineHeights[1],
+                    marginBottom: customTheme.space[2],
                   }
-                  a:hover {
-                    cursor: pointer;
-                  }
-                  body {
-                    font-family: ${customTheme.fonts.body};
-                    color: ${customTheme.colors.primary};
-                    line-height: ${customTheme.lineHeights[2]};
-                  }
-                  * {
-                    box-sizing: border-box;
-                    padding: 0;
-                    margin: 0;
-                  }
-                  p,h1,h2,h3,h4,h5 {
-                    line-height: ${customTheme.lineHeights[1]};
-                  }
-                `}
+                }}
               />
-              <Box maxWidth='6xl' m='auto' fontSize={[1,'sm']}>
+              <Box maxWidth='6xl' m='auto' fontSize={[1,'sm']} lineHeight={1}>
                 <Helmet
                   meta={[
                     { name: "referrer", content: "origin" },
