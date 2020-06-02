@@ -5,7 +5,7 @@ const baseLineHeight = 1.45; //24.8px
 const desktopBaseSize = 1.125; //18px
 const mobileBaseSize = 1; //16px
 const breakpoints = [
-  '48em',
+  '48rem',
 ]
 const scale = [
   0.75, 1, 1.2, 1.375, 1.6875, 2.5
@@ -22,6 +22,8 @@ const fonts = {
   italic: 'TiemposItalic'
 }
 
+theme.sizes['maxContainerWidth'] = maxContainerWidth
+
 const radii = [0, 1, 2, 4, 8, 16];
 
 const lineHeights = [
@@ -33,7 +35,7 @@ const lineHeights = [
   3 * baseLineHeight + 'rem',
 ];
 
-const space = [0,...lineHeights];
+const space = [0, ...lineHeights];
 
 const colors = {
   tint: '#F8F4F2',

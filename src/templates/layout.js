@@ -12,22 +12,18 @@ import { StaticQuery, graphql } from "gatsby"
 import "./fonts.css"
 
 import {
-  // ThemeProvider,
-  // Flex,
-  // Container,
-  // Box,
-  // P,
-  InputButton,
-  InputText,
-  // HorizontalRule,
-  // B,
-} from "bricks"
-import { ThemeProvider, ColorModeProvider, Box, Flex, Text } from "@chakra-ui/core"
+  ThemeProvider,
+  ColorModeProvider,
+  Box,
+  Flex,
+  Text,
+  Input,
+  Button,
+} from "@chakra-ui/core"
 import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
 import Img from "gatsby-image"
 import { Helmet } from "react-helmet"
-// import { useThemeUI } from "bricks"
 import Header from "./header"
 import customTheme from "../theme"
 import PlainLink from "../components/link"
@@ -79,7 +75,7 @@ const Footer = ({ images }) => (
     >
       <Box width={[1, 1 / 3]}>
         <Text lineHeight='1'>
-          Join our <Text fontWeight='black'>NEW</Text> newsletter to learn about the latest trends in the
+          Join our <Text as='b' fontFamily='bold' fontWeight='black'>NEW</Text> newsletter to learn about the latest trends in the
           fast changing front end atmosphere
         </Text>
         <Box my="1">
@@ -90,24 +86,36 @@ const Footer = ({ images }) => (
           >
             <input type="hidden" name="u" value="42069ce8928af0d4afc3fd428" />
             <input type="hidden" name="id" value="a540ccf305" />
-            <InputText
-              name="MERGE0"
-              type="email"
-              placeholder="Email address"
-              backgroundColor="black.4"
-              borderWidth={0}
-              borderRadius={[3, "4px 0 0 4px"]}
-              placeholder="@ Email address"
-              width={[1, 'auto']}
-            />
-            <InputButton
-              value="Subscribe"
-              name="subscribe"
-              px={2}
-              py="10px"
-              mt={1}
-              borderRadius={[3, "0 4px 4px 0"]}
-            />
+            <Box display={['block', 'flex']} mt='3' align='stretch'>
+              <Input
+                name="MERGE0"
+                type="email"
+                placeholder="Email address"
+                backgroundColor="black.4"
+                borderWidth={0}
+                borderRadius={[3, "6px 0 0 6px"]}
+                placeholder="@ Email address"
+                height='47px'
+                p={1}
+                fontFamily='body'
+                lineHeight='3'
+              />
+              <Button
+                bg='primary'
+                color='tint'
+                name="subscribe"
+                px={3}
+                py="10px"
+                height='47px'
+                lineHeight='0'
+                borderRadius={[3, "0 4px 4px 0"]}
+                border='none'
+                fontFamily='body'
+                mt={[1, 0]}
+              >
+                Subscribe
+              </Button>
+            </Box>
           </form>
         </Box>
       </Box>
@@ -161,17 +169,17 @@ const Footer = ({ images }) => (
       </Box>
     </Flex>
 
-    <Flex mt={[0, 3]}>
+    <Flex mt={[0, 3]} align='center'>
       <Box mr={1} display={['none', 'block']}>
         <img src={cbLogo} height="48px" alt="Codebrahma Logo" />
       </Box>
-      <Box>
-        <Box mb={1}>
+      <Box fontSize='1'>
+        <Text m='0'>
           Codebrahma is an independent company. Mentioned brands and companies are trademarked brands.
-        </Box>
-        <Box mt={1}>
+        </Text>
+        <Text m='0'>
           &copy; 2020 codebrahma.com. All rights reserved.
-        </Box>
+        </Text>
       </Box>
     </Flex>
   </Box>
@@ -255,10 +263,13 @@ const Layout = ({ children }) => {
                   'p': {
                     lineHeight: customTheme.lineHeights[1],
                     marginBottom: customTheme.space[2],
+                  },
+                  'b': {
+                    fontSize: customTheme.fonts.bold,
                   }
                 }}
               />
-              <Box maxWidth='6xl' m='auto' fontSize={[1,'desktop.1']}>
+              <Box maxWidth='maxContainerWidth' m={['1' ,'auto']} fontSize={[1,'desktop.1']}>
                 <Helmet
                   meta={[
                     { name: "referrer", content: "origin" },
