@@ -7,7 +7,7 @@ import Layout from "../templates/layout"
 import Link from "../components/link"
 import SEO from "../components/seo"
 import Title from "../components/title"
-import { Flex, H1, H2, H4, P ,Box} from "bricks"
+import { Box, Flex, Text } from '@chakra-ui/core';
 
 const SolutionsContainer = ({ title, children }) => (
   <Box mb='5'>
@@ -17,6 +17,7 @@ const SolutionsContainer = ({ title, children }) => (
       padding={1}
       borderRadius={4}
       mb="1"
+      lineHeight='1'
     >
       <Title mt={0} borderWidth={0} fontSize={3}>{title}</Title>
     </Box>
@@ -49,7 +50,7 @@ const Solution = ({ title, image, link }) => (
           objectPosition="50% 50%"
           alt={title}
         />
-        <H4 textAlign="center">{title}</H4>
+        <Text as='h4' fontFamily='heading' textAlign="center">{title}</Text>
       </Flex>
     </Box>
   </Link>
@@ -88,8 +89,8 @@ const SolutionPage = ({ data }) => (
       url="https://codebrahma.com/solutions"
     />
     <Box mb='4'>
-      <H1>Our Solutions</H1>
-      <P>We have great expertise in building web and mobile apps.</P>
+      <Text as='h1' fontFamily='heading'>Our Solutions</Text>
+      <Text>We have great expertise in building web and mobile apps.</Text>
     </Box>
 
     <SolutionsContainer title="Web">
