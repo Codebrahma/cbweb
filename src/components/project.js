@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import { Box, Flex, P } from "bricks"
+import { Box, Flex, Text } from "@chakra-ui/core"
 import PlainLink from "./link"
 import NonStretchedImage from "./nonStretchedImage"
 import Title from './title'
@@ -13,7 +13,7 @@ export default ({ title, image, description, link, reverse = false }) => (
       reverse ? "row-reverse" : "row"
     }
   >
-    <Box width={[1, '43%']}>
+    <Box width={['100%', '43%']}>
       <PlainLink to={link}>
         <NonStretchedImage alt={title} fluid={image} />
       </PlainLink>
@@ -21,7 +21,7 @@ export default ({ title, image, description, link, reverse = false }) => (
     <Box width={[0, '14%']} />
     <Flex
       flexDirection="column"
-      width={[1, '43%']}
+      width={['100%', '43%']}
       order={[0, 1]}
       mt={[1, 0]}
       justifyContent="center"
@@ -31,7 +31,7 @@ export default ({ title, image, description, link, reverse = false }) => (
       </PlainLink>
 
       <Box mt={[1, 2]}>
-        <P>{description}</P>
+        <Text>{description}</Text>
       </Box>
     </Flex>
   </Flex>

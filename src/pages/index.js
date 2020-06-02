@@ -50,10 +50,10 @@ const IndexPage = ({ data }) => {
         url="https://codebrahma.com"
       />
       <Box mt={[3, 6]} textAlign="center">
-        <Text as='h2' fontSize='desktop.5' fontFamily='heading'>
+        <Text as='h2' fontSize={[5, 'desktop.5']} fontFamily='heading' lineHeight='3'>
           We build your React &amp;&nbsp;React Native frontend
         </Text>
-        <Box width={[1, 2/3]} mt={2} mx="auto">
+        <Box width={['100%', 2/3]} mt={2} mx="auto">
           <Text>
             We take your design files &amp; api docs. And give you a fast mobile
             and browser app. You focus on your backend business&nbsp;logic!
@@ -74,7 +74,7 @@ const IndexPage = ({ data }) => {
           >
             React & React Native
           </Title>
-          <Box width={[1, 2/3]}>
+          <Box width={['100%', 2/3]}>
             <Text textAlign="center" fontSize={[1, 'desktop.1']} mb='2'>
               We have been building on React / React Native for 3 years now, and
               we absolutely love its declarative and functional philosophy. We
@@ -122,7 +122,7 @@ const IndexPage = ({ data }) => {
         >
           WE ARE ALL EARS
         </Title>
-        <Box width={[1, 2/3]} textAlign="center">
+        <Box width={['100%', 2/3]} textAlign="center">
           <Text fontSize={[1, 'desktop.1']} mb='2'>
             Whether it's a code review or a project, that you want to discuss or just want to say hello, We would love to hear from you.
             We cordially welcome your ideas, suggestions, and reviews regarding our work.

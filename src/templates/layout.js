@@ -73,7 +73,7 @@ const Footer = ({ images }) => (
       justifyContent="space-between"
       mt="3"
     >
-      <Box width={[1, 1 / 3]}>
+      <Box width={['100%', 1 / 3]}>
         <Text lineHeight='1'>
           Join our <Text as='b' fontFamily='bold' fontWeight='black'>NEW</Text> newsletter to learn about the latest trends in the
           fast changing front end atmosphere
@@ -119,7 +119,7 @@ const Footer = ({ images }) => (
           </form>
         </Box>
       </Box>
-      <Flex flexDirection={["column-reverse", "column"]} width={[1, 1 / 4]} mt={[2, 0]}>
+      <Flex flexDirection={["column-reverse", "column"]} width={['100%', 1 / 4]} mt={[2, 0]}>
         <TextWithIcon>
           <img src={mailIcon} alt="Mail" />
           &nbsp;
@@ -152,7 +152,7 @@ const Footer = ({ images }) => (
           </Flex>
         </Box>
       </Flex>
-      <Box width={[1, 1 / 4]} mb={[2, 0]}>
+      <Box width={['100%', 1 / 4]} mb={[2, 0]}>
         <TextWithIcon>
           <img src={locationIcon} alt="Address" />
           &nbsp;
