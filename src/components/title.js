@@ -1,34 +1,20 @@
 import React from 'react';
-import styled from '@emotion/styled';
-import { fontFamily, fontSize, fontWeight, lineHeight, space, border } from 'styled-system';
+import { Text } from '@chakra-ui/core';
 
-export const withTitleStyle = (comp) => styled(comp)`
-  ${fontFamily}
-  ${fontSize}
-  ${fontWeight}
-  ${lineHeight}
-  ${space}
-  ${border}
-`;
-
-const Title = ({ comp, ...otherProps }) => {
-  const TitleComponent = withTitleStyle(comp || 'span');
-
-  return (
-    <TitleComponent
-      fontFamily="heading"
-      fontSize={[4, 'desktop.4']}
-      lineHeight={2}
-      mt={[3, 4]}
-      mb={1}
-      px={0}
-      pt={0}
-      pb="2px"
-      borderBottom={`1px solid`}
-      borderColor="black.0"
-      {...otherProps}
-    />
-  );
-}
+const Title = (props) => (
+  <Text
+    as='span'
+    fontFamily="heading"
+    fontSize={[4, 'desktop.4']}
+    lineHeight={2}
+    mt={[3, 4]}
+    mb={1}
+    p={0}
+    pb="2px"
+    borderBottom='1px'
+    borderColor="black.0"
+    {...props}
+  />
+);
 
 export default Title;
