@@ -1,14 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { navigate } from "gatsby"
-import { InputButton } from "bricks"
+import Button from './button';
 
 const ContactUsButton = ({ text }) => (
-  <InputButton
-    borderRadius={3}
-    value={text}
-    onClick={() => navigate("/contact")}  
-  />
+  <Button
+    variant='solid'
+    color='tint'
+    bg='primary'
+    borderColor='primary'
+    onClick={() => navigate("/contact")}
+  >
+    {text}
+  </Button>
 );
 
 ContactUsButton.defaultProps = {

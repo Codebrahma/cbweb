@@ -1,5 +1,6 @@
 import React from "react"
-import { Box, Input, Button  } from '@chakra-ui/core';
+import { Box, Input  } from '@chakra-ui/core';
+import Button from './button';
 
 const ContactForm = ({ referrer }) => (
   <form action="https://api.formik.com/submit/codebrahma/contact" method="post">
@@ -38,19 +39,7 @@ const ContactForm = ({ referrer }) => (
       />
     </Box>
     <Box width={[1, 1 / 3]} mt={1}>
-      <Button
-        borderRadius={3}
-        variant="outline"
-        bg='transparent'
-        border='3px'
-        py='1'
-        h='auto'
-        px='4'
-        lineHeight='1'
-        fontFamily='body'
-      >
-        Submit
-      </Button>
+      <Button variant='outline'>Submit</Button>
     </Box>
   </form>
 )
