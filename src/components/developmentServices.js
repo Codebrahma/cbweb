@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box, P } from 'bricks';
+import { Box, Text } from '@chakra-ui/core';
 
 import Title from './title';
 
 export default () => (
-  <Box width={[1, 4 / 5 ]}>
+  <Box width={['100%', 4 / 5 ]}>
     <Title>Reliable ReactJS Development Services</Title>
     <br />
     <br />
@@ -16,9 +16,9 @@ export default () => (
     >
       Fast, modular and Bug free React JS development service
     </Title>
-    <P>
+    <Text>
       We develop your application with atleast 30% faster than other development companies.
-    </P>
+    </Text>
 
     <Title
       fontSize={[2, 'desktop.2']}
@@ -28,9 +28,9 @@ export default () => (
     >
       Javascript Lovers
     </Title>
-    <P>
+    <Text>
       We specialise in servicing modern JavaScript based web & mobile applications. We are experts in developing applications in React.js, AngularJS, Node.js
-    </P>
+    </Text>
 
     <Title
       fontSize={[2, 'desktop.2']}
@@ -40,9 +40,9 @@ export default () => (
     >
       Expert React JS Developers
     </Title>
-    <P>
+    <Text>
       We have a set of skilful React JS developers who are updated with current React Eco System
-    </P>
+    </Text>
 
     <Title
       fontSize={[2, 'desktop.2']}
@@ -52,8 +52,8 @@ export default () => (
     >
       Best React JS development Service history
     </Title>
-    <P>
+    <Text>
       We have 15+ React projects delivered to clients in quick time
-    </P>
+    </Text>
   </Box>
 );
