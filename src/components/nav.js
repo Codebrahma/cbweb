@@ -30,6 +30,7 @@ const Nav = ({ logo, links,}) => {
             to={link}
             key={link}
             fontFamily='body'
+            fontSize={1}
           >
             {title}
           </Box>

@@ -258,7 +258,7 @@ const Layout = ({ children }) => {
                   }
                 }}
               />
-              <Box maxWidth='6xl' m='auto' fontSize={[1,'sm']} lineHeight={1}>
+              <Box maxWidth='6xl' m='auto' fontSize={[1,'desktop.1']}>
                 <Helmet
                   meta={[
                     { name: "referrer", content: "origin" },

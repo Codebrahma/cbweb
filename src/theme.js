@@ -8,17 +8,12 @@ const breakpoints = [
   '48em',
 ]
 const scale = [
-  0.75,1, 1.2, 1.375, 1.6875, 2.5
+  0.75, 1, 1.2, 1.375, 1.6875, 2.5
 ];
 
 const fontSizes = scale.map(n=> n*mobileBaseSize + 'rem')
 //desktops
-fontSizes['xs'] = scale[0]*desktopBaseSize + 'rem'
-fontSizes['sm'] = scale[1]*desktopBaseSize + 'rem'
-fontSizes['md'] = scale[2]*desktopBaseSize + 'rem'
-fontSizes['lg'] = scale[3]*desktopBaseSize + 'rem'
-fontSizes['xl'] = scale[4]*desktopBaseSize + 'rem'
-fontSizes['2xl'] = scale[5]*desktopBaseSize + 'rem'
+fontSizes.desktop = scale.map(n=> n*desktopBaseSize + 'rem')
 
 const fonts = {
   heading: 'TiemposHeadline',
