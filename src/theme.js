@@ -46,92 +46,6 @@ const colors = {
 colors.primary = colors.black[1]
 colors.secondary = colors.tint
 
-// const styles = {
-//   body: {
-//     fontFamily: 'body',
-//     fontSize: [1, 'desktop.1'],
-//     lineHeight: 1,
-//   },
-//   h1: {
-//     fontFamily: 'heading',
-//     fontSize: [5, 'desktop.5'],
-//     lineHeight: 3,
-//     marginTop: [3, 4], 
-//     marginBottom: 1,
-//     padding: 0,
-//   },
-//   h2: {
-//     fontFamily: 'heading',
-//     fontSize: [4, 'desktop.4'],
-//     lineHeight: 2,
-//     marginTop: [3, 4],
-//     marginBottom: 1,
-//     padding: 0,
-//   },
-//   h3: {
-//     fontFamily: 'heading',
-//     fontSize: [3, 'desktop.3'],
-//     lineHeight: 1,
-//     marginTop: [ 2,3 ],
-//     marginBottom: 1,
-//     padding: 0,
-//   },
-//   h4: {
-//     fontFamily: 'heading',
-//     fontSize: [2, 'desktop.2'],
-//     lineHeight: 1,
-//     marginTop: 2,
-//     marginBottom: 1,
-//     padding: 0,
-//   },
-//   h5: {
-//     fontFamily: 'heading',
-//     fontSize: [1, 'desktop.1'],
-//     lineHeight: 1,
-//     marginTop: 2,
-//     marginBottom: 1,
-//     padding: 0,
-//   },
-//   p: {
-//     fontFamily: 'body',
-//     fontSize: [1, 'desktop.1'],
-//     lineHeight: 1,
-//     marginBottom: [2,2]
-//   },
-//   b: {
-//     fontFamily: 'bold',
-//   },
-//   strong: {
-//     fontFamily: 'bold'
-//   },
-//   em: {
-//     fontFamily: 'italic'
-//   },
-//   i: {
-//     fontFamily: 'italic',
-//   },
-//   Container: {
-//     maxWidth: '71.5rem',
-//     padding: 0,
-//     px: ['0.725rem']
-//   },
-//   ul: {
-//     listStyle: 'disc inside none' ,
-//     mb: [2,2]
-//   },
-//   ol: {
-//     listStyle: 'decimal inside none',
-//   },
-//   li: {
-//     mb: ['0.5rem','0.5rem'],
-//     fontFamily: 'body',
-//     fontSize: [1, 'desktop.1'],
-//     lineHeight: 1,
-//     maxWidth: '40rem',
-//     marginBottom: [1,1]
-//   }
-// }
-
 const customTheme = {
   ...theme,
   breakpoints,
@@ -139,9 +53,7 @@ const customTheme = {
   fontSizes,
   radii,
   lineHeights,
-  // maxContainerWidth,
   fonts,
   colors,
-  // styles,
 }
 export default customTheme;

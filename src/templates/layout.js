@@ -32,6 +32,7 @@ import cbLogo from './../images/logos/cb.png'
 import mailIcon from './../images/logos/mail.svg'
 import phoneIcon from './../images/logos/phone.svg'
 import locationIcon from './../images/logos/location.svg'
+import { globalStyle } from './global-styles';
 
 const socialLinks = [
   {
@@ -243,31 +244,7 @@ const Layout = ({ children }) => {
           <ColorModeProvider>
             <Box bg="rgb(247,245,242)" minHeigh="100vh">
               <Global
-                styles={{
-                  'a:visited': {
-                    color: 'inherit',
-                  },
-                  'a:hover': {
-                    cursor: 'pointer',
-                  },
-                  'body': {
-                    fontFamily: customTheme.fonts.body,
-                    color: customTheme.colors.primary,
-                    lineHeight: customTheme.lineHeights[2],
-                  },
-                  '*': {
-                    boxSizing: 'border-box',
-                    padding: 0,
-                    margin: 0,
-                  },
-                  'p': {
-                    lineHeight: customTheme.lineHeights[1],
-                    marginBottom: customTheme.space[2],
-                  },
-                  'b': {
-                    fontSize: customTheme.fonts.bold,
-                  }
-                }}
+                styles={globalStyle}
               />
               <Box maxWidth='maxContainerWidth' m={['1' ,'auto']} fontSize={[1,'desktop.1']}>
                 <Helmet
