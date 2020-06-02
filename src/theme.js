@@ -24,6 +24,8 @@ const fonts = {
 
 theme.sizes['maxContainerWidth'] = maxContainerWidth
 
+theme.borders['3px'] = '3px solid'
+
 const radii = [0, 1, 2, 4, 8, 16];
 
 const lineHeights = [
