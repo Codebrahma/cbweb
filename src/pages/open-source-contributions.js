@@ -2,104 +2,76 @@ import { jsx } from "@emotion/core"
 /** @jsx jsx */
 import styled from "@emotion/styled"
 import Layout from "../templates/layout"
-import { Box, Flex, H2, H4, P, HorizontalRule, css } from "bricks"
+import { Box, Flex, PseudoBox } from '@chakra-ui/core';
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import PlainLink from "../components/link"
 import projects from "../data/open-source-projects.json"
+import { Text } from '@chakra-ui/core';
 
-const CardBox = styled(Flex)(
-  css({
-    flexDirection: "column",
-    width: "20rem",
-    border: "2px solid #ddd",
-    justifyContent: "space-between",
-    padding: "0.5rem 1rem",
-    margin: "1rem",
-    "&:hover": {
-      boxShadow: "0px 0px 7px #ddd",
-    },
-  })
-)
+const CardBox = styled(Flex)({
+  flexDirection: "column",
+  width: "20rem",
+  border: "2px solid #ddd",
+  justifyContent: "space-between",
+  padding: "0.5rem 1rem",
+  margin: "1rem",
+  "&:hover": {
+    boxShadow: "0px 0px 7px #ddd",
+  },
+})
 
-const FlexWrap = styled(Flex)`
-  flex-wrap: wrap;
-`
-
-const InlineBox = styled(Box)`
-  display: inline;
-`
-
-const Title = styled(H4)`
-  margin: 0;
-`
-
-const OutboundLink = styled(Link, {
-  shouldForwardProp: prop => prop !== "as",
-})(
-  css({
-    bg: "tint",
-    color: "black.1",
-    fontSize: "1",
-    px: "0.8rem",
-    py: "0.7rem",
-    display: "inline-block",
-    borderRadius: "6px",
-    border: "1px solid black",
-    textDecoration: "none",
-    "&:hover": {
+const OutboundLink = (props) => (
+  <PseudoBox
+    as={Link}
+    bg="tint"
+    color="black.1"
+    fontSize="1"
+    px="0.8rem"
+    py="0.7rem"
+    borderRadius="6px"
+    border="1px solid black"
+    textDecoration="none"
+    display="inline-block"
+    lineHeight="1rem"
+    _hover={{
       bg: "black.1",
       color: "tint",
-    },
-    ":visited": {
+    }}
+    _visited={{
       bg: "tint",
       color: "black.1",
       "&:hover": {
         bg: "black.1",
         color: "tint",
       },
-    },
-  })
+    }}
+    {...props}
+  />
 )
-
-const ImageRow = styled(Flex)`
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  margin: 0.5rem 1rem;
-`
-
-const FlexRow = styled(Flex)`
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.5rem 1rem;
-`
-const Paragraph = styled(P)`
-  max-width: max-content;
-`;
 
 const Card = ({ name, description, github, demo, image }) => {
   const imageData = image.childImageSharp.fixed;
+
   return (
     <CardBox>
       <div>
-        <ImageRow>
-          <InlineBox minWidth={imageData.width}>
+        <Flex direction='row' justify='start' align='center' margin='0.5rem 1rem'>
+          <Box display='flex' minWidth={imageData.width + 'px'}>
             <Img
               fixed={imageData}
               objectFit="contain"
               objectPosition="50% 50%"
               alt={name}
             />
-          </InlineBox>
-          <Title padding="1">{name}</Title>
-        </ImageRow>
-        <HorizontalRule />
+          </Box>
+          <Text as='h4' m='0' padding="1" fontFamily='heading'>{name}</Text>
+        </Flex>
+        <Box height='2px' bg='black.2'/>
       </div>
-      <P padding="1">{description}</P>
-      <FlexRow>
+      <Text p="1">{description}</Text>
+      <Flex direction='row' justify='space-between' align='center' margin='0.5rem 1rem'>
         <OutboundLink as="a" href={github} target="_blank">
           GitHub
         </OutboundLink>
@@ -108,7 +80,7 @@ const Card = ({ name, description, github, demo, image }) => {
             Demo
           </OutboundLink>
         )}
-      </FlexRow>
+      </Flex>
     </CardBox>
   )
 }
@@ -116,7 +88,7 @@ const Card = ({ name, description, github, demo, image }) => {
 const OpenSource = props => {
   return (
     <Layout>
-      <H2>Our Open Source Contributions</H2>
+      <h2 as='h2'>Our Open Source Contributions</h2>
       <SEO
         title="Our Open Source Contributions | Codebrahma"
         description="Codebrahma specializes in building custom web applications using technologies - ReactJS, Ruby on Rails, NodeJS, React Native, Android, iOS, Serverless. Checkout our open source contributions."
@@ -135,11 +107,11 @@ const OpenSource = props => {
         ]}
         url="https://codebrahma.com/open-source-contributions"
       />
-      <Paragraph pt="2">
+      <Text pt="2">
         Codebrahma dev team regularly contributes to open source. Some of our contributions can be found below. For more, you can checkout our&nbsp;
         <PlainLink as="a" href="https://github.com/Codebrahma" target="_blank" withUnderline>github page</PlainLink>.
-      </Paragraph>
-      <FlexWrap>
+      </Text>
+      <Flex wrap='wrap'>
         {projects.map(({ name, description, github, demo, image }) => (
           <Card
             key={name}
@@ -150,7 +122,7 @@ const OpenSource = props => {
             image={props.data[image]}
           />
         ))}
-      </FlexWrap>
+      </Flex>
       <br />
       <blockquote>
         <Link to="/contact">Contact Us</Link> to work with the best React.js / React Native consultancy :)
