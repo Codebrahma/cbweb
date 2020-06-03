@@ -21,7 +21,7 @@ import {
   Button,
 } from "@chakra-ui/core"
 import styled from "@emotion/styled"
-import { Global, css } from "@emotion/core"
+import { Global } from "@emotion/core"
 import Img from "gatsby-image"
 import { Helmet } from "react-helmet"
 import Header from "./header"
@@ -244,7 +244,7 @@ const Layout = ({ children }) => (
             <Global
               styles={globalStyle}
             />
-            <Box maxWidth='maxContainerWidth' m='auto' mx={['1', 0]} fontSize={[1,'desktop.1']}>
+            <Box maxWidth='maxContainerWidth' mx={['1', 'auto']} fontSize={[1,'desktop.1']}>
               <Helmet
                 meta={[
                   { name: "referrer", content: "origin" },
