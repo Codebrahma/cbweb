@@ -2,8 +2,8 @@ import React from "react"
 import Layout from './layout'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { graphql } from 'gatsby'
-import {H1, Flex, Box} from 'bricks'
 import SEO  from '../components/seo'
+import { Box, Flex, Text } from '@chakra-ui/core';
 
 const Sidebar = ({author, category, tags})=> (
   <div>
@@ -17,7 +17,7 @@ const SolutionLayout = ({title, body, meta, keywords, description}) => {
       <Flex flexWrap='wrap'>
         <Box width={['100%',2/3]}>
           <Box mb={4}>
-            <H1>{title}</H1>
+            <Text as='h1' fontFamily='heading'>{title}</Text>
           </Box>
           <MDXRenderer>{body}</MDXRenderer>
         </Box>

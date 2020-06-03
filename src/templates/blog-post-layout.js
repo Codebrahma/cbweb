@@ -3,7 +3,7 @@ import Layout from "./layout"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-import { H1, Flex, Box, I } from "bricks"
+import { Flex, Box, Text } from "@chakra-ui/core"
 import { getCategory, slugify } from "../utils"
 import CategoryLink from "../components/categorylink"
 import PlainLink from "../components/link"
@@ -12,12 +12,12 @@ import SEO from '../components/seo'
 const Sidebar = ({ author, category, tags }) => (
   <div>
     <Box my={2}>
-      <Flex fontSize={[0, 0]} justifyContent="center">
-        Written by
-      </Flex>
+      <Box display='flex' fontSize={[0, 0]} justifyContent="center" lineHeight='0'>
+        <Text as='h1'>Written by</Text>
+      </Box>
       <Flex justifyContent="center" mt="0.5rem">
         <PlainLink to={`/author/${slugify(author)}`}>
-          <I>{author}</I>
+          <Text as='i'>{author}</Text>
           <br />
         </PlainLink>
       </Flex>
@@ -52,7 +52,7 @@ const Sidebar = ({ author, category, tags }) => (
               return (
                 <Box key={tag} p="0.125rem">
                   <PlainLink key={tag} to={`/tag/${slug}`}>
-                    <I>#{slug}</I>
+                    <Text as='i'>#{slug}</Text>
                   </PlainLink>
                 </Box>
               )
@@ -89,7 +89,7 @@ class BlogLayout extends React.Component {
         <Flex flexWrap="wrap">
           <Box width={["100%", 2 / 3]}>
             <Box mb={4}>
-              <H1>{title}</H1>
+              <Text as='h1'>{title}</Text>
             </Box>
             <MDXRenderer>{body}</MDXRenderer>
           </Box>
