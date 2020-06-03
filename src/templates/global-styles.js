@@ -19,7 +19,7 @@ export const globalStyle = {
   'body': {
     fontFamily: fonts.body,
     color: colors.primary,
-    lineHeight: lineHeights[2],
+    // lineHeight: lineHeights[2],
   },
   '*': {
     boxSizing: 'border-box',
