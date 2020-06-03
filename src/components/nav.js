@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Flex } from '@chakra-ui/core'
+import { Box, Flex, PseudoBox } from '@chakra-ui/core'
 import Link from './link'
 
 // TODO: mobile nav fix
@@ -24,16 +24,19 @@ const Nav = ({ logo, links,}) => {
       {logo}
       <Flex display={['none', 'flex']} css={isOpen ? mobileNav : {}}>
         {links.map(({ link, title }) => (
-          <Box
+          <PseudoBox
             as={Link}
             px={1}
             to={link}
             key={link}
             fontFamily='body'
             fontSize={1}
+            _hover={{
+              textDecoration: 'underline'
+            }}
           >
             {title}
-          </Box>
+          </PseudoBox>
        ))}
       </Flex>
       <Box display={['block', 'none']} p={1} onClick={() => setIsOpen(!isOpen)}>
