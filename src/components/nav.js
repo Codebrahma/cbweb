@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Flex, PseudoBox } from '@chakra-ui/core'
+import { Box, Flex, PseudoBox, Icon } from '@chakra-ui/core'
 import Link from './link'
 
 // TODO: mobile nav fix
@@ -40,7 +40,7 @@ const Nav = ({ logo, links,}) => {
        ))}
       </Flex>
       <Box display={['block', 'none']} p={1} onClick={() => setIsOpen(!isOpen)}>
-        <Box height='3px' bg='primary' marginBottom='5px' width={'30px'}/>
+        <Box height='3px' bg='primary' marginBottom='5px' width={'25px'}/>
         <Box height='3px' bg='primary' marginBottom='5px'/>
         <Box height='3px' bg='primary' marginBottom='5px'/>
       </Box>
@@ -53,9 +53,12 @@ const Nav = ({ logo, links,}) => {
           left='0'
           bg='secondary'
           flexDirection='column'
-          justify='space-between'
           align='center'
+          zIndex='5'
         >
+          <Flex p='2' justifyContent='flex-end' width='100%'>
+            <Icon name="close" p='1' onClick={() => setIsOpen(false)}/>
+          </Flex>
           {links.map(({ link, title }) => (
             <Box
               as={Link}
@@ -63,6 +66,9 @@ const Nav = ({ logo, links,}) => {
               to={link}
               key={link}
               fontFamily='body'
+              py={3}
+              fontSize={'desktop.3'}
+              userSelect='none'
             >
               {title}
             </Box>

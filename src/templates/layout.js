@@ -244,7 +244,7 @@ const Layout = ({ children }) => (
             <Global
               styles={globalStyle}
             />
-            <Box maxWidth='maxContainerWidth' m={['1' ,'auto']} fontSize={[1,'desktop.1']}>
+            <Box maxWidth='maxContainerWidth' m='auto' mx={['1', 0]} fontSize={[1,'desktop.1']}>
               <Helmet
                 meta={[
                   { name: "referrer", content: "origin" },
