@@ -91,7 +91,6 @@ const Footer = ({ images }) => (
               <Input
                 name="MERGE0"
                 type="email"
-                placeholder="Email address"
                 backgroundColor="black.4"
                 borderWidth={0}
                 borderRadius={[3, "6px 0 0 6px"]}

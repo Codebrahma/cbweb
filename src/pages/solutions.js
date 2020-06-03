@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from "react"
 import { jsx } from "@emotion/core"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"

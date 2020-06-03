@@ -30,9 +30,6 @@ export const globalStyle = {
     lineHeight: lineHeights[1],
     marginBottom: space[2],
   },
-  'b': {
-    fontSize: fonts.bold,
-  },
   h1: {
     fontFamily: fonts.heading,
     fontSize: fontSizes.desktop[5],
