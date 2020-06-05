@@ -23,8 +23,6 @@ export const globalStyle = {
   },
   '*': {
     boxSizing: 'border-box',
-    padding: 0,
-    margin: 0,
   },
   'p': {
     lineHeight: lineHeights[1],
