@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider } from 'bricks'
+import { ThemeProvider } from '@chakra-ui/core'
 import theme from './theme'
 
 global.__PATH_PREFIX__ = ''
