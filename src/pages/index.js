@@ -4,6 +4,7 @@ import { jsx } from "@emotion/core"
 import { graphql, navigate } from "gatsby"
 import Helmet from "react-helmet"
 import { Box, Text, Flex } from '@chakra-ui/core';
+import { H1, H3, P } from '../components/typo';
 
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
@@ -50,14 +51,14 @@ const IndexPage = ({ data }) => {
         url="https://codebrahma.com"
       />
       <Box mt={[3, 6]} textAlign="center">
-        <Text as='h2' fontSize={[5, 'desktop.5']} fontFamily='heading' lineHeight='3'>
+        <H1>
           We build your React &amp;&nbsp;React Native frontend
-        </Text>
+        </H1>
         <Box width={['100%', 2/3]} mt={2} mx="auto">
-          <Text>
+          <P>
             We take your design files &amp; api docs. And give you a fast mobile
             and browser app. You focus on your backend business&nbsp;logic!
-          </Text>
+          </P>
         </Box>
         <Flex
           mt={1}
@@ -68,19 +69,18 @@ const IndexPage = ({ data }) => {
           <ReactIcon width="200" height="200" />
           <Title
             fontSize={[3, 'desktop.3']}
-            lineHeight={2}
             border='none'
             mt={0}
           >
             React & React Native
           </Title>
           <Box width={['100%', 2/3]}>
-            <Text textAlign="center" fontSize={[1, 'desktop.1']} mb='2'>
+            <P textAlign="center">
               We have been building on React / React Native for 3 years now, and
               we absolutely love its declarative and functional philosophy. We
               strongly believe that a good react codebase is conducive for rapid
               UI iteration
-            </Text>
+            </P>
           </Box>
         </Flex>
       </Box>
@@ -113,20 +113,18 @@ const IndexPage = ({ data }) => {
       </Box>
 
       <Flex mt={[3, 6]} flexDirection="column" alignItems="center">
-        <Title
-          fontSize={[3, 'desktop.3']}
+        <H3
           fontWeight="bold"
           lineHeight={2}
-          borderWidth={0}
           mt={0}
         >
           WE ARE ALL EARS
-        </Title>
+        </H3>
         <Box width={['100%', 2/3]} textAlign="center">
-          <Text fontSize={[1, 'desktop.1']} mb='2'>
+          <P>
             Whether it's a code review or a project, that you want to discuss or just want to say hello, We would love to hear from you.
             We cordially welcome your ideas, suggestions, and reviews regarding our work.
-          </Text>
+          </P>
           <ContactUsButton text="say hello!" />
         </Box>
       </Flex>

@@ -66,124 +66,126 @@ const StyledLink = styled(PlainLink)`
   margin-right: 15px;
 `
 
-const Footer = ({ images }) => (
-  <Box marginTop="6" pb="6">
-    <Box height='2px' bg='black.1'/>
-    <Flex
-      flexDirection={["column", "row"]}
-      justifyContent="space-between"
-      mt="3"
-    >
-      <Box width={['100%', 1 / 3]}>
-        <Text lineHeight='1'>
-          Join our <Text as='b' fontFamily='bold' fontWeight='black'>NEW</Text> newsletter to learn about the latest trends in the
-          fast changing front end atmosphere
-        </Text>
-        <Box my="1">
-          <form
-            action="https://codebrahma.us3.list-manage.com/subscribe/post"
-            method="post"
-            target="/thanks"
-          >
-            <input type="hidden" name="u" value="42069ce8928af0d4afc3fd428" />
-            <input type="hidden" name="id" value="a540ccf305" />
-            <Box display={['block', 'flex']} mt='3' align='stretch'>
-              <Input
-                name="MERGE0"
-                type="email"
-                backgroundColor="black.4"
-                borderWidth={0}
-                borderRadius={[3, "6px 0 0 6px"]}
-                placeholder="@ Email address"
-                height='47px'
-                p={1}
-                fontFamily='body'
-                lineHeight='3'
-              />
-              <Button
-                bg='primary'
-                color='tint'
-                name="subscribe"
-                px={3}
-                py="10px"
-                height='47px'
-                lineHeight='0'
-                borderRadius={[3, "0 4px 4px 0"]}
-                border='none'
-                fontFamily='body'
-                mt={[1, 0]}
-              >
-                Subscribe
-              </Button>
-            </Box>
-          </form>
+const Footer = ({ images }) => {
+  return (
+    <Box marginTop="6" pb="6">
+      <Box height='2px' bg='black.1'/>
+      <Flex
+        flexDirection={["column", "row"]}
+        justifyContent="space-between"
+        mt="3"
+      >
+        <Box width={['100%', 1 / 3]}>
+          <Text lineHeight='1'>
+            Join our <Text as='b' fontFamily='bold' fontWeight='black'>NEW</Text> newsletter to learn about the latest trends in the
+            fast changing front end atmosphere
+          </Text>
+          <Box my="1">
+            <form
+              action="https://codebrahma.us3.list-manage.com/subscribe/post"
+              method="post"
+              target="/thanks"
+            >
+              <input type="hidden" name="u" value="42069ce8928af0d4afc3fd428" />
+              <input type="hidden" name="id" value="a540ccf305" />
+              <Box display={['block', 'flex']} mt='3' align='stretch'>
+                <Input
+                  name="MERGE0"
+                  type="email"
+                  backgroundColor="black.4"
+                  borderWidth={0}
+                  borderRadius={[3, "6px 0 0 6px"]}
+                  placeholder="@ Email address"
+                  height='47px'
+                  p={1}
+                  fontFamily='body'
+                  lineHeight='3'
+                />
+                <Button
+                  bg='primary'
+                  color='tint'
+                  name="subscribe"
+                  px={3}
+                  py="10px"
+                  height='47px'
+                  lineHeight='0'
+                  borderRadius={[3, "0 4px 4px 0"]}
+                  border='none'
+                  fontFamily='body'
+                  mt={[1, 0]}
+                >
+                  Subscribe
+                </Button>
+              </Box>
+            </form>
+          </Box>
         </Box>
-      </Box>
-      <Flex flexDirection={["column-reverse", "column"]} width={['100%', 1 / 4]} mt={[2, 0]}>
-        <TextWithIcon>
-          <img src={mailIcon} alt="Mail" />
-          &nbsp;
-          <PlainLink as="a" href="mailto:hello@codebrahma.com">
-            hello@codebrahma.com
-          </PlainLink>
-        </TextWithIcon>
-        <TextWithIcon mt={[1, 0]}>
-          <img src={phoneIcon} alt="Phone" />
-          &nbsp;
-          <PlainLink as="a" href="tel:+14845060634">
-            +1 484 506 0634
-          </PlainLink>
-        </TextWithIcon>
-        <Box mt={[1, 0]}>
-          <Flex flexDirection={["row"]} alignItems="center">
-            {socialLinks.map(({ name, link, image }) => {
-              const imageData = images[image].childImageSharp.fixed
-              return (
-                <StyledLink as="a" href={link} target="_blank" key={name}>
-                  <Img
-                    fixed={imageData}
-                    objectFit="contain"
-                    objectPosition="50% 50%"
-                    alt={name}
-                  />
-                </StyledLink>
-              )
-            })}
-          </Flex>
+        <Flex flexDirection={["column-reverse", "column"]} width={['100%', 1 / 4]} mt={[2, 0]}>
+          <TextWithIcon>
+            <img src={mailIcon} alt="Mail" />
+            &nbsp;
+            <PlainLink as="a" href="mailto:hello@codebrahma.com">
+              hello@codebrahma.com
+            </PlainLink>
+          </TextWithIcon>
+          <TextWithIcon mt={[1, 0]}>
+            <img src={phoneIcon} alt="Phone" />
+            &nbsp;
+            <PlainLink as="a" href="tel:+14845060634">
+              +1 484 506 0634
+            </PlainLink>
+          </TextWithIcon>
+          <Box mt={[1, 0]}>
+            <Flex flexDirection={["row"]} alignItems="center">
+              {socialLinks.map(({ name, link, image }) => {
+                const imageData = images[image].childImageSharp.fixed
+                return (
+                  <StyledLink as="a" href={link} target="_blank" key={name}>
+                    <Img
+                      fixed={imageData}
+                      objectFit="contain"
+                      objectPosition="50% 50%"
+                      alt={name}
+                    />
+                  </StyledLink>
+                )
+              })}
+            </Flex>
+          </Box>
+        </Flex>
+        <Box width={['100%', 1 / 4]} mb={[2, 0]}>
+          <TextWithIcon>
+            <img src={locationIcon} alt="Address" />
+            &nbsp;
+            <PlainLink
+              as="a"
+              href="http://maps.google.com/?q=Codebrahma 156, 2nd Street San Francisco, CA 94105"
+              target="_blank"
+            >
+              156, 2nd Street
+              <br />
+              San Francisco, CA 94105
+            </PlainLink>
+          </TextWithIcon>
         </Box>
       </Flex>
-      <Box width={['100%', 1 / 4]} mb={[2, 0]}>
-        <TextWithIcon>
-          <img src={locationIcon} alt="Address" />
-          &nbsp;
-          <PlainLink
-            as="a"
-            href="http://maps.google.com/?q=Codebrahma 156, 2nd Street San Francisco, CA 94105"
-            target="_blank"
-          >
-            156, 2nd Street
-            <br />
-            San Francisco, CA 94105
-          </PlainLink>
-        </TextWithIcon>
-      </Box>
-    </Flex>
 
-    <Flex mt={[0, 3]} align='center'>
-      <Box mr={1} display={['none', 'block']}>
-        <img src={cbLogo} height="48px" alt="Codebrahma Logo" />
-      </Box>
-      <Box fontSize='1'>
-        <Text m='0'>
-          Codebrahma is an independent company. Mentioned brands and companies are trademarked brands.
-        </Text>
-        <Text m='0'>
-          &copy; 2020 codebrahma.com. All rights reserved.
-        </Text>
-      </Box>
-    </Flex>
-  </Box>
-)
+      <Flex mt={[0, 3]} align='center'>
+        <Box mr={1} display={['none', 'block']}>
+          <img src={cbLogo} height="48px" alt="Codebrahma Logo" />
+        </Box>
+        <Box fontSize='1'>
+          <Text m='0'>
+            Codebrahma is an independent company. Mentioned brands and companies are trademarked brands.
+          </Text>
+          <Text m='0'>
+            &copy; 2020 codebrahma.com. All rights reserved.
+          </Text>
+        </Box>
+      </Flex>
+    </Box>
+  )
+}
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -241,7 +243,22 @@ const Layout = ({ children }) => (
         <ColorModeProvider>
           <Box bg="rgb(247,245,242)" minHeigh="100vh">
             <Global
-              styles={globalStyle}
+              styles={{
+                'a:visited': {
+                  color: 'inherit',
+                },
+                'a:hover': {
+                  cursor: 'pointer',
+                },
+                'body': {
+                  fontFamily: customTheme.fonts.body,
+                  color: customTheme.colors.primary,
+                  // lineHeight: customTheme.lineHeights[1],
+                },
+                '*': {
+                  boxSizing: 'border-box',
+                }
+              }}
             />
             <Box maxWidth='maxContainerWidth' mx={['1', 'auto']} fontSize={[1,'desktop.1']}>
               <Helmet
