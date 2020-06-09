@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import Project from "../components/project"
-import { Text } from '@chakra-ui/core';
+import { I, H1, P } from "../components/typography"
 
 const WorkPage = ({ data }) => (
   <Layout>
@@ -38,8 +38,8 @@ const WorkPage = ({ data }) => (
       image={data.serverless_screenshot.publicURL}
       url="https://codebrahma.com/work"
     />
-    <Text as="h1" fontFamily='heading'>Our Work</Text>
-    <Text>We have built 50+ apps over the last 6 years. We have listed a few</Text>
+    <H1>Our Work</H1>
+    <P>We have built 50+ apps over the last 6 years. We have listed a few</P>
     <Project
       title="Rippling"
       description="Codebrahma built the complete browser and mobile app for this fast growing
@@ -64,7 +64,7 @@ const WorkPage = ({ data }) => (
     <br />
     <br />
     <br />
-    <Text as='i'>And many more projects!!</Text>
+    <I>And many more projects!!</I>
   </Layout>
 )
 

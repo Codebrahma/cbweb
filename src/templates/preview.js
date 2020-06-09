@@ -1,7 +1,8 @@
 import { jsx } from '@emotion/core'
 /** @jsx jsx */
 import styled from '@emotion/styled'
-import { PseudoBox, Box, Text } from '@chakra-ui/core'
+import { PseudoBox, Box } from '@chakra-ui/core'
+import { H3, H4, P } from "../components/typography"
 import Layout from '../templates/layout'
 import PlainLink  from '../components/link'
 import { Link } from 'gatsby'
@@ -82,29 +83,29 @@ const HeadingLink = (props) => (
 // refactoring the Link beautifully with invert etc
 const Blog = ({ frontmatter })=>(
   <Box>
-    <Text as='h3'>
+    <H3>
       <HeadingLink ml='-5px' to={frontmatter.link}>
         {frontmatter.title}
       </HeadingLink>
-    </Text>
+    </H3>
     {getCategory(frontmatter) && (
       <CategoryLink to={`/category/${slugify(getCategory(frontmatter))}`}>
         {getCategory(frontmatter)}
       </CategoryLink>
     )}
     <Box marginTop='2'>
-      <Text>{frontmatter.description}</Text>
+      <P>{frontmatter.description}</P>
       <Box marginTop='1'>
-        <Text fontSize={[0,0]} color='black.2'>
+        <P fontSize={[0,0]} color='black.2'>
           {getTags(frontmatter) && getTags(frontmatter).map((tag,i)=> {
             const slug = slugify(tag)
             return (
               <TagLink key={tag} to={`/tag/${slug}`}>
-                <Text as='i'>#{slug}</Text>
+                <I>#{slug}</I>
               </TagLink>
             )
           })}
-        </Text>
+        </P>
       </Box>
     </Box>
     <Box marginBottom={3} marginTop={1}>
@@ -139,7 +140,7 @@ const JournalPage = ({
         value,
       })
     } />
-    <Text as='h4' color='black.1'>
+    <H4 color='black.1'>
       {getHeading({
         isFirstPage,
         currentPage,
@@ -147,7 +148,7 @@ const JournalPage = ({
         type,
         value,
       })}
-    </Text>
+    </H4>
     <Box marginTop={6} width={['100%', 2/3]}>
     {blogs.map((blog,i) => (
       <div key={blog.childMdx.frontmatter.title}>

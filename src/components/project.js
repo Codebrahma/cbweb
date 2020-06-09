@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import { Box, Flex, Text } from "@chakra-ui/core"
+import { Box, Flex } from "@chakra-ui/core"
+import { P } from './typography'
 import PlainLink from "./link"
 import NonStretchedImage from "./nonStretchedImage"
 import Title from './title'
@@ -31,7 +32,7 @@ export default ({ title, image, description, link, reverse = false }) => (
       </PlainLink>
 
       <Box mt={[1, 2]}>
-        <Text>{description}</Text>
+        <P>{description}</P>
       </Box>
     </Flex>
   </Flex>

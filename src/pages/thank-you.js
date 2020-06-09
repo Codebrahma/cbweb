@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Box, Text } from '@chakra-ui/core';
+import { Box } from '@chakra-ui/core';
 import { Main } from "theme-ui"
 import SEO from "../components/seo"
 import { Helmet } from "react-helmet"
+import { P } from "../components/typography"
 
 const ThankYou = () => {
   return (
@@ -30,16 +31,16 @@ const ThankYou = () => {
       />
       <Main mt="7">
         <Box textAlign="center">
-          <Text fontSize="6" mb="4">
+          <P fontSize="6" mb="4">
             Thank You!
-          </Text>
-          <Text fontSize="3" mb="4">
+          </P>
+          <P fontSize="3" mb="4">
             We will get back to you within 24 hours. Our typical response time
             is 5 minutes.
-          </Text>
-          <Text fontSize="3">
+          </P>
+          <P fontSize="3">
             <Link to="/">Back to Homepage</Link>
-          </Text>
+          </P>
         </Box>
       </Main>
     </>

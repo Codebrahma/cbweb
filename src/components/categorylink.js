@@ -1,7 +1,7 @@
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 import { PseudoBox } from '@chakra-ui/core';
 
-export default (props) => <PseudoBox 
+export default (props) => <PseudoBox
   as={Link}
   bg='tint'
   color='black.1'

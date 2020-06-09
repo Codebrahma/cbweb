@@ -6,7 +6,8 @@ import Layout from "../templates/layout"
 import Link from "../components/link"
 import SEO from "../components/seo"
 import Title from "../components/title"
-import { Box, Flex, Text } from '@chakra-ui/core';
+import { Box, Flex } from '@chakra-ui/core';
+import { H1, H4, P } from "../components/typography"
 
 const SolutionsContainer = ({ title, children }) => (
   <Box mb='5'>
@@ -49,7 +50,7 @@ const Solution = ({ title, image, link }) => (
           objectPosition="50% 50%"
           alt={title}
         />
-        <Text as='h4' fontFamily='heading' textAlign="center">{title}</Text>
+        <H4 textAlign="center">{title}</H4>
       </Flex>
     </Box>
   </Link>
@@ -88,8 +89,8 @@ const SolutionPage = ({ data }) => (
       url="https://codebrahma.com/solutions"
     />
     <Box mb='4'>
-      <Text as='h1' fontFamily='heading'>Our Solutions</Text>
-      <Text>We have great expertise in building web and mobile apps.</Text>
+      <H1>Our Solutions</H1>
+      <P>We have great expertise in building web and mobile apps.</P>
     </Box>
 
     <SolutionsContainer title="Web">
