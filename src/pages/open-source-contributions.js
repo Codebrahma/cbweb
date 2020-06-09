@@ -3,6 +3,7 @@ import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
 import Layout from "../templates/layout"
 import { Box, Flex, PseudoBox } from '@chakra-ui/core';
+import { H4, P, H2 } from "../components/typography";
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
@@ -66,11 +67,11 @@ const Card = ({ name, description, github, demo, image }) => {
               alt={name}
             />
           </Box>
-          <Text as='h4' m='0' padding="1" fontFamily='heading'>{name}</Text>
+          <H4 as='h4' m='0' padding="1" fontFamily='heading'>{name}</H4>
         </Flex>
         <Box height='2px' bg='black.2'/>
       </div>
-      <Text p="1">{description}</Text>
+      <P p="1">{description}</P>
       <Flex direction='row' justify='space-between' align='center' margin='0.5rem 1rem'>
         <OutboundLink as="a" href={github} target="_blank">
           GitHub
@@ -88,7 +89,7 @@ const Card = ({ name, description, github, demo, image }) => {
 const OpenSource = props => {
   return (
     <Layout>
-      <h2 as='h2'>Our Open Source Contributions</h2>
+      <H2 as='h2'>Our Open Source Contributions</H2>
       <SEO
         title="Our Open Source Contributions | Codebrahma"
         description="Codebrahma specializes in building custom web applications using technologies - ReactJS, Ruby on Rails, NodeJS, React Native, Android, iOS, Serverless. Checkout our open source contributions."
@@ -107,10 +108,10 @@ const OpenSource = props => {
         ]}
         url="https://codebrahma.com/open-source-contributions"
       />
-      <Text pt="2">
+      <P pt="2">
         Codebrahma dev team regularly contributes to open source. Some of our contributions can be found below. For more, you can checkout our&nbsp;
         <PlainLink as="a" href="https://github.com/Codebrahma" target="_blank" withUnderline>github page</PlainLink>.
-      </Text>
+      </P>
       <Flex wrap='wrap'>
         {projects.map(({ name, description, github, demo, image }) => (
           <Card

@@ -123,22 +123,6 @@ const Li = (props) => (
   />
 )
 
-const Title = (props) => (
-  <PseudoBox
-    as='span'
-    fontFamily="heading"
-    fontSize={[4, 'desktop.4']}
-    lineHeight={2}
-    mt={[3, 4]}
-    mb={1}
-    p={0}
-    pb="2px"
-    borderBottom='1px'
-    borderColor="black.0"
-    {...props}
-  />
-);
-
 export {
-  H1, H2, H3, H4, H5, Title, P, B, Em, I, Ul, Ol, Li
+  H1, H2, H3, H4, H5, P, B, Em, I, Ul, Ol, Li
 }

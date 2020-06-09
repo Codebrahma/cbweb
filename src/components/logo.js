@@ -1,18 +1,9 @@
 import Link from "./link"
 import React from "react"
-import { Box } from "@chakra-ui/core"
+import { H2 } from "../components/typography";
 
 export const Logo = ({ title }) => (
-  <Box
-    as='h2'
-    marginTop={[0, 0]}
-    fontFamily='TiemposHeadline'
-    fontSize={[4, 'desktop.4']}
-  >
-    <Link
-      to="/"
-    >
-      {title}
-    </Link>
-  </Box>
+  <H2 marginTop={[0, 0]} >
+    <Link to="/">{title}</Link>
+  </H2>
 )

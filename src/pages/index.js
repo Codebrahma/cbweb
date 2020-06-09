@@ -4,7 +4,7 @@ import { jsx } from "@emotion/core"
 import { graphql, navigate } from "gatsby"
 import Helmet from "react-helmet"
 import { Box, Text, Flex } from '@chakra-ui/core';
-import { H1, H3, P } from '../components/typo';
+import { H1, H3, P } from '../components/typography';
 
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
