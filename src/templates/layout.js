@@ -258,6 +258,7 @@ const Layout = ({ children }) => (
               ul: Typography.Ul,
               ol: Typography.Ol,
               li: Typography.Li,
+              strong: Typography.Strong,
             }}
           >
             <Box bg="rgb(247,245,242)" minHeigh="100vh">

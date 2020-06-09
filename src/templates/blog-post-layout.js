@@ -16,7 +16,7 @@ const Sidebar = ({ author, category, tags }) => (
       <Box display='flex' fontSize={[0, 0]} justifyContent="center" lineHeight='0'>
         <H1 as='h1'>Written by</H1>
       </Box>
-      <Flex justifyContent="center" mt="0.5rem">
+      <Flex justifyContent="center">
         <PlainLink to={`/author/${slugify(author)}`}>
           <I>{author}</I>
           <br />
@@ -28,7 +28,7 @@ const Sidebar = ({ author, category, tags }) => (
         <Flex fontSize={[0, 0]} justifyContent="center">
           Posted in
         </Flex>
-        <Flex justifyContent="center" mt="0.5rem">
+        <Flex justifyContent="center">
           <CategoryLink to={`/category/${slugify(getCategory({ category }))}`}>
             {getCategory({ category })}
           </CategoryLink>
@@ -40,7 +40,7 @@ const Sidebar = ({ author, category, tags }) => (
         <Flex fontSize={[0, 0]} justifyContent="center">
           Tags
         </Flex>
-        <Flex justifyContent="center" mt="0.5rem">
+        <Flex justifyContent="center">
           <Flex
             fontSize={[0, 0]}
             color="black.2"

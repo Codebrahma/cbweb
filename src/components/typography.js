@@ -98,7 +98,9 @@ const I = (props) => (
 const Ul = (props) => (
   <PseudoBox
     as='ul'
-    listStyle='disc inside none'
+    listStylePosition='inside'
+    listStyleImage='none'
+    listStyleType='disc'
     mb={2}
     {...props}
   />
@@ -106,7 +108,9 @@ const Ul = (props) => (
 const Ol = (props) => (
   <PseudoBox
     as='ol'
-    listStyle='decimal inside none'
+    listStylePosition='inside'
+    listStyleImage='none'
+    listStyleType='decimal'
     mb={2}
     {...props}
   />
@@ -123,6 +127,14 @@ const Li = (props) => (
   />
 )
 
+const Strong = (props) => (
+  <PseudoBox
+    as='strong'
+    fontFamily='bold'
+    {...props}
+  />
+)
+
 export {
-  H1, H2, H3, H4, H5, P, B, Em, I, Ul, Ol, Li
+  H1, H2, H3, H4, H5, P, B, Em, I, Ul, Ol, Li, Strong
 }
