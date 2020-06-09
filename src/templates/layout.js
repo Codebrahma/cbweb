@@ -19,7 +19,9 @@ import {
   Input,
   Button,
 } from "@chakra-ui/core"
+import { MDXProvider } from "@mdx-js/react"
 import { P, B } from "../components/typography"
+import * as Typography from "../components/typography"
 import styled from "@emotion/styled"
 import { Global } from "@emotion/core"
 import Img from "gatsby-image"
@@ -241,66 +243,84 @@ const Layout = ({ children }) => (
     render={data => (
       <ThemeProvider theme={customTheme}>
         <ColorModeProvider>
-          <Box bg="rgb(247,245,242)" minHeigh="100vh">
-            <Global
-              styles={{
-                'a:visited': {
-                  color: 'inherit',
-                },
-                'a:hover': {
-                  cursor: 'pointer',
-                },
-                'body': {
-                  fontFamily: customTheme.fonts.body,
-                  color: customTheme.colors.primary,
-                  lineHeight: customTheme.lineHeights[1],
-                },
-                '*': {
-                  boxSizing: 'border-box',
-                }
-              }}
-            />
-            <Box maxWidth='maxContainerWidth' mx={['1', 'auto']} fontSize={[1,'desktop.1']}>
-              <Helmet
-                meta={[
-                  { name: "referrer", content: "origin" },
-                  {
-                    name: "google-site-verification",
-                    content: "M4VnkYHL0o4WjZUo7XZO-_HUIjsZGo2Bvw-SGI3VF80",
+          <MDXProvider
+            components={{
+              // Map HTML element tag to React component
+              h1: Typography.H1,
+              h2: Typography.H2,
+              h3: Typography.H3,
+              h4: Typography.H4,
+              h5: Typography.H5,
+              p: Typography.P,
+              b: Typography.B,
+              em: Typography.Em,
+              i: Typography.I,
+              ul: Typography.Ul,
+              ol: Typography.Ol,
+              li: Typography.Li,
+            }}
+          >
+            <Box bg="rgb(247,245,242)" minHeigh="100vh">
+              <Global
+                styles={{
+                  'a:visited': {
+                    color: 'inherit',
                   },
-                ]}
+                  'a:hover': {
+                    cursor: 'pointer',
+                  },
+                  'body': {
+                    fontFamily: customTheme.fonts.body,
+                    color: customTheme.colors.primary,
+                    lineHeight: customTheme.lineHeights[1],
+                  },
+                  '*': {
+                    boxSizing: 'border-box',
+                  }
+                }}
               />
-              <Helmet>
-                <script
-                  async
-                  src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"
-                ></script>
-                <script>
-                  {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                  
-                    gtag('config', 'AW-700131916');
+              <Box maxWidth='maxContainerWidth' mx={['1', 'auto']} fontSize={[1,'desktop.1']}>
+                <Helmet
+                  meta={[
+                    { name: "referrer", content: "origin" },
+                    {
+                      name: "google-site-verification",
+                      content: "M4VnkYHL0o4WjZUo7XZO-_HUIjsZGo2Bvw-SGI3VF80",
+                    },
+                  ]}
+                />
+                <Helmet>
+                  <script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=AW-700131916"
+                  ></script>
+                  <script>
+                    {`
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                    
+                      gtag('config', 'AW-700131916');
 
-                    document.addEventListener('click',function(e){
-                      if(e.target.matches('[href="tel:+14845060634"]')){
-                        gtag('event', 'conversion', {'send_to': 'AW-700131916/co9tCKqOrLUBEMzU7M0C'});
-                        ga('send','event','button','click','phone');
-                      }
-                    })
-                  `}
-                </script>
-              </Helmet>
-              <Header siteTitle={data.site.siteMetadata.title} />
-              <Box>
-                <main>{children}</main>
-                <footer>
-                  <Footer images={data} />
-                </footer>
+                      document.addEventListener('click',function(e){
+                        if(e.target.matches('[href="tel:+14845060634"]')){
+                          gtag('event', 'conversion', {'send_to': 'AW-700131916/co9tCKqOrLUBEMzU7M0C'});
+                          ga('send','event','button','click','phone');
+                        }
+                      })
+                    `}
+                  </script>
+                </Helmet>
+                <Header siteTitle={data.site.siteMetadata.title} />
+                <Box>
+                  <main>{children}</main>
+                  <footer>
+                    <Footer images={data} />
+                  </footer>
+                </Box>
               </Box>
             </Box>
-          </Box>
+          </MDXProvider>
         </ColorModeProvider>
       </ThemeProvider>
     )}
