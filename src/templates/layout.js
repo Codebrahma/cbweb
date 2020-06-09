@@ -16,10 +16,10 @@ import {
   ColorModeProvider,
   Box,
   Flex,
-  Text,
   Input,
   Button,
 } from "@chakra-ui/core"
+import { P, B } from "../components/typography"
 import styled from "@emotion/styled"
 import { Global } from "@emotion/core"
 import Img from "gatsby-image"
@@ -76,10 +76,10 @@ const Footer = ({ images }) => {
         mt="3"
       >
         <Box width={['100%', 1 / 3]}>
-          <Text lineHeight='1'>
-            Join our <Text as='b' fontFamily='bold' fontWeight='black'>NEW</Text> newsletter to learn about the latest trends in the
+          <P lineHeight='1'>
+            Join our <B>NEW</B> newsletter to learn about the latest trends in the
             fast changing front end atmosphere
-          </Text>
+          </P>
           <Box my="1">
             <form
               action="https://codebrahma.us3.list-manage.com/subscribe/post"
@@ -175,12 +175,12 @@ const Footer = ({ images }) => {
           <img src={cbLogo} height="48px" alt="Codebrahma Logo" />
         </Box>
         <Box fontSize='1'>
-          <Text m='0'>
+          <P m='0' fontSize={1}>
             Codebrahma is an independent company. Mentioned brands and companies are trademarked brands.
-          </Text>
-          <Text m='0'>
+          </P>
+          <P m='0' fontSize={1}>
             &copy; 2020 codebrahma.com. All rights reserved.
-          </Text>
+          </P>
         </Box>
       </Flex>
     </Box>
@@ -253,7 +253,7 @@ const Layout = ({ children }) => (
                 'body': {
                   fontFamily: customTheme.fonts.body,
                   color: customTheme.colors.primary,
-                  // lineHeight: customTheme.lineHeights[1],
+                  lineHeight: customTheme.lineHeights[1],
                 },
                 '*': {
                   boxSizing: 'border-box',
