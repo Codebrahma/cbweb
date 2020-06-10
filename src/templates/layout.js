@@ -243,7 +243,7 @@ const Layout = ({ children }) => (
     render={data => (
       <ThemeProvider theme={customTheme}>
         <ColorModeProvider>
-          {/* <MDXProvider
+          <MDXProvider
             components={{
               // Map HTML element tag to React component
               h1: Typography.H1,
@@ -260,7 +260,7 @@ const Layout = ({ children }) => (
               li: Typography.Li,
               strong: Typography.Strong,
             }}
-          > */}
+          >
             <Box bg="rgb(247,245,242)" minHeigh="100vh">
               <Global
                 styles={{
@@ -321,7 +321,7 @@ const Layout = ({ children }) => (
                 </Box>
               </Box>
             </Box>
-          {/* </MDXProvider> */}
+          </MDXProvider>
         </ColorModeProvider>
       </ThemeProvider>
     )}
