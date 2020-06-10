@@ -9,7 +9,6 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 import PlainLink from "../components/link"
 import projects from "../data/open-source-projects.json"
-import { Text } from '@chakra-ui/core';
 
 const CardBox = styled(Flex)({
   flexDirection: "column",

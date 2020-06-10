@@ -34,7 +34,6 @@ import cbLogo from './../images/logos/cb.png'
 import mailIcon from './../images/logos/mail.svg'
 import phoneIcon from './../images/logos/phone.svg'
 import locationIcon from './../images/logos/location.svg'
-import { globalStyle } from './global-styles';
 
 const socialLinks = [
   {

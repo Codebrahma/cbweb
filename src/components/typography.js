@@ -118,7 +118,6 @@ const Ol = (props) => (
 const Li = (props) => (
   <PseudoBox
     as='li'
-    mb='0.5rem'
     fontFamily='body'
     fontSize={[1, 'desktop.1']}
     maxWidth="40rem"
