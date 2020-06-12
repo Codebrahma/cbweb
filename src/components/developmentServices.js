@@ -1,10 +1,11 @@
 import React from 'react';
-import { Box, P } from 'bricks';
+import { Box } from '@chakra-ui/core';
+import { P } from './typography'
 
 import Title from './title';
 
 export default () => (
-  <Box width={[1, 4 / 5 ]}>
+  <Box width={['100%', 4 / 5 ]}>
     <Title>Reliable ReactJS Development Services</Title>
     <br />
     <br />

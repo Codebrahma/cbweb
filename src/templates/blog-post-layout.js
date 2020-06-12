@@ -3,7 +3,8 @@ import Layout from "./layout"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-import { H1, Flex, Box, I } from "bricks"
+import { Flex, Box } from "@chakra-ui/core"
+import { H1, I } from "../components/typography"
 import { getCategory, slugify } from "../utils"
 import CategoryLink from "../components/categorylink"
 import PlainLink from "../components/link"
@@ -12,10 +13,10 @@ import SEO from '../components/seo'
 const Sidebar = ({ author, category, tags }) => (
   <div>
     <Box my={2}>
-      <Flex fontSize={[0, 0]} justifyContent="center">
-        Written by
-      </Flex>
-      <Flex justifyContent="center" mt="0.5rem">
+      <Box display='flex' fontSize={[0, 0]} justifyContent="center" lineHeight='0'>
+        <H1 as='h1'>Written by</H1>
+      </Box>
+      <Flex justifyContent="center">
         <PlainLink to={`/author/${slugify(author)}`}>
           <I>{author}</I>
           <br />
@@ -27,7 +28,7 @@ const Sidebar = ({ author, category, tags }) => (
         <Flex fontSize={[0, 0]} justifyContent="center">
           Posted in
         </Flex>
-        <Flex justifyContent="center" mt="0.5rem">
+        <Flex justifyContent="center">
           <CategoryLink to={`/category/${slugify(getCategory({ category }))}`}>
             {getCategory({ category })}
           </CategoryLink>
@@ -39,7 +40,7 @@ const Sidebar = ({ author, category, tags }) => (
         <Flex fontSize={[0, 0]} justifyContent="center">
           Tags
         </Flex>
-        <Flex justifyContent="center" mt="0.5rem">
+        <Flex justifyContent="center">
           <Flex
             fontSize={[0, 0]}
             color="black.2"

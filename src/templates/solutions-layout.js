@@ -1,7 +1,7 @@
 import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { graphql } from "gatsby"
-import { Flex } from "bricks"
+import { Flex } from "@chakra-ui/core"
 import SEO from "../components/seo"
 import Layout from "./layout"
 
@@ -22,7 +22,7 @@ const SolutionLayout = ({
         link={link}
         image={image ? image.publicURL : null}
       />
-      <Flex width={1} flexDirection="column">
+      <Flex width='100%' flexDirection="column">
         <MDXRenderer>{body}</MDXRenderer>
       </Flex>
     </Layout>

@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from "react"
 import { jsx } from "@emotion/core"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -7,7 +6,8 @@ import Layout from "../templates/layout"
 import Link from "../components/link"
 import SEO from "../components/seo"
 import Title from "../components/title"
-import { Flex, H1, H2, H4, P ,Box} from "bricks"
+import { Box, Flex } from '@chakra-ui/core';
+import { H1, H4, P } from "../components/typography"
 
 const SolutionsContainer = ({ title, children }) => (
   <Box mb='5'>
@@ -17,6 +17,7 @@ const SolutionsContainer = ({ title, children }) => (
       padding={1}
       borderRadius={4}
       mb="1"
+      lineHeight='1'
     >
       <Title mt={0} borderWidth={0} fontSize={3}>{title}</Title>
     </Box>

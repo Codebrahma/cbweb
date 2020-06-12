@@ -1,16 +1,14 @@
 import { jsx } from '@emotion/core'
 /** @jsx jsx */
 import styled from '@emotion/styled'
+import { PseudoBox, Box } from '@chakra-ui/core'
+import { H3, H4, P } from "../components/typography"
 import Layout from '../templates/layout'
-import { P, H3, H4, I,
-  Box, Text, HorizontalRule } from 'bricks'
 import PlainLink  from '../components/link'
-import { css } from 'bricks'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Pagination from '../components/pagination'
 import { getCategory, getTags, slugify } from '../utils'
-import { space } from 'styled-system'
 import CategoryLink from '../components/categorylink'
 
 const isLast = (arr, index)=> arr.length-1 === index
@@ -40,24 +38,26 @@ const getHeading = ({
   return `Blog Posts, page ${currentPage} of ${totalPages}`;
 };
 
-const ReadPostLink = styled(Link)(
-  css({
-    textAlign: 'center',
-    width: '100%',
-    borderRadius: '3px',
-    p: '2px',
-    display: 'inline-block',
-    '&:hover':{
+const ReadPostLink = (props) => (
+  <PseudoBox 
+    as={Link}
+    textAlign='center'
+    width='100%'
+    borderRadius='3px'
+    p='2px'
+    display='inline-block'
+    _hover={{
       bg: 'black.1',
       color: 'tint',
-    },
-    ':visited':{
+    }}
+    _visited={{
       '&:hover':{
         bg: 'black.1',
         color: 'tint',
       }
-    }
-  })
+    }}
+    {...props}
+  />
 )
 
 const TagLink = styled(PlainLink)`
@@ -65,52 +65,53 @@ const TagLink = styled(PlainLink)`
   margin-right: 10px;
 `
 
-const HeadingLink = styled(Link)(
-    space, 
-    css({
-    p: '5px',
-    borderRadius:'5px',
-    display: 'inline-block',
-    textDecoration: 'none',
-    '&:hover': {
+const HeadingLink = (props) => (
+  <PseudoBox
+    as={Link}
+    p='5px'
+    borderRadius='5px'
+    display='inline-block'
+    textDecoration='none'
+    _hover={{
       backgroundColor: 'primary',
       color: 'secondary',
-    }
-  })
+    }}
+    {...props}
+  />
 )
 
 // refactoring the Link beautifully with invert etc
-const Blog = ({frontmatter})=>(
-      <Box>
-        <H3>
-          <HeadingLink ml='-5px' to={frontmatter.link}>
-            {frontmatter.title }
-          </HeadingLink>
-        </H3>
-        {getCategory(frontmatter) && (
-          <CategoryLink to={`/category/${slugify(getCategory(frontmatter))}`}>
-            {getCategory(frontmatter)}
-          </CategoryLink>
-        )}
-        <Box marginTop='2'>
-          <P>{frontmatter.description}</P>
-          <Box marginTop='1'>
-            <Text fontSize={[0,0]} color='black.2'>
-              {getTags(frontmatter) && getTags(frontmatter).map((tag,i)=> {
-                const slug = slugify(tag)
-                return (
-                  <TagLink key={tag} to={`/tag/${slug}`}>
-                    <I>#{slug}</I>
-                  </TagLink>
-                )
-              })}
-            </Text>
-          </Box>
-        </Box>
-        <Box marginBottom={3} marginTop={1}>
-          <ReadPostLink to={frontmatter.link}>Read Post</ReadPostLink>
-        </Box>
+const Blog = ({ frontmatter })=>(
+  <Box>
+    <H3>
+      <HeadingLink ml='-5px' to={frontmatter.link}>
+        {frontmatter.title}
+      </HeadingLink>
+    </H3>
+    {getCategory(frontmatter) && (
+      <CategoryLink to={`/category/${slugify(getCategory(frontmatter))}`}>
+        {getCategory(frontmatter)}
+      </CategoryLink>
+    )}
+    <Box marginTop='2'>
+      <P>{frontmatter.description}</P>
+      <Box marginTop='1'>
+        <P fontSize={[0,0]} color='black.2'>
+          {getTags(frontmatter) && getTags(frontmatter).map((tag,i)=> {
+            const slug = slugify(tag)
+            return (
+              <TagLink key={tag} to={`/tag/${slug}`}>
+                <I>#{slug}</I>
+              </TagLink>
+            )
+          })}
+        </P>
       </Box>
+    </Box>
+    <Box marginBottom={3} marginTop={1}>
+      <ReadPostLink to={frontmatter.link}>Read Post</ReadPostLink>
+    </Box>
+  </Box>
 
 )
 
@@ -139,24 +140,27 @@ const JournalPage = ({
         value,
       })
     } />
-    <H4 css={css({color: 'black.1'})}>
-    {getHeading({
-          isFirstPage,
-          currentPage,
-          totalPages,
-          type,
-          value,
-        })}</H4>
-    <Box marginTop={6} width={[1, 2/3]}>
+    <H4 color='black.1'>
+      {getHeading({
+        isFirstPage,
+        currentPage,
+        totalPages,
+        type,
+        value,
+      })}
+    </H4>
+    <Box marginTop={6} width={['100%', 2/3]}>
     {blogs.map((blog,i) => (
       <div key={blog.childMdx.frontmatter.title}>
         <Blog frontmatter={blog.childMdx.frontmatter} />
-        { isLast(blogs, i)? '': 
-        <HorizontalRule
-          width={1}
-          borderWidth={1}
-          borderColor={'black.3'}
-        />
+        { isLast(blogs, i)
+          ? ''
+          : (
+            <Box
+              height={'1px'}
+              bg={'black.3'}
+            />
+          )
         }
       </div>
     ))}

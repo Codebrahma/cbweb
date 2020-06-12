@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Box, P } from "bricks"
+import { Box } from '@chakra-ui/core';
 import { Main } from "theme-ui"
 import SEO from "../components/seo"
 import { Helmet } from "react-helmet"
+import { P } from "../components/typography"
 
 const ThankYou = () => {
   return (

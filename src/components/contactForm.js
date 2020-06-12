@@ -1,50 +1,47 @@
 import React from "react"
-import { Flex, Box, InputText, OutlinedButton } from "bricks"
+import { Box, Input  } from '@chakra-ui/core';
+import Button from './button';
 
-const ContactForm = ({ referrer }) => {
-  return (
-    <form action="https://api.formik.com/submit/codebrahma/contact" method="post">
-      <input
-        type="hidden"
-        name="_next"
-        value="https://codebrahma.com/thank-you"
+const ContactForm = ({ referrer }) => (
+  <form action="https://api.formik.com/submit/codebrahma/contact" method="post">
+    <input
+      type="hidden"
+      name="_next"
+      value="https://codebrahma.com/thank-you"
+    />
+    <input type="hidden" name="referrer" value={referrer} />
+    <Box width={[1, 1 / 2]}>
+      <Input
+        size="25"
+        rows="5"
+        required
+        as="textarea"
+        name="msg"
+        backgroundColor="black.4"
+        borderWidth={0}
+        borderRadius={3}
+        placeholder="&#128172; Tell us about your idea"
+        padding={1}
       />
-      <input type="hidden" name="referrer" value={referrer} />
-      <Flex flexWrap="wrap" flexDirection="column">
-        <Box width={[1, 1 / 2]}>
-          <InputText
-            size="25"
-            rows="5"
-            width={1}
-            required
-            as="textarea"
-            name="msg"
-            backgroundColor="black.4"
-            borderWidth={0}
-            borderRadius={3}
-            placeholder="&#128172; Tell us about your idea"
-          />
-        </Box>
-        <Box width={[1, 1 / 2]} mt={1}>
-          <InputText
-            width={1}
-            name="email"
-            type="email"
-            required
-            backgroundColor="black.4"
-            borderWidth={0}
-            borderRadius={3}
-            placeholder="@ Email address"
-          />
-        </Box>
-        <Box width={[1, 1 / 3]} mt={1}>
-          <OutlinedButton borderRadius={3}>
-            Submit
-          </OutlinedButton>
-        </Box>
-      </Flex>
-    </form>
-  )
-}
+    </Box>
+    <Box width={[1, 1 / 2]} mt={1}>
+      <Input
+        name="email"
+        type="email"
+        required
+        backgroundColor="black.4"
+        borderWidth={0}
+        borderRadius={3}
+        placeholder="@ Email address"
+        lineHeight='1'
+        padding={1}
+        height='auto'
+      />
+    </Box>
+    <Box width={[1, 1 / 3]} mt={1}>
+      <Button type='submit' variant='outline'>Submit</Button>
+    </Box>
+  </form>
+)
 
 export default ContactForm

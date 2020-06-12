@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Flex, Box } from "bricks"
+import { Flex, Box } from "@chakra-ui/core"
 import Title from "./title"
 
 const OrderedList = styled.ol`
@@ -14,7 +14,7 @@ const ListItem = styled.li`
 
 export default () => (
   <Flex flexWrap="wrap">
-    <Box width={[1, 1 / 3]}>
+    <Box width={['100%', 1 / 3]}>
       <Title
         fontSize={[2, 'desktop.2']}
         fontWeight="bold"
@@ -28,7 +28,7 @@ export default () => (
         <ListItem>Flow js</ListItem>
       </OrderedList>
     </Box>
-    <Box width={[1, 1 / 3]}>
+    <Box width={['100%', 1 / 3]}>
       <Title
         fontSize={[2, 'desktop.2']}
         fontWeight="bold"
@@ -42,7 +42,7 @@ export default () => (
       </OrderedList>
     </Box>
 
-    <Box width={[1, 1 / 3]}>
+    <Box width={['100%', 1 / 3]}>
       <Title
         fontSize={[2, 'desktop.2']}
         fontWeight="bold"
@@ -56,7 +56,7 @@ export default () => (
       </OrderedList>
     </Box>
 
-    <Box width={[1, 1 / 3]}>
+    <Box width={['100%', 1 / 3]}>
       <Title
         fontSize={[2, 'desktop.2']}
         fontWeight="bold"
@@ -71,7 +71,7 @@ export default () => (
       </OrderedList>
     </Box>
 
-    <Box width={[1, 1 / 3]}>
+    <Box width={['100%', 1 / 3]}>
       <Title
         fontSize={[2, 'desktop.2']}
         fontWeight="bold"
@@ -87,7 +87,7 @@ export default () => (
       </OrderedList>
     </Box>
 
-    <Box width={[1, 1 / 3]}>
+    <Box width={['100%', 1 / 3]}>
       <Title
         fontSize={[2, 'desktop.2']}
         fontWeight="bold"

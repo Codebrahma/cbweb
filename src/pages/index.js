@@ -2,14 +2,17 @@
 import { jsx } from "@emotion/core"
 // eslint-disable-next-line
 import { graphql, navigate } from "gatsby"
+import Helmet from "react-helmet"
+import { Box, Flex } from '@chakra-ui/core';
+import { H1, H3, P } from '../components/typography';
 
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
-import Helmet from "react-helmet"
-import { Box, Flex, H1, P, ReactIcon, OutlinedButton } from "bricks"
+import ReactIcon from "../components/icons/React"
 import Title from "../components/title"
 import Project from "../components/project"
 import ContactUsButton from '../components/contactUsButton';
+import Button from '../components/button';
 
 const IndexPage = ({ data }) => {
   const structuredData = `{
@@ -51,7 +54,7 @@ const IndexPage = ({ data }) => {
         <H1>
           We build your React &amp;&nbsp;React Native frontend
         </H1>
-        <Box width={[1, 2/3]} mt={2} mx="auto">
+        <Box width={['100%', 2/3]} mt={2} mx="auto">
           <P>
             We take your design files &amp; api docs. And give you a fast mobile
             and browser app. You focus on your backend business&nbsp;logic!
@@ -66,13 +69,12 @@ const IndexPage = ({ data }) => {
           <ReactIcon width="200" height="200" />
           <Title
             fontSize={[3, 'desktop.3']}
-            lineHeight={2}
-            borderWidth={0}
+            border='none'
             mt={0}
           >
             React & React Native
           </Title>
-          <Box width={[1, 2/3]}>
+          <Box width={['100%', 2/3]}>
             <P textAlign="center">
               We have been building on React / React Native for 3 years now, and
               we absolutely love its declarative and functional philosophy. We
@@ -83,7 +85,7 @@ const IndexPage = ({ data }) => {
         </Flex>
       </Box>
       <Box>
-        <Box width={1} textAlign="center" mb={1}>
+        <Box textAlign="center" mb={1}>
           <Title>Our Featured Work</Title>
         </Box>
 
@@ -101,24 +103,24 @@ const IndexPage = ({ data }) => {
           link="/serverless/"
         />
 
-        <Box width={1} textAlign="center">
-          <OutlinedButton borderRadius={3} onClick={() => navigate('/work')}>
+        <Box textAlign="center">
+          <Button
+            onClick={() => navigate('/work')}
+          >
             More work
-          </OutlinedButton>
+          </Button>
         </Box>
       </Box>
 
       <Flex mt={[3, 6]} flexDirection="column" alignItems="center">
-        <Title
-          fontSize={[3, 'desktop.3']}
+        <H3
           fontWeight="bold"
           lineHeight={2}
-          borderWidth={0}
           mt={0}
         >
           WE ARE ALL EARS
-        </Title>
-        <Box width={[1, 2/3]} textAlign="center">
+        </H3>
+        <Box width={['100%', 2/3]} textAlign="center">
           <P>
             Whether it's a code review or a project, that you want to discuss or just want to say hello, We would love to hear from you.
             We cordially welcome your ideas, suggestions, and reviews regarding our work.

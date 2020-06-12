@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { P } from 'bricks';
+import { Text } from '@chakra-ui/core';
 
-export default styled(P)`
+export default styled(Text)`
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px !important;

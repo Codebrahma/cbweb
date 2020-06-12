@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../templates/layout"
 import SEO from "../components/seo"
 import Project from "../components/project"
-import { H1, I, P } from "bricks"
+import { I, H1, P } from "../components/typography"
 
 const WorkPage = ({ data }) => (
   <Layout>
