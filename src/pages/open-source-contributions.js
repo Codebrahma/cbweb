@@ -66,7 +66,7 @@ const Card = ({ name, description, github, demo, image }) => {
               alt={name}
             />
           </Box>
-          <H4 as='h4' m='0' padding="1" fontFamily='heading'>{name}</H4>
+          <H4 m='0' padding="1">{name}</H4>
         </Flex>
         <Box height='2px' bg='black.2'/>
       </div>
@@ -88,7 +88,7 @@ const Card = ({ name, description, github, demo, image }) => {
 const OpenSource = props => {
   return (
     <Layout>
-      <H2 as='h2'>Our Open Source Contributions</H2>
+      <H2>Our Open Source Contributions</H2>
       <SEO
         title="Our Open Source Contributions | Codebrahma"
         description="Codebrahma specializes in building custom web applications using technologies - ReactJS, Ruby on Rails, NodeJS, React Native, Android, iOS, Serverless. Checkout our open source contributions."
