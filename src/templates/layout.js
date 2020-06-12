@@ -101,8 +101,10 @@ const Footer = ({ images }) => {
                   p={1}
                   fontFamily='body'
                   lineHeight='3'
+                  isRequired
                 />
                 <Button
+                  type='submit'
                   bg='primary'
                   color='tint'
                   name="subscribe"

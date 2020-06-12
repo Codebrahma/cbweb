@@ -39,7 +39,7 @@ const ContactForm = ({ referrer }) => (
       />
     </Box>
     <Box width={[1, 1 / 3]} mt={1}>
-      <Button variant='outline'>Submit</Button>
+      <Button type='submit' variant='outline'>Submit</Button>
     </Box>
   </form>
 )
