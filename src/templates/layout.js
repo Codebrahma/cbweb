@@ -245,6 +245,9 @@ const Layout = ({ children }) => {
                   font-family: ${theme.fonts.body};
                   color: ${theme.colors.black[1]};
                 }
+                li > p {
+                  display: inline;
+                }
                 * {
                   box-sizing: border-box;
                 }
