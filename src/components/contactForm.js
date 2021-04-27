@@ -43,7 +43,7 @@ const ContactForm = ({ referrer }) => {
           navigate('/thank-you')
         }
       };
-      xhttp.open("POST", "https://api.formik.com/submit/codebrahma/contact", true);
+      xhttp.open("POST", "https://api.formium.io/submit/5e8c0a0a1cf69f00017473b3/contact", true);
       xhttp.setRequestHeader("Content-Type", "application/json");
       xhttp.send(JSON.stringify(formValues));
     }
