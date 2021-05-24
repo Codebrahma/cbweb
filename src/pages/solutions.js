@@ -135,42 +135,42 @@ export const query = graphql`
     angularLogo: file(relativePath: { eq: "logos/angular.png" }) {
       childImageSharp {
         fixed(width: 128, height: 128) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }
     financeLogo: file(relativePath: { eq: "logos/finance.png" }) {
       childImageSharp {
         fixed(width: 128, height: 128) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }
     nodejsLogo: file(relativePath: { eq: "logos/nodejs.png" }) {
       childImageSharp {
         fixed(width: 128, height: 128) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }
     pwaLogo: file(relativePath: { eq: "logos/pwa.png" }) {
       childImageSharp {
         fixed(width: 128, height: 128) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }
     railsLogo: file(relativePath: { eq: "logos/rails.png" }) {
       childImageSharp {
         fixed(width: 128, height: 128) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }
     reactLogo: file(relativePath: { eq: "logos/react-colored.png" }) {
       childImageSharp {
         fixed(width: 128, height: 128) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -178,7 +178,7 @@ export const query = graphql`
     serverlessLogo: file(relativePath: { eq: "logos/serverless.png" }) {
       childImageSharp {
         fixed(width: 128, height: 128) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }

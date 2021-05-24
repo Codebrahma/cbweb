@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { Nav } from 'bricks'
-import { Logo } from '../components/logo'
 import { Link } from 'gatsby'
+import { Logo } from '../components/logo'
 
 const links = [
   {title: 'Work', link: '/work'},
@@ -12,8 +12,7 @@ const links = [
   {title: 'Contact', link: '/contact'},
 ]
 
-const Header = ({ siteTitle }) => {
-  return (
+const Header = ({ siteTitle }) => (
   <header>
     <div>
       <Nav 
@@ -24,7 +23,6 @@ const Header = ({ siteTitle }) => {
     </div>
   </header>
 )
-}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

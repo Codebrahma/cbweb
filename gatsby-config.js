@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: `https://codebrahma.com`
   },
   plugins: [
+    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
