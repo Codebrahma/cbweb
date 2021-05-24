@@ -462,18 +462,22 @@ code.language-text.css-0 {
 @font-face {
   src: url("../fonts/TiemposTextWeb-Regular.woff") format("woff");
   font-family: "TiemposText";
+  font-display: swap;
 }
 @font-face {
   src: url("../fonts/TiemposTextWeb-RegularItalic.woff") format("woff");
   font-family: "TiemposItalic";
+  font-display: swap;
 }
 @font-face {
   src: url("../fonts/TiemposTextWeb-Bold.woff") format("woff");
   font-family: "TiemposBold";
+  font-display: swap;
 }
 @font-face {
   src: url("../fonts/TiemposHeadlineWeb-Regular.woff") format("woff");
   font-family: "TiemposHeadline";
+  font-display: swap;
 }
 
 a {
