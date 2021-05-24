@@ -166,7 +166,7 @@ export const query = graphql`
     serverless: file(relativePath: { eq: "open-source/serverless.png" }) {
       childImageSharp {
         fixed(width: 48, height: 48) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -174,7 +174,7 @@ export const query = graphql`
     multiSelect: file(relativePath: { eq: "open-source/multi-select.png" }) {
       childImageSharp {
         fixed(width: 60, height: 60) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -184,7 +184,7 @@ export const query = graphql`
     ) {
       childImageSharp {
         fixed(width: 64, height: 64) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -192,7 +192,7 @@ export const query = graphql`
     reactForms: file(relativePath: { eq: "open-source/react-forms.png" }) {
       childImageSharp {
         fixed(width: 80, height: 35) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -200,7 +200,7 @@ export const query = graphql`
     liteUi: file(relativePath: { eq: "open-source/react-lite-ui.png" }) {
       childImageSharp {
         fixed(width: 60, height: 64) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -208,7 +208,7 @@ export const query = graphql`
     reduxAction: file(relativePath: { eq: "open-source/redux-action.png" }) {
       childImageSharp {
         fixed(width: 80, height: 80) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -216,7 +216,7 @@ export const query = graphql`
     csvToGraphql: file(relativePath: { eq: "open-source/csv-graphql.png" }) {
       childImageSharp {
         fixed(width: 100, height: 40) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -224,7 +224,7 @@ export const query = graphql`
     gatsbyBlog: file(relativePath: { eq: "open-source/gatsby-blog.png" }) {
       childImageSharp {
         fixed(width: 66, height: 64) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -233,7 +233,7 @@ export const query = graphql`
     menubar: file(relativePath: { eq: "open-source/menu-bar.png" }) {
       childImageSharp {
         fixed(width: 65, height: 65) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -244,7 +244,7 @@ export const query = graphql`
     ) {
       childImageSharp {
         fixed(width: 64, height: 50) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -253,7 +253,7 @@ export const query = graphql`
     flexibleSlidingMenu: file(relativePath: { eq: "open-source/react-flexible-sliding-menu.png" }) {
       childImageSharp {
         fixed(height: 95, width: 68) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -262,7 +262,7 @@ export const query = graphql`
     multiLevelSelector: file(relativePath: { eq: "open-source/multi-level-selector.png" }) {
       childImageSharp {
         fixed(height: 54, width: 80) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL
@@ -271,7 +271,7 @@ export const query = graphql`
     reactStatelessModal: file(relativePath: { eq: "open-source/react-stateless-modal.png" }) {
       childImageSharp {
         fixed(height: 70, width: 70) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
       publicURL

@@ -192,7 +192,7 @@ const Layout = ({ children }) => {
           facebook: file(relativePath: { eq: "logos/facebook.png" }) {
             childImageSharp {
               fixed(width: 33, height: 33) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_noBase64
               }
             }
           }
@@ -200,7 +200,7 @@ const Layout = ({ children }) => {
           twitter: file(relativePath: { eq: "logos/twitter.png" }) {
             childImageSharp {
               fixed(width: 32, height: 32) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_noBase64
               }
             }
           }
@@ -208,7 +208,7 @@ const Layout = ({ children }) => {
           linkedin: file(relativePath: { eq: "logos/linkedin.png" }) {
             childImageSharp {
               fixed(width: 32, height: 32) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_noBase64
               }
             }
           }
@@ -216,7 +216,7 @@ const Layout = ({ children }) => {
           github: file(relativePath: { eq: "logos/github.png" }) {
             childImageSharp {
               fixed(width: 36, height: 36) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_noBase64
               }
             }
           }
@@ -224,7 +224,7 @@ const Layout = ({ children }) => {
           instagram: file(relativePath: { eq: "logos/instagram.png" }) {
             childImageSharp {
               fixed(width: 32, height: 32) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_noBase64
               }
             }
           }
