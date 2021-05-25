@@ -1,28 +1,28 @@
 ---
 templateKey: "blog-post"
-title: "React compound components (Hooks + typescript)"
+title: "How to build a simple Compound component using ReactJS hooks"
 date: 2021-05-25
 featuredpost: false
 description: >-
-  This article talks about what are compound components and how to build an accordion component using the concept of compound components.
+  This article explains with an example what compound components in react are . How to build a compound component with a tutorial to build accordion.
 keywords:
-- reactjs
-- Compound-components
-- Hooks
-- Typescript
+  - reactjs
+  - Compound-components
+  - Hooks
+  - Typescript
 link: /react-compound-components
 category:
-- Tutorial
+  - Tutorial
 author: Ashwin kumar
 tags:
-- react js
-- reactjs
-- typescript
-- compound components
-- build accordion component using compound components
+  - react js
+  - reactjs
+  - typescript
+  - compound components
+  - build accordion component using compound components
 ---
 
-**Compound Components** are an advanced and great pattern which you can use to create the meta component. It gives your components more flexibility. It is little difficult to understand the concept initially, But believe me, if you get a hold of it you will love building the components using compound components pattern
+**Compound Components** are an advanced and very useful pattern. They can be used to create meta components. They are slightly counter intuitive, but trust me, once you get a hang of it, you will love building components using the compound components pattern.
 
 ## What are compound components?
 
@@ -32,10 +32,10 @@ The compound components are a set of two or more components that work together t
 
 ```jsx
 <select>
- <option>Option1</option>
- <option>Option2</option>
- <option>Option3</option>
- <option>Option4</option>
+  <option>Option1</option>
+  <option>Option2</option>
+  <option>Option3</option>
+  <option>Option4</option>
 </select>
 ```
 
@@ -43,153 +43,154 @@ In the above example, when you click on an option in the select component, selec
 
 ## Compound Components in Action
 
-In this post, we’ll be building an Accordion component using compound components.
-
-You can check out the [Code sandbox link](https://codesandbox.io/s/interesting-wildflower-wj3iy) for the final demo of the accordion component.
+we will build an Accordion component using the compound component pattern.
 
 The accordion component will have four components.
 
-1. **Accordion** -  The outer wrapper component of the Accordion component. This is the root component of the Accordion component.
+1. **Accordion** - The outer wrapper component of the Accordion component. This is the root component of the Accordion component.
 2. **AccordionItem** - The component that allows us to define each accordion item. Each AccordionItem will have its AccordionButton and AccordionPanel components.
 3. **AccordionButton** - The header for the Accordion component.On clicking the accordion button will open the corresponding accordion panel.
 4. **AccordionPanel** - The panel for the accordion. This will hold the content of each accordion item.
 
-We are going to create the above mentioned components one by one and also let's see how we can create the link between them. 
-Let's start with Accordion component. Accordion component will wrap all other necessary components and will maintain the state that is to be shared among all the other components
+We are going to create the above mentioned components one by one and also let's see how we can create the link between them.
+Let's start with Accordion component. Accordion component will wrap the other components. It will also maintain shared state with other components. In this case the selected accordion item (active item)
 
 ```tsx
 const Accordion: React.FC<{
-  children: ReactNode | ReactNode[];
+  children: ReactNode | ReactNode[]
   className?: string
 }> = ({ children, className }) => {
-  const [activeItem, setActiveItem] = useState("");
+  const [activeItem, setActiveItem] = useState("")
   // function to update the active item
-   const changeActiveItem = useCallback(
-    (value) => {
-      if (activeItem !== value) setActiveItem(value);
+  const changeActiveItem = useCallback(
+    value => {
+      if (activeItem !== value) setActiveItem(value)
     },
     [setActiveItem, activeItem]
-  );
+  )
 
   return <div className={className}>{children}</div>
 }
-``` 
+```
 
-we had created the accordion component, now we need to pass or share the state and the function to update the state to its children. To achieve this, we are going to use the **React Context**. If you are not familiar with React context, please refer  [https://reactjs.org/docs/context.html](https://reactjs.org/docs/context.html). Iam not gonna explain about react context here, but i will give you a hint about react context.
+We have created the root Accordion component. Now we need to pass down or share the state and the update state function with its children. To achieve this, we are going to use the **React Context**. If you are not familiar with React context, please refer [https://reactjs.org/docs/context.html](https://reactjs.org/docs/context.html).
 
 > Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 
 Now let's add context to our accordion component.
 
 ```tsx
-import { createContext, useContext } from "react";
+import { createContext, useContext } from "react"
 
 // Creating the context for the Accordion.
 export const AccordionContext = createContext<{
-  activeItem: string;
-  changeSelectedItem: (item: string) => void;
-}>({ activeItem: "", changeSelectedItem: () => {} });
+  activeItem: string
+  changeSelectedItem: (item: string) => void
+}>({ activeItem: "", changeSelectedItem: () => {} })
 
 export const useAccordionContext = () => {
-  const context = useContext(AccordionContext);
+  const context = useContext(AccordionContext)
   if (!context) {
-    throw new Error("Error in creating the context");
+    throw new Error("Error in creating the context")
   }
-  return context;
-};
-``` 
+  return context
+}
+```
 
-After creating the context, we need to provide values to the context, it is done by **Context.Provider** element. The values refers to the data that is to be shared among all the components in the accordion. The **Provider** component accepts a value prop to be passed to consuming components that are descendants of this Provider. One Provider can be connected to many consumers.
+Lets provide values to the context using the Context.Provider element. The **Provider** component accepts a value prop to be passed to consuming components that are descendants of this Provider. One Provider can be connected to many consumers.
 
 ```tsx
 const Accordion: React.FC<{
-  children: ReactNode | ReactNode[];
-  className?: string;
+  children: ReactNode | ReactNode[]
+  className?: string
 }> = ({ children, className }) => {
-  const [activeItem, setActiveItem] = useState("");
+  const [activeItem, setActiveItem] = useState("")
 
   const changeActiveItem = useCallback(
-    (value) => {
-      if (activeItem !== value) setActiveItem(value);
+    value => {
+      if (activeItem !== value) setActiveItem(value)
     },
     [setActiveItem, activeItem]
-  );
+  )
   return (
     <AccordionContext.Provider
       value={{ activeItem, changeSelectedItem: changeActiveItem }}
     >
       <div className={`accordion ${className}`}>{children}</div>
     </AccordionContext.Provider>
-  );
-};
+  )
+}
 
-export default Accordion;
-``` 
+export default Accordion
+```
 
-In the accordion, we need to share the activeItem and changeSelectedItem to all the other components, so we are passing those two to the value of accordion context provider. Now We had built the root accordion component and also we have provided the values to the context. Let's build the remaining components and we are going to use the values consumed from the context and make the accordion component work as a whole.
+In the accordion, we need to share the activeItem and changeSelectedItem to all the other components, so we are passing them to the context provider which can be obtained using the the useAccordionContext custom hook (which uses the useContext hook internally). Let's build the remaining components. We are going to use the values consumed from the context and make the accordion component work as a whole.
 
 ```tsx
 // AccordionItem component
 export const AccordionItem: React.FC<{
-  children: ReactNode[];
-  label: string;
-className?: string;
+  children: ReactNode[]
+  label: string
+  className?: string
 }> = ({ children, label, className }) => {
-  const childrenArray = React.Children.toArray(children);
+  const childrenArray = React.Children.toArray(children)
 
   // label is used to distinguish between each accordion element.
   // Adding the label prop to the children of accordionItem along with other props.
-  const accordionItemChildren = childrenArray.map((child) => {
+  const accordionItemChildren = childrenArray.map(child => {
     if (React.isValidElement(child)) {
       return React.cloneElement(child, {
         ...child.props,
-        label
-      });
+        label,
+      })
     }
-    return null;
-  });
-  return <div className={className}>{accordionItemChildren}</div>;
-};
-``` 
+    return null
+  })
+  return <div className={className}>{accordionItemChildren}</div>
+}
+```
 
 ```tsx
 // AccordionButton component
 export const AccordionButton: React.FC<{
-  children: ReactNode;
-  label?: string;
-  className?:string
+  children: ReactNode
+  label?: string
+  className?: string
 }> = ({ label, children, className }) => {
-  const { changeSelectedItem } = useAccordionContext();
+  const { changeSelectedItem } = useAccordionContext()
   const accordionButtonClickHandler = useCallback(() => {
-    changeSelectedItem(label || "");
-  }, [changeSelectedItem, label]);
+    changeSelectedItem(label || "")
+  }, [changeSelectedItem, label])
 
   return (
-    <div onClick={accordionButtonClickHandler} className={`accordion-button ${className}`}>
+    <div
+      onClick={accordionButtonClickHandler}
+      className={`accordion-button ${className}`}
+    >
       {children}
     </div>
-  );
-};
-``` 
+  )
+}
+```
 
 ```tsx
 // AccordionPanel component
 export const AccordionPanel: React.FC<{
-  children: ReactNode;
-  label?: string;
-  className?:string
+  children: ReactNode
+  label?: string
+  className?: string
 }> = ({ children, label, className }) => {
-  const { activeItem } = useAccordionContext();
+  const { activeItem } = useAccordionContext()
   const panelStyles = [
     "accordion-panel",
     label === activeItem ? "show-item" : "hide-item",
-    className
-  ].join(" ");
+    className,
+  ].join(" ")
 
-  return <div className={panelStyles}>{children}</div>;
-};
-``` 
-   
+  return <div className={panelStyles}>{children}</div>
+}
+```
+
 We have done with creating all other components. Let's see what we have done.
 
 - In the Accordion-item, label prop is used to differentiate between different accordion items. The label prop will be required in the accordionButton and accordionPanel components, so we are adding label prop to the accordionItem children along with the other props.
@@ -204,8 +205,8 @@ import {
   Accordion,
   AccordionButton,
   AccordionItem,
-  AccordionPanel
-} from "./components/accordion";
+  AccordionPanel,
+} from "./components/accordion"
 
 export default function App() {
   return (
@@ -238,13 +239,19 @@ export default function App() {
         </AccordionItem>
       </Accordion>
     </div>
-  );
+  )
 }
-``` 
+```
+
 Yayyy!!! We had built the accordion component using the compound components.
 
- We can also build the same accordion component using render props method but there are many limitations to style the inner components (AccordionButton & AccordionPanel) , we need to pass props like renderAccordionButton, buttonClassName for the AccordionButton and we need separate props for AccordionItem and also AccordionPanel. 
- 
- Look at the accordion component now, it looks clean, you can style each and every component of Accordion using its respective component. In future, if you want to have buttonColour for the AccordionButton component, you can just add that prop to the AccordionButton alone and not to the outer accordion component.
+We can also build the same accordion component using render props method. But there are limitations to style the inner components (AccordionButton; AccordionPanel). We will have to pass props like renderAccordionButton for custom button component.
 
- Feel free to try it and check out the component in [code sandbox](https://codesandbox.io/s/interesting-wildflower-wj3iy). I hope you had understood the compound components and how to use them.
+The accordion component, now looks clean. One can style every component of the Accordion using its respective component. In future, if you want to have buttonColour for the AccordionButton component, you can just add that prop to the AccordionButton itself. Not clutter the outer accordion component.
+
+<iframe src="https://codesandbox.io/embed/interesting-wildflower-wj3iy?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="interesting-wildflower-wj3iy"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
