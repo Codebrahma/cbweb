@@ -137,15 +137,15 @@ export const AccordionItem: React.FC<{
 
   // label is used to distinguish between each accordion element.
   // Adding the label prop to the children of accordionItem along with other props.
-  const accordionItemChildren = childrenArray.map(child => {
+  const accordionItemChildren = childrenArray.map((child) => {
     if (React.isValidElement(child)) {
       return React.cloneElement(child, {
         ...child.props,
-        label,
-      })
+        __cb__internal__accordion_label: label
+      });
     }
-    return null
-  })
+    return null;
+  });
   return <div className={className}>{accordionItemChildren}</div>
 }
 ```
@@ -153,14 +153,14 @@ export const AccordionItem: React.FC<{
 ```tsx
 // AccordionButton component
 export const AccordionButton: React.FC<{
-  children: ReactNode
-  label?: string
-  className?: string
-}> = ({ label, children, className }) => {
-  const { changeSelectedItem } = useAccordionContext()
+  children: ReactNode;
+  __cb__internal__accordion_label?: string;
+  className?: string;
+}> = ({ __cb__internal__accordion_label: label, children, className }) => {
+  const { changeSelectedItem } = useAccordionContext();
   const accordionButtonClickHandler = useCallback(() => {
-    changeSelectedItem(label || "")
-  }, [changeSelectedItem, label])
+    changeSelectedItem(label || "");
+  }, [changeSelectedItem, label]);
 
   return (
     <div
@@ -169,26 +169,27 @@ export const AccordionButton: React.FC<{
     >
       {children}
     </div>
-  )
-}
+  );
+};
 ```
 
 ```tsx
 // AccordionPanel component
 export const AccordionPanel: React.FC<{
-  children: ReactNode
-  label?: string
-  className?: string
-}> = ({ children, label, className }) => {
-  const { activeItem } = useAccordionContext()
+  children: ReactNode;
+  __cb__internal__accordion_label?: string;
+  className?: string;
+}> = ({ children, __cb__internal__accordion_label: label, className }) => {
+  const { activeItem } = useAccordionContext();
+
   const panelStyles = [
     "accordion-panel",
     label === activeItem ? "show-item" : "hide-item",
-    className,
-  ].join(" ")
+    className
+  ].join(" ");
 
-  return <div className={panelStyles}>{children}</div>
-}
+  return <div className={panelStyles}>{children}</div>;
+};
 ```
 
 We have done with creating all other components. Let's see what we have done.
