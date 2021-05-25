@@ -10,7 +10,7 @@ keywords:
   - Compound-components
   - Hooks
   - Typescript
-link: /react-compound-components
+link: /how-to-build-react-compound-components-tutorial
 category:
   - Tutorial
 author: Ashwin kumar
