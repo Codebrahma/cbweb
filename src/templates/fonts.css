@@ -461,23 +461,23 @@ code.language-text.css-0 {
 /*----------------------RESET OVER----------------------------------*/
 @font-face {
   src: url("../fonts/TiemposTextWeb-Regular.woff") format("woff");
-  font-family: "TiemposText";
   font-display: swap;
+  font-family: "TiemposText";
 }
 @font-face {
   src: url("../fonts/TiemposTextWeb-RegularItalic.woff") format("woff");
-  font-family: "TiemposItalic";
   font-display: swap;
+  font-family: "TiemposItalic";
 }
 @font-face {
   src: url("../fonts/TiemposTextWeb-Bold.woff") format("woff");
-  font-family: "TiemposBold";
   font-display: swap;
+  font-family: "TiemposBold";
 }
 @font-face {
   src: url("../fonts/TiemposHeadlineWeb-Regular.woff") format("woff");
-  font-family: "TiemposHeadline";
   font-display: swap;
+  font-family: "TiemposHeadline";
 }
 
 a {

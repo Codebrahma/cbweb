@@ -31,7 +31,6 @@ import Header from "./header"
 import theme from "../theme"
 import PlainLink from "../components/link"
 import TextWithIcon from "../components/textWithIcon"
-import cbLogo from './../images/logos/cb.png'
 import mailIcon from './../images/logos/mail.svg'
 import phoneIcon from './../images/logos/phone.svg'
 import locationIcon from './../images/logos/location.svg'
@@ -162,7 +161,12 @@ const Footer = ({ images }) => (
 
     <Flex mt={[0, 3]}>
       <Box mr={1} display={['none', 'block']}>
-        <img src={cbLogo} height="48px" alt="Codebrahma Logo" />
+        <Img
+          fixed={images['cb'].childImageSharp.fixed}
+          objectFit="contain"
+          height="48px"
+          alt="Codebrahma Logo"
+        />
       </Box>
       <Box>
         <Box mb={1}>
@@ -186,6 +190,14 @@ const Layout = ({ children }) => {
           site {
             siteMetadata {
               title
+            }
+          }
+
+          cb: file(relativePath: { eq: "logos/cb.png" }) {
+            childImageSharp {
+              fixed(width: 96, height: 48) {
+                ...GatsbyImageSharpFixed_withWebp_noBase64
+              }
             }
           }
 
