@@ -7,9 +7,11 @@ description: >-
   This article explains with an example what compound components in react are . How to build a compound component with a tutorial to build accordion.
 keywords:
   - reactjs
-  - Compound-components
-  - Hooks
-  - Typescript
+  - compound-components
+  - hooks
+  - typescript
+  - tutorial
+  - react context
 link: /how-to-build-react-compound-components-tutorial
 category:
   - Tutorial
@@ -45,12 +47,14 @@ In the above example, when you click on an option in the select component, selec
 
 we will build an Accordion component using the compound component pattern.
 
+![accordion-diagram](./images/accordion-diagram.png)
+
 The accordion component will have four components.
 
-1. **Accordion** - The outer wrapper component of the Accordion component. This is the root component of the Accordion component.
-2. **AccordionItem** - The component that allows us to define each accordion item. Each AccordionItem will have its AccordionButton and AccordionPanel components.
-3. **AccordionButton** - The header for the Accordion component.On clicking the accordion button will open the corresponding accordion panel.
-4. **AccordionPanel** - The panel for the accordion. This will hold the content of each accordion item.
+1. **Accordion (violet)** - The outer wrapper component of the Accordion component. This is the root component of the Accordion component.
+2. **AccordionItem (blue)** - The component that allows us to define each accordion item. Each AccordionItem will have its AccordionButton and AccordionPanel components.
+3. **AccordionButton (green)** - The header for the Accordion component.On clicking the accordion button will open the corresponding accordion panel.
+4. **AccordionPanel (red)** - The panel for the accordion. This will hold the content of each accordion item.
 
 We are going to create the above mentioned components one by one and also let's see how we can create the link between them.
 Let's start with Accordion component. Accordion component will wrap the other components. It will also maintain shared state with other components. In this case the selected accordion item (active item)
@@ -137,15 +141,15 @@ export const AccordionItem: React.FC<{
 
   // label is used to distinguish between each accordion element.
   // Adding the label prop to the children of accordionItem along with other props.
-  const accordionItemChildren = childrenArray.map((child) => {
+  const accordionItemChildren = childrenArray.map(child => {
     if (React.isValidElement(child)) {
       return React.cloneElement(child, {
         ...child.props,
-        __cb__internal__accordion_label: label
-      });
+        __cb__internal__accordion_label: label,
+      })
     }
-    return null;
-  });
+    return null
+  })
   return <div className={className}>{accordionItemChildren}</div>
 }
 ```
@@ -153,14 +157,14 @@ export const AccordionItem: React.FC<{
 ```tsx
 // AccordionButton component
 export const AccordionButton: React.FC<{
-  children: ReactNode;
-  __cb__internal__accordion_label?: string;
-  className?: string;
+  children: ReactNode
+  __cb__internal__accordion_label?: string
+  className?: string
 }> = ({ __cb__internal__accordion_label: label, children, className }) => {
-  const { changeSelectedItem } = useAccordionContext();
+  const { changeSelectedItem } = useAccordionContext()
   const accordionButtonClickHandler = useCallback(() => {
-    changeSelectedItem(label || "");
-  }, [changeSelectedItem, label]);
+    changeSelectedItem(label || "")
+  }, [changeSelectedItem, label])
 
   return (
     <div
@@ -169,32 +173,32 @@ export const AccordionButton: React.FC<{
     >
       {children}
     </div>
-  );
-};
+  )
+}
 ```
 
 ```tsx
 // AccordionPanel component
 export const AccordionPanel: React.FC<{
-  children: ReactNode;
-  __cb__internal__accordion_label?: string;
-  className?: string;
+  children: ReactNode
+  __cb__internal__accordion_label?: string
+  className?: string
 }> = ({ children, __cb__internal__accordion_label: label, className }) => {
-  const { activeItem } = useAccordionContext();
+  const { activeItem } = useAccordionContext()
 
   const panelStyles = [
     "accordion-panel",
     label === activeItem ? "show-item" : "hide-item",
-    className
-  ].join(" ");
+    className,
+  ].join(" ")
 
-  return <div className={panelStyles}>{children}</div>;
-};
+  return <div className={panelStyles}>{children}</div>
+}
 ```
 
 We have done with creating all other components. Let's see what we have done.
 
-- In the Accordion-item, label prop is used to differentiate between different accordion items. The label prop will be required in the accordionButton and accordionPanel components, so we are adding label prop to the accordionItem children along with the other props.
+- In the Accordion-item, label prop is used to differentiate between different accordion items. The label prop will be required in the accordionButton and accordionPanel components, so we are passing an internal label prop to the children of accordion-item along with the other props.
 - We are using the **useAccordionContext** in the AccordionPanel and AccordionButton. That is how we get the data that is being provided from the Accordion component.
 - We use changeSelectedItem in the AccordionButton component to update the active item when the button is clicked.
 - We use activeItem in the AccordionPanel component whether show the content or hide the content
