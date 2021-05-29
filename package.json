@@ -54,10 +54,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "create-netlify-config": "node scripts/index.js",
+    "build": "gatsby build && yarn run create-netlify-config",
+    "start": "yarn run develop",
     "serve": "gatsby serve",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
