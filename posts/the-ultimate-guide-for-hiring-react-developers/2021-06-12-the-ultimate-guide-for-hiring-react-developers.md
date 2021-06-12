@@ -1,10 +1,10 @@
 ---
 templateKey: 'blog-post'
-title: 'The ultimate guide for hiring React Developers'
+title: 'The Ultimate Guide for Hiring React Developers'
 date: 2021-06-12
 featuredpost: false
 description: >-
-  Learn the ways to hire great react developers. This blog also explains the requirements for delivering a ReactJS project.
+  Learn the ways to hire great react developers. This blog also talks about the frontend decisions.
 keywords:
 - react
 - reactjs
@@ -18,7 +18,6 @@ tags:
 - hiring
 author: Anand Narayan
 ---
-# The Ultimate Guide for Hiring React Developers
 
 Most software applications have two major components, the backend and the frontend.  Backend contains the business logic. Frontend contains the user interface. The user interface could be a mobile app or a browser app.
 
