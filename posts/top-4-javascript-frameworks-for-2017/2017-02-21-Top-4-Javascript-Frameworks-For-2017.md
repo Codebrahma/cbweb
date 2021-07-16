@@ -51,7 +51,7 @@ Angular is a MVC type framework with two way data binding being its most notable
 
 AngularJS is immensely popular, with over 10,000 sites currently using it (according to Libscore). It is one of the best frameworks to use for building complex web applications as well as single page applications.
 
-[Hire Top AngularJS Developers](hire-angularjs-development-company/)
+[Hire Top AngularJS Developers](/hire-angularjs-development-company/)
 
  
 ![MeteorJSDevelopers](./images/TopJSFrameworks-Meteor-1024x342.png)
