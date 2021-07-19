@@ -124,9 +124,7 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-zopfli',
-      options: {
-        extensions: ['css', 'html', 'js', 'png', 'woff']
-      }
+      options: { extensions: ['js', 'png'] }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
