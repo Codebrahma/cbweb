@@ -7,7 +7,7 @@ import Layout from "../templates/layout"
 import Link from "../components/link"
 import SEO from "../components/seo"
 import Title from "../components/title"
-import { Flex, H1, H2, H4, P ,Box} from "bricks"
+import { Flex, H1, H4, P ,Box} from "bricks"
 
 const SolutionsContainer = ({ title, children }) => (
   <Box mb='5'>

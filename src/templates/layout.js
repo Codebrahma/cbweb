@@ -80,7 +80,7 @@ const Footer = ({ images }) => (
           Join our <B>NEW</B> newsletter to learn about the latest trends in the
           fast changing front end atmosphere
         </P>
-        <Box my="1">
+        <Box>
           <form
             action="https://codebrahma.us3.list-manage.com/subscribe/post"
             method="post"
@@ -103,7 +103,6 @@ const Footer = ({ images }) => (
               name="subscribe"
               px={2}
               py="10px"
-              mt={1}
               borderRadius={[3, "0 4px 4px 0"]}
             />
           </form>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import { Flex, Box, InputText, OutlinedButton, P } from "bricks";
+import { Flex, Box, InputText, OutlinedButton } from "bricks";
 import { navigate } from "gatsby";
 import styled from "@emotion/styled";
 import { css } from 'bricks';
