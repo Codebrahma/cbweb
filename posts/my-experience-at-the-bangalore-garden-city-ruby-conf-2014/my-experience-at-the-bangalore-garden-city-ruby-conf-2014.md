@@ -40,6 +40,4 @@ If you are looking for any then do contact us for quality work.
 [1]: /
 [2]: http://twitter.com/chadfowler
 [3]: http://www.slideshare.net/gautamrege/gcrc-2014-the-dark-side-of-ruby-29681735
-[4]: http://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil
-
-  
+[4]: https://web.archive.org/web/20140122173118/http://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil

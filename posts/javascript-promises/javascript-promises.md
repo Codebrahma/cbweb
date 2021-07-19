@@ -190,9 +190,3 @@ Example:
 ## But where?
 
 Everywhere. Cleanup your javascript code. Replace nested callbacks during sequential API calls, animations (etc) with promises. Promises are a great programming paradigm which have to be vigorously exploited.
-
-Refrences: [nithinkrishna.github.io][1]
-
-[1]: http://nithinkrishna.github.io/2014-05-02-Javascript-promises/
-
-  

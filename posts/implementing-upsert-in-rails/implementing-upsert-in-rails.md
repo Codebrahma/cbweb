@@ -82,6 +82,4 @@ case | user                      | system    | total     | real
 ```
 The numbers seem to suggest that __Implementation#2__ is faster. The best case scenario is __37%__ faster while the worst case is only __18%__ slower. Even when best/worst case scenarios are randomized __Implementation#2__ wins hands down.
 
-Gist: [upsert.rb](https://gist.github.com/nithinkrishna/549fa9d7213485cad392)
-
-Refrences: [nithinkrishna.github.io](http://nithinkrishna.github.io/2014-08-01-upsert-implementation-in-rails/)
+Gist: [upsert.rb](https://gist.github.com/aalavandhan/549fa9d7213485cad392)

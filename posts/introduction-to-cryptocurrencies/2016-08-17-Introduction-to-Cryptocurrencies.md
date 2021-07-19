@@ -115,7 +115,7 @@ Bitcoin nodes __trust the longest blockchain__ and build their blocks on it. If 
 Many people hail Bitcoin as an anonymous mode of payment. But the reality is quite the opposite. Every transaction made on Bitcoin is visible to everyone. Having said that, bitcoin transactions don’t necessarily link to the real identity of the user, but to a pseudonym, much like writing a book with a pen name. Thus, Bitcoin is __pseudonymous__.
 
 ## Fun facts about Bitcoin
-The first block of the blockchain is called the Genesis Block. Every bitcoin in circulation is either derived from a coinbase transaction or the Genesis block. See how it looked like [here](https://blockexplorer.com/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f).
+The first block of the blockchain is called the Genesis Block. Every bitcoin in circulation is either derived from a coinbase transaction or the Genesis block. See how it looked like [here](https://web.archive.org/web/20160331214343/https://blockexplorer.com/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f).
 
 Rewards from coinbase transactions are halved after every 210,000 transactions. In fact, the latest __halving event__ occurred recently on 9th July 2016, reducing the reward amount from BTC 25 to BTC 12.5. Check when’s the next halving event [here](http://www.coindesk.com/51-attacks-real-threat-bitcoin/).
 
@@ -148,7 +148,7 @@ Original [bitcoin paper](https://bitcoin.org/bitcoin.pdf) by Satoshi Nakamoto.
 
 [Poloniex](https://poloniex.com/) is an exchange / trading site for cryptocurrencies.
 
-[Coinbase](https://www.coinbase.com/) is the PayPal of cryptocurrencies.
+Coinbase is the PayPal of cryptocurrencies.
 
 If you liked the article and feel generous, or just want to hone your newly acquired bitcoin skills, feel free to send me some bitcoins at the following address.
 

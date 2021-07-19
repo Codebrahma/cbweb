@@ -54,6 +54,3 @@ function gpsafe(){
     git stash pop
 }
 ```
-
-
-Refrences: [nithinkrishna.github.io](http://nithinkrishna.github.io/blog/Optimising-your-workflow-Git-Bash-101/)

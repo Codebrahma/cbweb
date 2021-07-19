@@ -46,9 +46,4 @@ ternary  | 0.2800000   | 0.000000  | 0.2800000 | ( 0.277966)
 ```
 
 Note that **rescue** is considerably inefficient compared to the other two (almost 60 times). **The Ternary operator** seems to be the most sound option.
-
-Refrences: [nithinkrishna.github.io][1]
-
-[1]: http://nithinkrishna.github.io/blog/Ruby-Rescue-Vs-Try-Vs-Ternary/
-
   

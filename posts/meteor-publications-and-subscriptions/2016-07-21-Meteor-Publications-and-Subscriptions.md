@@ -20,7 +20,7 @@ tags:
 - Meteor development
 ---
 
-[Meteor](https://www.meteor.com/) is a full-stack JavaScript platform, in fact the [11th most popular](http://stats.js.org/) JavaScript project on GitHub at the time of writing. What makes Meteor so disruptive is the mode of data communication between server and client. It's not [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) but instead, Meteor uses Publish Subscribe pattern to communicate data between server and client. The protocol used for this communication is Distributed Data Protocol (DDP), which is built in-house by The [Meteor Development Group (MDG)](https://www.meteor.com/company), the startup behind Meteor.
+[Meteor](https://www.meteor.com/) is a full-stack JavaScript platform, in fact the [11th most popular](http://stats.js.org/) JavaScript project on GitHub at the time of writing. What makes Meteor so disruptive is the mode of data communication between server and client. It's not [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) but instead, Meteor uses Publish Subscribe pattern to communicate data between server and client. The protocol used for this communication is Distributed Data Protocol (DDP), which is built in-house by The [Meteor Development Group (MDG)](https://www.meteor.com/company/culture), the startup behind Meteor.
 
 In this chapter specifically, we're going to talk about meteor **publications** and **subscriptions**, and to explain these interwoven concepts, we're going to use them in various scenarios and analyze their results using 3rd party tools to achieve a better understanding of how Meteor publications and subscriptions work and the ways we can use them.
 

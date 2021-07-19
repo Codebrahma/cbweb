@@ -74,6 +74,3 @@ update_user = -> (u,i){ u.update(:attribute => "#{i}") }
 Parallel.each_with_index(User.all)(&update_user)
 ```
 Whilst we aim at building rails-applications that scale and perform better, limited by the performance constraints that are inherent to ruby such intelligent code optimizations are key.
-
-Refrences: [nithinkrishna.github.io](http://nithinkrishna.github.io/2014-08-15-parallel-processing-in-ruby/)
-

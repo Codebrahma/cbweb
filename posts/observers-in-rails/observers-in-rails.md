@@ -83,12 +83,8 @@ _ _
 4. Finally, Observers have been **removed** form the rails core after `Rails 3.2`. You need to include the `rails-observers` gem to use observers in later rails versions.
 * * *
 
-Refrences:  
-[http://api.rubyonrails.org/v3.2.13/classes/ActiveRecord/Observer.html][4],  
-[nithinkrishna.github.io][3]
+References:
+[http://api.rubyonrails.org/v3.2.13/classes/ActiveRecord/Observer.html][2],
 
 [1]: http://sourcemaking.com/design_patterns/observer
-[3]: http://nithinkrishna.github.io/blog/Active-record-observers/
-[4]: http://api.rubyonrails.org/v3.2.13/classes/ActiveRecord/Observer.html
-
-  
+[2]: http://api.rubyonrails.org/v3.2.13/classes/ActiveRecord/Observer.html

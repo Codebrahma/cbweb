@@ -12,7 +12,7 @@ category:
 - Tutorial
 ---
 
-Most experts agree that by the year 2020, nearly [83 percent of enterprise workloads](https://www.forbes.com/sites/louiscolumbus/2018/01/07/83-of-enterprise-workloads-will-be-in-the-cloud-by-2020/#3dd5a6e26261) will be based in the cloud. In just the past few years, the number of businesses using cloud-based tools has exploded.
+Most experts agree that by the year 2020, nearly [83 percent of enterprise workloads](https://www.forbes.com/sites/louiscolumbus/2018/01/07/83-of-enterprise-workloads-will-be-in-the-cloud-by-2020/?sh=58396c2c6261) will be based in the cloud. In just the past few years, the number of businesses using cloud-based tools has exploded.
 
 If your company is in the business of developing applications for mass consumption, finding a way to make these programs more functional and reliable is a must. Many of the most popular apps on the market have found a way to seamlessly integrate cloud technology into their interface.
 
