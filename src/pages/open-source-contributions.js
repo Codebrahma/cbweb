@@ -276,5 +276,14 @@ export const query = graphql`
       }
       publicURL
     }
+
+    comboBox: file(relativePath: { eq: "open-source/drop-down.png" }) {
+      childImageSharp {
+        fixed(height: 70, width: 70) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+      publicURL
+    }
   }
 `
