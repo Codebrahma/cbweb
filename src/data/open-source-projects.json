@@ -101,5 +101,12 @@
     "github": "https://github.com/Codebrahma/React-combobox",
     "demo": "https://react-combobox.netlify.app/demo",
     "image": "comboBox"
+  },
+  {
+    "name": "React Searchable Filter",
+    "description": "A Searchable and Customizable React Filter component",
+    "github": "https://github.com/Codebrahma/react-searchable-filter",
+    "demo": "https://react-searchable-filter.netlify.app/demo/",
+    "image": "filter"
   }
 ]
