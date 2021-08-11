@@ -1,5 +1,4 @@
-[
-  {
+[{
     "name": "Serverless Design System",
     "description": "A series of React components that can be reused in different combinations.",
     "github": "https://github.com/Codebrahma/serverless-design-system",
@@ -95,5 +94,19 @@
     "github": "https://github.com/Codebrahma/react-stateless-modal",
     "demo": "https://cb-react-modal-docs.netlify.com/",
     "image": "reactStatelessModal"
+  },
+  {
+    "name": "React Combo box",
+    "description": "A flexible and easy accessible React combo box component",
+    "github": "https://github.com/Codebrahma/React-combobox",
+    "demo": "https://react-combobox.netlify.app/demo",
+    "image": "comboBox"
+  },
+  {
+    "name": "React Searchable Filter",
+    "description": "A Searchable and Customizable React Filter component",
+    "github": "https://github.com/Codebrahma/react-searchable-filter",
+    "demo": "https://react-searchable-filter.netlify.app/demo/",
+    "image": "filter"
   }
 ]

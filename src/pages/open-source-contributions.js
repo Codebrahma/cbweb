@@ -276,5 +276,23 @@ export const query = graphql`
       }
       publicURL
     }
+
+    comboBox: file(relativePath: { eq: "open-source/combo-box.png" }) {
+      childImageSharp {
+        fixed(height: 70, width: 70) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+      publicURL
+    }
+
+    filter: file(relativePath: { eq: "open-source/searchable-filter.png" }) {
+      childImageSharp {
+        fixed(height: 50, width: 55) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+      publicURL
+    }
   }
 `
