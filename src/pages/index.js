@@ -74,7 +74,7 @@ const IndexPage = ({ data }) => {
           </Title>
           <Box width={[1, 2/3]}>
             <P textAlign="center">
-              We have been building on React / React Native for 3 years now, and
+              We have been building on React / React Native for {new Date().getFullYear() - 2016} years now, and
               we absolutely love its declarative and functional philosophy. We
               strongly believe that a good react codebase is conducive for rapid
               UI iteration
