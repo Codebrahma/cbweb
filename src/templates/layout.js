@@ -178,7 +178,7 @@ const Footer = ({ images }) => (
           Codebrahma is an independent company. Mentioned brands and companies are trademarked brands.
         </Box>
         <Box mt={1}>
-          &copy; 2020 codebrahma.com. All rights reserved.
+          &copy; {new Date().getFullYear()} codebrahma.com. All rights reserved.
         </Box>
       </Box>
     </Flex>
