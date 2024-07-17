@@ -13,6 +13,25 @@ Kick off your project with this default boilerplate. This starter ships with the
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
+0. **Setup Dev Environment**
+
+    This project is from 2020, and has dependencies such as Python 2.7 and Nodejs v14
+    that are not supported widely.
+
+    We will use docker to setup the dev environment, and run npm, yarn, and gatsby
+    commands from with it.
+
+    First, build the docker image.
+
+    ```shell
+    docker build . -t cbweb:node14-custom
+    ```
+
+    Then, run all the npm, yarn, and gatsby inside docker by running
+
+    ```shell
+    docker run -it -p 9000:9000 -p 8000:8000 -v $(pwd):/app cbweb:node14-custom /bin/bash
+    ```
 
 1.  **Create a Gatsby site.**
 
