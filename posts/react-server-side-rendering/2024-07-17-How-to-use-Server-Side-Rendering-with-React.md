@@ -43,4 +43,4 @@ So, limiting React SSR to only being able to make HTTP API requests is a great w
 
 Moreover, you can leverage any of the several edge networks to host your front-end code close to your user's physical location and improve the latency and Time To First Byte (TTFB). That’s because these edge networks allow HTTP requests but don’t allow installing native libraries required to make database calls.
 
-*This post is authored by [Shiv Deepak Muddada](https://shivdeepak.com/) and peer-reviewed by [Anand Narayan](https://codeanand.com/) and [Sudhanshu Yadav](https://www.linkedin.com/in/yadavsudhanshu/).*
+*This post is authored by <a href="https://shivdeepak.com/" target="_blank">Shiv Deepak Muddada</a> and peer-reviewed by <a href="https://codeanand.com/" target="_blank">Anand Narayan</a> and <a href="https://www.linkedin.com/in/yadavsudhanshu/" target="_blank">Sudhanshu Yadav</a>.*
