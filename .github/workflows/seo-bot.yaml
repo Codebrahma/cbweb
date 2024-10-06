@@ -4,7 +4,7 @@ name: Update Markdown Files
 on:
   workflow_dispatch: # Allows manual/API triggering
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight (you can adjust this)
+    - cron: '30 17 * * *'  # Runs daily at 11pm IST
 
 jobs:
   update-markdown:
