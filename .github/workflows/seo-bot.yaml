@@ -2,9 +2,6 @@ name: Update Markdown Files
 
 # Trigger this action on push, pull request, or a schedule if needed
 on:
-  push:
-    branches:
-      - '*'  # This will trigger on any branch
   workflow_dispatch: # Allows manual/API triggering
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight (you can adjust this)
