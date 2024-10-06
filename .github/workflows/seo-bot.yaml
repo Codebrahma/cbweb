@@ -31,7 +31,7 @@ jobs:
       # Step 2: Run your script to pull data and generate markdown files
       - name: Run the blog-fetching script
         run: |
-          API_KEY=${{ secrets.SEO_BOT_API_KEY }} node scripts/seo-bot.js
+          SEO_BOT_API_KEY=${{ secrets.SEO_BOT_API_KEY }} node scripts/seo-bot.js
 
       # Step 3: Commit and push changes if there are any
       - name: Commit and push changes
