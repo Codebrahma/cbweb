@@ -30,17 +30,13 @@ jobs:
         run: |
           SEO_BOT_API_KEY=${{ secrets.SEO_BOT_API_KEY }} node scripts/seo-bot.js
 
-      # Step 3: Commit if there are any
+      # Step 3: Commit and push changes if there are any
       - name: Commit and push changes
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Automated update of seo bot blogs" || echo "No changes to commit"
-      
-      # Push changes if there are any
-      - name: Push changes
-        run: |
-          git push origin master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          git push https://$PAT_TOKEN@github.com/${{ github.repository }} HEAD:master
