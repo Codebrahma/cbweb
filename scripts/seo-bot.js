@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const fetch = require('node-fetch');
-
 const POSTS_DIRECTORY = path.join(__dirname, '..', 'posts');
 
 const formatDate = (dateString) => {
