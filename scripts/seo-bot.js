@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const fetch = require('node-fetch');
+const { parse } = require('url');
 const POSTS_DIRECTORY = path.join(__dirname, '..', 'posts');
 
 const formatDate = (dateString) => {
@@ -35,12 +36,23 @@ const downloadImage = async (url, filePath) => {
   }
 }
 
+const getFileNameFromUrl = (url) => {
+  const parsedUrl = parse(url);
+  const pathname = parsedUrl.pathname;
+  return path.basename(pathname);
+}
+
 const generateMarkdownFile = (data) => {
+  const blogDirectory = path.join(POSTS_DIRECTORY, data.slug);
+  const imagesDirectory = path.join(blogDirectory, 'images');
+  const headerName = data.image ? getFileNameFromUrl(data.image) : '';
+
   const content = `---
 templateKey: "blog-post"
 title: "${data.headline}"
 date: ${formatDate(data.publishedAt)}
 featuredpost: false
+${data.image ? 'image: ./images/' + headerName : ''}
 description: >-
   "${data.metaDescription}"
 keywords:
@@ -56,7 +68,6 @@ author: Anand Narayan
 <div className='seo-bot-ai-blog' dangerouslySetInnerHTML={{ __html: ${JSON.stringify(data.html.replace(/<h1[^>]*?>[\s\S]*?<\/h1>/, ''))} }} />
   `;
 
-  const blogDirectory = path.join(POSTS_DIRECTORY, data.slug);
   // Create blog directory if doesnt exist
   if (!fs.existsSync(blogDirectory)) {
     fs.mkdirSync(blogDirectory);
@@ -68,7 +79,14 @@ author: Anand Narayan
     fs.unlinkSync(filePath);
   }
 
-  downloadImage(data.image, )
+  if (data.image) {
+    // Create blog directory if doesnt exist
+    if (!fs.existsSync(imagesDirectory)) {
+      fs.mkdirSync(imagesDirectory);
+    }
+
+    downloadImage(data.image, path.join(imagesDirectory, headerName));
+  }
 
   fs.writeFileSync(filePath, content, 'utf8');
 }
@@ -109,5 +127,4 @@ const processPosts = async () => {
   }
 }
 
-console.log(process.env);
 processPosts();
