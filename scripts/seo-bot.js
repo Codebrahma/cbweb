@@ -69,12 +69,10 @@ author: Anand Narayan
     fs.unlinkSync(filePath);
   }
 
-  fs.write
+  downloadImage(data.image, )
 
   fs.writeFileSync(filePath, content, 'utf8');
 }
-
-const fetch = require('node-fetch');
 
 const fetchBase = async () => {
   const response = await fetch(
