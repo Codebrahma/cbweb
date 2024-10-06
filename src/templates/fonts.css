@@ -454,7 +454,7 @@ ul.unstyled-list{
 }
 code.language-text.css-0 {
   background: transparent !important;
-  color: #4a2fff;
+  color: #c6cec6;
   padding: 2px 4px !important;
   margin: 2px;
 }
@@ -487,6 +487,10 @@ a {
 
 a:visited {
   color: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Vimeo style style starts */
@@ -532,4 +536,130 @@ a:visited {
   overflow: initial;
   float: left;
   min-width: 100%;
+}
+
+:not(pre) > code[class*="language-text"].css-0 {
+  color: unset !important;
+}
+
+.seo-bot-ai-blog {
+  font-family: TiemposText;
+  font-size: 1rem;
+  line-height: 1.45rem;
+}
+
+.seo-bot-ai-blog pre {
+  background-color: #1b1b1a;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.seo-bot-ai-blog td, th {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.seo-bot-ai-blog strong, .seo-bot-ai-blog b {
+  font-family: TiemposBold;
+}
+
+.seo-bot-ai-blog > p, .seo-bot-ai-blog table {
+  font-family: TiemposText;
+  line-height: 1.45rem;
+  margin-bottom: 1.45rem;
+}
+
+.seo-bot-ai-blog li {
+  margin-bottom: 0.725rem;
+  font-family: TiemposText;
+  font-size: 1rem;
+  line-height: 1.45rem;
+  max-width: 40rem;
+}
+
+.seo-bot-ai-blog h1 {
+  font-family: TiemposHeadline;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  margin-top: 2.175rem;
+  margin-bottom: 0.725rem;
+  padding: 0;
+}
+
+.seo-bot-ai-blog h2 {
+  font-family: TiemposHeadline;
+  font-size: 1.6875rem;
+  line-height: 2.175rem;
+  margin-top: 2.175rem;
+  margin-bottom: 0.725rem;
+  padding: 0;
+  margin-top: 0;
+}
+
+.seo-bot-ai-blog h3 {
+  font-family: TiemposHeadline;
+  font-size: 1.375rem;
+  line-height: 1.45rem;
+  margin-top: 1.45rem;
+  margin-bottom: 0.725rem;
+  padding: 0;
+}
+
+.seo-bot-ai-blog h4 {
+  font-family: TiemposHeadline;
+  font-size: 1.2rem;
+  line-height: 1.45rem;
+  margin-top: 1.45rem;
+  margin-bottom: 0.725rem;
+  padding: 0;
+}
+
+.seo-bot-ai-blog code {
+  background: #1b1b1a;
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.3em;
+  color: #f8f8f2;
+}
+
+.seo-bot-ai-blog ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+@media screen and (min-width: 52em) {
+  .seo-bot-ai-blog {
+    font-size: 1.125rem;
+  }
+
+  .seo-bot-ai-blog h1 {
+    font-size: 2.8125rem;
+    margin-top: 2.9rem;
+  }
+
+  .seo-bot-ai-blog h2 {
+    font-size: 1.8984375rem;
+    margin-top: 2.5rem;
+  }
+
+  .seo-bot-ai-blog h3 {
+    font-size: 1.546875rem;
+    margin-top: 2.175rem;
+  }
+
+  .seo-bot-ai-blog h4 {
+    font-size: 1.3499999999999999rem;
+  }
+
+  .seo-bot-ai-blog li {
+    margin-bottom: 0.725rem;
+    font-size: 1.125rem;
+  }
 }

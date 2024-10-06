@@ -1,0 +1,40 @@
+name: Update Markdown Files
+
+# Trigger this action on push, pull request, or a schedule if needed
+on:
+  workflow_dispatch: # Allows manual/API triggering
+  schedule:
+    - cron: '30 17 * * *'  # Runs daily at 11pm IST
+
+jobs:
+  update-markdown:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js 14
+      - name: Setup Node.js 14
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: yarn install
+
+      # Step 2: Run your script to pull data and generate markdown files
+      - name: Run the blog-fetching script
+        run: |
+          SEO_BOT_API_KEY=${{ secrets.SEO_BOT_API_KEY }} node scripts/seo-bot.js
+
+      # Step 3: Commit and push changes if there are any
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Automated update of seo bot blogs" || echo "No changes to commit"
+          git push
