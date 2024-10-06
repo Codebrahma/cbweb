@@ -4,7 +4,7 @@ name: Update Blogs
 on:
   workflow_dispatch: # Allows manual/API triggering
   schedule:
-    - cron: '*/5 * * * *'  # Runs every 8 hours
+    - cron: '* */8 * * *'  # Runs every 8 hours
 
 jobs:
   update-blogs:
