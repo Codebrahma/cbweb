@@ -109,4 +109,5 @@ const processPosts = async () => {
   }
 }
 
+console.log(process.env);
 processPosts();
