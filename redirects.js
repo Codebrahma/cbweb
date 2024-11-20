@@ -172,6 +172,27 @@ module.exports = [
     from: "/author/anand",
     to: "/author/anand-narayan",
   },
+  {
+    from: "/design/patterns/2014/04/28/ruby-decorators.html",
+    to: "/ruby-decorators",
+  },
+  {
+    from: "/react-lite-ui",
+    to: "https://react-lite-ui.netlify.app/react-lite-ui/",
+  },
+  {
+    from: "/react-lite-ui/documentation",
+    to: "https://react-lite-ui.netlify.app/react-lite-ui/documentation",
+  },
+  {
+    from: "/react-lite-ui/playground",
+    to: "https://react-lite-ui.netlify.app/react-lite-ui/playground",
+  },
+  {
+    from: "/react-lite-ui/documentation?component=card",
+    to:
+      "https://react-lite-ui.netlify.app/react-lite-ui/documentation?component=card",
+  },
 
   /**
    * TEMPORARY REDIRECTS TO AVOID GOOGLE'S PENALTY
@@ -308,16 +329,16 @@ module.exports = [
     to: "/tag/react-js",
   },
   {
-    from: '/tag/angularjs',
-    to: '/'
+    from: "/tag/angularjs",
+    to: "/",
   },
   {
-    from: '/tag/financial',
-    to: '/'
+    from: "/tag/financial",
+    to: "/",
   },
   {
-    from: '/tag/rails',
-    to: '/'
+    from: "/tag/rails",
+    to: "/",
   },
   {
     from: "/tag/nodejs",
@@ -409,6 +430,10 @@ module.exports = [
   },
   {
     from: "/service-vertical/web/",
+    to: "/",
+  },
+  {
+    from: "/vuejs-development",
     to: "/",
   },
   /**
